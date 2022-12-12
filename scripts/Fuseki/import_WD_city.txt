@@ -1,0 +1,153 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix city: <http://www.art.org/ontology/world/city#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+CONSTRUCT {?cityID rdf:type owl:NamedIndividual, world:city ; rdfs:label ?cityName1 ,?cityName2 ;
+           rdfs:comment ?desc1,?desc2 ; owl:sameAs ?city ;owl:sameAs ?wpLink ; world:isCityOf ?countryID . 
+}
+WHERE
+{SERVICE <https://query.wikidata.org/sparql> 
+{
+  ?painter wdt:P6379 ?museum FILTER (?painter in (wd:Q39931,wd:Q296)) .
+  ?museum wdt:P17 ?country . #FILTER(?country=wd:Q39) .
+  ?museum wdt:P131 ?city .
+  OPTIONAL {?city rdfs:label ?cityName1 . FILTER(lang(?cityName1)="en") .}
+  OPTIONAL {?city rdfs:label ?cityName2 . FILTER(lang(?cityName2)="fr") .}
+  OPTIONAL {?city schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+  OPTIONAL {?city schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+  OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?city . } 
+  ?city wdt:P31 ?city1 .
+  ?city1 wdt:P279 wd:Q515 .
+  BIND(replace(str(?city),"http://www.wikidata.org/entity/","") as ?itemID )
+  BIND(IRI(CONCAT("http://www.art.org/ontology/world/city#", ?itemID   )) AS ?cityID ) .
+  BIND(replace(str(?country),"http://www.wikidata.org/entity/","") as ?itemID2 )
+  BIND(IRI(CONCAT("http://www.art.org/ontology/world/country#", ?itemID2   )) AS ?countryID ) .
+}}
+
+
+-- wikidata
+SELECT distinct ?country ?city ?cityName1 ?cityName2 ?desc1 ?desc2 ?cityID ?wpLink
+WHERE
+{
+  ?painter wdt:P6379 ?museum FILTER (?painter in (wd:Q39931,wd:Q296)) .
+  ?museum wdt:P17 ?country  FILTER(?country=wd:Q39) .
+  ?museum wdt:P131 ?city .
+  OPTIONAL {?city rdfs:label ?cityName1 . FILTER(lang(?cityName1)="en") .}
+  OPTIONAL {?city rdfs:label ?cityName2 . FILTER(lang(?cityName2)="fr") .}
+  OPTIONAL {?city schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+  OPTIONAL {?city schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+  OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?city . } 
+  ?city wdt:P31 ?city1 .
+  ?city1 wdt:P279 wd:Q515 .
+  BIND(replace(str(?city),"http://www.wikidata.org/entity/","") as ?itemID )
+  BIND(IRI(CONCAT("http://www.art.org/ontology/world/city#", ?itemID   )) AS ?cityID ) .
+}
+
+#missing cities
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX world: <http://www.art.org/ontology/world#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX mus: <http://www.art.org/ontology/museum#>
+#select ?city ?cityID
+CONSTRUCT {?city rdf:type owl:NamedIndividual, world:city ; rdfs:label ?cityName1 ,?cityName2 ;
+           rdfs:comment ?desc1,?desc2 ; owl:sameAs ?wdID ;owl:sameAs ?wpLink  . 
+}
+where {
+   {select distinct ?city where {
+     { GRAPH <http://www.art.org/museum> {
+                 ?museum mus:inCity ?city .
+                 FILTER NOT EXISTS { GRAPH <http://www.art.org/world> {?city rdf:type  world:city . }}
+        }}
+    }
+  }
+  BIND(replace(str(?city),"http://www.art.org/ontology/world/city#","") as ?itemID )
+  BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?wdID wdt:P31 ?city1 ; wdt:P17 ?country .
+        OPTIONAL {?wdID rdfs:label ?cityName1 . FILTER(lang(?cityName1)="en") .}
+        OPTIONAL {?wdID rdfs:label ?cityName2 . FILTER(lang(?cityName2)="fr") .}
+        OPTIONAL {?wdID schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+        OPTIONAL {?wdID schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+        OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?wdID . } 
+    }
+}
+
+
+
+
+-- check for missing city info ; create without country world:isCityOf ?countryID 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <http://schema.org/>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+#select distinct ?city ?wdID ?cityName1 ?desc1
+CONSTRUCT {?city rdf:type owl:NamedIndividual, world:city ; rdfs:label ?cityName1 ,?cityName2 ;
+           rdfs:comment ?desc1,?desc2 ; owl:sameAs ?wdID ;owl:sameAs ?wpLink  . 
+}
+where { graph <http://www.art.org/museum> { ?museum mus:inCity ?city  .  #FILTER (?city in (city:Q60,city:Q64)) 
+  }
+  FILTER NOT EXISTS {graph <http://www.art.org/world> {?city  rdf:type  world:city }  }.
+  BIND(replace(str(?city),"http://www.art.org/ontology/world/city#","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) . 
+  SERVICE <https://query.wikidata.org/sparql> {
+    ?wdID wdt:P31 ?city1 ; wdt:P17 ?country .
+        OPTIONAL {?wdID rdfs:label ?cityName1 . FILTER(lang(?cityName1)="en") .}
+        OPTIONAL {?wdID rdfs:label ?cityName2 . FILTER(lang(?cityName2)="fr") .}
+        OPTIONAL {?wdID schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+        OPTIONAL {?wdID schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+        OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?wdID . } 
+    }
+} 
+
+# check for missing country world:isCityOf in city
+PPREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX world: <http://www.art.org/ontology/world#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX mus: <http://www.art.org/ontology/museum#>
+#select distinct ?city ?wdID ?country ?countryID
+CONSTRUCT {?city world:isCityOf ?countryID .}
+where {
+   {select distinct ?city where {
+     { graph <http://www.art.org/world> { ?city rdf:type   world:city . 
+            FILTER NOT EXISTS { ?city  world:isCityOf ?country . }
+        }}
+    }
+  }
+  BIND(replace(str(?city),"http://www.art.org/ontology/world/city#","") as ?itemID )
+  BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  SERVICE <https://query.wikidata.org/sparql> { ?wdID wdt:P17 ?country
+  }
+  BIND(replace(str(?country),"http://www.wikidata.org/entity/","") as ?itemID2 ) .
+  BIND(IRI(CONCAT("http://www.art.org/ontology/world/country#", ?itemID2   ))  AS ?countryID ) .
+ 
+}
+
+ 

@@ -1,0 +1,73 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+CONSTRUCT {?countryID rdf:type owl:NamedIndividual, world:country ; rdfs:label ?countryName1 ,?countryName2 ;
+           rdfs:comment ?desc1,?desc2 ; owl:sameAs ?country ;owl:sameAs ?wpLink ; world:inContinent ?continent . 
+}
+WHERE
+{SERVICE <https://query.wikidata.org/sparql> 
+{
+  {?country wdt:P31 wd:Q6256 .
+      OPTIONAL { ?country rdfs:label ?countryName1 . FILTER(lang(?countryName1)="en") . } 
+  OPTIONAL { ?country rdfs:label ?countryName2 . FILTER(lang(?countryName2)="fr") . } 
+    BIND(replace(str(?country),"http://www.wikidata.org/entity/","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.art.org/ontology/world/country#", ?itemID   ))  AS ?countryID ) .
+  OPTIONAL { ?country schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+  OPTIONAL { ?country schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+  OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?country . } 
+  ?country wdt:P361 ?continent . 
+    }
+  }}
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+CONSTRUCT {?countryID rdf:type owl:NamedIndividual, world:country ; rdfs:label ?countryName1 ,?countryName2 ;
+           rdfs:comment ?desc1,?desc2 ; owl:sameAs ?country ;owl:sameAs ?wpLink ; world:inContinent ?continent . 
+}
+WHERE
+{SERVICE <https://query.wikidata.org/sparql> 
+{
+  {?country wdt:P31 ?o  FILTER(?country in (wd:Q31,wd:Q1206012,wd:Q403,wd:Q212,Q235) ).
+      OPTIONAL { ?country rdfs:label ?countryName1 . FILTER(lang(?countryName1)="en") . } 
+  OPTIONAL { ?country rdfs:label ?countryName2 . FILTER(lang(?countryName2)="fr") . } 
+    BIND(replace(str(?country),"http://www.wikidata.org/entity/","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.art.org/ontology/world/country#", ?itemID   ))  AS ?countryID ) .
+  OPTIONAL { ?country schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+  OPTIONAL { ?country schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+  OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?country . } 
+  ?country wdt:P361 ?continent . 
+    }
+  }}
+
+
+
+SELECT ?country ?countryName1 ?countryName2 ?desc1 ?desc2
+where {?country wdt:P31 wd:Q6256 .
+      OPTIONAL { ?country rdfs:label ?countryName1 . FILTER(lang(?countryName1)="en") . } 
+  OPTIONAL { ?country rdfs:label ?countryName2 . FILTER(lang(?countryName2)="fr") . } 
+  OPTIONAL { ?country schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+  OPTIONAL { ?country schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }}
+  
+ctry:France rdf:type owl:NamedIndividual ,
+                      world:country; world:inContinent cont:Europe ;
+                      rdfs:label "France"@en .
+
+  

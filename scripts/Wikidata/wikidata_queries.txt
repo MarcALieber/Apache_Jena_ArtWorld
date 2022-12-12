@@ -1,0 +1,84 @@
+#Just Renoir added WIKIPEDIA
+SELECT ?painter ?painterLabel ?painterDescription ?wikipediaLink ?nameLabel ?mouvementLabel ?sexLabel ?dateOfBirthLabel ?dateOfDeathLabel
+WHERE
+{
+  ?painter wdt:P31 wd:Q5; #is a human
+           wdt:P734 ?name; #family name
+           wdt:P106 wd:Q1028181; #occupation = painter
+           wdt:P27 wd:Q142; #Citizen of France
+           wdt:P135 ?mouvement FILTER (?painter=wd:Q39931 && ?mouvement IN (wd:Q40415,wd:Q166713)) . #is an impressionists or post-impressionist
+   ?painter wdt:P21 ?sex;
+           wdt:P569 ?dateOfBirth .
+   OPTIONAL{?wikipediaLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?painter . }
+   OPTIONAL{?painter  wdt:P570 ?dateOfDeath } .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" } .
+}
+ORDER BY DESC(?nameLabel)
+
+
+
+#list of all artistic movement
+SELECT ?mvmt ?mvmtName1 ?desc1 ?mvmtName2 ?desc2 ?wpLink
+WHERE
+{
+  ?mvmt wdt:P31 wd:Q968159 . #FILTER (?mvmt = wd:Q40415 ) .       
+  OPTIONAL { ?mvmt rdfs:label ?mvmtName1 . FILTER(lang(?mvmtName1)="fr") . } 
+  OPTIONAL { ?mvmt schema:description ?desc1 . FILTER(lang(?desc1)="fr") .  }
+  OPTIONAL { ?mvmt rdfs:label ?mvmtName2 . FILTER(lang(?mvmtName2)="en") . } 
+  OPTIONAL { ?mvmt schema:description ?desc2 . FILTER(lang(?desc2)="en") .  }
+  OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?mvmt . }
+  #SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en" }
+} #LIMIT 10
+
+#list of all artistic movement
+#SELECT ?mvmt ?mvmtName1 ?desc1 ?mvmtName2 ?desc2
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+CONSTRUCT {?mvmt a mvmt:movement ; rdfs:label ?mvmtName1 ,?mvmtName2; rdfs:comment ?desc1,?desc2 ;owl:sameAs ?wpLink . }
+WHERE
+{
+  ?mvmt wdt:P31 wd:Q968159 FILTER (?mvmt IN (wd:Q40415,wd:Q166593,wd:Q80113,wd:Q134147,wd:Q143357,wd:Q152778,wd:Q166713,wd:Q170292 )) .        
+  OPTIONAL { ?mvmt rdfs:label ?mvmtName1 . FILTER(lang(?mvmtName1)="fr") . } 
+  OPTIONAL { ?mvmt schema:description ?desc1 . FILTER(lang(?desc1)="fr") .  }
+  OPTIONAL { ?mvmt rdfs:label ?mvmtName2 . FILTER(lang(?mvmtName2)="en") . } 
+  OPTIONAL { ?mvmt schema:description ?desc2 . FILTER(lang(?desc2)="en") .  }
+  OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?mvmt . }
+} #LIMIT 10
+
+#Tableaux de Gustav Klimt
+#defaultView:ImageGrid
+SELECT *
+WHERE
+{
+  ?item wdt:P31 wd:Q3305213 .
+  ?item wdt:P170 wd:Q34661 .
+  ?item wdt:P18 ?pic .
+}
+
+#Museum Renoir and Monet
+SELECT distinct ?museum ?museumName1 ?country ?city ?cityName ?countryName1
+WHERE
+{
+  ?painter wdt:P6379 ?museum FILTER (?painter in (wd:Q39931,wd:Q296)) .
+  OPTIONAL { ?museum rdfs:label ?museumName1 . FILTER(lang(?museumName1)="en") . } 
+  OPTIONAL { ?museum schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+  ?museum wdt:P17 ?country  FILTER(?country=wd:Q39) .
+  OPTIONAL { ?country rdfs:label ?countryName1 . FILTER(lang(?countryName1)="en") . } 
+  OPTIONAL { ?museum wdt:P131 ?city .
+             OPTIONAL {?city rdfs:label ?cityName . FILTER(lang(?cityName)="en") .}
+           }
+}
+
+#list of cities where Renoir and Monet paintings can be found in a museum (Swiss only)
+SELECT distinct ?country ?city ?cityName1 ?cityName2 ?desc1 ?desc2
+WHERE
+{
+  ?painter wdt:P6379 ?museum FILTER (?painter in (wd:Q39931,wd:Q296)) .
+  ?museum wdt:P17 ?country  FILTER(?country=wd:Q39) .
+  ?museum wdt:P131 ?city .
+  OPTIONAL {?city rdfs:label ?cityName1 . FILTER(lang(?cityName1)="en") .}
+  OPTIONAL {?city rdfs:label ?cityName2 . FILTER(lang(?cityName2)="fr") .}
+  OPTIONAL {?city schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+  OPTIONAL {?city schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+  ?city wdt:P31 ?city1 .
+  ?city1 wdt:P279 wd:Q515 .
+}

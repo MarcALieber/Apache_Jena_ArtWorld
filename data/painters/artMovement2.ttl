@@ -1,0 +1,32 @@
+@prefix :         <http://www.art.org/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:   <http://schema.org/> .
+@prefix mvmt:     <http://www.art.org/ontology/movement#> .
+@prefix period:     <http://www.art.org/ontology/period#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+
+#DBPedia cannot be found in Wikidata
+mvmt:Q40415 owl:sameAs dbpedia:Impressionism ; mvmt:inArtPeriod period:nineteen .
+mvmt:Q166593 owl:sameAs dbpedia:Impressionism ; mvmt:inArtPeriod period:modern .
+
+period:modern rdf:type  :artPeriod ;
+        rdfs:comment  "20th century Art"@en , "mouvements artistiques du 20ème siècle"@fr ;
+        rdfs:label    "20th century"@en , "20ème siècle"@fr .
+        
+period:nineteen  rdf:type  :artPeriod ;
+        rdfs:comment  "19th century Art"@en , "mouvements artistiques du 19ème siècle"@fr ;
+        rdfs:label    "19th century"@en , "19ème siècle"@fr .
+        
+period:eighteen  rdf:type  :artPeriod ;
+        rdfs:comment  "18th century Art"@en , "mouvements artistiques du 18ème siècle"@fr ;
+        rdfs:label    "18th century"@en , "18ème siècle"@fr .
+
+period:anticGreek  rdf:type  :artPeriod ;
+        rdfs:comment  "Greek art antique"@en , "mouvements artistiques de l'antiquité grecque"@fr ;
+        rdfs:label    "Greek Antique"@en , "Antiquité grecque"@fr .        
+        
+period:anticRoman rdf:type  :artPeriod ;
+        rdfs:comment  "Roman art antique"@en , "mouvements artistiques de l'antiquité romaine"@fr ;
+        rdfs:label    "Roman Antique"@en , "Antiquité romaine"@fr .                

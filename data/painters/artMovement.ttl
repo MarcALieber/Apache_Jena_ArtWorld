@@ -1,0 +1,131 @@
+@prefix :          <http://www.art.org/ontology#> .
+@prefix art:       <http://www.art.org/ontology/art#> .
+@prefix city:      <http://www.art.org/ontology/world/city#> .
+@prefix cont:      <http://www.art.org/ontology/world/continent#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix dbo:       <http://dbpedia.org/ontology/> .
+@prefix dbp:       <http://dbpedia.org/property/> .
+@prefix dbpedia:   <http://dbpedia.org/resource/> .
+@prefix dc:        <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix g:         <http://www.art.org/ontology/geography#> .
+@prefix gender:    <http://www.art.org/ontology/person/gender#> .
+@prefix lod:       <http://www.art.org/ontology/LinkedOpenData#> .
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix mvmt:      <http://www.art.org/ontology/movement#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix p:         <http://marclieber.fr/ontology/src/> .
+@prefix painting:  <http://www.art.org/ontology/artPainting#> .
+@prefix period:    <http://www.art.org/ontology/period#> .
+@prefix person:    <http://www.art.org/ontology/person#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:       <http://www.art.org/ontology/world/countryRegion#> .
+@prefix remote:    <http://www.art.org/ontology/remote#> .
+@prefix schema:    <http://schema.org/> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd:        <http://www.wikidata.org/entity/> .
+@prefix wdp:       <https://www.wikidata.org/wiki/Property/> .
+@prefix wdt:       <http://www.wikidata.org/prop/direct/> .
+@prefix wikidata:  <http://www.wikidata.org/entity/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+@prefix wm:        <https://commons.wikimedia.org/wiki/> .
+@prefix world:     <http://www.art.org/ontology/world#> .
+@prefix wp:        <https://en.wikipedia.org/wiki/> .
+@prefix xml:       <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+mvmt:Q152778  rdf:type  owl:NamedIndividual,  :movement ;
+        rdfs:comment  "German expressionist artist group"@en , "groupe d'artistes allemands expressionnistes formé à Dresde en 1905"@fr ;
+        rdfs:label    "Die Brücke"@en , "Die Brücke"@fr ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Die_Br%C3%BCcke> , wikidata:Q152778 .
+
+mvmt:Q80113  rdf:type  owl:NamedIndividual,  :movement ;
+        rdfs:comment  "modernist art movement"@en , "mouvement artistique"@fr ;
+        rdfs:label    "expressionism"@en , "expressionnisme"@fr ;
+        owl:sameAs    wikipedia:Expressionism , wikidata:Q80113 .
+
+mvmt:Q134147  rdf:type  owl:NamedIndividual,  :movement ;
+        rdfs:comment  "art movement"@en , "mouvement artistique"@fr ;
+        rdfs:label    "pop art"@en , "pop art"@fr ;
+        owl:sameAs    wikipedia:Pop_art , wikidata:Q134147 .
+
+mvmt:Q143357  rdf:type  owl:NamedIndividual,  :movement ;
+        rdfs:comment  "artistic movement of landscape painters of the first part and mid-19th century"@en , "mouvement artistique de peintres paysagistes de la première partie et du milieu du XIXe siècle"@fr ;
+        rdfs:label    "Barbizon school"@en , "École de Barbizon"@fr ;
+        owl:sameAs    wikipedia:Barbizon_school , wikidata:Q143357 .
+
+mvmt:Q166713  rdf:type  owl:NamedIndividual,  :movement ;
+        rdfs:comment  "predominantly French art movement that developed roughly between 1886 and 1905"@en , "ensemble de courants artistiques qui, durant la période allant approximativement de 1885 à 1905, diverge de l'impressionnisme ou s'oppose à lui"@fr ;
+        rdfs:label    "post-impressionism"@en , "postimpressionnisme"@fr ;
+        owl:sameAs    wikipedia:Post-Impressionism , wikidata:Q166713 .
+
+mvmt:Q40415  rdf:type  owl:NamedIndividual,  :movement ;
+        rdfs:comment  "19th-century art movement"@en , "courant artistique"@fr ;
+        rdfs:label    "Impressionism"@en , "impressionnisme"@fr ;
+        owl:sameAs    wikipedia:Impressionism , wikidata:Q40415 .
+
+mvmt:Q166593  rdf:type  owl:NamedIndividual,  :movement ;
+        rdfs:comment  "artistic style that emphasized painterly qualities and strong color over the representational or realistic values retained by Impressionism"@en , "mouvement pictural né en France au début du XXe siècle caractérisé par la nouveauté de   ses formes simplifiées, cloisonnées par des contours très marqués"@fr ;
+        rdfs:label    "fauvism"@en , "fauvisme"@fr ;
+        owl:sameAs    wikipedia:Fauvism , wikidata:Q166593 .
+
+mvmt:Q170292  rdf:type  owl:NamedIndividual,  :movement ;
+        rdfs:comment  "art movement; architectural style"@en , "mouvement artistique"@fr ;
+        rdfs:label    "classicism"@en , "classicisme"@fr ;
+        owl:sameAs    wikipedia:Classicism , wikidata:Q170292 .
+
+mvmt:Q39427  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "international cultural movement that began in the early 1920s"@en , "mouvement artistique"@fr ;
+        rdfs:label    "surrealism"@en , "surréalisme"@fr ;
+        owl:sameAs    wikipedia:Surrealism , wikidata:Q39427 .
+
+mvmt:Q42934  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "early-20th-century avant-garde art movement"@en , "mouvement artistique d'avant-garde du début du XXe siècle"@fr ;
+        rdfs:label    "Cubism"@en , "cubisme"@fr ;
+        owl:sameAs    wikipedia:Cubism , wikidata:Q42934 .
+
+mvmt:Q150091  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "art movement"@en , "mouvement artistique"@fr ;
+        rdfs:label    "neo-impressionism"@en , "néo-impressionnisme"@fr ;
+        owl:sameAs    wikipedia:Neo-Impressionism , wikidata:Q150091 .
+
+mvmt:Q1474884  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "short period of the most exceptional artistic production during the Italian Renaissance"@en , "mouvement artistique"@fr ;
+        rdfs:label    "High Renaissance"@en , "Haute Renaissance"@fr ;
+        owl:sameAs    wikipedia:High_Renaissance , wikidata:Q1474884 .
+
+mvmt:Q164800  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "art movement"@en , "mouvement artistique"@fr ;
+        rdfs:label    "Symbolism"@en , "symbolisme"@fr ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Symbolism_(arts)> , wikidata:Q164800 .
+
+mvmt:Q34636  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "international philosophy and style of art, architecture and applied art"@en , "mouvement artistique de la fin du XIXe et du début du XXe siècle qui s'appuie sur l'esthétique des lignes courbes"@fr ;
+        rdfs:label    "Art Nouveau"@en , "Art nouveau"@fr ;
+        owl:sameAs    wikipedia:Art_Nouveau , wikidata:Q34636 .
+        
+mvmt:Q15885248  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "painting of that period of European history known as the Renaissance"@en , "période de l'histoire de la peinture"@fr ;
+        rdfs:label    "Renaissance painting"@en , "peinture de la Renaissance"@fr ;
+        owl:sameAs    wikidata:Q15885248 .
+
+mvmt:Q858436  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "art movement"@en , "mouvement artistique des années 1940 et 1950"@fr ;
+        rdfs:label    "neorealism"@en , "néoréalisme"@fr ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Neorealism_(art)> , wikidata:Q858436 .
+
+mvmt:Q4745527  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "style in art, music and literature that depicted contemporary social realities and the lives and everyday activities of ordinary people"@en , "mouvement artistique américain"@fr ;
+        rdfs:label    "American realism"@en , "réalisme américain"@fr ;
+        owl:sameAs    wikipedia:American_Realism , wikidata:Q4745527 .
+
+mvmt:Q38166  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "artistic works produced during the period extending roughly from the 1860s to the 1970s"@en , "production artistique initié par Édouard Manet et les peintres impressionnistes dans les années 1870 et s'achevant  au milieu des années 1950"@fr ;
+        rdfs:label    "modern art"@en , "art moderne"@fr ;
+        owl:sameAs    wikipedia:Modern_art , wikidata:Q38166 .
+
+mvmt:Q469913  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "art movement"@en , "mouvement artistique américain"@fr ;
+        rdfs:label    "American scene painting"@en , "régionalisme"@fr ;
+        owl:sameAs    wikipedia:American_scene_painting , wikidata:Q469913 .                        

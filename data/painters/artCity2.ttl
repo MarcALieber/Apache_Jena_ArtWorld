@@ -1,0 +1,1229 @@
+@prefix :          <http://www.art.org/ontology#> .
+@prefix city:      <http://www.art.org/ontology/world/city#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix world:     <http://www.art.org/ontology/world#> .
+
+city:Q1731  world:isCityOf  ctry:Q183 .
+
+city:Q28802100  world:isCityOf  ctry:Q17 .
+
+city:Q6441  world:isCityOf  ctry:Q142 .
+
+city:Q16557  world:isCityOf  ctry:Q30 .
+
+city:Q1489  world:isCityOf  ctry:Q96 .
+
+city:Q1297  world:isCityOf  ctry:Q30 .
+
+city:Q12172  world:isCityOf  ctry:Q39 .
+
+city:Q10002  world:isCityOf  ctry:Q55 .
+
+city:Q1781  world:isCityOf  ctry:Q28 .
+
+city:Q41876  world:isCityOf  ctry:Q142 .
+
+city:Q41329  world:isCityOf  ctry:Q40 .
+
+city:Q20986484  world:isCityOf  ctry:Q145 .
+
+city:Q36405  world:isCityOf  ctry:Q145 .
+
+city:Q743287  world:isCityOf  ctry:Q30 .
+
+city:Q25607  world:isCityOf  ctry:Q39 .
+
+city:Q7880  world:isCityOf  ctry:Q142 .
+
+city:Q18125  world:isCityOf  ctry:Q145 .
+
+city:Q49239  world:isCityOf  ctry:Q30 .
+
+city:Q49218  world:isCityOf  ctry:Q30 .
+
+city:Q41087  world:isCityOf  ctry:Q30 .
+
+city:Q41621  world:isCityOf  ctry:Q801 .
+
+city:Q268  world:isCityOf  ctry:Q36 .
+
+city:Q96249787  world:isCityOf  ctry:Q664 .
+
+city:Q42735  world:isCityOf  ctry:Q30 .
+
+city:Q6294511  world:isCityOf  ctry:Q258 .
+
+city:Q2256  world:isCityOf  ctry:Q145 .
+
+city:Q15551  world:isCityOf  ctry:Q29 .
+
+city:Q37043  world:isCityOf  ctry:Q30 .
+
+city:Q9832  world:isCityOf  ctry:Q55 .
+
+city:Q33405  world:isCityOf  ctry:Q30 .
+
+city:Q1726  world:isCityOf  ctry:Q183 .
+
+city:Q389537  world:isCityOf  ctry:Q17 .
+
+city:Q1342  world:isCityOf  ctry:Q30 .
+
+city:Q208863  world:isCityOf  ctry:Q17 .
+
+city:Q16552  world:isCityOf  ctry:Q30 .
+
+city:Q83065  world:isCityOf  ctry:Q145 .
+
+city:Q63939  world:isCityOf  ctry:Q39 .
+
+city:Q862100  world:isCityOf  ctry:Q159 .
+
+city:Q131908  world:isCityOf  ctry:Q30 .
+
+city:Q19660  world:isCityOf  ctry:Q218 .
+
+city:Q487977  world:isCityOf  ctry:Q30 .
+
+city:Q100  world:isCityOf  ctry:Q30 .
+
+city:Q597  world:isCityOf  ctry:Q45 .
+
+city:Q3018561  world:isCityOf  ctry:Q55 .
+
+city:Q1492  world:isCityOf  ctry:Q29 .
+
+city:Q36600  world:isCityOf  ctry:Q55 .
+
+city:Q18575  world:isCityOf  ctry:Q30 .
+
+city:Q61  world:isCityOf  ctry:Q30 .
+
+city:Q18383  world:isCityOf  ctry:Q30 .
+
+city:Q858352  world:isCityOf  ctry:Q17 .
+
+city:Q9777  world:isCityOf  ctry:Q55 .
+
+city:Q188806  world:isCityOf  ctry:Q17 .
+
+city:Q69345  world:isCityOf  ctry:Q39 .
+
+city:Q1350060  world:isCityOf  ctry:Q17 .
+
+city:Q6602  world:isCityOf  ctry:Q142 .
+
+city:Q130994  world:isCityOf  ctry:Q142 .
+
+city:Q1479  world:isCityOf  ctry:Q142 .
+
+city:Q48370  world:isCityOf  ctry:Q30 .
+
+city:Q90  world:isCityOf  ctry:Q142 .
+
+city:Q350  world:isCityOf  ctry:Q145 .
+
+city:Q336438  world:isCityOf  ctry:Q17 .
+
+city:Q450287  world:isCityOf  ctry:Q17 .
+
+city:Q193826  world:isCityOf  ctry:Q142 .
+
+city:Q621  world:isCityOf  ctry:Q142 .
+
+city:Q1345  world:isCityOf  ctry:Q30 .
+
+city:Q1066398  world:isCityOf  ctry:Q142 .
+
+city:Q16555  world:isCityOf  ctry:Q30 .
+
+city:Q43668  world:isCityOf  ctry:Q30 .
+
+city:Q49179  world:isCityOf  ctry:Q30 .
+
+city:Q773527  world:isCityOf  ctry:Q30 .
+
+city:Q49158  world:isCityOf  ctry:Q30 .
+
+city:Q12191  world:isCityOf  ctry:Q142 .
+
+city:Q5083  world:isCityOf  ctry:Q30 .
+
+city:Q9125  world:isCityOf  ctry:Q39 .
+
+city:Q203263  world:isCityOf  ctry:Q30 .
+
+city:Q81788  world:isCityOf  ctry:Q79 .
+
+city:Q200589  world:isCityOf  ctry:Q17 .
+
+city:Q183557  world:isCityOf  ctry:Q142 .
+
+city:Q1018289  world:isCityOf  ctry:Q30 .
+
+city:Q1040  world:isCityOf  ctry:Q183 .
+
+city:Q92909922  world:isCityOf  ctry:Q17 .
+
+city:Q68965  world:isCityOf  ctry:Q39 .
+
+city:Q485176  world:isCityOf  ctry:Q30 .
+
+city:Q1524  world:isCityOf  ctry:Q41 .
+
+city:Q721163  world:isCityOf  ctry:Q17 .
+
+city:Q35765  world:isCityOf  ctry:Q17 .
+
+city:Q696412  world:isCityOf  ctry:Q17 .
+
+city:Q16563  world:isCityOf  ctry:Q30 .
+
+city:Q1795217  world:isCityOf  ctry:Q17 .
+
+city:Q18094  world:isCityOf  ctry:Q30 .
+
+city:Q6397  world:isCityOf  ctry:Q142 .
+
+city:Q5262  world:isCityOf  ctry:Q39 .
+
+city:Q49145  world:isCityOf  ctry:Q30 .
+
+city:Q671040  world:isCityOf  ctry:Q17 .
+
+city:Q41185  world:isCityOf  ctry:Q142 .
+
+city:Q43421  world:isCityOf  ctry:Q30 .
+
+city:Q174  world:isCityOf  ctry:Q155 .
+
+city:Q64  world:isCityOf  ctry:Q183 .
+
+city:Q41819  world:isCityOf  ctry:Q30 .
+
+city:Q1724  world:isCityOf  ctry:Q183 .
+
+city:Q983837  world:isCityOf  ctry:Q30 .
+
+city:Q7498925  world:isCityOf  ctry:Q17 .
+
+city:Q34404  world:isCityOf  ctry:Q30 .
+
+city:Q6221  world:isCityOf  ctry:Q38 .
+
+city:Q207321  world:isCityOf  ctry:Q17 .
+
+city:Q44564  world:isCityOf  ctry:Q30 .
+
+city:Q23051  world:isCityOf  ctry:Q145 .
+
+city:Q72  world:isCityOf  ctry:Q39 .
+
+city:Q49111  world:isCityOf  ctry:Q30 .
+
+city:Q65618  world:isCityOf  ctry:Q39 .
+
+city:Q952097  world:isCityOf  ctry:Q30 .
+
+city:Q23556  world:isCityOf  ctry:Q30 .
+
+city:Q21665571  world:isCityOf  ctry:Q145 .
+
+city:Q495  world:isCityOf  ctry:Q38 .
+
+city:Q12102  world:isCityOf  ctry:Q29 .
+
+city:Q37320  world:isCityOf  ctry:Q30 .
+
+city:Q1711  world:isCityOf  ctry:Q183 .
+
+city:Q11426430  world:isCityOf  ctry:Q17 .
+
+city:Q1519  world:isCityOf  ctry:Q878 .
+
+city:Q2107  world:isCityOf  ctry:Q183 .
+
+city:Q653402  world:isCityOf  ctry:Q17 .
+
+city:Q16558  world:isCityOf  ctry:Q30 .
+
+city:Q26555  world:isCityOf  ctry:Q55 .
+
+city:Q11481474  world:isCityOf  ctry:Q17 .
+
+city:Q504530  world:isCityOf  ctry:Q145 .
+
+city:Q1085  world:isCityOf  ctry:Q213 .
+
+city:Q340  world:isCityOf  ctry:Q16 .
+
+city:Q138518  world:isCityOf  ctry:Q30 .
+
+city:Q25287  world:isCityOf  ctry:Q34 .
+
+city:Q1953  world:isCityOf  ctry:Q399 .
+
+city:Q504125  world:isCityOf  ctry:Q35 .
+
+city:Q1761  world:isCityOf  ctry:Q27 .
+
+city:Q189960  world:isCityOf  ctry:Q145 .
+
+city:Q49240  world:isCityOf  ctry:Q30 .
+
+city:Q1022  world:isCityOf  ctry:Q183 .
+
+city:Q49190  world:isCityOf  ctry:Q30 .
+
+city:Q2044  world:isCityOf  ctry:Q38 .
+
+city:Q34370  world:isCityOf  ctry:Q55 .
+
+city:Q18013  world:isCityOf  ctry:Q30 .
+
+city:Q243713  world:isCityOf  ctry:Q142 .
+
+city:Q490  world:isCityOf  ctry:Q38 .
+
+city:Q28515  world:isCityOf  ctry:Q30 .
+
+city:Q2841  world:isCityOf  ctry:Q739 .
+
+city:Q25395  world:isCityOf  ctry:Q30 .
+
+city:Q3955  world:isCityOf  ctry:Q183 .
+
+city:Q220673  world:isCityOf  ctry:Q142 .
+
+city:Q236736  world:isCityOf  ctry:Q142 .
+
+city:Q30974  world:isCityOf  ctry:Q142 .
+
+city:Q484678  world:isCityOf  ctry:Q30 .
+
+city:Q163795  world:isCityOf  ctry:Q142 .
+
+city:Q430349  world:isCityOf  ctry:Q17 .
+
+city:Q188002  world:isCityOf  ctry:Q298 .
+
+city:Q68124  world:isCityOf  ctry:Q39 .
+
+city:Q565405  world:isCityOf  ctry:Q794 .
+
+city:Q42794  world:isCityOf  ctry:Q38 .
+
+city:Q203027  world:isCityOf  ctry:Q17 .
+
+city:Q193832  world:isCityOf  ctry:Q142 .
+
+city:Q648  world:isCityOf  ctry:Q142 .
+
+city:Q23154  world:isCityOf  ctry:Q145 .
+
+city:Q456  world:isCityOf  ctry:Q142 .
+
+city:Q12439  world:isCityOf  ctry:Q30 .
+
+city:Q986200  world:isCityOf  ctry:Q30 .
+
+city:Q202368  world:isCityOf  ctry:Q142 .
+
+city:Q2807  world:isCityOf  ctry:Q29 .
+
+city:Q3413122  world:isCityOf  ctry:Q142 .
+
+city:Q1094063  world:isCityOf  ctry:Q408 .
+
+city:Q49164  world:isCityOf  ctry:Q30 .
+
+city:Q28260  world:isCityOf  ctry:Q30 .
+
+city:Q727  world:isCityOf  ctry:Q55 .
+
+city:Q11279143  world:isCityOf  ctry:Q17 .
+
+city:Q172  world:isCityOf  ctry:Q16 .
+
+city:Q7024  world:isCityOf  ctry:Q39 .
+
+city:Q62  world:isCityOf  ctry:Q30 .
+
+city:Q3413222  world:isCityOf  ctry:Q142 .
+
+city:Q42810  world:isCityOf  ctry:Q142 .
+
+city:Q7003  world:isCityOf  ctry:Q142 .
+
+city:Q656  world:isCityOf  ctry:Q159 .
+
+city:Q1715951  world:isCityOf  ctry:Q183 .
+
+city:Q142410  world:isCityOf  ctry:Q142 .
+
+city:Q3616  world:isCityOf  ctry:Q794 .
+
+city:Q49201  world:isCityOf  ctry:Q30 .
+
+city:Q37836  world:isCityOf  ctry:Q30 .
+
+city:Q9899  world:isCityOf  ctry:Q55 .
+
+city:Q39709  world:isCityOf  ctry:Q30 .
+
+city:Q585  world:isCityOf  ctry:Q20 .
+
+city:Q79848  world:isCityOf  ctry:Q145 .
+
+city:Q204249  world:isCityOf  ctry:Q17 .
+
+city:Q23992018  world:isCityOf  ctry:Q29 .
+
+city:Q70  world:isCityOf  ctry:Q39 .
+
+city:Q33935  world:isCityOf  ctry:Q801 .
+
+city:Q108769568  world:isCityOf  ctry:Q183 .
+
+city:Q818364  world:isCityOf  ctry:Q30 .
+
+city:Q199797  world:isCityOf  ctry:Q30 .
+
+city:Q38453  world:isCityOf  ctry:Q30 .
+
+city:Q498011  world:isCityOf  ctry:Q17 .
+
+city:Q161741  world:isCityOf  ctry:Q142 .
+
+city:Q41057  world:isCityOf  ctry:Q30 .
+
+city:Q16556  world:isCityOf  ctry:Q30 .
+
+city:Q274183  world:isCityOf  ctry:Q142 .
+
+city:Q43919  world:isCityOf  ctry:Q30 .
+
+city:Q1930  world:isCityOf  ctry:Q16 .
+
+city:Q288  world:isCityOf  ctry:Q142 .
+
+city:Q4191  world:isCityOf  ctry:Q39 .
+
+city:Q10690  world:isCityOf  ctry:Q145 .
+
+city:Q47465  world:isCityOf  ctry:Q142 .
+
+city:Q231720  world:isCityOf  ctry:Q142 .
+
+city:Q1075966  world:isCityOf  ctry:Q17 .
+
+city:Q3561  world:isCityOf  ctry:Q262 .
+
+city:Q40435  world:isCityOf  ctry:Q30 .
+
+city:Q5092  world:isCityOf  ctry:Q30 .
+
+city:Q36091  world:isCityOf  ctry:Q30 .
+
+city:Q132671  world:isCityOf  ctry:Q142 .
+
+city:Q65  world:isCityOf  ctry:Q30 .
+
+city:Q1205581  world:isCityOf  ctry:Q17 .
+
+city:Q3114  world:isCityOf  ctry:Q408 .
+
+city:Q165061  world:isCityOf  ctry:Q142 .
+
+city:Q30031267  world:isCityOf  ctry:Q38 .
+
+city:Q1533  world:isCityOf  ctry:Q717 .
+
+city:Q37100  world:isCityOf  ctry:Q664 .
+
+city:Q38022  world:isCityOf  ctry:Q30 .
+
+city:Q23436  world:isCityOf  ctry:Q145 .
+
+city:Q34739  world:isCityOf  ctry:Q30 .
+
+city:Q29364  world:isCityOf  ctry:Q30 .
+
+city:Q12269651  world:isCityOf  ctry:Q55 .
+
+city:Q25280  world:isCityOf  ctry:Q30 .
+
+city:Q174691  world:isCityOf  ctry:Q17 .
+
+city:Q1754  world:isCityOf  ctry:Q34 .
+
+city:Q40898  world:isCityOf  ctry:Q142 .
+
+city:Q533317  world:isCityOf  ctry:Q30 .
+
+city:Q2805  world:isCityOf  ctry:Q183 .
+
+city:Q220  world:isCityOf  ctry:Q38 .
+
+city:Q223140  world:isCityOf  ctry:Q142 .
+
+city:Q37776  world:isCityOf  ctry:Q142 .
+
+city:Q28237  world:isCityOf  ctry:Q30 .
+
+city:Q201352  world:isCityOf  ctry:Q142 .
+
+city:Q60  world:isCityOf  ctry:Q30 .
+
+city:Q3130  world:isCityOf  ctry:Q408 .
+
+city:Q43196  world:isCityOf  ctry:Q30 .
+
+city:Q845851  world:isCityOf  ctry:Q17 .
+
+city:Q1741  world:isCityOf  ctry:Q40 .
+
+city:Q6643  world:isCityOf  ctry:Q142 .
+
+city:Q270  world:isCityOf  ctry:Q36 .
+
+city:Q1373658  world:isCityOf  ctry:Q35 .
+
+city:Q79867  world:isCityOf  ctry:Q30 .
+
+city:Q16567  world:isCityOf  ctry:Q30 .
+
+city:Q188776  world:isCityOf  ctry:Q142 .
+
+city:Q184775  world:isCityOf  ctry:Q145 .
+
+city:Q2066  world:isCityOf  ctry:Q183 .
+
+city:Q161176  world:isCityOf  ctry:Q17 .
+
+city:Q2742  world:isCityOf  ctry:Q183 .
+
+city:Q181955  world:isCityOf  ctry:Q142 .
+
+city:Q641  world:isCityOf  ctry:Q38 .
+
+city:Q15674  world:isCityOf  ctry:Q17 .
+
+city:Q68956  world:isCityOf  ctry:Q39 .
+
+city:Q2145  world:isCityOf  ctry:Q16 .
+
+city:Q975  world:isCityOf  ctry:Q30 .
+
+city:Q34600  world:isCityOf  ctry:Q17 .
+
+city:Q16554  world:isCityOf  ctry:Q30 .
+
+city:Q1486  world:isCityOf  ctry:Q414 .
+
+city:Q16704  world:isCityOf  ctry:Q29 .
+
+city:Q55934339  world:isCityOf  ctry:Q145 .
+
+city:Q6730  world:isCityOf  ctry:Q142 .
+
+city:Q2321784  world:isCityOf  ctry:Q145 .
+
+city:Q6346  world:isCityOf  ctry:Q30 .
+
+city:Q8678  world:isCityOf  ctry:Q155 .
+
+city:Q23197  world:isCityOf  ctry:Q30 .
+
+city:Q34863  world:isCityOf  ctry:Q30 .
+
+city:Q1757  world:isCityOf  ctry:Q33 .
+
+city:Q49236  world:isCityOf  ctry:Q30 .
+
+city:Q1715  world:isCityOf  ctry:Q183 .
+
+city:Q174247  world:isCityOf  ctry:Q142 .
+
+city:Q33486  world:isCityOf  ctry:Q30 .
+
+city:Q49186  world:isCityOf  ctry:Q30 .
+
+city:Q365  world:isCityOf  ctry:Q183 .
+
+city:Q84  world:isCityOf  ctry:Q145 .
+
+city:Q42448  world:isCityOf  ctry:Q145 .
+
+city:Q1218  world:isCityOf  ctry:Q801 .
+
+city:Q159288  world:isCityOf  ctry:Q30 .
+
+city:Q807  world:isCityOf  ctry:Q39 .
+
+city:Q2119  world:isCityOf  ctry:Q183 .
+
+city:Q211260  world:isCityOf  ctry:Q55 .
+
+city:Q71  world:isCityOf  ctry:Q39 .
+city:Q138338  world:isCityOf  ctry:Q30 .
+city:Q239  world:isCityOf  ctry:Q31 .
+city:Q24861  world:isCityOf  ctry:Q30 .
+city:Q4455813  world:isCityOf  ctry:Q212 .
+city:Q47045  world:isCityOf  ctry:Q142 .
+city:Q55115  world:isCityOf  ctry:Q235 .
+city:Q1055  world:isCityOf  ctry:Q183 .
+city:Q49231  world:isCityOf  ctry:Q30 .
+
+city:Q1218  world:isCityOf  ctry:Q801 .
+
+city:Q96249787  world:isCityOf  ctry:Q664 .
+
+city:Q23556  world:isCityOf  ctry:Q30 .
+
+city:Q365  world:isCityOf  ctry:Q183 .
+
+city:Q40898  world:isCityOf  ctry:Q142 .
+
+city:Q9920  world:isCityOf  ctry:Q55 .
+
+city:Q743287  world:isCityOf  ctry:Q30 .
+
+city:Q1345  world:isCityOf  ctry:Q30 .
+
+city:Q18125  world:isCityOf  ctry:Q145 .
+
+city:Q3018561  world:isCityOf  ctry:Q55 .
+
+city:Q727  world:isCityOf  ctry:Q55 .
+
+city:Q10002  world:isCityOf  ctry:Q55 .
+
+city:Q12191  world:isCityOf  ctry:Q142 .
+
+city:Q42448  world:isCityOf  ctry:Q145 .
+
+city:Q721163  world:isCityOf  ctry:Q17 .
+
+city:Q16557  world:isCityOf  ctry:Q30 .
+
+city:Q2805  world:isCityOf  ctry:Q183 .
+
+city:Q37043  world:isCityOf  ctry:Q30 .
+
+city:Q34739  world:isCityOf  ctry:Q30 .
+
+city:Q61  world:isCityOf  ctry:Q30 .
+
+city:Q68965  world:isCityOf  ctry:Q39 .
+
+city:Q231720  world:isCityOf  ctry:Q142 .
+
+city:Q230127  world:isCityOf  ctry:Q142 .
+
+city:Q845851  world:isCityOf  ctry:Q17 .
+
+city:Q773527  world:isCityOf  ctry:Q30 .
+
+city:Q43196  world:isCityOf  ctry:Q30 .
+
+city:Q55115  world:isCityOf  ctry:Q235 .
+
+city:Q10690  world:isCityOf  ctry:Q145 .
+
+city:Q25607  world:isCityOf  ctry:Q39 .
+
+city:Q25287  world:isCityOf  ctry:Q34 .
+
+city:Q69345  world:isCityOf  ctry:Q39 .
+
+city:Q188806  world:isCityOf  ctry:Q17 .
+
+city:Q2256  world:isCityOf  ctry:Q145 .
+
+city:Q456  world:isCityOf  ctry:Q142 .
+
+city:Q23436  world:isCityOf  ctry:Q145 .
+
+city:Q65618  world:isCityOf  ctry:Q39 .
+
+city:Q975  world:isCityOf  ctry:Q30 .
+
+city:Q1297  world:isCityOf  ctry:Q30 .
+
+city:Q15551  world:isCityOf  ctry:Q29 .
+
+city:Q16552  world:isCityOf  ctry:Q30 .
+
+city:Q49239  world:isCityOf  ctry:Q30 .
+
+city:Q487977  world:isCityOf  ctry:Q30 .
+
+city:Q35765  world:isCityOf  ctry:Q17 .
+
+city:Q1533  world:isCityOf  ctry:Q717 .
+
+city:Q484678  world:isCityOf  ctry:Q30 .
+
+city:Q6294511  world:isCityOf  ctry:Q258 .
+
+city:Q126675  world:isCityOf  ctry:Q142 .
+
+city:Q41876  world:isCityOf  ctry:Q142 .
+
+city:Q49240  world:isCityOf  ctry:Q30 .
+
+city:Q39709  world:isCityOf  ctry:Q30 .
+
+city:Q236736  world:isCityOf  ctry:Q142 .
+
+city:Q1726  world:isCityOf  ctry:Q183 .
+
+city:Q12994  world:isCityOf  ctry:Q31 .
+
+city:Q188776  world:isCityOf  ctry:Q142 .
+
+city:Q239  world:isCityOf  ctry:Q31 .
+
+city:Q40435  world:isCityOf  ctry:Q30 .
+
+city:Q270  world:isCityOf  ctry:Q36 .
+
+city:Q36091  world:isCityOf  ctry:Q30 .
+
+city:Q188801  world:isCityOf  ctry:Q145 .
+
+city:Q28260  world:isCityOf  ctry:Q30 .
+
+city:Q240  world:isCityOf  ctry:Q31 .
+
+city:Q49179  world:isCityOf  ctry:Q30 .
+
+city:Q205526  world:isCityOf  ctry:Q17 .
+
+city:Q565405  world:isCityOf  ctry:Q794 .
+
+city:Q7498925  world:isCityOf  ctry:Q17 .
+
+city:Q16558  world:isCityOf  ctry:Q30 .
+
+city:Q23051  world:isCityOf  ctry:Q145 .
+
+city:Q3711  world:isCityOf  ctry:Q403 .
+
+city:Q12439  world:isCityOf  ctry:Q30 .
+
+city:Q12892  world:isCityOf  ctry:Q31 .
+
+city:Q12102  world:isCityOf  ctry:Q29 .
+
+city:Q1781  world:isCityOf  ctry:Q28 .
+
+city:Q62  world:isCityOf  ctry:Q30 .
+
+city:Q12269651  world:isCityOf  ctry:Q55 .
+
+city:Q3413222  world:isCityOf  ctry:Q142 .
+
+city:Q43421  world:isCityOf  ctry:Q30 .
+
+city:Q36405  world:isCityOf  ctry:Q145 .
+
+city:Q8678  world:isCityOf  ctry:Q155 .
+
+city:Q656  world:isCityOf  ctry:Q159 .
+
+city:Q653364  world:isCityOf  ctry:Q17 .
+
+city:Q807  world:isCityOf  ctry:Q39 .
+
+city:Q47045  world:isCityOf  ctry:Q142 .
+
+city:Q11481474  world:isCityOf  ctry:Q17 .
+
+city:Q28802100  world:isCityOf  ctry:Q17 .
+
+city:Q33486  world:isCityOf  ctry:Q30 .
+
+city:Q131908  world:isCityOf  ctry:Q30 .
+
+city:Q142410  world:isCityOf  ctry:Q142 .
+
+city:Q161176  world:isCityOf  ctry:Q17 .
+
+city:Q6346  world:isCityOf  ctry:Q30 .
+
+city:Q204249  world:isCityOf  ctry:Q17 .
+
+city:Q430349  world:isCityOf  ctry:Q17 .
+
+city:Q671040  world:isCityOf  ctry:Q17 .
+
+city:Q24861  world:isCityOf  ctry:Q30 .
+
+city:Q1479  world:isCityOf  ctry:Q142 .
+
+city:Q1350060  world:isCityOf  ctry:Q17 .
+
+city:Q288  world:isCityOf  ctry:Q142 .
+
+city:Q29364  world:isCityOf  ctry:Q30 .
+
+city:Q16704  world:isCityOf  ctry:Q29 .
+
+city:Q1715  world:isCityOf  ctry:Q183 .
+
+city:Q49186  world:isCityOf  ctry:Q30 .
+
+city:Q43668  world:isCityOf  ctry:Q30 .
+
+city:Q3114  world:isCityOf  ctry:Q408 .
+
+city:Q9125  world:isCityOf  ctry:Q39 .
+
+city:Q5092  world:isCityOf  ctry:Q30 .
+
+city:Q1757  world:isCityOf  ctry:Q33 .
+
+city:Q174  world:isCityOf  ctry:Q155 .
+
+city:Q42794  world:isCityOf  ctry:Q38 .
+
+city:Q23154  world:isCityOf  ctry:Q145 .
+
+city:Q621  world:isCityOf  ctry:Q142 .
+
+city:Q504125  world:isCityOf  ctry:Q35 .
+
+city:Q199797  world:isCityOf  ctry:Q30 .
+
+city:Q1492  world:isCityOf  ctry:Q29 .
+
+city:Q38022  world:isCityOf  ctry:Q30 .
+
+city:Q174247  world:isCityOf  ctry:Q142 .
+
+city:Q138518  world:isCityOf  ctry:Q30 .
+
+city:Q1040  world:isCityOf  ctry:Q183 .
+
+city:Q79848  world:isCityOf  ctry:Q145 .
+
+city:Q202368  world:isCityOf  ctry:Q142 .
+
+city:Q211260  world:isCityOf  ctry:Q55 .
+
+city:Q189960  world:isCityOf  ctry:Q145 .
+
+city:Q41087  world:isCityOf  ctry:Q30 .
+
+city:Q2107  world:isCityOf  ctry:Q183 .
+
+city:Q41057  world:isCityOf  ctry:Q30 .
+
+city:Q3561  world:isCityOf  ctry:Q262 .
+
+city:Q23992018  world:isCityOf  ctry:Q29 .
+
+city:Q200589  world:isCityOf  ctry:Q17 .
+
+city:Q504530  world:isCityOf  ctry:Q145 .
+
+city:Q165061  world:isCityOf  ctry:Q142 .
+
+city:Q1022  world:isCityOf  ctry:Q183 .
+
+city:Q18013  world:isCityOf  ctry:Q30 .
+
+city:Q2807  world:isCityOf  ctry:Q29 .
+
+city:Q2119  world:isCityOf  ctry:Q183 .
+
+city:Q37100  world:isCityOf  ctry:Q664 .
+
+city:Q7003  world:isCityOf  ctry:Q142 .
+
+city:Q34404  world:isCityOf  ctry:Q30 .
+
+city:Q1486  world:isCityOf  ctry:Q414 .
+
+city:Q24879  world:isCityOf  ctry:Q183 .
+
+city:Q350  world:isCityOf  ctry:Q145 .
+
+city:Q986200  world:isCityOf  ctry:Q30 .
+
+city:Q243713  world:isCityOf  ctry:Q142 .
+
+city:Q1795217  world:isCityOf  ctry:Q17 .
+
+city:Q2740658  world:isCityOf  ctry:Q145 .
+
+city:Q1794  world:isCityOf  ctry:Q183 .
+
+city:Q983837  world:isCityOf  ctry:Q30 .
+
+city:Q19660  world:isCityOf  ctry:Q218 .
+
+city:Q467487  world:isCityOf  ctry:Q17 .
+
+city:Q55934339  world:isCityOf  ctry:Q145 .
+
+city:Q9777  world:isCityOf  ctry:Q55 .
+
+city:Q6643  world:isCityOf  ctry:Q142 .
+
+city:Q1342  world:isCityOf  ctry:Q30 .
+
+city:Q9832  world:isCityOf  ctry:Q55 .
+
+city:Q6221  world:isCityOf  ctry:Q38 .
+
+city:Q28237  world:isCityOf  ctry:Q30 .
+
+city:Q36600  world:isCityOf  ctry:Q55 .
+
+city:Q653402  world:isCityOf  ctry:Q17 .
+
+city:Q49145  world:isCityOf  ctry:Q30 .
+
+city:Q585  world:isCityOf  ctry:Q20 .
+
+city:Q16554  world:isCityOf  ctry:Q30 .
+
+city:Q5262  world:isCityOf  ctry:Q39 .
+
+city:Q41329  world:isCityOf  ctry:Q40 .
+
+city:Q208863  world:isCityOf  ctry:Q17 .
+
+city:Q208260  world:isCityOf  ctry:Q142 .
+
+city:Q83065  world:isCityOf  ctry:Q145 .
+
+city:Q28515  world:isCityOf  ctry:Q30 .
+
+city:Q163795  world:isCityOf  ctry:Q142 .
+
+city:Q597  world:isCityOf  ctry:Q45 .
+
+city:Q81788  world:isCityOf  ctry:Q79 .
+
+city:Q79867  world:isCityOf  ctry:Q30 .
+
+city:Q34863  world:isCityOf  ctry:Q30 .
+
+city:Q26555  world:isCityOf  ctry:Q55 .
+
+city:Q37836  world:isCityOf  ctry:Q30 .
+
+city:Q70  world:isCityOf  ctry:Q39 .
+
+city:Q42735  world:isCityOf  ctry:Q30 .
+
+city:Q818364  world:isCityOf  ctry:Q30 .
+
+city:Q23197  world:isCityOf  ctry:Q30 .
+
+city:Q138338  world:isCityOf  ctry:Q30 .
+
+city:Q498011  world:isCityOf  ctry:Q17 .
+
+city:Q862100  world:isCityOf  ctry:Q159 .
+
+city:Q92909922  world:isCityOf  ctry:Q17 .
+
+city:Q3616  world:isCityOf  ctry:Q794 .
+
+city:Q15674  world:isCityOf  ctry:Q17 .
+
+city:Q68956  world:isCityOf  ctry:Q39 .
+
+city:Q495  world:isCityOf  ctry:Q38 .
+
+city:Q49236  world:isCityOf  ctry:Q30 .
+
+city:Q1741  world:isCityOf  ctry:Q40 .
+
+city:Q2742  world:isCityOf  ctry:Q183 .
+
+city:Q11426430  world:isCityOf  ctry:Q17 .
+
+city:Q1711  world:isCityOf  ctry:Q183 .
+
+city:Q179351  world:isCityOf  ctry:Q145 .
+
+city:Q41185  world:isCityOf  ctry:Q142 .
+
+city:Q64  world:isCityOf  ctry:Q183 .
+
+city:Q1018289  world:isCityOf  ctry:Q30 .
+
+city:Q37776  world:isCityOf  ctry:Q142 .
+
+city:Q49218  world:isCityOf  ctry:Q30 .
+
+city:Q2066  world:isCityOf  ctry:Q183 .
+
+city:Q68124  world:isCityOf  ctry:Q39 .
+
+city:Q6602  world:isCityOf  ctry:Q142 .
+
+city:Q30031267  world:isCityOf  ctry:Q38 .
+
+city:Q2321784  world:isCityOf  ctry:Q145 .
+
+city:Q49164  world:isCityOf  ctry:Q30 .
+
+city:Q203027  world:isCityOf  ctry:Q17 .
+
+city:Q18575  world:isCityOf  ctry:Q30 .
+
+city:Q1524  world:isCityOf  ctry:Q41 .
+
+city:Q33935  world:isCityOf  ctry:Q801 .
+
+city:Q490  world:isCityOf  ctry:Q38 .
+
+city:Q49231  world:isCityOf  ctry:Q30 .
+
+city:Q3413122  world:isCityOf  ctry:Q142 .
+
+city:Q30974  world:isCityOf  ctry:Q142 .
+
+city:Q16555  world:isCityOf  ctry:Q30 .
+
+city:Q49201  world:isCityOf  ctry:Q30 .
+
+city:Q641  world:isCityOf  ctry:Q38 .
+
+city:Q2145  world:isCityOf  ctry:Q16 .
+
+city:Q858352  world:isCityOf  ctry:Q17 .
+
+city:Q952097  world:isCityOf  ctry:Q30 .
+
+city:Q49158  world:isCityOf  ctry:Q30 .
+
+city:Q16567  world:isCityOf  ctry:Q30 .
+
+city:Q41819  world:isCityOf  ctry:Q30 .
+
+city:Q130994  world:isCityOf  ctry:Q142 .
+
+city:Q63939  world:isCityOf  ctry:Q39 .
+
+city:Q533317  world:isCityOf  ctry:Q30 .
+
+city:Q203263  world:isCityOf  ctry:Q30 .
+
+city:Q485176  world:isCityOf  ctry:Q30 .
+
+city:Q184775  world:isCityOf  ctry:Q145 .
+
+city:Q71  world:isCityOf  ctry:Q39 .
+
+city:Q1373658  world:isCityOf  ctry:Q35 .
+
+city:Q450287  world:isCityOf  ctry:Q17 .
+
+city:Q9899  world:isCityOf  ctry:Q55 .
+
+city:Q132671  world:isCityOf  ctry:Q142 .
+
+city:Q389537  world:isCityOf  ctry:Q17 .
+
+city:Q41621  world:isCityOf  ctry:Q801 .
+
+city:Q1953  world:isCityOf  ctry:Q399 .
+
+city:Q3955  world:isCityOf  ctry:Q183 .
+
+city:Q4455813  world:isCityOf  ctry:Q212 .
+
+city:Q49111  world:isCityOf  ctry:Q30 .
+
+city:Q108769568  world:isCityOf  ctry:Q183 .
+
+city:Q34370  world:isCityOf  ctry:Q55 .
+
+city:Q340  world:isCityOf  ctry:Q16 .
+
+city:Q3141  world:isCityOf  ctry:Q408 .
+
+city:Q188002  world:isCityOf  ctry:Q298 .
+
+city:Q274183  world:isCityOf  ctry:Q142 .
+
+city:Q696412  world:isCityOf  ctry:Q17 .
+
+city:Q207321  world:isCityOf  ctry:Q17 .
+
+city:Q18383  world:isCityOf  ctry:Q30 .
+
+city:Q7880  world:isCityOf  ctry:Q142 .
+
+city:Q65  world:isCityOf  ctry:Q30 .
+
+city:Q6397  world:isCityOf  ctry:Q142 .
+
+city:Q183557  world:isCityOf  ctry:Q142 .
+
+city:Q33405  world:isCityOf  ctry:Q30 .
+
+city:Q1754  world:isCityOf  ctry:Q34 .
+
+city:Q201352  world:isCityOf  ctry:Q142 .
+
+city:Q1724  world:isCityOf  ctry:Q183 .
+
+city:Q13329  world:isCityOf  ctry:Q38 .
+
+city:Q1066398  world:isCityOf  ctry:Q142 .
+
+city:Q20986484  world:isCityOf  ctry:Q145 .
+
+city:Q25280  world:isCityOf  ctry:Q30 .
+
+city:Q1289  world:isCityOf  ctry:Q142 .
+
+city:Q159288  world:isCityOf  ctry:Q30 .
+
+city:Q6730  world:isCityOf  ctry:Q142 .
+
+city:Q161741  world:isCityOf  ctry:Q142 .
+
+city:Q38453  world:isCityOf  ctry:Q30 .
+
+city:Q181955  world:isCityOf  ctry:Q142 .
+
+city:Q44564  world:isCityOf  ctry:Q30 .
+
+city:Q34600  world:isCityOf  ctry:Q17 .
+
+city:Q5083  world:isCityOf  ctry:Q30 .
+
+city:Q16556  world:isCityOf  ctry:Q30 .
+
+city:Q118958  world:isCityOf  ctry:Q31 .
+
+city:Q90  world:isCityOf  ctry:Q142 .
+
+city:Q1094063  world:isCityOf  ctry:Q408 .
+
+city:Q220  world:isCityOf  ctry:Q38 .
+
+city:Q336438  world:isCityOf  ctry:Q17 .
+
+city:Q3992  world:isCityOf  ctry:Q31 .
+
+city:Q60  world:isCityOf  ctry:Q30 .
+
+city:Q42810  world:isCityOf  ctry:Q142 .
+
+city:Q193832  world:isCityOf  ctry:Q142 .
+
+city:Q12172  world:isCityOf  ctry:Q39 .
+
+city:Q174691  world:isCityOf  ctry:Q17 .
+
+city:Q1930  world:isCityOf  ctry:Q16 .
+
+city:Q49190  world:isCityOf  ctry:Q30 .
+
+city:Q47887  world:isCityOf  ctry:Q55 .
+
+city:Q48370  world:isCityOf  ctry:Q30 .
+
+city:Q47465  world:isCityOf  ctry:Q142 .
+
+city:Q37320  world:isCityOf  ctry:Q30 .
+
+city:Q72  world:isCityOf  ctry:Q39 .
+
+city:Q1519  world:isCityOf  ctry:Q878 .
+
+city:Q4191  world:isCityOf  ctry:Q39 .
+
+city:Q18094  world:isCityOf  ctry:Q30 .
+
+city:Q201117  world:isCityOf  ctry:Q17 .
+
+city:Q1761  world:isCityOf  ctry:Q27 .
+
+city:Q43919  world:isCityOf  ctry:Q30 .
+
+city:Q173219  world:isCityOf  ctry:Q31 .
+
+city:Q1731  world:isCityOf  ctry:Q183 .
+
+city:Q3130  world:isCityOf  ctry:Q408 .
+
+city:Q2044  world:isCityOf  ctry:Q38 .
+
+city:Q220673  world:isCityOf  ctry:Q142 .
+
+city:Q84  world:isCityOf  ctry:Q145 .
+
+city:Q1205581  world:isCityOf  ctry:Q17 .
+
+city:Q11279143  world:isCityOf  ctry:Q17 .
+
+city:Q7024  world:isCityOf  ctry:Q39 .
+
+city:Q1075966  world:isCityOf  ctry:Q17 .
+
+city:Q21665571  world:isCityOf  ctry:Q145 .
+
+city:Q1773  world:isCityOf  ctry:Q211 .
+
+city:Q1296  world:isCityOf  ctry:Q31 .
+
+city:Q1085  world:isCityOf  ctry:Q213 .
+
+city:Q193826  world:isCityOf  ctry:Q142 .
+
+city:Q6441  world:isCityOf  ctry:Q142 .
+
+city:Q68144  world:isCityOf  ctry:Q39 .
+
+city:Q1055  world:isCityOf  ctry:Q183 .
+
+city:Q648  world:isCityOf  ctry:Q142 .
+
+city:Q100  world:isCityOf  ctry:Q30 .
+
+city:Q25395  world:isCityOf  ctry:Q30 .
+
+city:Q223140  world:isCityOf  ctry:Q142 .
+
+city:Q16563  world:isCityOf  ctry:Q30 .
+
+city:Q1489  world:isCityOf  ctry:Q96 .
+
+city:Q2841  world:isCityOf  ctry:Q739 .
+
+city:Q172  world:isCityOf  ctry:Q16 .        
+
+city:Q10686  world:isCityOf  ctry:Q145 .
+
+city:Q38555  world:isCityOf  ctry:Q30 .
+
+city:Q491540  world:isCityOf  ctry:Q30 .
+
+city:Q51685  world:isCityOf  ctry:Q30 .
+
+city:Q49172  world:isCityOf  ctry:Q30 .
+
+city:Q174224  world:isCityOf  ctry:Q30 .
+
+#vatican
+city:Q237  world:isCityOf  ctry:Q237 .
+
+city:Q209814  world:isCityOf  ctry:Q142 .
+
+city:Q492833  world:isCityOf  ctry:Q30 .
+
+city:Q202088  world:isCityOf  ctry:Q145 .
+
+city:Q23939248  world:isCityOf  ctry:Q145 .

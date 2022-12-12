@@ -1,0 +1,157 @@
+# missing mvmt (also SHACL)
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX mvmt: <http://www.art.org/ontology/movement#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?mvmt ?mvmtID
+where {?person person:isPartofMovement ?mvmt .
+   FILTER NOT EXISTS {graph <http://www.art.org/movement> {?mvmt rdfs:label ?mvmtName FILTER ( lang(?mvmtName) = "en" ) }  } .
+  BIND(replace(str(?mvmt),"http://www.art.org/ontology/movement#","") as ?mvmtID )
+}
+
+# missing museum (also SHACL)
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?museum ?museumID ?wdID ?museumName
+where {?person art:exposedIn ?museum . #FILTER(?museum = mus:Q703640 ) .
+  FILTER NOT EXISTS {graph <http://www.art.org/museum> {?museum rdfs:label ?museumName FILTER ( lang(?museumName) = "en" ) }  }.
+  #graph <http://www.art.org/museum> {?museum rdfs:label ?museumName FILTER ( lang(?museumName) = "en" ) }
+  BIND(replace(str(?museum),"http://www.art.org/ontology/museum#","") as ?museumID )
+  BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?museumID   ))  AS ?wdID ) .
+}
+
+# missing museum mus:inCity  (also SHACL)
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?museum ?museumName ?wdID
+where {?painter art:exposedIn ?museum . 
+  FILTER NOT EXISTS {graph <http://www.art.org/museum> {?museum mus:inCity ?city }  }.
+  BIND(replace(str(?museum),"http://www.art.org/ontology/museum#","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  #graph <http://www.art.org/museum> {?museum mus:inCity ?city } 
+} 
+
+# missing world:city infos when checking mus:inCity (also SHACL)
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?city ?wdID
+where { graph <http://www.art.org/museum> { ?museum mus:inCity ?city  . }
+  FILTER NOT EXISTS {graph <http://www.art.org/world> {?city  rdf:type  world:city }  }.
+  BIND(replace(str(?city),"http://www.art.org/ontology/world/city#","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  #graph <http://www.art.org/world> {?city  rdf:type  world:city } 
+}  
+
+# check for missing world:isCityOf in city (also SHACL)
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?city ?wdID
+where { graph <http://www.art.org/world> { ?city rdf:type   world:city . }
+  FILTER NOT EXISTS {graph <http://www.art.org/world> {?city  world:isCityOf ?country }  }.
+  BIND(replace(str(?city),"http://www.art.org/ontology/world/city#","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  #graph <http://www.art.org/world> {?city  ?city  world:isCityOf ?country } 
+}  
+
+# check for missing country (also SHACL)
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?country ?wdID
+where { graph <http://www.art.org/world> { ?city  world:isCityOf ?country . }
+  FILTER NOT EXISTS {graph <http://www.art.org/world> {?country  rdf:type world:country }  }.
+  BIND(replace(str(?country),"http://www.art.org/ontology/world/country#","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  #graph <http://www.art.org/world> {?city  ?city  world:isCityOf ?country } 
+}  
+
+#check for invalid predicates not found in the ontology
+#to do
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?p ?type ?range
+{ 
+  #GRAPH <http://www.art.org/world> { ?s ?p ?o . FILTER (?p NOT IN ( rdfs:label, rdfs:comment, rdf:type, owl:sameAs )) .}
+  #GRAPH <http://www.art.org/museum> { ?s ?p ?o . FILTER (?p NOT IN ( rdfs:label, rdfs:comment, rdf:type, owl:sameAs )) .}
+  #GRAPH <http://www.art.org/movement> { ?s ?p ?o . FILTER (?p NOT IN ( rdfs:label, rdfs:comment, rdf:type, owl:sameAs )) .}
+  #GRAPH <http://www.art.org/artefact> { ?s ?p ?o . FILTER (?p NOT IN ( rdfs:label, rdfs:comment, rdf:type, owl:sameAs )) .}
+  { ?s ?p ?o . FILTER (?p NOT IN ( rdfs:label, rdfs:comment, rdf:type, owl:sameAs )) .}
+  OPTIONAL { graph <http://www.art.org/ontology> { ?p  rdf:type ?type ; rdfs:range ?range . } }
+}  
+
+# check for declared classes not found in the ontology
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select ?g ?o (COUNT(?o) as ?cnt)
+where {
+  {?s a ?o . }
+   UNION
+  {GRAPH ?g {?s a ?o . }}
+  FILTER (?g NOT IN ( IRI(<http://www.art.org/ontology>) )) .
+ FILTER (?o NOT IN ( owl:NamedIndividual )) .
+ FILTER NOT EXISTS { GRAPH <http://www.art.org/ontology> {?o rdf:type owl:Class .  }}
+}
+group by ?g ?o 
+
+#rdfs:label must always exist
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix art:       <http://www.art.org/ontology/art#> 
+select ?g ?s ?o 
+where {
+  {?s a ?o FILTER NOT EXISTS { ?s rdfs:label ?label . } }
+   UNION
+  {GRAPH ?g {?s a ?o FILTER NOT EXISTS { ?s rdfs:label ?label . } }}
+ FILTER (?g NOT IN ( IRI(<http://www.art.org/ontology>) )) .
+ FILTER (?o NOT IN ( art:painting, owl:NamedIndividual)) .
+}
+
+#rdfs:label in english must always exist
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix art: <http://www.art.org/ontology/art#> 
+select ?g ?s ?o (strlen(?g) as ?ll)
+where {
+  {?s a ?o FILTER NOT EXISTS { ?s rdfs:label ?label FILTER(lang(?label)="en") . } }
+   UNION
+  {GRAPH ?g {?s a ?o FILTER NOT EXISTS { ?s rdfs:label ?label FILTER(lang(?label)="en") . } }
+    FILTER ( ?g NOT IN ( IRI(<http://www.art.org/ontology>) )) . 
+  }
+  FILTER (?o NOT IN ( art:painting, owl:NamedIndividual)) .
+} 
+
+
+#a painting can only be in one museum (also SHACL)
+  see art:Q28061187  

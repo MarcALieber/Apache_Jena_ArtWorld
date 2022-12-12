@@ -1,0 +1,539 @@
+@prefix :          <http://www.art.org/ontology#> .
+@prefix art:       <http://www.art.org/ontology/art#> .
+@prefix city:      <http://www.art.org/ontology/world/city#> .
+@prefix cont:      <http://www.art.org/ontology/world/continent#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix dbo:       <http://dbpedia.org/ontology/> .
+@prefix dbp:       <http://dbpedia.org/property/> .
+@prefix dbpedia:   <http://dbpedia.org/resource/> .
+@prefix dc:        <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix g:         <http://www.art.org/ontology/geography#> .
+@prefix gender:    <http://www.art.org/ontology/person/gender#> .
+@prefix lod:       <http://www.art.org/ontology/LinkedOpenData#> .
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix mvmt:      <http://www.art.org/ontology/movement#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix p:         <http://marclieber.fr/ontology/src/> .
+@prefix painting:  <http://www.art.org/ontology/artPainting#> .
+@prefix period:    <http://www.art.org/ontology/period#> .
+@prefix person:    <http://www.art.org/ontology/person#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:       <http://www.art.org/ontology/world/countryRegion#> .
+@prefix remote:    <http://www.art.org/ontology/remote#> .
+@prefix schema:    <http://schema.org/> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd:        <http://www.wikidata.org/entity/> .
+@prefix wdp:       <https://www.wikidata.org/wiki/Property/> .
+@prefix wdt:       <http://www.wikidata.org/prop/direct/> .
+@prefix wikidata:  <http://www.wikidata.org/entity/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+@prefix wm:        <https://commons.wikimedia.org/wiki/> .
+@prefix world:     <http://www.art.org/ontology/world#> .
+@prefix wp:        <https://en.wikipedia.org/wiki/> .
+@prefix xml:       <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+mus:Q153306  mus:inCity  city:Q270 .
+
+mus:Q639791  mus:inCity  city:Q60 .
+
+mus:Q632682  mus:inCity  city:Q60 .
+
+mus:Q682827  mus:inCity  city:Q60 .
+
+mus:Q1229770  mus:inCity  city:Q270 .
+
+mus:Q160236  mus:inCity  city:Q60 .
+
+mus:Q1059456  mus:inCity  city:Q60 .
+
+mus:Q188740  mus:inCity  city:Q60 .
+
+mus:Q1478423  mus:inCity  city:Q60 .
+
+mus:Q201469  mus:inCity  city:Q60 .
+
+mus:Q861252  mus:inCity  city:Q1492 .
+
+mus:Q592116  mus:inCity  city:Q60 .
+
+mus:Q59546080  mus:inCity  city:Q90 .
+
+mus:Q1528356  mus:inCity  city:Q208863 .
+
+mus:Q32659772  mus:inCity  city:Q64 .
+
+mus:Q23402  mus:inCity  city:Q90 .
+
+mus:Q819504  mus:inCity  city:Q2107 .
+
+mus:Q211262  mus:inCity  city:Q597 .
+
+mus:Q1574475  mus:inCity  city:Q671040 .
+
+mus:Q1756399  mus:inCity  city:Q3616 .
+
+mus:Q2970522  mus:inCity  city:Q43196 .
+
+mus:Q650519  mus:inCity  city:Q90 .
+
+mus:Q679075  mus:inCity  city:Q71 .
+
+mus:Q3478488  mus:inCity  city:Q34600 .
+
+mus:Q169542  mus:inCity  city:Q1055 .
+
+mus:Q11663204  mus:inCity  city:Q174691 .
+
+mus:Q857276  mus:inCity  city:Q90 .
+
+mus:Q303139  mus:inCity  city:Q1741 .
+
+mus:Q840886  mus:inCity  city:Q1781 .
+
+mus:Q125634  mus:inCity  city:Q2066 .
+
+mus:Q1327886  mus:inCity  city:Q90 .
+
+mus:Q1055037  mus:inCity  city:Q35765 .
+
+mus:Q3297769  mus:inCity  city:Q188806 .
+
+mus:Q10854956  mus:inCity  city:Q15674 .
+
+mus:Q3753155  mus:inCity  city:Q25280 .
+
+mus:Q2051997  mus:inCity  city:Q23436 .
+
+mus:Q2217420  mus:inCity  city:Q4191 .
+
+mus:Q526170  mus:inCity  city:Q23992018 .
+
+mus:Q953345  mus:inCity  city:Q23556 .
+
+mus:Q3837886  mus:inCity  city:Q37043 .
+
+mus:Q5284947  mus:inCity  city:Q23197 .
+
+mus:Q2495870  mus:inCity  city:Q28237 .
+
+mus:Q3345073  mus:inCity  city:Q55115 .
+
+mus:Q2114028  mus:inCity  city:Q12269651 .
+
+mus:Q1992004  mus:inCity  city:Q25287 .
+
+mus:Q1372546  mus:inCity  city:Q28260 .
+
+mus:Q1274511  mus:inCity  city:Q1754 .
+
+mus:Q6436109  mus:inCity  city:Q28515 .
+
+mus:Q180788  mus:inCity  city:Q189960 .
+
+mus:Q279049  mus:inCity  city:Q43919 .
+
+mus:Q3912134  mus:inCity  city:Q34370 .
+
+mus:Q1492387  mus:inCity  city:Q220 .
+
+mus:Q12110695  mus:inCity  city:Q189960 .
+
+mus:Q6829008  mus:inCity  city:Q986200 .
+
+mus:Q1421440  mus:inCity  city:Q350 .
+
+mus:Q3383883  mus:inCity  city:Q211260 .
+
+mus:Q1984633  mus:inCity  city:Q565405 .
+
+mus:Q5415088  mus:inCity  city:Q8678 .
+
+mus:Q5506587  mus:inCity  city:Q42735 .
+
+mus:Q3747192  mus:inCity  city:Q30031267 .
+
+mus:Q4115728  mus:inCity  city:Q81788 .
+
+mus:Q2638817  mus:inCity  city:Q18125 .
+
+mus:Q3878590  mus:inCity  city:Q37043 .
+
+mus:Q5478803  mus:inCity  city:Q24861 .
+
+mus:Q1601838  mus:inCity  city:Q41057 .
+
+mus:Q8015837  mus:inCity  city:Q2321784 .
+
+mus:Q3567825  mus:inCity  city:Q18125 .
+
+mus:Q212281  mus:inCity  city:Q1533 .
+
+mus:Q1519050  mus:inCity  city:Q172 .
+
+mus:Q4013975  mus:inCity  city:Q43421 .
+
+mus:Q679527  mus:inCity  city:Q34370 .
+
+mus:Q7412332  mus:inCity  city:Q37043 .
+
+mus:Q3816734  mus:inCity  city:Q16567 .
+
+mus:Q770918  mus:inCity  city:Q1373658 .
+
+mus:Q4674272  mus:inCity  city:Q41087 .
+
+mus:Q6305638  mus:inCity  city:Q29364 .
+
+mus:Q3330707  mus:inCity  city:Q585 .
+
+mus:Q4859590  mus:inCity  city:Q2256 .
+
+mus:Q1465805  mus:inCity  city:Q100 .
+
+mus:Q2046319  mus:inCity  city:Q10690 .
+
+mus:Q7082143  mus:inCity  city:Q34863 .
+
+mus:Q4666883  mus:inCity  city:Q36405 .
+
+mus:Q7741188  mus:inCity  city:Q24861 .
+
+mus:Q33119180  mus:inCity  city:Q1524 .
+
+mus:Q6023573  mus:inCity  city:Q6346 .
+
+mus:Q5459526  mus:inCity  city:Q28237 .
+
+mus:Q5945433  mus:inCity  city:Q44564 .
+
+mus:Q99346823  mus:inCity  city:Q3018561 .
+
+mus:Q842858  mus:inCity  city:Q1754 .
+
+mus:Q4968867  mus:inCity  city:Q23154 .
+
+mus:Q5495608  mus:inCity  city:Q34863 .
+
+
+mus:Q3094628  mus:inCity  city:Q2044 .
+
+mus:Q687778  mus:inCity  city:Q68956 .
+
+mus:Q2527311  mus:inCity  city:Q16567 .
+
+mus:Q2087788  mus:inCity  city:Q1953 .
+
+mus:Q861608  mus:inCity  city:Q61 .
+
+mus:Q1782422  mus:inCity  city:Q9832 .
+
+mus:Q460889  mus:inCity  city:Q2807 .
+
+mus:Q18342548  mus:inCity  city:Q952097 .
+
+mus:Q1050032  mus:inCity  city:Q1492 .
+
+mus:Q3329255  mus:inCity  city:Q47045 .
+
+mus:Q641630  mus:inCity  city:Q64 .
+
+mus:Q6815803  mus:inCity  city:Q16563 .
+
+mus:Q2711480  mus:inCity  city:Q7880 .
+
+mus:Q840618  mus:inCity  city:Q33935 .
+
+mus:Q3329201  mus:inCity  city:Q6730 .
+
+mus:Q965780  mus:inCity  city:Q47465 .
+
+mus:Q7012302  mus:inCity  city:Q83065 .
+
+mus:Q6129019  mus:inCity  city:Q38022 .
+
+mus:Q1049033  mus:inCity  city:Q641 .
+
+mus:Q1142334  mus:inCity  city:Q818364 .
+
+mus:Q193375  mus:inCity  city:Q84 .
+
+mus:Q3176133  mus:inCity  city:Q1519 .
+
+mus:Q1888308  mus:inCity  city:Q16555 .
+
+mus:Q6868358  mus:inCity  city:Q773527 .
+
+mus:Q1798475  mus:inCity  city:Q2742 .
+
+mus:Q105027234 mus:inCity city:Q60 .
+mus:Q703640 mus:inCity city:Q365 .
+mus:Q700959 mus:inCity city:Q365 .
+mus:Q1499958 mus:inCity city:Q36600 .
+mus:Q1319378 mus:inCity city:Q90 .
+mus:Q108838951 mus:inCity city:Q727 .
+mus:Q808462 mus:inCity city:Q1345 .
+mus:Q99237584 mus:inCity city:Q18383 .
+mus:Q91353383 mus:inCity city:Q239 .
+mus:Q98546069 mus:inCity city:Q60 .
+mus:Q95999613 mus:inCity city:Q42794 .
+mus:Q2343008 mus:inCity city:Q60 .
+mus:Q98556638 mus:inCity city:Q727 .
+mus:Q3330222 mus:inCity city:Q163795 .
+
+mus:Q3330248  mus:inCity  city:Q165061 .
+
+mus:Q1618645  mus:inCity  city:Q743287 .
+
+mus:Q15694044  mus:inCity  city:Q533317 .
+
+mus:Q7753511  mus:inCity  city:Q504530 .
+
+mus:Q428559  mus:inCity  city:Q16704 .
+
+mus:Q11283175  mus:inCity  city:Q450287 .
+
+mus:Q11345132  mus:inCity  city:Q28802100 .
+
+mus:Q1465387  mus:inCity  city:Q55934339 .
+
+mus:Q775376  mus:inCity  city:Q188002 .
+
+mus:Q63828  mus:inCity  city:Q11426430 .
+
+mus:Q3458883  mus:inCity  city:Q138338 .
+
+mus:Q510324  mus:inCity  city:Q1345 .
+
+mus:Q11530056  mus:inCity  city:Q7498925 .
+
+mus:Q913808  mus:inCity  city:Q1795217 .
+
+mus:Q3329642  mus:inCity  city:Q6643 .
+
+mus:Q636400  mus:inCity  city:Q20986484 .
+
+mus:Q693591  mus:inCity  city:Q24879 .
+
+mus:Q3822143  mus:inCity  city:Q12102 .
+
+mus:Q3140304  mus:inCity  city:Q131908 .
+
+mus:Q377579  mus:inCity  city:Q5092 .
+
+mus:Q4894835  mus:inCity  city:Q15551 .
+
+mus:Q566661  mus:inCity  city:Q108769568 .
+
+mus:Q1895953  mus:inCity  city:Q3413122 .
+
+mus:Q11426772  mus:inCity  city:Q11481474 .
+
+mus:Q3329050  mus:inCity  city:Q236736 .
+
+mus:Q5114675  mus:inCity  city:Q49231 .
+
+mus:Q4556499  mus:inCity  city:Q1350060 .
+
+mus:Q6217142  mus:inCity  city:Q6294511 .
+
+mus:Q3329155  mus:inCity  city:Q231720 .
+
+mus:Q15818188  mus:inCity  city:Q202368 .
+
+mus:Q28843765  mus:inCity  city:Q174247 .
+
+mus:Q726781  mus:inCity  city:Q161741 .
+
+mus:Q1061094  mus:inCity  city:Q55934339 .
+
+mus:Q3329787  mus:inCity  city:Q621 .
+
+mus:Q3329646  mus:inCity  city:Q1066398 .
+
+mus:Q924335  mus:inCity  city:Q9899 .
+
+mus:Q12072937  mus:inCity  city:Q983837 .
+
+mus:Q3329574  mus:inCity  city:Q220673 .
+
+mus:Q224124  mus:inCity  city:Q9899 .
+
+mus:Q3329546  mus:inCity  city:Q184775 .
+
+mus:Q671384  mus:inCity  city:Q504125 .
+
+mus:Q1851283  mus:inCity  city:Q130994 .
+
+mus:Q318289  mus:inCity  city:Q65618 .
+
+mus:Q4872  mus:inCity  city:Q862100 .
+
+mus:Q1614504  mus:inCity  city:Q430349 .
+
+mus:Q743206  mus:inCity  city:Q3413222 .
+
+mus:Q1505892  mus:inCity  city:Q10002 .
+
+mus:Q3361180  mus:inCity  city:Q6397 .
+
+mus:Q3330217  mus:inCity  city:Q132671 .
+
+mus:Q2603905  mus:inCity  city:Q138518 .
+
+mus:Q2317145  mus:inCity  city:Q193832 .
+
+mus:Q3329161  mus:inCity  city:Q181955 .
+
+mus:Q3329033  mus:inCity  city:Q274183 .
+
+mus:Q23498495  mus:inCity  city:Q142410 .
+
+mus:Q2277827  mus:inCity  city:Q1018289 .
+
+mus:Q1536471  mus:inCity  city:Q21665571 .
+
+mus:Q1428076  mus:inCity  city:Q4455813 .
+
+mus:Q190804  mus:inCity  city:Q9899 .
+
+mus:Q210081  mus:inCity  city:Q5092 .
+
+mus:Q5314986  mus:inCity  city:Q96249787 .
+
+mus:Q246821  mus:inCity  city:Q188776 .
+
+mus:Q705557  mus:inCity  city:Q1094063 .
+
+mus:Q1051928  mus:inCity  city:Q26555 .
+
+mus:Q1362629  mus:inCity  city:Q92909922 .
+
+mus:Q2452513  mus:inCity  city:Q243713 .
+
+mus:Q1011471  mus:inCity  city:Q183557 .
+
+mus:Q861588  mus:inCity  city:Q11279143 .
+
+mus:Q1016909  mus:inCity  city:Q55934339 .
+
+mus:Q1128657  mus:inCity  city:Q223140 .
+
+mus:Q3001838  mus:inCity  city:Q193826 .
+
+mus:Q1359908  mus:inCity  city:Q1075966 .
+
+mus:Q1955692  mus:inCity  city:Q201352 .
+
+mus:Q3329052  mus:inCity  city:Q6397 .
+
+mus:Q1140507  mus:inCity  city:Q504125 .
+
+mus:Q3248015  mus:inCity  city:Q1205581 .
+
+mus:Q4328346  mus:inCity  city:Q25395 .
+
+mus:Q2362660  mus:inCity  city:Q118958 .
+
+mus:Q6352575  mus:inCity  city:Q49145 .
+
+mus:Q1192305  mus:inCity  city:Q61 .
+
+mus:Q95569  mus:inCity  city:Q1741 .
+
+mus:Q28647411  mus:inCity  city:Q2044 .
+
+mus:Q3547979  mus:inCity  city:Q10686 .
+
+mus:Q917183  mus:inCity  city:Q12994 .
+
+mus:Q806615  mus:inCity  city:Q1741 .
+
+mus:Q474563  mus:inCity  city:Q9920 .
+
+mus:Q18410543  mus:inCity  city:Q68144 .
+
+mus:Q1620553  mus:inCity  city:Q61 .
+
+mus:Q49135  mus:inCity  city:Q100 .
+
+mus:Q4461630  mus:inCity  city:Q201117 .
+
+mus:Q270920  mus:inCity  city:Q179351 .
+
+mus:Q686531  mus:inCity  city:Q41329 .
+
+mus:Q2418618  mus:inCity  city:Q2044 .
+
+mus:Q1851516  mus:inCity  city:Q36091 .
+
+mus:Q59435  mus:inCity  city:Q1741 .
+
+mus:Q574961  mus:inCity  city:Q9920 .
+
+mus:Q160112  mus:inCity  city:Q2807 .
+
+mus:Q3757722  mus:inCity  city:Q13329 .
+
+mus:Q51252  mus:inCity  city:Q2044 .
+
+mus:Q306724  mus:inCity  city:Q1741 .
+
+mus:Q2191491  mus:inCity  city:Q597 .
+
+mus:Q271928  mus:inCity  city:Q2044 .
+
+mus:Q756807  mus:inCity  city:Q641 .
+
+mus:Q10855544  mus:inCity  city:Q2044 .
+
+mus:Q1200696  mus:inCity  city:Q2044 .
+
+mus:Q7493533  mus:inCity  city:Q28260 .
+
+mus:Q1540707  mus:inCity  city:Q1296 .
+
+mus:Q1357573  mus:inCity  city:Q2044 .
+
+mus:Q1017269  mus:inCity  city:Q49111 .
+
+mus:Q283998  mus:inCity  city:Q51685 .
+
+mus:Q388448  mus:inCity  city:Q2044 .
+
+mus:Q505873  mus:inCity  city:Q1741 .
+
+mus:Q1435689  mus:inCity  city:Q208260 .
+
+mus:Q1236032  mus:inCity  city:Q126675 .
+
+mus:Q3329364  mus:inCity  city:Q209814 .
+        
+mus:Q478455  mus:inCity  city:Q1741 .
+mus:Q59468  mus:inCity  city:Q60 .
+mus:Q213322 mus:inCity  city:Q23939248 .
+mus:Q182955  mus:inCity  city:Q237 .
+
+mus:Q1127079  mus:inCity  city:Q47887 .
+
+mus:Q1624722  mus:inCity  city:Q2740658 .
+
+mus:Q555946  mus:inCity  city:Q64 .
+mus:Q779736  mus:inCity  city:Q2740658 .
+mus:Q7005718  mus:inCity  city:Q49172 .
+mus:Q4681251  mus:inCity  city:Q492833 .
+
+mus:Q612530  mus:inCity  city:Q491540 .
+
+mus:Q559229  mus:inCity  city:Q38555 .
+mus:Q1183941  mus:inCity  city:Q174224 .
+mus:Q464404  mus:inCity  city:Q1726 .
+mus:Q2599177 mus:inCity  city:Q90 .
+mus:Q6373 mus:inCity  city:Q2740658 .
+mus:Q1952033  mus:inCity  city:Q1345 .
+
+mus:Q17745628 mus:inCity  city:Q60 .
+
+        

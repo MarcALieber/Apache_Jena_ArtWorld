@@ -1,0 +1,85 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix : <http://www.art.org/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix art:       <http://www.art.org/ontology/art#> .
+@prefix person:    <http://www.art.org/ontology/person#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#rdfs:label in english must always exist
+# a declared city in museum must exist
+# art:inception integer optional
+# art:madeOf material
+# art:width and art:length max 1 and decimal
+
+schema:ArteFactShape
+    a sh:NodeShape ;
+    sh:targetClass art:painting ;
+    #sh:closed true ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        #sh:minCount 1;
+        sh:maxCount 2;
+        sh:name "label" ;
+        sh:description "the label of the artefact must exist";
+        sh:message "An Artefact must have a label with language declaration";
+    ] ;
+    sh:property [
+        sh:path rdfs:comment ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:name "comment" ;
+        sh:message "comment must have unique language declaration";
+    ] ;
+    sh:property [
+        sh:path art:createdBy ;
+        sh:maxCount 3;
+        sh:minCount 1;
+        sh:message "an Artefact must be assigned to one or more artists (max=3)";
+    ] ;
+    sh:property [
+        sh:path art:createdBy ;
+        sh:node schema:artistShape ;
+        sh:message "Unknown artist for that artefact";
+    ] ;
+    sh:property [
+        sh:path art:inMuseum ;
+        sh:maxCount 1;
+        sh:minCount 1;
+        sh:message "an Artefact can only be in one museum";
+    ] ;
+    sh:property [
+        sh:path art:inMuseum ;
+        sh:node schema:museumShape ;
+        sh:message "Unknown museum for that artefact";
+    ] .
+    
+schema:museumShape
+    a sh:NodeShape ;
+    sh:targetClass mus:museum ; 
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:minCount 1;
+        sh:description "the label of the museum must exist";
+    ] .
+
+schema:artistShape
+    a sh:NodeShape ;
+    sh:targetClass person:painter, person:sculptor, person:ceramicist, person:architect ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:minCount 1;
+        sh:description "the label of the museum must exist";
+    ] .
+                
+                

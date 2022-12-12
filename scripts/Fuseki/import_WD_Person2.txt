@@ -1,0 +1,41 @@
+#art:exposedIn 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+prefix mus:       <http://www.art.org/ontology/museum#> 
+prefix art: <http://www.art.org/ontology/art#> 
+CONSTRUCT {?personID art:exposedIn ?museumID }
+where {
+  {SERVICE <https://query.wikidata.org/sparql> {?painter wdt:P6379 ?museum  FILTER (?painter in (wd:Q944834, wd:Q34661, wd:Q157194 )) .
+      BIND(replace(str(?museum),"http://www.wikidata.org/entity/","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.art.org/ontology/museum#", ?itemID   ))  AS ?museumID ) .
+      BIND(replace(str(?painter),"http://www.wikidata.org/entity/","") as ?wdID )
+    BIND(IRI(CONCAT("http://www.art.org/ontology/person#", ?wdID   ))  AS ?personID ) .
+    }
+  }
+}
+
+---------------------------------------------------------------------------------------------
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+prefix world: <http://www.art.org/ontology/world#> 
+prefix person: <http://www.art.org/ontology/person#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+prefix mus:       <http://www.art.org/ontology/museum#> 
+prefix art: <http://www.art.org/ontology/art#> 
+#select ?painter ?wdpainter ?museum ?museumID
+CONSTRUCT {?painter art:exposedIn ?museumID }
+where {
+  ?painter a person:painter FILTER (?painter in (person:Q944834 ,person:Q34661 ,person:Q5592 ,person:Q157194 )) .
+  ?painter owl:sameAs ?wdpainter FILTER (regex(str(?wdpainter),"wikidata"))
+  {SERVICE <https://query.wikidata.org/sparql> {?wdpainter wdt:P6379 ?museum .
+            BIND(replace(str(?museum),"http://www.wikidata.org/entity/","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.art.org/ontology/museum#", ?itemID   ))  AS ?museumID ) .
+    }
+  }
+}
+order by ?painter ?museumID
+

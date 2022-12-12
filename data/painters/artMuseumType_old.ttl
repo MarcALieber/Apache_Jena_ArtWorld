@@ -1,0 +1,883 @@
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wikidata:  <http://www.wikidata.org/entity/> .
+
+#  mus:artMuseum = mus:artMuseum; Q33506 = mus:museum; Q768717 = mus:; Q7328910 = mus:artCollection
+#  Q445396 = mus:artCollection
+mus:Q2970522  rdf:type   mus:artMuseum .
+
+mus:Q6305638  rdf:type   mus:artMuseum .
+
+mus:Q59546080  rdf:type     mus:artMuseum .
+
+mus:Q51252  rdf:type     mus:artMuseum , wikidata:Q16560 .
+
+mus:Q160236  rdf:type  wikidata:Q2085381 ,  mus:artMuseum .
+
+mus:Q1050032  rdf:type   mus:artMuseum .
+
+mus:Q1362629  rdf:type    wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q318289  rdf:type  wikidata:Q2668072 , wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q1055037  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q913808  rdf:type   mus:artMuseum .
+
+mus:Q460889  rdf:type  wikidata:Q64578911 , wikidata:Q17431399 , wikidata:Q4989906 , wikidata:Q2190251 ,  mus:artMuseum .
+
+mus:Q1140507  rdf:type  wikidata:Q957433 .
+
+mus:Q505873  rdf:type  wikidata:Q2327632 ,  mus:artMuseum ,   .
+
+mus:Q6129019  rdf:type   mus:artMuseum .
+
+mus:Q5506587  rdf:type   mus:artMuseum .
+
+mus:Q32659772  rdf:type   mus:artMuseum .
+
+mus:Q194533  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q22032181  rdf:type   mus:artMuseum .
+
+mus:Q5114675  rdf:type   mus:artMuseum .
+
+mus:Q5459526  rdf:type   mus:artMuseum .
+
+mus:Q975240  rdf:type  wikidata:Q108860593 , wikidata:Q740437 ,  mus:artMuseum .
+
+mus:Q2603905  rdf:type  wikidata:Q111889841 .
+
+mus:Q15818188  rdf:type    .
+
+mus:Q658725  rdf:type   mus:artMuseum .
+
+mus:Q1536471  rdf:type   mus:artMuseum .
+
+mus:Q3492931  rdf:type   mus:artMuseum .
+
+mus:Q63828  rdf:type   mus:artMuseum .
+
+mus:Q5415088  rdf:type  wikidata:Q2087181 ,  mus:artMuseum .
+
+mus:Q770918  rdf:type   mus:artMuseum .
+
+mus:Q639791  rdf:type  wikidata:Q15090615 ,  mus:artMuseum .
+
+mus:Q3297769  rdf:type   mus:artMuseum .
+
+mus:Q3329646  rdf:type   mus:artMuseum .
+
+mus:Q592116  rdf:type    wikidata:Q1307560 ,  mus:artMuseum .
+
+mus:Q162111  rdf:type   mus:artMuseum .
+
+mus:Q193375  rdf:type  wikidata:Q3343298 ,  mus:artMuseum .
+
+mus:Q3330717  rdf:type  wikidata:Q17431399 .
+
+mus:Q840618  rdf:type    .
+
+mus:Q756807  rdf:type    , wikidata:Q16560 .
+
+mus:Q468458  rdf:type   mus:artMuseum .
+
+mus:Q23785329  rdf:type    wikidata:Q1370468 ,  mus:artMuseum .
+
+mus:Q2418618  rdf:type  wikidata:Q2087181 , wikidata:Q684740 ,  mus:artMuseum , wikidata:Q166118 ,   .
+
+mus:Q1359908  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q685038  rdf:type  wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q7895562  rdf:type   mus:artMuseum .
+
+mus:Q125634  rdf:type   mus:artMuseum .
+
+mus:Q1756399  rdf:type  wikidata:Q108860927 .
+
+mus:Q1264942  rdf:type  wikidata:Q1802963 , wikidata:Q1438040 ,   , wikidata:Q31855 .
+
+mus:Q1955692  rdf:type   mus:artMuseum .
+
+mus:Q843638  rdf:type   mus:artMuseum .
+
+mus:Q5572991  rdf:type   mus:artMuseum .
+
+mus:Q3329574  rdf:type   mus:artMuseum .
+
+mus:Q475667  rdf:type  wikidata:Q2668072 ,  mus:artMuseum .
+
+mus:Q6373  rdf:type  wikidata:Q17431399 , wikidata:Q3343298 ,  mus:artMuseum .
+
+mus:Q95569  rdf:type   mus:artMuseum .
+
+mus:Q3816734  rdf:type   mus:artMuseum .
+
+mus:Q2063082  rdf:type   mus:artMuseum .
+
+mus:Q12072937  rdf:type   mus:artMuseum .
+
+mus:Q11283175  rdf:type  wikidata:Q2087181 ,  mus:artMuseum .
+
+mus:Q3361180  rdf:type    .
+
+mus:Q743206  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q2343008  rdf:type  wikidata:Q5 .
+
+mus:Q377579  rdf:type    wikidata:Q2085381 ,  mus:artMuseum .
+
+mus:Q682827  rdf:type  mus:artCollection ,  mus:artMuseum .
+
+mus:Q2638817  rdf:type   mus:artMuseum .
+
+mus:Q1368166  rdf:type   mus:artMuseum .
+
+mus:Q23402  rdf:type  wikidata:Q28496624 , wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q1848918  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q1233913  rdf:type   mus:artMuseum .
+
+mus:Q2655425  rdf:type     mus:artMuseum .
+
+mus:Q670250  rdf:type   mus:artMuseum .
+
+mus:Q650519  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q2277827  rdf:type  wikidata:Q163740 ,   .
+
+mus:Q1192305  rdf:type   mus:artMuseum .
+
+mus:Q213322  rdf:type  wikidata:Q17000320 , wikidata:Q1200701 ,  mus:artMuseum ,   .
+
+mus:Q1618645  rdf:type   mus:artMuseum , wikidata:Q3947 .
+
+mus:Q303139  rdf:type   mus:artMuseum .
+
+mus:Q99237584  rdf:type  wikidata:Q5 .
+
+mus:Q91353383  rdf:type  wikidata:Q5 .
+
+mus:Q108838951  rdf:type  mus:artCollection .
+
+mus:Q3329050  rdf:type    .
+
+mus:Q201469  rdf:type    wikidata:Q570116 ,  mus:artMuseum .
+
+mus:Q176251  rdf:type   mus:artMuseum ,   .
+
+mus:Q1132918  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q1435689  rdf:type   mus:artMuseum .
+
+mus:Q2527311  rdf:type  wikidata:Q1007870 ,  mus:artMuseum , wikidata:Q41253 .
+
+mus:Q3329201  rdf:type   mus:artMuseum .
+
+mus:Q1016909  rdf:type   mus:artMuseum .
+
+mus:Q2468251  rdf:type   mus:artMuseum .
+
+mus:Q3330217  rdf:type     mus:artMuseum .
+
+mus:Q745866  rdf:type   mus:artMuseum .
+
+mus:Q4819492  rdf:type   mus:artMuseum .
+
+mus:Q1783956  rdf:type   mus:artMuseum .
+
+mus:Q1760539  rdf:type   mus:artMuseum .
+
+mus:Q1888308  rdf:type   mus:artMuseum .
+
+mus:Q511  rdf:type   mus:artMuseum .
+
+mus:Q6803132  rdf:type   mus:artMuseum .
+
+mus:Q1792552  rdf:type  wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q1895953  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q1519050  rdf:type   mus:artMuseum .
+
+mus:Q11426772  rdf:type     mus:artMuseum .
+
+mus:Q857276  rdf:type   mus:artMuseum .
+
+mus:Q4666883  rdf:type   mus:artMuseum ,   .
+
+mus:Q10854956  rdf:type   mus:artMuseum .
+
+mus:Q1741629  rdf:type   mus:artMuseum .
+
+mus:Q2087788  rdf:type   mus:artMuseum .
+
+mus:Q7569107  rdf:type   mus:artMuseum .
+
+mus:Q2977589  rdf:type   mus:artMuseum .
+
+mus:Q3329255  rdf:type   mus:artMuseum .
+
+mus:Q1976985  rdf:type   mus:artMuseum .
+
+mus:Q3345073  rdf:type  wikidata:Q17431399 .
+
+mus:Q2599177  rdf:type  wikidata:Q2087181 , wikidata:Q1865249 .
+
+mus:Q924335  rdf:type   mus:artMuseum .
+
+mus:Q3086934  rdf:type   mus:artMuseum .
+
+mus:Q4328346  rdf:type   mus:artMuseum , wikidata:Q163740 .
+
+mus:Q430682  rdf:type  wikidata:Q88667167 , wikidata:Q45400320 , wikidata:Q1047437 ,  mus:artMuseum .
+
+mus:Q6379617  rdf:type   mus:artMuseum .
+
+mus:Q1117704  rdf:type   mus:artMuseum .
+
+mus:Q10333663  rdf:type   mus:artMuseum .
+
+mus:Q1519002  rdf:type   mus:artMuseum .
+
+mus:Q2383136  rdf:type   mus:artMuseum .
+
+mus:Q169542  rdf:type   mus:artMuseum .
+
+mus:Q180788  rdf:type   mus:artMuseum .
+
+mus:Q671384  rdf:type   mus:artMuseum .
+
+mus:Q632682  rdf:type   mus:artMuseum .
+
+mus:Q1492387  rdf:type  wikidata:Q108860593 , wikidata:Q17431399 , wikidata:Q3867560 , wikidata:Q1007870 ,  mus:artMuseum ,   .
+
+mus:Q673833  rdf:type  mus:artCollection ,  mus:artMuseum .
+
+mus:Q3003161  rdf:type   mus:artMuseum .
+
+mus:Q566661  rdf:type   mus:artMuseum .
+
+mus:Q3329364  rdf:type    .
+
+mus:Q5507735  rdf:type   mus:artMuseum .
+
+mus:Q314082  rdf:type    .
+
+mus:Q1574475  rdf:type   mus:artMuseum .
+
+mus:Q775376  rdf:type  wikidata:Q111986502 , wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q672759  rdf:type    wikidata:Q2416110 , wikidata:Q1792623 , wikidata:Q570116 ,  mus:artMuseum .
+
+mus:Q82941  rdf:type  wikidata:Q1329623 , wikidata:Q383092 ,  mus:artMuseum .
+
+mus:Q3329642  rdf:type   mus:artMuseum .
+
+mus:Q682406  rdf:type  wikidata:Q1497649 ,  mus:private ,  mus:artMuseum .
+
+mus:Q4894835  rdf:type  wikidata:Q4989906 ,  mus:artMuseum .
+
+mus:Q49135  rdf:type   mus:artMuseum .
+
+mus:Q496040  rdf:type  wikidata:Q1007870 ,  mus:artMuseum .
+
+mus:Q1994770  rdf:type   mus:artMuseum .
+
+mus:Q5263501  rdf:type   mus:artMuseum .
+
+mus:Q1319378  rdf:type   mus:artMuseum .
+
+mus:Q325712  rdf:type   mus:artMuseum .
+
+mus:Q7673984  rdf:type   mus:artMuseum .
+
+mus:Q3747192  rdf:type  wikidata:Q108860593 , wikidata:Q2087181 , wikidata:Q684740 ,  mus:artMuseum , wikidata:Q157031 .
+
+mus:Q1851516  rdf:type  wikidata:Q1007870 ,  mus:artMuseum , wikidata:Q41253 .
+
+mus:Q6829008  rdf:type  wikidata:Q866133 ,  mus:artMuseum ,   .
+
+mus:Q11530056  rdf:type   mus:artMuseum .
+
+mus:Q160112  rdf:type  wikidata:Q17431399 , wikidata:Q1200957 , wikidata:Q570116 ,  mus:artMuseum , wikidata:Q43229 .
+
+mus:Q1428076  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q2148186  rdf:type  wikidata:Q614316 ,  mus:artMuseum .
+
+mus:Q3567825  rdf:type   mus:artMuseum .
+
+mus:Q3330248  rdf:type   mus:artMuseum .
+
+mus:Q286389  rdf:type   mus:artMuseum .
+
+mus:Q809600  rdf:type     mus:artMuseum .
+
+mus:Q7412332  rdf:type   mus:artMuseum .
+
+mus:Q18563658  rdf:type   mus:artMuseum .
+
+mus:Q478455  rdf:type  wikidata:Q62098611 .
+
+mus:Q2338135  rdf:type  wikidata:Q2085381 , wikidata:Q1497375 ,  mus:artMuseum .
+
+mus:Q239303  rdf:type  wikidata:Q2385804 ,  mus:artMuseum .
+
+mus:Q726781  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q700959  rdf:type   mus:artMuseum .
+
+mus:Q819504  rdf:type   mus:artMuseum .
+
+mus:Q731126  rdf:type  wikidata:Q2085381 ,  mus:artMuseum .
+
+mus:Q559229  rdf:type  wikidata:Q20857085 ,  mus:artMuseum .
+
+mus:Q3329033  rdf:type   mus:artMuseum .
+
+mus:Q1952033  rdf:type  wikidata:Q23002054 , wikidata:Q383092 ,  mus:artMuseum .
+
+mus:Q2916280  rdf:type  wikidata:Q1352795 , wikidata:Q726929 ,  mus:artMuseum , wikidata:Q41253 .
+
+mus:Q687778  rdf:type  wikidata:Q2516357 , wikidata:Q1497649 , wikidata:Q839954 ,  mus:artMuseum .
+
+mus:Q913672  rdf:type  wikidata:Q108860593 , wikidata:Q2085381 .
+
+mus:Q1127079  rdf:type    .
+
+mus:Q3330707  rdf:type   mus:artMuseum .
+
+mus:Q1011471  rdf:type    .
+
+mus:Q16303680  rdf:type   mus:artMuseum .
+
+mus:Q865736  rdf:type   mus:artMuseum .
+
+mus:Q1465387  rdf:type  wikidata:Q16735822 , wikidata:Q1970365 , wikidata:Q866133 ,  mus:artMuseum .
+
+mus:Q953345  rdf:type   mus:artMuseum .
+
+mus:Q2983474  rdf:type   mus:artMuseum .
+
+mus:Q1952944  rdf:type  wikidata:Q2668072 , wikidata:Q245188 ,  mus:artMuseum .
+
+mus:Q46625757  rdf:type    , wikidata:Q7075 .
+
+mus:Q569079  rdf:type     mus:artMuseum .
+
+mus:Q214867  rdf:type  wikidata:Q17431399 , wikidata:Q2085381 ,  mus:artMuseum .
+
+mus:Q1051928  rdf:type  wikidata:Q17431399 , wikidata:Q1759852 ,  mus:artMuseum .
+
+mus:Q1798475  rdf:type   mus:artMuseum .
+
+mus:Q1641836  rdf:type   mus:artMuseum .
+
+mus:Q769765  rdf:type  wikidata:Q3329412 ,   .
+
+mus:Q153306  rdf:type  wikidata:Q17431399 , wikidata:Q16735822 ,  mus:artMuseum .
+
+mus:Q1970945  rdf:type   mus:artMuseum .
+
+mus:Q11551651  rdf:type   mus:artMuseum .
+
+mus:Q95999613  rdf:type  wikidata:Q5 .
+
+mus:Q270920  rdf:type  wikidata:Q2668072 , wikidata:Q1966910 ,  mus:artMuseum .
+
+mus:Q1565911  rdf:type   mus:artMuseum .
+
+mus:Q3329100  rdf:type    .
+
+mus:Q812285  rdf:type  mus:artCollection ,  mus:artMuseum .
+
+mus:Q1319192  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q23498495  rdf:type    .
+
+mus:Q977015  rdf:type   mus:artMuseum .
+
+mus:Q25045355  rdf:type   mus:artMuseum .
+
+mus:Q1624722  rdf:type  wikidata:Q2087181 .
+
+mus:Q11345132  rdf:type   mus:artMuseum .
+
+mus:Q371908  rdf:type   mus:artCollection ,  mus:artMuseum .
+
+mus:Q59468  rdf:type   mus:artMuseum .
+
+mus:Q677561  rdf:type   mus:artMuseum .
+
+mus:Q3912134  rdf:type  wikidata:Q604177 .
+
+mus:Q1277393  rdf:type  wikidata:Q17431399 .
+
+mus:Q1787100  rdf:type   mus:artMuseum .
+
+mus:Q2046319  rdf:type  wikidata:Q113095515 , wikidata:Q7981903 .
+
+mus:Q1459878  rdf:type   mus:artMuseum .
+
+mus:Q3329787  rdf:type    .
+
+mus:Q779736  rdf:type  wikidata:Q20897549 ,  mus:artMuseum .
+
+mus:Q194626  rdf:type  wikidata:Q1497649 ,  mus:artMuseum ,   .
+
+mus:Q1614504  rdf:type   mus:artMuseum .
+
+mus:Q1274511  rdf:type  wikidata:Q108860593 , wikidata:Q68295960 , wikidata:Q10444897 ,  mus:artMuseum .
+
+mus:Q2098074  rdf:type  wikidata:Q1759852 , wikidata:Q756102 ,   .
+
+mus:Q3329546  rdf:type  wikidata:Q1970365 , wikidata:Q1595639 ,  mus:artMuseum .
+
+mus:Q18342548  rdf:type   mus:artMuseum .
+
+mus:Q2097646  rdf:type   mus:artMuseum .
+
+mus:Q4461630  rdf:type   mus:artMuseum .
+
+mus:Q1183941  rdf:type   mus:artMuseum .
+
+mus:Q3878590  rdf:type   mus:artMuseum .
+
+mus:Q3330225  rdf:type   mus:artMuseum .
+
+mus:Q795228  rdf:type  wikidata:Q110376455 , wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q1327886  rdf:type   mus:artMuseum .
+
+mus:Q56875825  rdf:type    , wikidata:Q7075 .
+
+mus:Q686531  rdf:type   mus:artMuseum .
+
+mus:Q806615  rdf:type  wikidata:Q2065736 ,   .
+
+mus:Q840886  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q28843765  rdf:type   mus:artMuseum .
+
+mus:Q5945433  rdf:type   mus:artMuseum , wikidata:Q163740 .
+
+mus:Q98556638  rdf:type  wikidata:Q5 .
+
+mus:Q1200696  rdf:type  wikidata:Q112132513 ,  mus:artMuseum ,   .
+
+mus:Q4556499  rdf:type  wikidata:Q1007870 ,  mus:artMuseum .
+
+mus:Q182955  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q510324  rdf:type   mus:artMuseum .
+
+mus:Q15694044  rdf:type  wikidata:Q1329623 ,  mus:artMuseum .
+
+mus:Q11617518  rdf:type     mus:artMuseum .
+
+mus:Q11609688  rdf:type     mus:artMuseum .
+
+mus:Q3547979  rdf:type  wikidata:Q43229 ,   .
+
+mus:Q679527  rdf:type   mus:artMuseum .
+
+mus:Q210081  rdf:type  wikidata:Q2085381 ,  mus:artMuseum .
+
+mus:Q3757708  rdf:type  wikidata:Q108860593 ,  mus:artMuseum .
+
+mus:Q7005718  rdf:type   mus:artMuseum .
+
+mus:Q5495608  rdf:type   mus:artMuseum .
+
+mus:Q3329052  rdf:type   mus:artMuseum .
+
+mus:Q612530  rdf:type   mus:artMuseum .
+
+mus:Q6023573  rdf:type  wikidata:Q111889841 .
+
+mus:Q1920251  rdf:type   mus:artMuseum .
+
+mus:Q2404549  rdf:type   mus:artMuseum .
+
+mus:Q1267958  rdf:type   mus:artMuseum ,   .
+
+mus:Q1321874  rdf:type    wikidata:Q17431399 , wikidata:Q1970365 ,  mus:artMuseum ,   .
+
+mus:Q212281  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q3329541  rdf:type   mus:artMuseum .
+
+mus:Q46815  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q1236032  rdf:type   mus:artMuseum .
+
+mus:Q1068063  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q403080  rdf:type   mus:artMuseum .
+
+mus:Q3329511  rdf:type  wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q845468  rdf:type   mus:artMuseum .
+
+mus:Q2114028  rdf:type  wikidata:Q163740 ,   .
+
+mus:Q1478423  rdf:type  wikidata:Q44234152 ,   , wikidata:Q7075 .
+
+mus:Q3757721  rdf:type  wikidata:Q108860593 ,  mus:artMuseum .
+
+mus:Q3753155  rdf:type    .
+
+mus:Q4859590  rdf:type   mus:artMuseum .
+
+mus:Q1956195  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q279049  rdf:type   mus:artMuseum .
+
+mus:Q3329161  rdf:type   mus:artMuseum .
+
+mus:Q1700481  rdf:type  wikidata:Q383092 ,  mus:artMuseum , wikidata:Q163740 .
+
+mus:Q33119180  rdf:type     mus:artMuseum ,   .
+
+mus:Q1421440  rdf:type  wikidata:Q16735822 , wikidata:Q866133 , wikidata:Q570116 ,  mus:artMuseum .
+
+mus:Q211262  rdf:type    .
+
+mus:Q3329523  rdf:type  wikidata:Q2668072 , wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q679075  rdf:type  wikidata:Q16735822 , wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q1465805  rdf:type   mus:artMuseum , wikidata:Q31855 .
+
+mus:Q5935366  rdf:type   mus:artMuseum .
+
+mus:Q1601838  rdf:type  wikidata:Q811979 ,   .
+
+mus:Q98546069  rdf:type  wikidata:Q5 .
+
+mus:Q28647411  rdf:type  wikidata:Q88667167 , wikidata:Q3867560 , wikidata:Q3329412 ,  mus:artMuseum .
+
+mus:Q641630  rdf:type   mus:artMuseum .
+
+mus:Q2051997  rdf:type  wikidata:Q3343298 ,   .
+
+mus:Q246821  rdf:type   mus:artMuseum .
+
+mus:Q878253  rdf:type  wikidata:Q751876 , wikidata:Q699405 ,  mus:artMuseum ,   .
+
+mus:Q2526644  rdf:type    .
+
+mus:Q7012302  rdf:type    .
+
+mus:Q3329620  rdf:type  wikidata:Q16735822 , wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q1954748  rdf:type   mus:artMuseum .
+
+mus:Q1324926  rdf:type   mus:artMuseum .
+
+mus:Q693591  rdf:type   mus:artMuseum .
+
+mus:Q666331  rdf:type  wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q14715853  rdf:type  wikidata:Q111889841 .
+
+mus:Q917183  rdf:type    , wikidata:Q16970 .
+
+mus:Q7367636  rdf:type   mus:artMuseum .
+
+mus:Q2495870  rdf:type   mus:artMuseum ,   .
+
+mus:Q190804  rdf:type  wikidata:Q17431399 , wikidata:Q16735822 ,  mus:artMuseum .
+
+mus:Q3329155  rdf:type   mus:artMuseum .
+
+mus:Q861588  rdf:type   mus:artMuseum .
+
+mus:Q1043967  rdf:type   mus:artMuseum .
+
+mus:Q18410543  rdf:type  wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q2365880  rdf:type   mus:artMuseum ,   .
+
+mus:Q252071  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q5284947  rdf:type  wikidata:Q1759852 ,  mus:artMuseum .
+
+mus:Q2628596  rdf:type   mus:artMuseum .
+
+mus:Q1049033  rdf:type  wikidata:Q108860593 ,  mus:artMuseum .
+
+mus:Q578485  rdf:type   mus:artMuseum , wikidata:Q163740 .
+
+mus:Q1419555  rdf:type  wikidata:Q108935461 , wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q3007727  rdf:type   mus:artMuseum .
+
+mus:Q188740  rdf:type  wikidata:Q108860593 .
+
+mus:Q6815343  rdf:type   mus:artMuseum .
+
+mus:Q1416890  rdf:type   mus:artMuseum .
+
+mus:Q1752085  rdf:type   mus:artMuseum .
+
+mus:Q4968867  rdf:type   mus:artMuseum ,   .
+
+mus:Q1505892  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q7753511  rdf:type   mus:artMuseum .
+
+mus:Q271928  rdf:type  wikidata:Q25550691 , mus:artCollection , wikidata:Q2651004 , wikidata:Q570116 ,  mus:artMuseum ,   .
+
+mus:Q10855544  rdf:type  wikidata:Q58632302 , wikidata:Q17431399 ,  mus:artMuseum ,   .
+
+mus:Q526170  rdf:type  wikidata:Q12317349 , wikidata:Q4989906 ,  mus:artMuseum , wikidata:Q7075 .
+
+mus:Q636400  rdf:type  wikidata:Q866133 ,  mus:artMuseum .
+
+mus:Q1059456  rdf:type  wikidata:Q16735822 ,   .
+
+mus:Q705551  rdf:type   mus:artMuseum .
+
+mus:Q80784  rdf:type   mus:artMuseum .
+
+mus:Q3822143  rdf:type    .
+
+mus:Q7492669  rdf:type  wikidata:Q113095515 , wikidata:Q163740 .
+
+mus:Q1229770  rdf:type   mus:artMuseum .
+
+mus:Q1851283  rdf:type  wikidata:Q16735822 , wikidata:Q3329412 ,  mus:artMuseum .
+
+mus:Q306724  rdf:type  wikidata:Q17000320 .
+
+mus:Q768446  rdf:type  wikidata:Q464980 ,  mus:artMuseum .
+
+mus:Q650299  rdf:type  wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q194622  rdf:type  wikidata:Q27699276 , wikidata:Q3196771 , wikidata:Q1497649 .
+
+mus:Q1721563  rdf:type    .
+
+mus:Q2362660  rdf:type  wikidata:Q2668072 ,   .
+
+mus:Q464404  rdf:type   mus:artCollection ,  mus:artMuseum .
+
+mus:Q11417787  rdf:type   mus:artMuseum .
+
+mus:Q808462  rdf:type  wikidata:Q2385804 ,  mus:artMuseum .
+
+mus:Q842858  rdf:type  wikidata:Q68295960 , wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q5478803  rdf:type   mus:artMuseum .
+
+mus:Q6436109  rdf:type    .
+
+mus:Q6868358  rdf:type   mus:artMuseum .
+
+mus:Q1992004  rdf:type   mus:artMuseum .
+
+mus:Q2018379  rdf:type  wikidata:Q17431399 .
+
+mus:Q3757722  rdf:type  wikidata:Q108860593 ,  mus:private ,  mus:artMuseum ,   .
+
+mus:Q2317145  rdf:type   mus:artMuseum ,   .
+
+mus:Q3248015  rdf:type   mus:artMuseum .
+
+mus:Q597355  rdf:type   mus:artMuseum .
+
+mus:Q1061094  rdf:type   mus:artMuseum .
+
+mus:Q1743116  rdf:type   mus:artMuseum .
+
+mus:Q954222  rdf:type   mus:artMuseum .
+
+mus:Q3140304  rdf:type   mus:artMuseum .
+
+mus:Q4681251  rdf:type   mus:artMuseum .
+
+mus:Q163804  rdf:type   mus:artMuseum .
+
+mus:Q1782422  rdf:type   mus:artMuseum .
+
+mus:Q653002  rdf:type   mus:artMuseum .
+
+mus:Q1189960  rdf:type   mus:artMuseum .
+
+mus:Q1816301  rdf:type   mus:artMuseum .
+
+mus:Q3383883  rdf:type    .
+
+mus:Q1464509  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q1984633  rdf:type  wikidata:Q17431399 .
+
+mus:Q224124  rdf:type   mus:artMuseum .
+
+mus:Q12110695  rdf:type   mus:artMuseum .
+
+mus:Q847508  rdf:type   mus:artMuseum .
+
+mus:Q1341595  rdf:type  wikidata:Q27699276 , mus:artCollection , wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q388448  rdf:type  wikidata:Q16735822 , wikidata:Q3867560 , wikidata:Q957433 ,  mus:artMuseum ,   .
+
+mus:Q3094628  rdf:type  wikidata:Q108860593 , wikidata:Q2087181 ,  mus:artMuseum ,   .
+
+mus:Q703640  rdf:type   mus:artMuseum .
+
+mus:Q1372546  rdf:type   mus:artMuseum .
+
+mus:Q705557  rdf:type   mus:artMuseum .
+
+mus:Q1954623  rdf:type   mus:artMuseum .
+
+mus:Q7082143  rdf:type  wikidata:Q570116 ,  mus:artMuseum .
+
+mus:Q41512158  rdf:type   mus:artMuseum .
+
+mus:Q657415  rdf:type  wikidata:Q2085381 ,  mus:artMuseum .
+
+mus:Q1528356  rdf:type   mus:artMuseum .
+
+mus:Q99346823  rdf:type    .
+
+mus:Q2711480  rdf:type   mus:artMuseum .
+
+mus:Q860812  rdf:type   mus:artMuseum .
+
+mus:Q5547611  rdf:type  wikidata:Q866133 ,  mus:artMuseum .
+
+mus:Q7741188  rdf:type   mus:artMuseum .
+
+mus:Q377500  rdf:type  wikidata:Q2288140 ,  mus:artMuseum ,   .
+
+mus:Q283998  rdf:type  wikidata:Q111889841 .
+
+mus:Q7895060  rdf:type  wikidata:Q866133 ,  mus:artMuseum .
+
+mus:Q18751939  rdf:type  wikidata:Q684740 , wikidata:Q327333 ,   .
+
+mus:Q11467765  rdf:type   mus:artMuseum .
+
+mus:Q8015837  rdf:type   mus:artMuseum .
+
+mus:Q683163  rdf:type    wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q684556  rdf:type  wikidata:Q1497649 ,  mus:artMuseum , wikidata:Q3950 .
+
+mus:Q6352575  rdf:type   mus:artMuseum .
+
+mus:Q2452513  rdf:type    , wikidata:Q16560 , wikidata:Q3950 .
+
+mus:Q11535226  rdf:type  wikidata:Q4409567 .
+
+mus:Q128316  rdf:type   mus:artMuseum .
+
+mus:Q861252  rdf:type   mus:artMuseum .
+
+mus:Q829296  rdf:type    .
+
+mus:Q6217142  rdf:type   mus:artMuseum .
+
+mus:Q2912600  rdf:type  wikidata:Q17431399 ,  mus:artMuseum .
+
+mus:Q2184071  rdf:type  wikidata:Q108860927 ,  mus:artMuseum .
+
+mus:Q4013975  rdf:type  wikidata:Q2085381 ,  mus:artMuseum .
+
+mus:Q11357837  rdf:type   mus:artMuseum .
+
+mus:Q1357573  rdf:type  wikidata:Q92755865 , wikidata:Q3867560 ,  mus:artMuseum , wikidata:Q108325 ,   .
+
+mus:Q3458883  rdf:type   mus:artMuseum .
+
+mus:Q7493533  rdf:type   mus:artMuseum .
+
+mus:Q5638699  rdf:type  wikidata:Q1595639 ,  mus:artMuseum .
+
+mus:Q1568434  rdf:type   mus:artMuseum .
+
+mus:Q5368756  rdf:type   mus:artMuseum ,   .
+
+mus:Q1499958  rdf:type   mus:artMuseum .
+
+mus:Q14917275  rdf:type   mus:artMuseum .
+
+mus:Q4674272  rdf:type   mus:artMuseum .
+
+mus:Q2191491  rdf:type   mus:artMuseum .
+
+mus:Q3837886  rdf:type   mus:artMuseum .
+
+mus:Q4115728  rdf:type   mus:artMuseum .
+
+mus:Q428559  rdf:type    .
+
+mus:Q1540707  rdf:type   mus:artMuseum ,   .
+
+mus:Q59435  rdf:type   mus:artMuseum .
+
+mus:Q11663204  rdf:type     mus:artMuseum .
+
+mus:Q6815803  rdf:type   mus:artMuseum .
+
+mus:Q4872  rdf:type     mus:artMuseum .
+
+mus:Q555946  rdf:type   mus:artCollection ,  mus:artMuseum .
+
+mus:Q3176133  rdf:type   mus:artMuseum .
+
+mus:Q1142334  rdf:type   mus:artMuseum .
+
+mus:Q861608  rdf:type   mus:artMuseum .
+
+mus:Q2217420  rdf:type  wikidata:Q56856618 , wikidata:Q4830453 , wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q3330222  rdf:type   mus:artMuseum .
+
+mus:Q965780  rdf:type   mus:artMuseum .
+
+mus:Q1620553  rdf:type  wikidata:Q1759852 ,  mus:artMuseum .
+
+mus:Q132783  rdf:type  wikidata:Q28737012 , wikidata:Q16735822 , wikidata:Q1497364 , wikidata:Q570116 ,  mus:artMuseum , wikidata:Q16560 .
+
+mus:Q3478488  rdf:type   mus:artMuseum .
+
+mus:Q3001838  rdf:type   mus:artMuseum .
+
+mus:Q105027234  rdf:type  mus:artCollection .
+
+mus:Q11599987  rdf:type   mus:artMuseum .
+
+mus:Q49133  rdf:type   mus:artMuseum .
+
+mus:Q7419233  rdf:type  wikidata:Q618123 ,  mus:artMuseum .
+
+mus:Q1778179  rdf:type   mus:artMuseum .
+
+mus:Q1017269  rdf:type   mus:artMuseum .
+
+mus:Q5314986  rdf:type   mus:artMuseum .
+
+mus:Q1955739  rdf:type   mus:artMuseum .
+
+mus:Q2105170  rdf:type  wikidata:Q2085381 ,  mus:artMuseum .
+
+mus:Q1128657  rdf:type    .
+
+mus:Q1201549  rdf:type  wikidata:Q3469910 ,  mus:artMuseum , wikidata:Q41253 .
+
+mus:Q3330204  rdf:type  wikidata:Q1497649 ,  mus:artMuseum .
+
+mus:Q574961  rdf:type   mus:artMuseum .
+
+mus:Q3783572  rdf:type   mus:artMuseum .
+
+mus:Q474563  rdf:type    .
+
+mus:Q428765  rdf:type   mus:artMuseum .

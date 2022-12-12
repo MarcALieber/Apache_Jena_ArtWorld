@@ -1,0 +1,200 @@
+Named Graphs:
+http://www.art.org/ontology
+http://www.art.org/museum
+http://www.art.org/movement
+http://www.art.org/world
+--// http://www.art.org/person
+person is loaded in default graph
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?g ?class ?label ?description
+WHERE {
+  graph ?g {?class a owl:Class.
+  OPTIONAL { ?class rdfs:label ?label}
+  OPTIONAL { ?class rdfs:comment ?description}
+  }}
+
+# use of the from clause (ontology and world are considered part of the default graph
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dc:  <http://purl.org/dc/elements/1.1/>
+PREFIX :    <.>
+SELECT *
+FROM       <http://www.art.org/onstology>
+FROM       <http://www.art.org/world>
+FROM NAMED <http://www.art.org/onstology>
+FROM NAMED <http://www.art.org/amuseum>
+{
+   { ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } }
+}
+
+
+
+# list of all painters and the movement associated (some painter do not belong to a movement)
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+prefix world: <http://www.art.org/ontology/world#> 
+prefix person: <http://www.art.org/ontology/person#> 
+select ?painter ?wikidata ?name ?movement ?movementName  ?wdMvmt
+where {
+    ?painter a person:painter; rdfs:label ?name FILTER ( lang(?name) = "en" )  .
+    OPTIONAL{?painter owl:sameAs ?wikidata FILTER ( regex(str(?wikidata), 'wikidata', "i")  ) . } 
+    OPTIONAL {?painter person:isPartofMovement ?movement . 
+       OPTIONAL { GRAPH <http://www.art.org/movement> {?movement rdfs:label ?movementName FILTER ( lang(?movementName) = "en" ) . }}
+       OPTIONAL { GRAPH <http://www.art.org/movement> {?movement owl:sameAs ?wdMvmt FILTER ( regex(str(?wdMvmt), 'wikidata', "i")  ) . } }
+  }
+  }
+order by ?painter 
+
+# list of all artists + mouvements
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+prefix world: <http://www.art.org/ontology/world#> 
+prefix person: <http://www.art.org/ontology/person#> 
+select ?painter ?occupationName ?wikidata ?name ?movement ?movementName  ?wdMvmt
+where {
+    ?painter a ?occupation; rdfs:label ?name FILTER ( lang(?name) = "en" )  .
+    GRAPH <http://www.art.org/ontology> {?occupation rdfs:label ?occupationName FILTER ( lang(?occupationName) = "en" ) . }
+    OPTIONAL{?painter owl:sameAs ?wikidata FILTER ( regex(str(?wikidata), 'wikidata', "i")  ) . } 
+    OPTIONAL {?painter person:isPartofMovement ?movement . 
+       OPTIONAL { GRAPH <http://www.art.org/movement> {?movement rdfs:label ?movementName FILTER ( lang(?movementName) = "en" ) . }}
+       OPTIONAL { GRAPH <http://www.art.org/movement> {?movement owl:sameAs ?wdMvmt FILTER ( regex(str(?wdMvmt), 'wikidata', "i")  ) . } }
+  }
+  }
+order by ?painter ?occupationName
+
+#http://localhost:3030/#/dataset/ArtWorld/query?query=PREFIX%20art%3A%20%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fart%23%3E%0Aprefix%20owl%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%20%0Aprefix%20rdf%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%20%0Aprefix%20rdfs%3A%20%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%20%0Aprefix%20person%3A%20%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fperson%23%3E%20%0Aselect%20%3Fpainter%20%3Fgender%20%3Fname%20%28count%28distinct%20%3Fmuseum%29%20as%20%3Fcnt%29%0Awhere%20%7B%0A%20%20%20%20%3Fpainter%20person%3AhasGender%20%3Fgender%3B%20rdfs%3Alabel%20%3Fname%20FILTER%20%28%20lang%28%3Fname%29%20=%20%22en%22%20%29%20%20.%0A%20%20%20%20optional%7B%3Fpainter%20art%3AexposedIn%20%3Fmuseum%20.%7D%0A%20%20%7D%0Agroup%20by%20%3Fpainter%20%3Fgender%20%3Fname%0Aorder%20by%20%3Fname
+
+#artists count exposed in
+PREFIX art: <http://www.art.org/ontology/art#>
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix person: <http://www.art.org/ontology/person#> 
+select ?painter ?gender ?name (count(distinct ?museum) as ?cnt)
+where {
+    ?painter person:hasGender ?gender; rdfs:label ?name FILTER ( lang(?name) = "en" )  .
+    optional{?painter art:exposedIn ?museum .}
+  }
+group by ?painter ?gender ?name
+order by ?name
+
+
+# list of cities, contries and continent 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix city: <http://www.art.org/ontology/world/city#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+select ?city ?cityName ?country ?countryName ?continent ?continentName
+where {GRAPH <http://www.art.org/world> {?city a world:city; world:isCityOf ?country ; rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) .
+        ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) .
+        ?country world:inContinent ?continent .
+        ?continent rdfs:label ?continentName FILTER ( lang(?continentName) = "en" ) .
+  }
+}
+order by ?continentName ?countryName
+
+# list of Swiss museum and link to wikidata
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix city: <http://www.art.org/ontology/world/city#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix mus:       <http://www.art.org/ontology/museum#> 
+select distinct ?museum ?museumName ?city ?cityName ?countryName ?continentName ?wikidata
+where { GRAPH <http://www.art.org/museum> {?museum a mus:museum ; mus:inCity ?city  .
+                                           OPTIONAL{?museum owl:sameAs ?wikidata  FILTER(regex(STR(?wikidata),"wikidata")) .} 
+                                           ?museum rdfs:label ?museumName FILTER ( lang(?museumName) = "en" ) .
+        }
+        GRAPH <http://www.art.org/world> {?city a world:city; world:isCityOf ?country  FILTER (?country = ctry:Q39) . 
+                                          ?city rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) .
+        ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) .
+        ?country world:inContinent ?continent .
+        ?continent rdfs:label ?continentName FILTER ( lang(?continentName) = "en" ) .
+  }
+}
+order by ?cityName
+
+# list of Swiss museum where Renoir can be found : PB no entry for Kunst Basel 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix person: <http://www.art.org/ontology/person#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix city: <http://www.art.org/ontology/world/city#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix mus:       <http://www.art.org/ontology/museum#> 
+prefix art:     <http://www.art.org/ontology/art#> 
+select ?museum ?museumName ?cityName ?countryName  ?wikidata ?paint ?picture ?pictureName
+where { person:Q39931 art:exposedIn  ?museum .
+        GRAPH <http://www.art.org/museum> {?museum a mus:museum ; mus:inCity ?city  .
+                                           OPTIONAL{?museum owl:sameAs ?wikidata  FILTER(regex(STR(?wikidata),"wikidata")) .} 
+                                           ?museum rdfs:label ?museumName FILTER ( lang(?museumName) = "en" ) .
+        }
+        GRAPH <http://www.art.org/world> {?city a world:city; world:isCityOf ?country  FILTER (?country = ctry:Q39) . 
+                                          ?city rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) .
+        ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) .
+    OPTIONAL { GRAPH <http://www.art.org/artefact> { ?paint art:location ?museum ; art:pictureLink ?picture; rdfs:label ?pictureName FILTER ( lang(?pictureName) = "en" ) . }}
+  }
+}
+order by ?cityName
+
+#Theodore Deck
+PREFIX art:  <http://www.art.org/ontology/art#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+prefix person: <http://www.art.org/ontology/person#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix mus:       <http://www.art.org/ontology/museum#>
+prefix world:       <http://www.art.org/ontology/world#>
+select ?person ?name ?museum ?museumName ?city ?cityName ?country ?countryName
+where {?person rdf:type owl:NamedIndividual FILTER (?person = person:Q937373) .
+       ?person rdfs:label ?name FILTER ( lang(?name) = "en" ) .
+       ?person art:exposedIn ?museum .
+       OPTIONAL { Graph <http://www.art.org/museum> { ?museum rdfs:label ?museumName FILTER ( lang(?museumName) = "fr" ) .
+           ?museum mus:inCity  ?city .
+       OPTIONAL { Graph <http://www.art.org/world> { ?city rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) . 
+                                                     ?city world:isCityOf ?country .
+                                                     ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) . 
+        }}
+    }  
+  }
+}
+
+#Full text search 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX text: <http://jena.apache.org/text#>
+SELECT ?subject ?object
+WHERE {
+?subject text:query (rdfs:label "Monet").
+?subject rdfs:label ?object .
+}
+LIMIT 25

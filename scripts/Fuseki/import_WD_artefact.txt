@@ -1,0 +1,145 @@
+# inferred person:Q296 person:isCreatorOf painting:Q1167912 .
+painting:Q1167912 art:createdBy person:Q296 .
+painting:Q1167912 rdf:type art:painting; rdfs:label "Le Déjeuner sur l'herbe" .
+
+PREFIX  schema: <http://schema.org/>
+PREFIX  mat:  <http://www.art.org/ontology/art/material#>
+PREFIX  art:  <http://www.art.org/ontology/art#>
+PREFIX  mvmt: <http://www.art.org/ontology/movement#>
+PREFIX  owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX  wdt:  <http://www.wikidata.org/prop/direct/>
+PREFIX  xsd:  <http://www.w3.org/2001/XMLSchema#>
+PREFIX  rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX  mus:  <http://www.art.org/ontology/museum#>
+PREFIX  pic:  <http://commons.wikimedia.org/wiki/>
+PREFIX  wd:   <http://www.wikidata.org/entity/>
+PREFIX  rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX  person: <http://www.art.org/ontology/person#>
+PREFIX  wikipedia: <https://en.wikipedia.org/wiki/>
+
+CONSTRUCT 
+  { 
+    ?artID rdf:type art:painting .
+    ?artID rdf:type owl:NamedIndividual .
+    ?artID art:createdBy ?painterID .
+    ?artID art:inception ?inception .
+    ?artID rdfs:label ?itemName1 .
+    ?artID rdfs:label ?itemName2 .
+    ?artID rdfs:comment ?desc1 .
+    ?artID rdfs:comment ?desc2 .
+    ?artID art:height ?height .
+    ?artID art:width ?width .
+    ?artID art:pictureLink ?pic .
+    ?artID art:madeOf ?materialID .
+    ?artID owl:sameAs ?item .
+    ?artID owl:sameAs ?wpLink .
+    ?artID art:location ?museumID .
+  }
+WHERE
+  { SERVICE <https://query.wikidata.org/sparql>
+      { ?item  wdt:P31   wd:Q3305213 ;
+               wdt:P170  ?painter
+        FILTER ( ?painter IN (wd:Q944834, wd:Q34661, wd:Q157194) )
+        ?item  wdt:P18  ?pic
+        OPTIONAL
+          { ?item  rdfs:label  ?itemName1
+            FILTER ( lang(?itemName1) = "en" )
+          }
+        OPTIONAL
+          { ?item  rdfs:label  ?itemName2
+            FILTER ( lang(?itemName2) = "fr" )
+          }
+        OPTIONAL
+          { ?item  schema:description  ?desc2
+            FILTER ( lang(?desc2) = "fr" )
+          }
+        OPTIONAL
+          { ?item  schema:description  ?desc1
+            FILTER ( lang(?desc1) = "en" )
+          }
+        OPTIONAL
+          { ?item  wdt:P571  ?inceptiond
+            BIND(year(?inceptiond) AS ?inception)
+          }
+        OPTIONAL
+          { ?wpLink  schema:isPartOf  <https://en.wikipedia.org/> ;
+                     schema:about     ?item
+          }
+        { ?item  wdt:P276  ?museum }
+        OPTIONAL
+          { ?item  wdt:P2048  ?height }
+        OPTIONAL
+          { ?item  wdt:P2049  ?width }
+        OPTIONAL
+          { ?item     wdt:P186  ?material .
+            ?material  wdt:P279  wd:Q174219
+          }
+      }
+    BIND(replace(str(?item), "http://www.wikidata.org/entity/", "") AS ?pID)
+    BIND(IRI(concat("http://www.art.org/ontology/art#", ?pID)) AS ?artID)
+    BIND(replace(str(?museum), "http://www.wikidata.org/entity/", "") AS ?mID)
+    BIND(IRI(concat("http://www.art.org/ontology/museum#", ?mID)) AS ?museumID)
+    BIND(replace(str(?painter), "http://www.wikidata.org/entity/", "") AS ?wdID)
+    BIND(IRI(concat("http://www.art.org/ontology/person#", ?wdID)) AS ?painterID)
+    BIND(replace(str(?material), "http://www.wikidata.org/entity/", "") AS ?matID)
+    BIND(IRI(concat("http://www.art.org/ontology/art/material#", ?matID)) AS ?materialID)
+  }
+  
+--- OLD ---------------------------------------------------
+#Tableaux de Renoir (only if found in the museum list)
+prefix art: <http://www.art.org/ontology/art#> 
+prefix mat: <http://www.art.org/ontology/art/material#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix mus: <http://www.art.org/ontology/museum#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix world: <http://www.art.org/ontology/world#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+#SELECT ?item ?pic ?inception ?museum ?width ?height ?material
+CONSTRUCT {?artID rdf:type art:painting, owl:NamedIndividual  ; art:createdBy ?painterID ; art:inception ?inception ; 
+            rdfs:label ?itemName1 ,?itemName2; rdfs:comment ?desc1,?desc2 ;
+            art:height ?height ; art:width ?width ; art:pictureLink ?pic ; art:madeOf ?materialID ;
+            owl:sameAs ?item ; owl:sameAs ?wpLink ; art:location ?museumID . 
+           #?painter person:isCreatorOf ?artID .
+}
+WHERE
+{SERVICE <https://query.wikidata.org/sparql> {
+  ?item wdt:P31 wd:Q3305213  .  #FILTER(?item=wd:Q3807741).
+  ?item wdt:P170 ?painter FILTER(?painter = wd:Q296) .
+  ?item wdt:P18 ?pic ; 
+  OPTIONAL { ?item rdfs:label ?itemName1 . FILTER(lang(?itemName1)="en") . } 
+  OPTIONAL { ?item rdfs:label ?itemName2 . FILTER(lang(?itemName2)="fr") . } 
+  OPTIONAL { ?item schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+  OPTIONAL { ?item schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+  OPTIONAL { ?item wdt:P571 ?inceptiond  . 
+             BIND(YEAR(?inceptiond)  AS ?inception ) .
+           } # art:inception
+  #?item wdt:P195 ?museum  FILTER EXISTS {?museum wdt:P31 ?type } . 
+  OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?item . } 
+   { ?item wdt:P276 ?museum . }
+  OPTIONAL { ?item wdt:P2048 ?height . }  #art:height 
+  OPTIONAL { ?item wdt:P2049 ?width . }
+  OPTIONAL { ?item wdt:P186 ?material . # ?material is missing in ontology oilPainting 
+             ?material wdt:P279 wd:Q174219 .
+           }
+  }
+   BIND(replace(str(?item),"http://www.wikidata.org/entity/","") as ?pID )
+   BIND(IRI(CONCAT("http://www.art.org/ontology/art#", ?pID   ))  AS ?artID ) .
+   BIND(replace(str(?museum),"http://www.wikidata.org/entity/","") as ?mID )
+   BIND(IRI(CONCAT("http://www.art.org/ontology/museum#", ?mID   ))  AS ?museumID ) .
+   BIND(replace(str(?painter),"http://www.wikidata.org/entity/","") as ?wdID )
+   BIND(IRI(CONCAT("http://www.art.org/ontology/person#", ?wdID   ))  AS ?painterID ) .
+   BIND(replace(str(?material),"http://www.wikidata.org/entity/","") as ?matID )
+   BIND(IRI(CONCAT("http://www.art.org/ontology/art/material#", ?matID   ))  AS ?materialID ) .
+   GRAPH <http://www.art.org/museum> {?museumID rdf:type mus:museum } 
+}
+
+
+
+

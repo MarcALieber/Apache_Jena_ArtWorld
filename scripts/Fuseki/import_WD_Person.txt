@@ -1,0 +1,49 @@
+-- Step1 : Import person
+-- Step2 : import related link to Museum
+-- Step3 : import missing Museum infos
+
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix mus: <http://www.art.org/ontology/museum#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix world: <http://www.art.org/ontology/world#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+CONSTRUCT {?painterID a owl:NamedIndividual ,person:painter ; rdfs:label ?painterName1 ,?painterName2; rdfs:comment ?desc1,?desc2 ;
+           owl:sameAs ?painter ;owl:sameAs ?wpLink ; person:dateOfBirth ?dateOfBirth ;person:dateOfDeath  ?dateOfDeath; person:hasGender ?genderID ;
+           person:isPartofMovement ?mvmtID ; person:isCitizenOf ?countryID ; person:familyName ?familyName .
+}
+WHERE
+{SERVICE <https://query.wikidata.org/sparql> 
+{ ?painter wdt:P21 ?sex; wdt:P27 ?country; wdt:P569 ?dateOfBirth 
+    FILTER (?painter in (wd:Q944834,wd:Q34661,wd:Q5592,wd:Q157194
+            )) . 
+  OPTIONAL {?painter wdt:P734 ?name .
+      OPTIONAL {?name rdfs:label ?familyName . FILTER(lang(?familyName)="en") . }}
+  OPTIONAL {?painter wdt:P6379 ?museum . }
+  OPTIONAL { ?painter rdfs:label ?painterName1 . FILTER(lang(?painterName1)="en") . } 
+  OPTIONAL { ?painter rdfs:label ?painterName2 . FILTER(lang(?painterName2)="fr") . } 
+  OPTIONAL { ?painter schema:description ?desc2 . FILTER(lang(?desc2)="fr") .  }
+  OPTIONAL { ?painter schema:description ?desc1 . FILTER(lang(?desc1)="en") .  }
+  OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?painter . } 
+    BIND(replace(str(?painter),"http://www.wikidata.org/entity/","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.art.org/ontology/person#", ?itemID   ))  AS ?painterID ) .
+  OPTIONAL {?painter wdt:P570 ?dateOfDeath . }
+  OPTIONAL {?painter wdt:P135 ?mvmt . }
+   BIND(replace(str(?mvmt),"http://www.wikidata.org/entity/","") as ?mID )
+   BIND(IRI(CONCAT("http://www.art.org/ontology/movement#", ?mID   ))  AS ?mvmtID ) .
+  OPTIONAL { ?sex rdfs:label ?gender . FILTER(lang(?gender)="en") . } 
+  BIND(IRI(CONCAT("http://www.art.org/ontology/person/gender#", ?gender   ))  AS ?genderID ) .
+  BIND(replace(str(?country),"http://www.wikidata.org/entity/","") as ?itemID2 )
+  BIND(IRI(CONCAT("http://www.art.org/ontology/world/country#", ?itemID2   )) AS ?countryID ) .
+}
+}
+
+todo: 
+--separate owl:sameAs dbpedia:Pierre-Auguste_Renoir ;
+http://www.art.org/ontology/person#workLocation person:workLocation P937  --> multiple entries --> forget import: do Manually
+

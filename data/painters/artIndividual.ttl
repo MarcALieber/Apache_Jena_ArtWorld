@@ -1,0 +1,19 @@
+@prefix :         <http://www.art.org/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:   <http://schema.org/> .
+@prefix mvmt:     <http://www.art.org/ontology/movement#> .
+@prefix period:     <http://www.art.org/ontology/period#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix dbpedia: <http://dbpedia.org/resource/> .
+@prefix person:   <http://www.art.org/ontology/person#> .
+@prefix gender:   <http://www.art.org/ontology/person/gender#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@prefix lod: <http://www.art.org/ontology/LinkedOpenData#> .
+
+lod:dbpedia rdf:type :LinkedOpenData ; rdfs:label "DBpedia"@en; owl:sameAs <https://dbpedia.org/sparql> ; lod:sparqlEndPoint <https://dbpedia.org/sparql> .
+lod:wikidata rdf:type :LinkedOpenData ; rdfs:label "wikidata"@en; owl:sameAs <https://www.wikidata.org> ; lod:sparqlEndPoint <https://query.wikidata.org/sparql> .
+lod:geonames rdf:type :LinkedOpenData ; rdfs:label "geonames"@en; owl:sameAs <https://sws.geonames.org/> ; lod:sparqlEndPoint <https://sws.geonames.org/sparql> .
+lod:wikimedia rdf:type :LinkedOpenData ; rdfs:label "wikimedia"@en; owl:sameAs <https://commons.wikimedia.org> .
+lod:yago rdf:type :LinkedOpenData ; rdfs:label "yago"@en; owl:sameAs <https://yago-knowledge.org> ; lod:sparqlEndPoint <https://yago-knowledge.org/sparql> .
+lod:wikipedia rdf:type :LinkedOpenData ; rdfs:label "wikipedia"@en; owl:sameAs wikidata:Q6581097; owl:sameAs <https://en.wikipedia.org> .

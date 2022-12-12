@@ -1,0 +1,1833 @@
+@prefix :          <http://www.art.org/ontology#> .
+@prefix art:       <http://www.art.org/ontology/art#> .
+@prefix city:      <http://www.art.org/ontology/world/city#> .
+@prefix cont:      <http://www.art.org/ontology/world/continent#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix dbo:       <http://dbpedia.org/ontology/> .
+@prefix dbp:       <http://dbpedia.org/property/> .
+@prefix dbpedia:   <http://dbpedia.org/resource/> .
+@prefix dc:        <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix g:         <http://www.art.org/ontology/geography#> .
+@prefix gender:    <http://www.art.org/ontology/person/gender#> .
+@prefix lod:       <http://www.art.org/ontology/LinkedOpenData#> .
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix mvmt:      <http://www.art.org/ontology/movement#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix p:         <http://marclieber.fr/ontology/src/> .
+@prefix painting:  <http://www.art.org/ontology/artPainting#> .
+@prefix period:    <http://www.art.org/ontology/period#> .
+@prefix person:    <http://www.art.org/ontology/person#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:       <http://www.art.org/ontology/world/countryRegion#> .
+@prefix remote:    <http://www.art.org/ontology/remote#> .
+@prefix schema:    <http://schema.org/> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd:        <http://www.wikidata.org/entity/> .
+@prefix wdp:       <https://www.wikidata.org/wiki/Property/> .
+@prefix wdt:       <http://www.wikidata.org/prop/direct/> .
+@prefix wikidata:  <http://www.wikidata.org/entity/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+@prefix wm:        <https://commons.wikimedia.org/wiki/> .
+@prefix world:     <http://www.art.org/ontology/world#> .
+@prefix wp:        <https://en.wikipedia.org/wiki/> .
+@prefix xml:       <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+city:Q653364  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in the eastern end of the Shizuoka Prefecture of Japan"@en ;
+        rdfs:label      "Atami"@fr , "Atami"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      wikipedia:Atami , wikidata:Q653364 .
+
+city:Q1289  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département de l'Isère (chef-lieu)"@fr , "commune in Isère, France"@en ;
+        rdfs:label      "Grenoble"@fr , "Grenoble"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Grenoble , wikidata:Q1289 .
+
+city:Q1794  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville d’Allemagne en Hesse"@fr , "most populous city in Hesse, Germany"@en ;
+        rdfs:label      "Francfort-sur-le-Main"@fr , "Frankfurt am Main"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Frankfurt , wikidata:Q1794 .
+
+city:Q3141  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville australienne, capitale du Victoria"@fr , "capital city of Victoria, Australia"@en ;
+        rdfs:label      "Melbourne"@fr , "Melbourne"@en ;
+        world:isCityOf  ctry:Q408 ;
+        owl:sameAs      wikipedia:Melbourne , wikidata:Q3141 .
+
+city:Q1773  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la Lettonie"@fr , "capital and largest city of Latvia"@en ;
+        rdfs:label      "Riga"@fr , "Riga"@en ;
+        world:isCityOf  ctry:Q211 ;
+        owl:sameAs      wikipedia:Riga , wikidata:Q1773 .
+
+city:Q467487  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Okayama Prefecture, Japan"@en ;
+        rdfs:label      "Kurashiki"@fr , "Kurashiki"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      wikipedia:Kurashiki , wikidata:Q467487 .
+
+city:Q205526  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Yamagata Prefecture, Japan"@en ;
+        rdfs:label      "Yamagata"@fr , "Yamagata"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Yamagata_(city)> , wikidata:Q205526 .
+
+city:Q1731  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville d'Allemagne"@fr , "capital city of the Free State of Saxony in Germany"@en ;
+        rdfs:label      "Dresde"@fr , "Dresden"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Dresden , wikidata:Q1731 .
+
+city:Q6441  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département de l'Hérault (chef-lieu)"@fr , "city in Hérault, France"@en ;
+        rdfs:label      "Montpellier"@fr , "Montpellier"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Montpellier , wikidata:Q6441 .
+
+city:Q16557  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine de l'État du Texas"@fr , "county seat of Dallas County, Texas, United States"@en ;
+        rdfs:label      "Dallas"@fr , "Dallas"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Dallas , wikidata:Q16557 .
+
+city:Q1489  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale du Mexique"@fr , "capital and largest city of Mexico"@en ;
+        rdfs:label      "Mexico"@fr , "Mexico City"@en ;
+        world:isCityOf  ctry:Q96 ;
+        owl:sameAs      wikipedia:Mexico_City , wikidata:Q1489 .
+
+city:Q1297  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de l'Illinois aux États-Unis"@fr , "city and county seat of Cook County, Illinois, United States of America"@en ;
+        rdfs:label      "Chicago"@fr , "Chicago"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Chicago , wikidata:Q1297 .
+
+city:Q12172  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "canton de Suisse"@fr , "canton of Switzerland"@en ;
+        rdfs:label      "canton de Bâle-Ville"@fr , "Basel-Stadt"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      wikipedia:Basel-Stadt , wikidata:Q12172 .
+
+city:Q1781  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la Hongrie"@fr , "capital and largest city of Hungary"@en ;
+        rdfs:label      "Budapest"@fr , "Budapest"@en ;
+        world:isCityOf  ctry:Q28 ;
+        owl:sameAs      wikipedia:Budapest , wikidata:Q1781 .
+
+city:Q41876  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département de la Marne en région Grand Est"@fr , "city in Marne, France"@en ;
+        rdfs:label      "Reims"@fr , "Reims"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Reims , wikidata:Q41876 .
+
+city:Q41329  rdf:type   owl:NamedIndividual , world:city ;
+        rdfs:comment    "commune autrichienne"@fr , "capital city of Upper Austria, Austria"@en ;
+        rdfs:label      "Linz"@fr , "Linz"@en ;
+        world:isCityOf  ctry:Q40 ;
+        owl:sameAs      wikipedia:Linz , wikidata:Q41329 .
+
+city:Q25607  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville suisse et chef-lieu du canton de Saint-Gall"@fr , "capital of St. Gallen canton in Switzerland"@en ;
+        rdfs:label      "Saint-Gall"@fr , "St. Gallen"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      wikipedia:St._Gallen , wikidata:Q25607 .
+
+city:Q7880  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département de la Haute-Garonne (chef-lieu)"@fr , "French commune in the Haute-Garonne department, Occitania"@en ;
+        rdfs:label      "Toulouse"@fr , "Toulouse"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Toulouse , wikidata:Q7880 .
+
+city:Q49239  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine située dans l'État de l'Ohio"@fr , "county seat of Lucas County, Ohio, United States"@en ;
+        rdfs:label      "Toledo"@fr , "Toledo"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Toledo,_Ohio> , wikidata:Q49239 .
+
+city:Q49218  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de l'État de New York, aux États-Unis"@fr , "county seat of Monroe County, New York, United States"@en ;
+        rdfs:label      "Rochester"@fr , "Rochester"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Rochester,_New_York> , wikidata:Q49218 .
+
+city:Q41087  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Caroline du Nord, États-Unis"@fr , "city in and state capital of North Carolina, United States of America"@en ;
+        rdfs:label      "Raleigh"@fr , "Raleigh"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Raleigh,_North_Carolina> , wikidata:Q41087 .
+
+city:Q41621  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville israélienne"@fr , "third-largest city in Israel"@en ;
+        rdfs:label      "Haïfa"@fr , "Haifa"@en ;
+        world:isCityOf  ctry:Q801 ;
+        owl:sameAs      wikipedia:Haifa , wikidata:Q41621 .
+
+city:Q268  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Pologne"@fr , "capital of the Greater Poland Voivodeship in west-central Poland"@en ;
+        rdfs:label      "Poznań"@fr , "Poznań"@en ;
+        world:isCityOf  ctry:Q36 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Pozna%C5%84> , wikidata:Q268 .
+
+city:Q33405  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine de l'État de l'Arkansas"@fr , "capital and largest city of Arkansas, United States"@en ;
+        rdfs:label      "Little Rock"@fr , "Little Rock"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Little_Rock,_Arkansas> , wikidata:Q33405 .
+
+city:Q1726  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville allemande et capitale de la Bavière"@fr , "capital and most populous city of Bavaria, Germany"@en ;
+        rdfs:label      "Munich"@fr , "Munich"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Munich , wikidata:Q1726 .
+
+city:Q389537  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Aichi prefecture, Japan"@en ;
+        rdfs:label      "Komaki"@fr , "Komaki"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      wikipedia:Komaki , wikidata:Q389537 .
+
+city:Q1342  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Pennsylvanie, aux États-Unis"@fr , "county seat in Allegheny County, Pennsylvania, United States"@en ;
+        rdfs:label      "Pittsburgh"@fr , "Pittsburgh"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Pittsburgh , wikidata:Q1342 .
+
+city:Q208863  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Tokyo, Japan"@en ;
+        rdfs:label      "Hachiōji"@fr , "Hachiōji"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Hachi%C5%8Dji> , wikidata:Q208863 .
+
+city:Q16552  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Californie aux États-Unis"@fr , "city in San Diego County, California, United States; second-largest city in California"@en ;
+        rdfs:label      "San Diego"@fr , "San Diego"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:San_Diego , wikidata:Q16552 .
+
+city:Q63939  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune suisse située dans le canton d'Argovie"@fr , "municipality in the canton Aargau, Switzerland"@en ;
+        rdfs:label      "Baden"@fr , "Baden"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Baden,_Switzerland> , wikidata:Q63939 .
+
+city:Q19660  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la Roumanie"@fr , "capital and largest city of Romania"@en ;
+        rdfs:label      "Bucarest"@fr , "Bucharest"@en ;
+        world:isCityOf  ctry:Q218 ;
+        owl:sameAs      wikipedia:Bucharest , wikidata:Q19660 .
+
+city:Q487977  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du comté de Johnson, Iowa, États-Unis"@fr , "city in Johnson County, Iowa, United States"@en ;
+        rdfs:label      "Iowa City"@fr , "Iowa City"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Iowa_City,_Iowa> , wikidata:Q487977 .
+
+city:Q100  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'État du Massachusetts aux États-Unis"@fr , "capital and largest city of Massachusetts, United States"@en ;
+        rdfs:label      "Boston"@fr , "Boston"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Boston , wikidata:Q100 .
+
+city:Q18575  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de l'Arizona, aux États-Unis"@fr , "city in and county seat of Pima County, Arizona, United States"@en ;
+        rdfs:label      "Tucson"@fr , "Tucson"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Tucson,_Arizona> , wikidata:Q18575 .
+
+city:Q61  rdf:type      world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale des États-Unis d'Amérique"@fr , "capital city of the United States"@en ;
+        rdfs:label      "Washington"@fr , "Washington, D.C."@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Washington,_D.C.> , wikidata:Q61 .
+
+city:Q18383  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l’État américain du Rhode Island"@fr , "capital city of Rhode Island, United States"@en ;
+        rdfs:label      "Providence"@fr , "Providence"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Providence,_Rhode_Island> , wikidata:Q18383 .
+
+city:Q858352  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "City in Kagoshima Prefecture, Japan"@en ;
+        rdfs:label      "Kirishima"@fr , "Kirishima"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Kirishima,_Kagoshima> , wikidata:Q858352 .
+
+city:Q9777  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune néerlandaise située au Limbourg"@fr , "municipality in southern Netherlands"@en ;
+        rdfs:label      "Venlo"@fr , "Venlo"@en ;
+        world:isCityOf  ctry:Q55 ;
+        owl:sameAs      wikipedia:Venlo , wikidata:Q9777 .
+
+city:Q69345  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Suisse et chef-lieu du canton de Neuchâtel"@fr , "city in Switzerland and capital of its canton"@en ;
+        rdfs:label      "Neuchâtel"@fr , "Neuchâtel"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Neuch%C3%A2tel> , wikidata:Q69345 .
+
+city:Q6602  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française de la Collectivité européenne d'Alsace (chef-lieu)"@fr , "capital and largest city of Grand Est; located in the historical region of Alsace"@en ;
+        rdfs:label      "Strasbourg"@fr , "Strasbourg"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Strasbourg , wikidata:Q6602 .
+
+city:Q1479  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département de la Gironde (chef-lieu)"@fr , "city and commune in Gironde, New Aquitaine, France"@en ;
+        rdfs:label      "Bordeaux"@fr , "Bordeaux"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Bordeaux , wikidata:Q1479 .
+
+city:Q48370  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville au New Hampshire"@fr , "city in Hillsborough County in southern New Hampshire, United States"@en ;
+        rdfs:label      "Manchester"@fr , "Manchester"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Manchester,_New_Hampshire> , wikidata:Q48370 .
+
+city:Q90  rdf:type      world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la France"@fr , "capital and largest city of France"@en ;
+        rdfs:label      "Paris"@fr , "Paris"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Paris , wikidata:Q90 .
+
+city:Q336438  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Gunma prefecture, Japan"@en ;
+        rdfs:label      "Takasaki"@fr , "Takasaki"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      wikipedia:Takasaki , wikidata:Q336438 .
+
+city:Q16555  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Texas (États-Unis)"@fr , "county seat of Harris County, Texas, United States"@en ;
+        rdfs:label      "Houston"@fr , "Houston"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Houston , wikidata:Q16555 .
+
+city:Q43668  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine"@fr , "county seat of Jefferson County, Kentucky, United States"@en ;
+        rdfs:label      "Louisville"@fr , "Louisville"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Louisville,_Kentucky> , wikidata:Q43668 .
+
+city:Q49179  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine du Massachusetts"@fr , "county seat city in Worcester County, Massachusetts, United States"@en ;
+        rdfs:label      "Worcester"@fr , "Worcester"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Worcester,_Massachusetts> , wikidata:Q49179 .
+
+city:Q49158  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Massachusetts, aux États-Unis"@fr , "county seat of Hampden County, Massachusetts, United States"@en ;
+        rdfs:label      "Springfield"@fr , "Springfield"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Springfield,_Massachusetts> , wikidata:Q49158 .
+
+city:Q12191  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville et commune française du département de la Loire-Atlantique (chef-lieu)"@fr , "city in Loire-Atlantique, Pays de la Loire, France"@en ;
+        rdfs:label      "Nantes"@fr , "Nantes"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Nantes , wikidata:Q12191 .
+
+city:Q5083  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du comté de King, État de Washington, États-Unis"@fr , "city in and county seat of King County, Washington, United States"@en ;
+        rdfs:label      "Seattle"@fr , "Seattle"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Seattle , wikidata:Q5083 .
+
+city:Q9125  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Suisse du canton de Zurich"@fr , "city in the canton of Zürich, Switzerland"@en ;
+        rdfs:label      "Winterthour"@fr , "Winterthur"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      wikipedia:Winterthur , wikidata:Q9125 .
+
+city:Q203263  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Géorgie, aux États-Unis"@fr , "consolidated city-county and county seat of Clarke County, Georgia, United States"@en ;
+        rdfs:label      "Athens"@fr , "Athens"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Athens,_Georgia> , wikidata:Q203263 .
+
+city:Q200589  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "capital city of Tochigi Prefecture, Japan"@en ;
+        rdfs:label      "Utsunomiya"@fr , "Utsunomiya"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      wikipedia:Utsunomiya , wikidata:Q200589 .
+
+city:Q1040  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Bade-Wurtemberg"@fr , "city in Baden-Württemberg, Germany"@en ;
+        rdfs:label      "Karlsruhe"@fr , "Karlsruhe"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Karlsruhe , wikidata:Q1040 .
+
+city:Q68965  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Suisse et chef-lieu du canton de Soleure"@fr , "city in Switzerland, capital of its canton"@en ;
+        rdfs:label      "Soleure"@fr , "Solothurn"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      wikipedia:Solothurn , wikidata:Q68965 .
+
+city:Q485176  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Californie, aux États-Unis"@fr , "city in Los Angeles County, California, United States"@en ;
+        rdfs:label      "Pasadena"@fr , "Pasadena"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Pasadena,_California> , wikidata:Q485176 .
+
+city:Q721163  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Shizuoka Prefecture, Japan"@en ;
+        rdfs:label      "Itō"@fr , "Itō"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/It%C5%8D,_Shizuoka> , wikidata:Q721163 .
+
+city:Q696412  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "établissement humain au Japon"@fr , "city in Ōsaka Prefecture, Japan"@en ;
+        rdfs:label      "Izumi"@fr , "Izumi"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Izumi,_Osaka> , wikidata:Q696412 .
+
+city:Q18094  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'État d'Hawaii des États-Unis"@fr , "city in and county seat of Honolulu County, Hawaii, United States, that is also the capital city of Hawaii"@en ;
+        rdfs:label      "Honolulu"@fr , "Honolulu"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Honolulu , wikidata:Q18094 .
+
+city:Q5262  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Suisse"@fr , "municipality in the canton of Basel-Stadt in Switzerland"@en ;
+        rdfs:label      "Riehen"@fr , "Riehen"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      wikipedia:Riehen , wikidata:Q5262 .
+
+city:Q49145  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Connecticut, aux États-Unis"@fr , "city in Connecticut, United States"@en ;
+        rdfs:label      "New Haven"@fr , "New Haven"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/New_Haven,_Connecticut> , wikidata:Q49145 .
+
+city:Q41185  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département du Calvados (chef-lieu)"@fr , "commune in Calvados, France"@en ;
+        rdfs:label      "Caen"@fr , "Caen"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Caen , wikidata:Q41185 .
+
+city:Q174  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "plus grande ville du Brésil"@fr , "largest city in Brazil"@en ;
+        rdfs:label      "São Paulo"@fr , "São Paulo"@en ;
+        world:isCityOf  ctry:Q155 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/S%C3%A3o_Paulo> , wikidata:Q174 .
+
+city:Q41819  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Missouri"@fr , "largest municipality in the U.S. state of Missouri"@en ;
+        rdfs:label      "Kansas City"@fr , "Kansas City"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Kansas_City,_Missouri> , wikidata:Q41819 .
+
+city:Q1724  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune allemande"@fr , "capital of the German state of Saarland"@en ;
+        rdfs:label      "Sarrebruck"@fr , "Saarbrücken"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Saarbr%C3%BCcken> , wikidata:Q1724 .
+
+city:Q34404  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "plus grande ville de Louisiane (États-Unis d'Amérique)"@fr , "city in Louisiana, United States"@en ;
+        rdfs:label      "La Nouvelle-Orléans"@fr , "New Orleans"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:New_Orleans , wikidata:Q34404 .
+
+city:Q6221  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du nord de l'Italie"@fr , "Italian city in Lombardy"@en ;
+        rdfs:label      "Brescia"@fr , "Brescia"@en ;
+        world:isCityOf  ctry:Q38 ;
+        owl:sameAs      wikipedia:Brescia , wikidata:Q6221 .
+
+city:Q207321  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Shimane prefecture, Japan"@en ;
+        rdfs:label      "Matsue"@fr , "Matsue"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      wikipedia:Matsue , wikidata:Q207321 .
+
+city:Q23051  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville au Pays de Galles, Royaume-Uni"@fr , "city in Swansea principal area, Wales"@en ;
+        rdfs:label      "Swansea"@fr , "Swansea"@en ;
+        world:isCityOf  ctry:Q145 ;
+        owl:sameAs      wikipedia:Swansea , wikidata:Q23051 .
+
+city:Q72  rdf:type      world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de la Suisse et chef-lieu du canton de Zurich"@fr , "capital of the canton of Zürich, Switzerland"@en ;
+        rdfs:label      "Zurich"@fr , "Zürich"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Z%C3%BCrich> , wikidata:Q72 .
+
+city:Q49111  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Massachusetts"@fr , "city in Middlesex County, Massachusetts, United States"@en ;
+        rdfs:label      "Cambridge"@fr , "Cambridge"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Cambridge,_Massachusetts> , wikidata:Q49111 .
+
+city:Q495  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville d'Italie"@fr , "city and commune in Italy"@en ;
+        rdfs:label      "Turin"@fr , "Turin"@en ;
+        world:isCityOf  ctry:Q38 ;
+        owl:sameAs      wikipedia:Turin , wikidata:Q495 .
+
+city:Q37320  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville des États-Unis (Ohio)"@fr , "city in and county seat of Cuyahoga County, Ohio, United States"@en ;
+        rdfs:label      "Cleveland"@fr , "Cleveland"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Cleveland , wikidata:Q37320 .
+
+city:Q1711  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville d'Allemagne, capitale de l'état de Brandebourg"@fr , "capital city of the German state of Brandenburg"@en ;
+        rdfs:label      "Potsdam"@fr , "Potsdam"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Potsdam , wikidata:Q1711 .
+
+city:Q653402  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Shizuoka prefecture, Japan"@en ;
+        rdfs:label      "Shimoda"@fr , "Shimoda"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Shimoda,_Shizuoka> , wikidata:Q653402 .
+
+city:Q240  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "région belge"@fr , "federal region of Belgium"@en ;
+        rdfs:label      "Région de Bruxelles-Capitale"@fr , "Brussels-Capital Region"@en ;
+        world:isCityOf  ctry:Q31 ;
+        owl:sameAs      wikipedia:Brussels , wikidata:Q240 .
+
+city:Q16558  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du comté de Wise, Texas, États-Unis"@fr , "city in Texas, United States"@en ;
+        rdfs:label      "Fort Worth"@fr , "Fort Worth"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Fort_Worth,_Texas> , wikidata:Q16558 .
+
+city:Q1085  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la Tchéquie"@fr , "capital and largest city of the Czech Republic"@en ;
+        rdfs:label      "Prague"@fr , "Prague"@en ;
+        world:isCityOf  ctry:Q213 ;
+        owl:sameAs      wikipedia:Prague , wikidata:Q1085 .
+
+city:Q340  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Québec, au Canada"@fr , "largest city in Quebec, Canada"@en ;
+        rdfs:label      "Montréal"@fr , "Montreal"@en ;
+        world:isCityOf  ctry:Q16 ;
+        owl:sameAs      wikipedia:Montreal , wikidata:Q340 .
+
+city:Q1761  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'Irlande"@fr , "capital and largest city of Ireland"@en ;
+        rdfs:label      "Dublin"@fr , "Dublin"@en ;
+        world:isCityOf  ctry:Q27 ;
+        owl:sameAs      wikipedia:Dublin , wikidata:Q1761 .
+
+city:Q49240  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Californie"@fr , "county seat of San Joaquin County, California, United States"@en ;
+        rdfs:label      "Stockton"@fr , "Stockton"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Stockton,_California> , wikidata:Q49240 .
+
+city:Q1022  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville allemande, capitale de Bade-Wurtemberg"@fr , "capital city of German federated state Baden-Württemberg"@en ;
+        rdfs:label      "Stuttgart"@fr , "Stuttgart"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Stuttgart , wikidata:Q1022 .
+
+city:Q49190  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Massachusetts"@fr , "city in Middlesex County, Massachusetts, United States"@en ;
+        rdfs:label      "Waltham"@fr , "Waltham"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Waltham,_Massachusetts> , wikidata:Q49190 .
+
+city:Q18013  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la Californie"@fr , "capital city of California, United States"@en ;
+        rdfs:label      "Sacramento"@fr , "Sacramento"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Sacramento,_California> , wikidata:Q18013 .
+
+city:Q490  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville d'Italie"@fr , "Italian commune and capital city of Lombardy"@en ;
+        rdfs:label      "Milan"@fr , "Milan"@en ;
+        world:isCityOf  ctry:Q38 ;
+        owl:sameAs      wikipedia:Milan , wikidata:Q490 .
+
+city:Q2841  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la Colombie"@fr , "capital city of Colombia"@en ;
+        rdfs:label      "Bogota"@fr , "Bogotá"@en ;
+        world:isCityOf  ctry:Q739 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Bogot%C3%A1> , wikidata:Q2841 .
+
+city:Q3955  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Thuringe, Allemagne"@fr , "city in the federal state of Thuringia, Germany"@en ;
+        rdfs:label      "Weimar"@fr , "Weimar"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Weimar , wikidata:Q3955 .
+
+city:Q30974  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département de la Seine-Maritime (chef-lieu)"@fr , "commune in Seine-Maritime, France"@en ;
+        rdfs:label      "Rouen"@fr , "Rouen"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Rouen , wikidata:Q30974 .
+
+city:Q484678  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Californie, États-Unis"@fr , "city in Alameda County, California, United States"@en ;
+        rdfs:label      "Berkeley"@fr , "Berkeley"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Berkeley,_California> , wikidata:Q484678 .
+
+city:Q68124  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune suisse"@fr , "municipality in Switzerland"@en ;
+        rdfs:label      "La Chaux-de-Fonds"@fr , "La Chaux-de-Fonds"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      wikipedia:La_Chaux-de-Fonds , wikidata:Q68124 .
+
+city:Q203027  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Mie Prefecture, Japan"@en ;
+        rdfs:label      "Tsu"@fr , "Tsu"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Tsu,_Mie> , wikidata:Q203027 .
+
+city:Q648  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département du Nord (chef-lieu)"@fr , "city in the northern part of France, in French Flanders"@en ;
+        rdfs:label      "Lille"@fr , "Lille"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Lille , wikidata:Q648 .
+
+city:Q456  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française de la métropole de Lyon (chef-lieu)"@fr , "commune in the metropolis of Lyon, France"@en ;
+        rdfs:label      "Lyon"@fr , "Lyon"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Lyon , wikidata:Q456 .
+
+city:Q12439  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Michigan aux États-Unis"@fr , "city in and county seat of Wayne County, Michigan, United States"@en ;
+        rdfs:label      "Détroit"@fr , "Detroit"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Detroit , wikidata:Q12439 .
+
+city:Q2807  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'Espagne"@fr , "capital and largest city of Spain"@en ;
+        rdfs:label      "Madrid"@fr , "Madrid"@en ;
+        world:isCityOf  ctry:Q29 ;
+        owl:sameAs      wikipedia:Madrid , wikidata:Q2807 .
+
+city:Q49164  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "localité américaine du Massachusetts"@fr , "town in Hampshire County, Massachusetts, United States"@en ;
+        rdfs:label      "Amherst"@fr , "Amherst"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Amherst,_Massachusetts> , wikidata:Q49164 .
+
+city:Q172  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'Ontario et plus grande ville du Canada"@fr , "capital and largest city of the province of Ontario, Canada"@en ;
+        rdfs:label      "Toronto"@fr , "Toronto"@en ;
+        world:isCityOf  ctry:Q16 ;
+        owl:sameAs      wikipedia:Toronto , wikidata:Q172 .
+
+city:Q7024  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Suisse"@fr , "city in Ticino, Switzerland"@en ;
+        rdfs:label      "Lugano"@fr , "Lugano"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      wikipedia:Lugano , wikidata:Q7024 .
+
+city:Q62  rdf:type      world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine située en Californie"@fr , "consolidated city and county in California, United States"@en ;
+        rdfs:label      "San Francisco"@fr , "San Francisco"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:San_Francisco , wikidata:Q62 .
+
+city:Q42810  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune portuaire française du département de la Seine-Maritime"@fr , "commune in Seine-Maritime, France"@en ;
+        rdfs:label      "Le Havre"@fr , "Le Havre"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Le_Havre , wikidata:Q42810 .
+
+city:Q7003  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département de la Côte-d'Or (chef-lieu)"@fr , "commune in Côte-d'Or, France"@en ;
+        rdfs:label      "Dijon"@fr , "Dijon"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Dijon , wikidata:Q7003 .
+
+city:Q656  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Russie"@fr , "federal city in and former capital of Russia"@en ;
+        rdfs:label      "Saint-Pétersbourg"@fr , "Saint Petersburg"@en ;
+        world:isCityOf  ctry:Q159 ;
+        owl:sameAs      wikipedia:Saint_Petersburg , wikidata:Q656 .
+
+city:Q3992  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Wallonie (Belgique)"@fr , "city in Wallonia, Belgium"@en ;
+        rdfs:label      "Liège"@fr , "Liège"@en ;
+        world:isCityOf  ctry:Q31 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Li%C3%A8ge> , wikidata:Q3992 .
+
+city:Q49201  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine de l'état du Maine"@fr , "county seat of Cumberland County, Maine, United States"@en ;
+        rdfs:label      "Portland"@fr , "Portland"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Portland,_Maine> , wikidata:Q49201 .
+
+city:Q37836  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine située au Wisconsin"@fr , "city in and county seat of Milwaukee County, Wisconsin, United States"@en ;
+        rdfs:label      "Milwaukee"@fr , "Milwaukee"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Milwaukee , wikidata:Q37836 .
+
+city:Q39709  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'Iowa"@fr , "city in and county seat of Polk County, Iowa, United States, and Iowa federated state capital city"@en ;
+        rdfs:label      "Des Moines"@fr , "Des Moines"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Des_Moines,_Iowa> , wikidata:Q39709 .
+
+city:Q585  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la Norvège"@fr , "capital city of Norway"@en ;
+        rdfs:label      "Oslo"@fr , "Oslo"@en ;
+        world:isCityOf  ctry:Q20 ;
+        owl:sameAs      wikipedia:Oslo , wikidata:Q585 .
+
+city:Q79848  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Royaume-Uni"@fr , "city and major port in Hampshire, South-East England, United Kingdom"@en ;
+        rdfs:label      "Southampton"@fr , "Southampton"@en ;
+        world:isCityOf  ctry:Q145 ;
+        owl:sameAs      wikipedia:Southampton , wikidata:Q79848 .
+
+city:Q204249  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de la préfecture d'Ibaraki, au Japon"@fr , "city in Japan, seat of Ibaraki Prefecture"@en ;
+        rdfs:label      "Mito"@fr , "Mito"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Mito,_Ibaraki> , wikidata:Q204249 .
+
+city:Q70  rdf:type      world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de facto de la Suisse et chef-lieu du canton de Berne"@fr , "city in Switzerland, capital of the canton of Bern and de facto capital of Switzerland"@en ;
+        rdfs:label      "Berne"@fr , "Bern"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      wikipedia:Bern , wikidata:Q70 .
+
+city:Q33935  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville d'Israël"@fr , "city in Israel"@en ;
+        rdfs:label      "Tel Aviv"@fr , "Tel Aviv"@en ;
+        world:isCityOf  ctry:Q801 ;
+        owl:sameAs      wikipedia:Tel_Aviv , wikidata:Q33935 .
+
+city:Q173219  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Wallonie (Belgique)"@fr , "city in Wallonia, Belgium"@en ;
+        rdfs:label      "Tournai"@fr , "Tournai"@en ;
+        world:isCityOf  ctry:Q31 ;
+        owl:sameAs      wikipedia:Tournai , wikidata:Q173219 .
+
+city:Q199797  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du comté de Pierce, Washington, États-Unis"@fr , "county seat of Pierce County, Washington, United States"@en ;
+        rdfs:label      "Tacoma"@fr , "Tacoma"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Tacoma,_Washington> , wikidata:Q199797 .
+
+city:Q38453  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville principale et capitale de Caroline du Sud, aux États-Unis"@fr , "capital of South Carolina, United States"@en ;
+        rdfs:label      "Columbia"@fr , "Columbia"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Columbia,_South_Carolina> , wikidata:Q38453 .
+
+city:Q498011  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "établissement humain au Japon"@fr , "city in Chiba Prefecture, Japan"@en ;
+        rdfs:label      "Sakura"@fr , "Sakura"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Sakura,_Chiba> , wikidata:Q498011 .
+
+city:Q16556  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine"@fr , "city in Maricopa County, Arizona, United States"@en ;
+        rdfs:label      "Phoenix"@fr , "Phoenix"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Phoenix,_Arizona> , wikidata:Q16556 .
+
+city:Q1296  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Flandre orientale, Belgique"@fr , "city in the province of East Flanders, Belgium"@en ;
+        rdfs:label      "Gand"@fr , "Ghent"@en ;
+        world:isCityOf  ctry:Q31 ;
+        owl:sameAs      wikipedia:Ghent , wikidata:Q1296 .
+
+city:Q1930  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale du Canada"@fr , "capital city of Canada"@en ;
+        rdfs:label      "Ottawa"@fr , "Ottawa"@en ;
+        world:isCityOf  ctry:Q16 ;
+        owl:sameAs      wikipedia:Ottawa , wikidata:Q1930 .
+
+city:Q288  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française, chef-lieu du département d'Indre-et-Loire"@fr , "city and commune in Indre-et-Loire, Centre-Val de Loire, France"@en ;
+        rdfs:label      "Tours"@fr , "Tours"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      wikipedia:Tours , wikidata:Q288 .
+
+city:Q10690  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Royaume-Uni, capitale du pays de Galles"@fr , "capital city of Wales"@en ;
+        rdfs:label      "Cardiff"@fr , "Cardiff"@en ;
+        world:isCityOf  ctry:Q145 ;
+        owl:sameAs      wikipedia:Cardiff , wikidata:Q10690 .
+
+city:Q3561  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'Algérie"@fr , "capital city of Algeria"@en ;
+        rdfs:label      "Alger"@fr , "Algiers"@en ;
+        world:isCityOf  ctry:Q262 ;
+        owl:sameAs      wikipedia:Algiers , wikidata:Q3561 .
+
+city:Q40435  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de l'État de New York, aux États-Unis"@fr , "city and county seat of Erie County, New York, United States"@en ;
+        rdfs:label      "Buffalo"@fr , "Buffalo"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Buffalo,_New_York> , wikidata:Q40435 .
+
+city:Q3711  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la Serbie"@fr , "capital of Serbia"@en ;
+        rdfs:label      "Belgrade"@fr , "Belgrade"@en ;
+        world:isCityOf  ctry:Q403 ;
+        owl:sameAs      wikipedia:Belgrade , wikidata:Q3711 .
+
+city:Q36091  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Minnesota"@fr , "largest city in Minnesota, U.S., county seat of Hennepin County"@en ;
+        rdfs:label      "Minneapolis"@fr , "Minneapolis"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Minneapolis , wikidata:Q36091 .
+
+city:Q65  rdf:type      world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Californie aux États-Unis"@fr , "largest city in California, United States"@en ;
+        rdfs:label      "Los Angeles"@fr , "Los Angeles"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Los_Angeles , wikidata:Q65 .
+
+city:Q3114  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'Australie"@fr , "capital of Australia"@en ;
+        rdfs:label      "Canberra"@fr , "Canberra"@en ;
+        world:isCityOf  ctry:Q408 ;
+        owl:sameAs      wikipedia:Canberra , wikidata:Q3114 .
+
+city:Q1533  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale du Venezuela"@fr , "capital of Venezuela"@en ;
+        rdfs:label      "Caracas"@fr , "Caracas"@en ;
+        world:isCityOf  ctry:Q717 ;
+        owl:sameAs      wikipedia:Caracas , wikidata:Q1533 .
+
+city:Q37100  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Nouvelle-Zélande"@fr , "city on the North Island New Zealand"@en ;
+        rdfs:label      "Auckland"@fr , "Auckland"@en ;
+        world:isCityOf  ctry:Q664 ;
+        owl:sameAs      wikipedia:Auckland , wikidata:Q37100 .
+
+city:Q38022  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "municipalité du Missouri, aux États-Unis"@fr , "independent city in Missouri, United States"@en ;
+        rdfs:label      "Saint-Louis"@fr , "St. Louis"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:St._Louis , wikidata:Q38022 .
+
+city:Q34739  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine de l'État de l'Ohio"@fr , "city and county seat of Montgomery County, Ohio, United States"@en ;
+        rdfs:label      "Dayton"@fr , "Dayton"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Dayton,_Ohio> , wikidata:Q34739 .
+
+city:Q40898  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département de Meurthe-et-Moselle (chef-lieu)"@fr , "city in Meurthe-et-Moselle, France"@en ;
+        rdfs:label      "Nancy"@fr , "Nancy"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Nancy,_France> , wikidata:Q40898 .
+
+city:Q2805  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville en Rhénanie-du-Nord-Westphalie, Allemagne"@fr , "city in North Rhine-Westphalia, Germany"@en ;
+        rdfs:label      "Krefeld"@fr , "Krefeld"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Krefeld , wikidata:Q2805 .
+
+city:Q37776  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "commune française du département du Doubs (chef-lieu)"@fr , "commune in Doubs, France"@en ;
+        rdfs:label      "Besançon"@fr , "Besançon"@en ;
+        world:isCityOf  ctry:Q142 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Besan%C3%A7on> , wikidata:Q37776 .
+
+city:Q12892  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Belgique dans la Région flamande"@fr , "municipality in the province of Antwerp, Belgium"@en ;
+        rdfs:label      "Anvers"@fr , "Antwerp"@en ;
+        world:isCityOf  ctry:Q31 ;
+        owl:sameAs      wikipedia:Antwerp , wikidata:Q12892 .
+
+city:Q3130  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville la plus peuplée d'Océanie, capitale de l'État australien de Nouvelle-Galles du Sud"@fr , "capital city of New South Wales, Australia"@en ;
+        rdfs:label      "Sydney"@fr , "Sydney"@en ;
+        world:isCityOf  ctry:Q408 ;
+        owl:sameAs      wikipedia:Sydney , wikidata:Q3130 .
+
+city:Q845851  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville japonaise"@fr , "city in Ibaraki prefecture, Japan"@en ;
+        rdfs:label      "Kasama"@fr , "Kasama"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Kasama,_Ibaraki> , wikidata:Q845851 .
+
+city:Q1741  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'Autriche"@fr , "capital of and state in Austria"@en ;
+        rdfs:label      "Vienne"@fr , "Vienna"@en ;
+        world:isCityOf  ctry:Q40 ;
+        owl:sameAs      wikipedia:Vienna , wikidata:Q1741 .
+
+city:Q79867  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville et siège du comté de Jefferson en Alabama (États-Unis)"@fr , "city in and county seat of Jefferson County, Alabama, United States"@en ;
+        rdfs:label      "Birmingham"@fr , "Birmingham"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Birmingham,_Alabama> , wikidata:Q79867 .
+
+city:Q16567  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine de l'Ohio"@fr , "capital city of Ohio, United States"@en ;
+        rdfs:label      "Columbus"@fr , "Columbus"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Columbus,_Ohio> , wikidata:Q16567 .
+
+city:Q161176  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la préfecture de Fukushima, Japon"@fr , "city in Fukushima prefecture, Japan"@en ;
+        rdfs:label      "Fukushima"@fr , "Fukushima"@en ;
+        world:isCityOf  ctry:Q17 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Fukushima_(city)> , wikidata:Q161176 .
+
+city:Q2145  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville et capitale du Québec, Canada"@fr , "capital city of the province of Quebec, Canada"@en ;
+        rdfs:label      "Québec"@fr , "Quebec City"@en ;
+        world:isCityOf  ctry:Q16 ;
+        owl:sameAs      wikipedia:Quebec_City , wikidata:Q2145 .
+
+city:Q975  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville américaine de l'État du Texas"@fr , "second-largest city in Texas, United States"@en ;
+        rdfs:label      "San Antonio"@fr , "San Antonio"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:San_Antonio , wikidata:Q975 .
+
+city:Q16554  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale du Colorado, aux États-Unis"@fr , "capital and largest city of Colorado, United States"@en ;
+        rdfs:label      "Denver"@fr , "Denver"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Denver , wikidata:Q16554 .
+
+city:Q1486  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l’Argentine"@fr , "capital of Argentina"@en ;
+        rdfs:label      "Buenos Aires"@fr , "Buenos Aires"@en ;
+        world:isCityOf  ctry:Q414 ;
+        owl:sameAs      wikipedia:Buenos_Aires , wikidata:Q1486 .
+
+city:Q6346  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l'Indiana"@fr , "city in and county seat of Marion County, Indiana, United States and the Indiana federated state capital city"@en ;
+        rdfs:label      "Indianapolis"@fr , "Indianapolis"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      wikipedia:Indianapolis , wikidata:Q6346 .
+
+city:Q8678  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "municipalité de l'État de Rio de Janeiro, Brésil"@fr , "capital and largest city of the state of Rio de Janeiro, Brazil"@en ;
+        rdfs:label      "Rio de Janeiro"@fr , "Rio de Janeiro"@en ;
+        world:isCityOf  ctry:Q155 ;
+        owl:sameAs      wikipedia:Rio_de_Janeiro , wikidata:Q8678 .
+
+city:Q23197  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Tennessee, aux États-Unis"@fr , "consolidated city-county in Davidson County, Tennessee, United States, and the state capital of Tennessee"@en ;
+        rdfs:label      "Nashville"@fr , "Nashville"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Nashville,_Tennessee> , wikidata:Q23197 .
+
+city:Q1757  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de la Finlande"@fr , "capital and most populous city of Finland"@en ;
+        rdfs:label      "Helsinki"@fr , "Helsinki"@en ;
+        world:isCityOf  ctry:Q33 ;
+        owl:sameAs      wikipedia:Helsinki , wikidata:Q1757 .
+
+city:Q49236  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville en Floride, aux États-Unis"@fr , "city in Pinellas County, Florida, United States"@en ;
+        rdfs:label      "St. Petersburg"@fr , "St. Petersburg"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/St._Petersburg,_Florida> , wikidata:Q49236 .
+
+city:Q1715  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville d'Allemagne"@fr , "capital city of the German federated state of Lower Saxony"@en ;
+        rdfs:label      "Hanovre"@fr , "Hanover"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Hanover , wikidata:Q1715 .
+
+city:Q33486  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale de l’État du Connecticut, aux États-Unis"@fr , "city in and capital of Connecticut, United States"@en ;
+        rdfs:label      "Hartford"@fr , "Hartford"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Hartford,_Connecticut> , wikidata:Q33486 .
+
+city:Q49186  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Massachusetts, aux États-Unis"@fr , "county seat of Hampshire County, Massachusetts, United States"@en ;
+        rdfs:label      "Northampton"@fr , "Northampton"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Northampton,_Massachusetts> , wikidata:Q49186 .
+
+city:Q84  rdf:type      world:city , owl:NamedIndividual ;
+        rdfs:comment    "capitale du Royaume-Uni"@fr , "capital and largest city of the United Kingdom"@en ;
+        rdfs:label      "Londres"@fr , "London"@en ;
+        world:isCityOf  ctry:Q145 ;
+        owl:sameAs      wikipedia:London , wikidata:Q84 .
+
+city:Q42448  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Royaume-Uni"@fr , "city in South Yorkshire, England, United Kingdom"@en ;
+        rdfs:label      "Sheffield"@fr , "Sheffield"@en ;
+        world:isCityOf  ctry:Q145 ;
+        owl:sameAs      wikipedia:Sheffield , wikidata:Q42448 .
+
+city:Q1218  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Proche-Orient, capitale de facto de l'État d'Israël"@fr , "city in Western Asia, claimed by both Israel and the Palestinian Authority as its capital"@en ;
+        rdfs:label      "Jérusalem"@fr , "Jerusalem"@en ;
+        world:isCityOf  ctry:Q801 ;
+        owl:sameAs      wikipedia:Jerusalem , wikidata:Q1218 .
+
+city:Q159288  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment    "municipalité de Californie"@fr , "city in California, United States"@en ;
+        rdfs:label      "Santa Barbara"@fr , "Santa Barbara"@en ;
+        world:isCityOf  ctry:Q30 ;
+        owl:sameAs      <https://en.wikipedia.org/wiki/Santa_Barbara,_California> , wikidata:Q159288 .
+
+city:Q807  rdf:type     world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville de Suisse, chef-lieu du canton de Vaud"@fr , "capital city of the canton of Vaud, Switzerland"@en ;
+        rdfs:label      "Lausanne"@fr , "Lausanne"@en ;
+        world:isCityOf  ctry:Q39 ;
+        owl:sameAs      wikipedia:Lausanne , wikidata:Q807 .
+
+city:Q2119  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment    "ville du Bade-Wurtemberg, en Allemagne"@fr , "city in Baden-Württemberg, Germany"@en ;
+        rdfs:label      "Mannheim"@fr , "Mannheim"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs      wikipedia:Mannheim , wikidata:Q2119 .
+
+##############################################################
+city:Q3413122  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "quartier administratif de Paris, France"@fr , "administrative quarter in Paris, France"@en ;
+        rdfs:label    "Saint-Merri"@fr , "Quartier Saint-Merri"@en ;
+        owl:sameAs    wikidata:Q3413122 .
+
+city:Q430349  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "établissement humain au Japon"@fr , "neighborhood in Shinjuku-ku, Tokyo"@en ;
+        rdfs:label    "Nishi Shinjuku"@fr , "Nishi-Shinjuku"@en ;
+        owl:sameAs    wikipedia:Nishi-Shinjuku , wikidata:Q430349 .
+
+city:Q55115  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "quartier de Monaco"@fr , "ward in Principality of Monaco"@en ;
+        rdfs:label    "Monaco-Ville"@fr , "Monaco City"@en ;
+        owl:sameAs    wikipedia:Monaco_City , wikidata:Q55115 .
+
+city:Q71  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de Suisse et chef-lieu du canton de Genève"@fr , "city in Switzerland and capital of its canton"@en ;
+        rdfs:label    "Genève"@fr , "Geneva"@en ;
+        owl:sameAs    wikipedia:Geneva , wikidata:Q71 .
+
+city:Q161741  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "arrondissement parisien"@fr , "one of the 20 arrondissements (administrative districts) of Paris"@en ;
+        rdfs:label    "1er arrondissement de Paris"@fr , "1st arrondissement of Paris"@en ;
+        owl:sameAs    wikipedia:1st_arrondissement_of_Paris , wikidata:Q161741 .
+
+city:Q193832  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Alpes-Maritimes"@fr , "commune in Alpes-Maritimes, France"@en ;
+        rdfs:label    "Cagnes-sur-Mer"@fr , "Cagnes-sur-Mer"@en ;
+        owl:sameAs    wikipedia:Cagnes-sur-Mer , wikidata:Q193832 .
+
+city:Q270  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de la Pologne"@fr , "capital and largest city of Poland"@en ;
+        rdfs:label    "Varsovie"@fr , "Warsaw"@en ;
+        owl:sameAs    wikipedia:Warsaw , wikidata:Q270 .
+
+city:Q34370  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville néerlandaise située en Hollande-Méridionale"@fr , "city in South Holland, the Netherlands"@en ;
+        rdfs:label    "Rotterdam"@fr , "Rotterdam"@en ;
+        owl:sameAs    wikipedia:Rotterdam , wikidata:Q34370 .
+
+city:Q25395  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du New Jersey, aux États-Unis"@fr , "largest city in Essex County, New Jersey, United States"@en ;
+        rdfs:label    "Newark"@fr , "Newark"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Newark,_New_Jersey> , wikidata:Q25395 .
+
+city:Q24861  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de l'État de New York, aux États-Unis"@fr , "capital of New York, United States and seat of Albany County"@en ;
+        rdfs:label    "Albany"@fr , "Albany"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Albany,_New_York> , wikidata:Q24861 .
+
+city:Q1094063  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "zone d'administration locale d'Australie"@fr , "local government area in South Australia"@en ;
+        rdfs:label    "Ville d'Adélaïde"@fr , "Adelaide"@en ;
+        owl:sameAs    wikipedia:City_of_Adelaide , wikidata:Q1094063 .
+
+city:Q231720  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Calvados"@fr , "commune in Calvados, France"@en ;
+        rdfs:label    "Honfleur"@fr , "Honfleur"@en ;
+        owl:sameAs    wikipedia:Honfleur , wikidata:Q231720 .
+
+city:Q20986484  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "district in Oxfordshire, England"@en ;
+        rdfs:label    "Oxford"@en ;
+        owl:sameAs    wikidata:Q20986484 .
+
+city:Q1350060  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipalité de la mer intérieur de Seto, Japon"@fr , "town in Kagawa district, Kagawa prefecture, Japan"@en ;
+        rdfs:label    "Naoshima"@fr , "Naoshima"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Naoshima,_Kagawa> , wikidata:Q1350060 .
+
+city:Q36405  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville en Écosse"@fr , "city in Aberdeen, Scotland, UK"@en ;
+        rdfs:label    "Aberdeen"@fr , "Aberdeen"@en ;
+        owl:sameAs    wikipedia:Aberdeen , wikidata:Q36405 .
+
+city:Q641  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Italie"@fr , "capital city of Veneto, Italy"@en ;
+        rdfs:label    "Venise"@fr , "Venice"@en ;
+        owl:sameAs    wikipedia:Venice , wikidata:Q641 .
+
+city:Q34600  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville japonaise"@fr , "city in Kyōto prefecture, Japan"@en ;
+        rdfs:label    "Kyoto"@fr , "Kyoto"@en ;
+        owl:sameAs    wikipedia:Kyoto , wikidata:Q34600 .
+
+city:Q65618  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune suisse"@fr , "municipality in the canton of Bern in Switzerland"@en ;
+        rdfs:label    "Riggisberg"@fr , "Riggisberg"@en ;
+        owl:sameAs    wikipedia:Riggisberg , wikidata:Q65618 .
+
+city:Q1754  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de la Suède"@fr , "capital and largest city of Sweden"@en ;
+        rdfs:label    "Stockholm"@fr , "Stockholm"@en ;
+        owl:sameAs    wikipedia:Stockholm , wikidata:Q1754 .
+
+city:Q565405  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "neighbourhood of Tehran, capital of Shemiranat County"@en ;
+        rdfs:label    "Shemiran"@fr , "Shemiran"@en ;
+        owl:sameAs    wikipedia:Shemiran , wikidata:Q565405 .
+
+city:Q1519  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale des Émirats arabes unis"@fr , "capital city of the United Arab Emirates"@en ;
+        rdfs:label    "Abou Dabi"@fr , "Abu Dhabi"@en ;
+        owl:sameAs    wikipedia:Abu_Dhabi , wikidata:Q1519 .
+
+city:Q42735  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de l'État de Washington"@fr , "city in and county seat of Thurston County, Washington, United States, and Washington federated state capital city"@en ;
+        rdfs:label    "Olympia"@fr , "Olympia"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Olympia,_Washington> , wikidata:Q42735 .
+
+city:Q7498925  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "établissement humain au Japon"@fr , "neighborhood in Minato-ku, Tokyo"@en ;
+        rdfs:label    "Shirokanedai"@fr , "Shirokanedai"@en ;
+        owl:sameAs    wikipedia:Shirokanedai , wikidata:Q7498925 .
+
+city:Q18125  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du nord-ouest de l'Angleterre (Royaume-Uni)"@fr , "major city in Greater Manchester, England, UK"@en ;
+        rdfs:label    "Manchester"@fr , "Manchester"@en ;
+        owl:sameAs    wikipedia:Manchester , wikidata:Q18125 .
+
+city:Q43919  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de l'État de l'Oregon aux États-Unis"@fr , "city and capital of Oregon, USA"@en ;
+        rdfs:label    "Salem"@fr , "Salem"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Salem,_Oregon> , wikidata:Q43919 .
+
+city:Q6730  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Pyrénées-Orientales (chef-lieu)"@fr , "commune in Pyrénées-Orientales, France"@en ;
+        rdfs:label    "Perpignan"@fr , "Perpignan"@en ;
+        owl:sameAs    wikipedia:Perpignan , wikidata:Q6730 .
+
+city:Q188776  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Tarn"@fr , "commune in Tarn, France"@en ;
+        rdfs:label    "Castres"@fr , "Castres"@en ;
+        owl:sameAs    wikipedia:Castres , wikidata:Q188776 .
+
+city:Q1075966  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "parc à Tokyo, Japon"@fr , "town located in Chiyoda-ku, Tokyo"@en ;
+        rdfs:label    "parc Kitanomaru"@fr , "Kitanomaru Park"@en ;
+        owl:sameAs    wikipedia:Kitanomaru_Park , wikidata:Q1075966 .
+
+city:Q21665571  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "local government district in Merseyside, England, UK"@en ;
+        rdfs:label    "Liverpool"@fr , "Liverpool"@en ;
+        owl:sameAs    wikidata:Q21665571 .
+
+city:Q55934339  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "council area of Scotland, UK"@en ;
+        rdfs:label    "Glasgow City"@en ;
+        owl:sameAs    wikidata:Q55934339 .
+
+city:Q1055  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville et land (état) d'Allemagne"@fr , "city and federal state in the North of Germany"@en ;
+        rdfs:label    "Hambourg"@fr , "Hamburg"@en ;
+        owl:sameAs    wikipedia:Hamburg , wikidata:Q1055 .
+
+city:Q25287  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "Deuxième ville la plus grande de Suède et capitale du comté de Västra Götaland"@fr , "second-largest city in Sweden and capital of the Västra Götaland County"@en ;
+        rdfs:label    "Göteborg"@fr , "Gothenburg"@en ;
+        owl:sameAs    wikipedia:Gothenburg , wikidata:Q25287 .
+
+city:Q4455813  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "rue du raïon de Chevtchenko (Kiev, Ukraine)"@fr , "street in Shevchenko Raion, Kyiv, Ukraine"@en ;
+        rdfs:label    "rue Terechtchenko"@fr , "Tereshchenkivska Street"@en ;
+        owl:sameAs    wikidata:Q4455813 .
+
+city:Q15674  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du Japon"@fr , "capital city of Kagoshima prefecture"@en ;
+        rdfs:label    "Kagoshima"@fr , "Kagoshima"@en ;
+        owl:sameAs    wikipedia:Kagoshima , wikidata:Q15674 .
+
+city:Q92909922  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "town located in Taitō-ku, Tokyo"@en ;
+        rdfs:label    "Ueno-kōen"@en ;
+        owl:sameAs    wikidata:Q92909922 .
+
+city:Q68956  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune suisse"@fr , "municipality in Switzerland"@en ;
+        rdfs:label    "Martigny"@fr , "Martigny"@en ;
+        owl:sameAs    wikipedia:Martigny , wikidata:Q68956 .
+
+city:Q6643  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Pyrénées-Orientales"@fr , "commune in Pyrénées-Orientales, France"@en ;
+        rdfs:label    "Céret"@fr , "Céret"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/C%C3%A9ret> , wikidata:Q6643 .
+
+city:Q1953  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de l'Arménie"@fr , "capital of Armenia"@en ;
+        rdfs:label    "Erevan"@fr , "Yerevan"@en ;
+        owl:sameAs    wikipedia:Yerevan , wikidata:Q1953 .
+
+city:Q16704  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune espagnole"@fr , "municipality in Catalonia, Spain"@en ;
+        rdfs:label    "Monistrol de Montserrat"@fr , "Monistrol de Montserrat"@en ;
+        owl:sameAs    wikipedia:Monistrol_de_Montserrat , wikidata:Q16704 .
+
+city:Q41057  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du Kansas, aux États-Unis"@fr , "capital of the state of Kansas, United States; county seat of Shawnee County"@en ;
+        rdfs:label    "Topeka"@fr , "Topeka"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Topeka,_Kansas> , wikidata:Q41057 .
+
+city:Q23992018  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capital of municipality"@en ;
+        rdfs:label    "Vilanova i la Geltrú"@en ;
+        owl:sameAs    wikidata:Q23992018 .
+
+city:Q49231  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville indépendante américaine"@fr , "independent city in Virginia, United States"@en ;
+        rdfs:label    "Norfolk"@fr , "Norfolk"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Norfolk,_Virginia> , wikidata:Q49231 .
+
+city:Q12102  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune espagnole"@fr , "municipality in the comarca of the Maresme in Catalonia, Spain"@en ;
+        rdfs:label    "Caldes d'Estrac"@fr , "Caldes d'Estrac"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Caldes_d%27Estrac> , wikidata:Q12102 .
+
+city:Q81788  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Égypte"@fr , "city in Egypt"@en ;
+        rdfs:label    "Gizeh"@fr , "Giza"@en ;
+        owl:sameAs    wikipedia:Giza , wikidata:Q81788 .
+
+city:Q28260  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale du Nebraska"@fr , "city in and the county seat of Lancaster County, Nebraska, United States, that is also the state capitol"@en ;
+        rdfs:label    "Lincoln"@fr , "Lincoln"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Lincoln,_Nebraska> , wikidata:Q28260 .
+
+city:Q239  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville, capitale de la Belgique"@fr , "municipality and capital city of Belgium"@en ;
+        rdfs:label    "Bruxelles"@fr , "Brussels"@en ;
+        owl:sameAs    wikipedia:City_of_Brussels , wikidata:Q239 .
+
+city:Q236736  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département de l'Eure"@fr , "French commune in Eure, Normandy"@en ;
+        rdfs:label    "Vernon"@fr , "Vernon"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Vernon,_Eure> , wikidata:Q236736 .
+
+city:Q43421  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipalité de la Virginie, aux USA"@fr , "capital city of Virginia, United States of America"@en ;
+        rdfs:label    "Richmond"@fr , "Richmond"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Richmond,_Virginia> , wikidata:Q43421 .
+
+city:Q130994  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Haut-Rhin (chef-lieu)"@fr , "commune in Haut-Rhin, France"@en ;
+        rdfs:label    "Colmar"@fr , "Colmar"@en ;
+        owl:sameAs    wikipedia:Colmar , wikidata:Q130994 .
+
+city:Q773527  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville américaine de l'état du Minnesota"@fr , "city and the county seat of Winona County, Minnesota, United States"@en ;
+        rdfs:label    "Winona"@fr , "Winona"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Winona,_Minnesota> , wikidata:Q773527 .
+
+city:Q220  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de l'Italie"@fr , "capital and largest city of Italy"@en ;
+        rdfs:label    "Rome"@fr , "Rome"@en ;
+        owl:sameAs    wikipedia:Rome , wikidata:Q220 .
+
+city:Q188002  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune chilienne"@fr , "commune of Chile"@en ;
+        rdfs:label    "Santiago"@fr , "Santiago commune"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Santiago_(commune)> , wikidata:Q188002 .
+
+city:Q188806  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville japonaise"@fr , "city in Fukuoka Prefecture, Japan"@en ;
+        rdfs:label    "Kitakyūshū"@fr , "Kitakyūshū"@en ;
+        owl:sameAs    wikipedia:Kitakyushu , wikidata:Q188806 .
+
+city:Q47465  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Bouches-du-Rhône"@fr , "French commune in Bouches-du-Rhône, Provence-Alpes-Côte d'Azur"@en ;
+        rdfs:label    "Aix-en-Provence"@fr , "Aix-en-Provence"@en ;
+        owl:sameAs    wikipedia:Aix-en-Provence , wikidata:Q47465 .
+
+city:Q223140  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "arrondissement français"@fr , "one of the 20 administrative districts of Paris, France"@en ;
+        rdfs:label    "3e arrondissement de Paris"@fr , "3rd arrondissement of Paris"@en ;
+        owl:sameAs    wikipedia:3rd_arrondissement_of_Paris , wikidata:Q223140 .
+
+city:Q23154  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville et comté du sud-ouest de l'Angleterre au Royaume-Uni"@fr , "city in South West England, United Kingdom"@en ;
+        rdfs:label    "Bristol"@fr , "Bristol"@en ;
+        owl:sameAs    wikipedia:Bristol , wikidata:Q23154 .
+
+city:Q43196  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de l'Ohio, États-Unis"@fr , "city in Ohio, United States; county seat of Hamilton County"@en ;
+        rdfs:label    "Cincinnati"@fr , "Cincinnati"@en ;
+        owl:sameAs    wikipedia:Cincinnati , wikidata:Q43196 .
+
+city:Q35765  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville japonaise"@fr , "designated city in Kansai, Japan"@en ;
+        rdfs:label    "Osaka"@fr , "Osaka"@en ;
+        owl:sameAs    wikipedia:Osaka , wikidata:Q35765 .
+
+city:Q6397  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département de Vaucluse (chef-lieu)"@fr , "commune in Vaucluse, France"@en ;
+        rdfs:label    "Avignon"@fr , "Avignon"@en ;
+        owl:sameAs    wikipedia:Avignon , wikidata:Q6397 .
+
+city:Q47045  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département d'outre-mer de La Réunion (chef-lieu)"@fr , "French commune in Réunion"@en ;
+        rdfs:label    "Saint-Denis"@fr , "Saint-Denis"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Saint-Denis,_R%C3%A9union> , wikidata:Q47045 .
+
+city:Q6294511  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "bourg sud-africain"@fr , "place in Gauteng, South Africa"@en ;
+        rdfs:label    "Joubert Park"@en ;
+        owl:sameAs    wikipedia:Joubert_Park , wikidata:Q6294511 .
+
+city:Q28237  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville américaine"@fr , "city in Ingham County, Eaton County and Clinton County, Michigan, USA and Michigan federated state capital city"@en ;
+        rdfs:label    "Lansing"@fr , "Lansing"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Lansing,_Michigan> , wikidata:Q28237 .
+
+city:Q3616  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de l'Iran"@fr , "capital city of Iran"@en ;
+        rdfs:label    "Téhéran"@fr , "Tehran"@en ;
+        owl:sameAs    wikipedia:Tehran , wikidata:Q3616 .
+
+city:Q952097  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du Michigan, aux États-Unis"@fr , "city in and county seat of Muskegon County, Michigan, United States"@en ;
+        rdfs:label    "Muskegon"@fr , "Muskegon"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Muskegon,_Michigan> , wikidata:Q952097 .
+
+city:Q29364  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville américaine de l'État d'Alabama"@fr , "capital city of Alabama, United States of America"@en ;
+        rdfs:label    "Montgomery"@fr , "Montgomery"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Montgomery,_Alabama> , wikidata:Q29364 .
+
+city:Q1205581  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "village japonais"@fr , "village in Yama district, Fukushima prefecture, Japan"@en ;
+        rdfs:label    "Kitashiobara"@fr , "Kitashiobara"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Kitashiobara,_Fukushima> , wikidata:Q1205581 .
+
+city:Q25280  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de Pennsylvanie, aux États-Unis"@fr , "city in and county seat of Dauphin County, Pennsylvania, United States and Pennsylvania federated state capital city"@en ;
+        rdfs:label    "Harrisburg"@fr , "Harrisburg"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Harrisburg,_Pennsylvania> , wikidata:Q25280 .
+
+city:Q11279143  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "établissement humain au Japon"@fr , "town located in Nishi-ku, Yokohama City, Japan"@en ;
+        rdfs:label    "Minatomirai"@en ;
+        owl:sameAs    wikidata:Q11279143 .
+
+city:Q986200  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de Georgie, aux États-Unis"@fr , "city in and county seat of DeKalb County, Georgia, United States"@en ;
+        rdfs:label    "Decatur"@fr , "Decatur"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Decatur,_Georgia> , wikidata:Q986200 .
+
+city:Q96249787  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "district d'autorité territoriale de Nouvelle-Zélande"@fr , "territorial authority district of New Zealand"@en ;
+        rdfs:label    "ville de Dunedin"@fr , "Dunedin City"@en ;
+        owl:sameAs    wikidata:Q96249787 .
+
+city:Q504125  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune danoise"@fr , "municipality in the Capital Region of Denmark"@en ;
+        rdfs:label    "commune de Copenhague"@fr , "Copenhagen Municipality"@en ;
+        owl:sameAs    wikipedia:Copenhagen_Municipality , wikidata:Q504125 .
+
+city:Q2066  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Allemagne"@fr , "city in North Rhine-Westphalia, Germany"@en ;
+        rdfs:label    "Essen"@fr , "Essen"@en ;
+        owl:sameAs    wikipedia:Essen , wikidata:Q2066 .
+
+city:Q2321784  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "localité britannique"@fr , "district of the London Borough of Waltham Forest in east London, England"@en ;
+        rdfs:label    "Walthamstow"@fr , "Walthamstow"@en ;
+        owl:sameAs    wikipedia:Walthamstow , wikidata:Q2321784 .
+
+city:Q138518  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du New Jersey, aux États-Unis"@fr , "municipality in Mercer County, New Jersey, United States"@en ;
+        rdfs:label    "Princeton"@fr , "Princeton"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Princeton,_New_Jersey> , wikidata:Q138518 .
+
+city:Q5092  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipalité du Maryland, États-Unis"@fr , "city in Maryland, United States"@en ;
+        rdfs:label    "Baltimore"@fr , "Baltimore"@en ;
+        owl:sameAs    wikipedia:Baltimore , wikidata:Q5092 .
+
+city:Q10002  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune néerlandaise située en province d'Overijssel"@fr , "municipality in Overijssel the Netherlands"@en ;
+        rdfs:label    "Enschede"@fr , "Enschede"@en ;
+        owl:sameAs    wikipedia:Enschede , wikidata:Q10002 .
+
+city:Q1066398  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département de la Loire"@fr , "commune in Loire, France"@en ;
+        rdfs:label    "Saint-Priest-en-Jarez"@fr , "Saint-Priest-en-Jarez"@en ;
+        owl:sameAs    wikipedia:Saint-Priest-en-Jarez , wikidata:Q1066398 .
+
+city:Q818364  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville américaine de l'état de l'Arkansas"@fr , "city and county seat of Benton, Arkansas, United States"@en ;
+        rdfs:label    "Bentonville"@fr , "Bentonville"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Bentonville,_Arkansas> , wikidata:Q818364 .
+
+city:Q189960  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "quartier de la Cité de Westminster"@fr , "area of Central London, England"@en ;
+        rdfs:label    "Westminster"@fr , "Westminster"@en ;
+        owl:sameAs    wikipedia:Westminster , wikidata:Q189960 .
+
+city:Q201352  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Val-d'Oise (chef-lieu)"@fr , "commune in Val-d'Oise, France"@en ;
+        rdfs:label    "Pontoise"@fr , "Pontoise"@en ;
+        owl:sameAs    wikipedia:Pontoise , wikidata:Q201352 .
+
+city:Q108769568  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "historic district in Leipzig"@en ;
+        rdfs:label    "Zentrum"@en ;
+        owl:sameAs    wikidata:Q108769568 .
+
+city:Q183557  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département de la Seine-Maritime"@fr , "commune in Seine-Maritime, France"@en ;
+        rdfs:label    "Dieppe"@fr , "Dieppe"@en ;
+        owl:sameAs    wikipedia:Dieppe , wikidata:Q183557 .
+
+city:Q862100  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "établissement humain, District administratif central, Moscou, Russie"@fr , "human settlement in Central Administrative Okrug, Moscow, Russia"@en ;
+        rdfs:label    "Khamovniki"@fr , "Khamovniki District"@en ;
+        owl:sameAs    wikipedia:Khamovniki_District , wikidata:Q862100 .
+
+city:Q131908  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du New Hampshire (États-Unis)"@fr , "town in Grafton County, New Hampshire, United States"@en ;
+        rdfs:label    "Hanover"@fr , "Hanover"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Hanover,_New_Hampshire> , wikidata:Q131908 .
+
+city:Q28515  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de l'Illinois, aux États-Unis"@fr , "city in and county seat of Sangamon County, Illinois, United States and Illinois federated state capital city"@en ;
+        rdfs:label    "Springfield"@fr , "Springfield"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Springfield,_Illinois> , wikidata:Q28515 .
+
+city:Q211260  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville néerlandaise située en Hollande-Septentrionale"@fr , "city in North Holland, the Netherlands"@en ;
+        rdfs:label    "Zaandam"@fr , "Zaandam"@en ;
+        owl:sameAs    wikipedia:Zaandam , wikidata:Q211260 .
+
+city:Q1345  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de Pennsylvanie, États-Unis"@fr , "largest city in Pennsylvania, United States"@en ;
+        rdfs:label    "Philadelphie"@fr , "Philadelphia"@en ;
+        owl:sameAs    wikipedia:Philadelphia , wikidata:Q1345 .
+
+city:Q1524  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de l'Attique et capitale de la Grèce"@fr , "capital and largest city of Greece"@en ;
+        rdfs:label    "Athènes"@fr , "Athens"@en ;
+        owl:sameAs    wikipedia:Athens , wikidata:Q1524 .
+
+city:Q30031267  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "chief town of the homonym municipality"@en ;
+        rdfs:label    "Traversetolo"@fr , "Traversetolo"@en ;
+        owl:sameAs    wikidata:Q30031267 .
+
+city:Q174691  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville japonaise"@fr , "capital city of Shizuoka Prefecture, Japan"@en ;
+        rdfs:label    "Shizuoka"@fr , "Shizuoka"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Shizuoka_(city)> , wikidata:Q174691 .
+
+city:Q365  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Allemagne"@fr , "most populous city in North Rhine-Westphalia, Germany"@en ;
+        rdfs:label    "Cologne"@fr , "Cologne"@en ;
+        owl:sameAs    wikipedia:Cologne , wikidata:Q365 .
+
+city:Q533317  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "localité américaine du Massachusetts"@fr , "town in Norfolk County, Massachusetts, United States"@en ;
+        rdfs:label    "Wellesley"@fr , "Wellesley"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Wellesley,_Massachusetts> , wikidata:Q533317 .
+
+city:Q42794  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune italienne"@fr , "Italian comune"@en ;
+        rdfs:label    "Rozzano"@fr , "Rozzano"@en ;
+        owl:sameAs    wikipedia:Rozzano , wikidata:Q42794 .
+
+city:Q3018561  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "grande ville centre de la commune homonyme dans la province de Gueldre (Pays-Bas)"@fr , "main city in the municipality of the same name in the province of Gueldre, Netherlands"@en ;
+        rdfs:label    "Apeldoorn"@fr , "Apeldoorn"@en ;
+        owl:sameAs    wikidata:Q3018561 .
+
+city:Q220673  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Alpes-Maritimes"@fr , "commune in Alpes-Maritimes, France"@en ;
+        rdfs:label    "Mougins"@fr , "Mougins"@en ;
+        owl:sameAs    wikipedia:Mougins , wikidata:Q220673 .
+
+city:Q132671  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Pyrénées-Atlantiques (chef-lieu)"@fr , "commune in Pyrénées-Atlantiques, France"@en ;
+        rdfs:label    "Pau"@fr , "Pau"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Pau,_Pyr%C3%A9n%C3%A9es-Atlantiques> , wikidata:Q132671 .
+
+city:Q28802100  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "établissement humain au Japon"@fr , "human settlement in Japan"@en ;
+        rdfs:label    "Aoi, Nagoya"@en ;
+        owl:sameAs    wikidata:Q28802100 .
+
+city:Q138338  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du New Jersey (États-Unis)"@fr , "city in and county seat of Middlesex County, New Jersey, United States"@en ;
+        rdfs:label    "New Brunswick"@fr , "New Brunswick"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/New_Brunswick,_New_Jersey> , wikidata:Q138338 .
+
+city:Q37043  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du comté de Leon, Floride, États-Unis"@fr , "county seat of Leon County, Florida, USA and Florida federated state capital city"@en ;
+        rdfs:label    "Tallahassee"@fr , "Tallahassee"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Tallahassee,_Florida> , wikidata:Q37043 .
+
+city:Q60  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de l'État de New York et principale ville des États-Unis"@fr , "most populous city in the United States"@en ;
+        rdfs:label    "New York"@fr , "New York City"@en ;
+        owl:sameAs    wikipedia:New_York_City , wikidata:Q60 .
+
+city:Q142410  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département d'Eure-et-Loir"@fr , "commune in Eure-et-Loir, France"@en ;
+        rdfs:label    "Dreux"@fr , "Dreux"@en ;
+        owl:sameAs    wikipedia:Dreux , wikidata:Q142410 .
+
+city:Q11481474  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "établissement humain au Japon"@fr ;
+        rdfs:label    "Tokiwa"@en ;
+        owl:sameAs    wikidata:Q11481474 .
+
+city:Q15551  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune espagnole"@fr , "town in Catalonia, Spain"@en ;
+        rdfs:label    "Sitges"@fr , "Sitges"@en ;
+        owl:sameAs    wikipedia:Sitges , wikidata:Q15551 .
+
+city:Q12269651  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville et capitale de la province neérlandaise de Gueldre"@fr , "capital city of Gelderland, the Netherlands"@en ;
+        rdfs:label    "Arnhem"@fr , "Arnhem"@en ;
+        owl:sameAs    wikidata:Q12269651 .
+
+city:Q743287  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "town du Connecticut, aux États-Unis"@fr , "town in Hartford County, Connecticut, United States"@en ;
+        rdfs:label    "Farmington"@fr , "Farmington"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Farmington,_Connecticut> , wikidata:Q743287 .
+
+city:Q1018289  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville des États-Unis de l'état du Vermont"@fr , "town in Vermont, United States"@en ;
+        rdfs:label    "Shelburne"@fr , "Shelburne"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Shelburne,_Vermont> , wikidata:Q1018289 .
+
+city:Q181955  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département de la Savoie"@fr , "commune in Savoie, France"@en ;
+        rdfs:label    "Aix-les-Bains"@fr , "Aix-les-Bains"@en ;
+        owl:sameAs    wikipedia:Aix-les-Bains , wikidata:Q181955 .
+
+city:Q983837  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville, dans le comté de Berkshire, Massachusetts, États-Unis"@fr , "town in Massachusetts"@en ;
+        rdfs:label    "Williamstown"@fr , "Williamstown"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Williamstown,_Massachusetts> , wikidata:Q983837 .
+
+city:Q9832  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune néerlandaise au Brabant-Septentrional"@fr , "city and municipality in North Brabant, Netherlands"@en ;
+        rdfs:label    "Eindhoven"@fr , "Eindhoven"@en ;
+        owl:sameAs    wikipedia:Eindhoven , wikidata:Q9832 .
+
+city:Q2044  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Italie"@fr , "Italian city, located in Tuscany"@en ;
+        rdfs:label    "Florence"@fr , "Florence"@en ;
+        owl:sameAs    wikipedia:Florence , wikidata:Q2044 .
+
+city:Q4191  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de Suisse et chef-lieu du canton de Lucerne"@fr , "city on Lake Lucerne, in central Switzerland"@en ;
+        rdfs:label    "Lucerne"@fr , "Lucerne"@en ;
+        owl:sameAs    wikipedia:Lucerne , wikidata:Q4191 .
+
+city:Q1373658  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "localité danoise"@fr , "suburb in Copenhagen"@en ;
+        rdfs:label    "Charlottenlund"@fr , "Charlottenlund"@en ;
+        owl:sameAs    wikipedia:Charlottenlund , wikidata:Q1373658 .
+
+city:Q450287  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville japonaise"@fr , "town in Otokuni district, Kyoto prefecture, Japan"@en ;
+        rdfs:label    "Ōyamazaki"@fr , "Ōyamazaki"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/%C5%8Cyamazaki,_Kyoto> , wikidata:Q450287 .
+
+city:Q504530  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du Royaume-Uni"@fr , "town in West Midlands, England"@en ;
+        rdfs:label    "Walsall"@fr , "Walsall"@en ;
+        owl:sameAs    wikipedia:Walsall , wikidata:Q504530 .
+
+city:Q9899  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune des Pays-Bas"@fr , "municipality in the Netherlands, containing the cities of Amsterdam an Weesp"@en ;
+        rdfs:label    "Amsterdam"@fr , "Amsterdam"@en ;
+        owl:sameAs    wikipedia:Government_of_Amsterdam , wikidata:Q9899 .
+
+city:Q16563  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du Tennessee, aux États-Unis"@fr , "city in and county seat of Shelby County, Tennessee, United States"@en ;
+        rdfs:label    "Memphis"@fr , "Memphis"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Memphis,_Tennessee> , wikidata:Q16563 .
+
+city:Q1492  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de la communauté autonome de Catalogne (Espagne)"@fr , "city in Catalonia, Spain"@en ;
+        rdfs:label    "Barcelone"@fr , "Barcelona"@en ;
+        owl:sameAs    wikipedia:Barcelona , wikidata:Q1492 .
+
+city:Q193826  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Nord"@fr , "commune in Nord, France"@en ;
+        rdfs:label    "Douai"@fr , "Douai"@en ;
+        owl:sameAs    wikipedia:Douai , wikidata:Q193826 .
+
+city:Q274183  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Gard"@fr , "commune in Gard, France"@en ;
+        rdfs:label    "Bagnols-sur-Cèze"@fr , "Bagnols-sur-Cèze"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Bagnols-sur-C%C3%A8ze> , wikidata:Q274183 .
+
+city:Q34863  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de l'Oklahoma"@fr , "city and state capital of Oklahoma, United States"@en ;
+        rdfs:label    "Oklahoma City"@fr , "Oklahoma City"@en ;
+        owl:sameAs    wikipedia:Oklahoma_City , wikidata:Q34863 .
+
+city:Q23436  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de l'Écosse"@fr , "capital city of Scotland, UK"@en ;
+        rdfs:label    "Édimbourg"@fr , "Edinburgh"@en ;
+        owl:sameAs    wikipedia:Edinburgh , wikidata:Q23436 .
+
+city:Q597  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale du Portugal"@fr , "capital city of Portugal"@en ;
+        rdfs:label    "Lisbonne"@fr , "Lisbon"@en ;
+        owl:sameAs    wikipedia:Lisbon , wikidata:Q597 .
+
+city:Q184775  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville britannique"@fr , "county town of Suffolk, England"@en ;
+        rdfs:label    "Ipswich"@fr , "Ipswich"@en ;
+        owl:sameAs    wikipedia:Ipswich , wikidata:Q184775 .
+
+city:Q44564  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville américaine de l'État de Virginie-Occidentale"@fr , "capital city of West Virginia, United States"@en ;
+        rdfs:label    "Charleston"@fr , "Charleston"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Charleston,_West_Virginia> , wikidata:Q44564 .
+
+city:Q671040  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville japonaise"@fr , "town in Ashigarashimo district, Kanagawa prefecture, Japan"@en ;
+        rdfs:label    "Hakone"@fr , "Hakone"@en ;
+        owl:sameAs    wikipedia:Hakone , wikidata:Q671040 .
+
+city:Q2742  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de Rhénanie-du-Nord-Westphalie"@fr , "city in North Rhine-Westphalia, Germany"@en ;
+        rdfs:label    "Münster"@fr , "Münster"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/M%C3%BCnster> , wikidata:Q2742 .
+
+city:Q2256  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Angleterre"@fr , "city in West Midlands, England"@en ;
+        rdfs:label    "Birmingham"@fr , "Birmingham"@en ;
+        owl:sameAs    wikipedia:Birmingham , wikidata:Q2256 .
+
+city:Q163795  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Nord (Hauts-de-France)"@fr , "French commune in Nord, Hauts-de-France"@en ;
+        rdfs:label    "Valenciennes"@fr , "Valenciennes"@en ;
+        owl:sameAs    wikipedia:Valenciennes , wikidata:Q163795 .
+
+city:Q23556  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville des États-Unis, capitale de la Géorgie"@fr , "city in DeKalb and Fulton counties in Georgia, United States, county seat city of Fulton County and Georgia federated state capital city"@en ;
+        rdfs:label    "Atlanta"@fr , "Atlanta"@en ;
+        owl:sameAs    wikipedia:Atlanta , wikidata:Q23556 .
+
+city:Q243713  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Alpes-Maritimes"@fr , "commune in Alpes-Maritimes, France"@en ;
+        rdfs:label    "Saint-Jean-Cap-Ferrat"@fr , "Saint-Jean-Cap-Ferrat"@en ;
+        owl:sameAs    wikipedia:Saint-Jean-Cap-Ferrat , wikidata:Q243713 .
+
+city:Q1795217  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "quartier de Tokyo"@fr , "town located in Chūō-ku, Tokyo"@en ;
+        rdfs:label    "Kyōbashi"@fr , "Kyōbashi"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Ky%C5%8Dbashi,_Tokyo> , wikidata:Q1795217 .
+
+city:Q36600  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville siège du gouvernement des Pays-Bas et chef-lieu de la province de Hollande-Méridionale"@fr , "municipality in the Netherlands, seat of the Dutch government"@en ;
+        rdfs:label    "La Haye"@fr , "The Hague"@en ;
+        owl:sameAs    wikipedia:The_Hague , wikidata:Q36600 .
+
+city:Q727  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale des Pays-Bas"@fr , "capital and most populous city of the Netherlands"@en ;
+        rdfs:label    "Amsterdam"@fr , "Amsterdam"@en ;
+        owl:sameAs    wikipedia:Amsterdam , wikidata:Q727 .
+
+city:Q174247  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département de Saône-et-Loire (chef-lieu)"@fr , "commune in Saône-et-Loire, France"@en ;
+        rdfs:label    "Mâcon"@fr , "Mâcon"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/M%C3%A2con> , wikidata:Q174247 .
+
+city:Q202368  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Finistère"@fr , "commune in Finistère, France"@en ;
+        rdfs:label    "Morlaix"@fr , "Morlaix"@en ;
+        owl:sameAs    wikipedia:Morlaix , wikidata:Q202368 .
+
+city:Q350  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville britannique"@fr , "city in Cambridgeshire, England"@en ;
+        rdfs:label    "Cambridge"@fr , "Cambridge"@en ;
+        owl:sameAs    wikipedia:Cambridge , wikidata:Q350 .
+
+city:Q11426430  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "neighborhood in Naka-ku, Hiroshima"@en ;
+        rdfs:label    "Motomachi"@en ;
+        owl:sameAs    wikidata:Q11426430 .
+
+city:Q165061  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département de l'Eure"@fr , "commune in Eure, France"@en ;
+        rdfs:label    "Giverny"@fr , "Giverny"@en ;
+        owl:sameAs    wikipedia:Giverny , wikidata:Q165061 .
+
+city:Q26555  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune de Gueldre, Pays-Bas"@fr , "municipality in the center of the Netherlands"@en ;
+        rdfs:label    "Ede"@fr , "Ede"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Ede,_Netherlands> , wikidata:Q26555 .
+
+city:Q64  rdf:type    world:city , owl:NamedIndividual ;
+        rdfs:comment  "land, capitale et plus grande ville d'Allemagne"@fr , "federal state, capital and largest city of Germany"@en ;
+        rdfs:label    "Berlin"@fr , "Berlin"@en ;
+        owl:sameAs    wikipedia:Berlin , wikidata:Q64 .
+
+city:Q3413222  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "quartier administratif de Paris, France"@fr , "administrative quarter in Paris, France"@en ;
+        rdfs:label    "Archives"@fr , "Quartier des Archives"@en ;
+        owl:sameAs    wikidata:Q3413222 .
+
+city:Q2107  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Allemagne"@fr , "city in North Rhine-Westphalia, Germany"@en ;
+        rdfs:label    "Wuppertal"@fr , "Wuppertal"@en ;
+        owl:sameAs    wikipedia:Wuppertal , wikidata:Q2107 .
+
+city:Q621  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Yvelines (chef-lieu)"@fr , "French commune in Yvelines, Île-de-France"@en ;
+        rdfs:label    "Versailles"@fr , "Versailles"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Versailles,_Yvelines> , wikidata:Q621 .
+
+city:Q24879  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de la ville hanséatique libre de Brême, Allemagne"@fr , "city in the Bremen federated state, Germany"@en ;
+        rdfs:label    "Brême"@fr ,"Bremen"@en ;
+        world:isCityOf  ctry:Q183 ;
+        owl:sameAs    wikidata:Q24879 .
+
+city:Q83065  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville du Royaume-Uni"@fr , "city in Leicestershire, East Midlands, England"@en ;
+        rdfs:label    "Leicester"@fr , "Leicester"@en ;
+        owl:sameAs    wikipedia:Leicester , wikidata:Q83065 .
+
+city:Q201117  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Aichi, Japon"@fr , "city in Aichi Prefecture, Japan"@en ;
+        rdfs:label    "Toyota"@fr , "Toyota"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Toyota,_Aichi> , wikidata:Q201117 .
+
+city:Q47887  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune néerlandaise située en Gueldre"@fr , "city and municipality in Gelderland, Netherlands"@en ;
+        rdfs:label    "Nimègue"@fr , "Nijmegen"@en ;
+        owl:sameAs    wikipedia:Nijmegen , wikidata:Q47887 .
+
+city:Q208260  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Alpes-Maritimes"@fr , "commune in Alpes-Maritimes, France"@en ;
+        rdfs:label    "Saint-Paul-de-Vence"@fr , "Saint-Paul-de-Vence"@en ;
+        owl:sameAs    wikipedia:Saint-Paul-de-Vence , wikidata:Q208260 .
+
+city:Q118958  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale du Brabant flamand, Belgique"@fr , "capital city of Flemish Brabant, Belgium"@en ;
+        rdfs:label    "Louvain"@fr , "Leuven"@en ;
+        owl:sameAs    wikipedia:Leuven , wikidata:Q118958 .
+
+city:Q202088  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "borough du Grand Londres"@fr , "borough of London, England"@en ;
+        rdfs:label    "borough londonien de Camden"@fr , "London Borough of Camden"@en ;
+        owl:sameAs    wikipedia:London_Borough_of_Camden , wikidata:Q202088 .
+
+city:Q237  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "État européen sous la souveraineté du Saint-Siège, depuis 1929"@fr , "Holy See's independent city-state, an enclave within Rome, Italy"@en ;
+        rdfs:label    "Cité du Vatican"@fr , "Vatican City"@en ;
+        owl:sameAs    wikipedia:Vatican_City , wikidata:Q237 .
+
+city:Q230127  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "arrondissement français"@fr , "one of the 20 administrative districts of Paris, France"@en ;
+        rdfs:label    "4e arrondissement de Paris"@fr , "4th arrondissement of Paris"@en ;
+        owl:sameAs    wikipedia:4th_arrondissement_of_Paris , wikidata:Q230127 .
+
+city:Q126675  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département de l'Oise"@fr , "commune in Oise, France"@en ;
+        rdfs:label    "Chantilly"@fr , "Chantilly"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Chantilly,_Oise> , wikidata:Q126675 .
+
+city:Q13329  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune italienne"@fr , "Italian comune"@en ;
+        rdfs:label    "Plaisance"@fr , "Piacenza"@en ;
+        owl:sameAs    wikipedia:Piacenza , wikidata:Q13329 .
+
+city:Q188801  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "borough du Grand Londres"@fr , "central London borough of Royal borough status"@en ;
+        rdfs:label    "borough royal de Kensington et Chelsea"@fr , "Royal Borough of Kensington and Chelsea"@en ;
+        owl:sameAs    wikipedia:Royal_Borough_of_Kensington_and_Chelsea , wikidata:Q188801 .
+
+city:Q2740658  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "localité britannique du comté anglais de Norfolk"@fr , "village and civil parish in Norfolk, United Kingdom"@en ;
+        rdfs:label    "Holkham"@fr , "Holkham"@en ;
+        owl:sameAs    wikipedia:Holkham , wikidata:Q2740658 .
+
+city:Q12994  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de la Flandre occidentale, Belgique"@fr , "city in West Flanders, Belgium"@en ;
+        rdfs:label    "Bruges"@fr , "Bruges"@en ;
+        owl:sameAs    wikipedia:Bruges , wikidata:Q12994 .
+
+city:Q179351  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "borough et cité du Grand Londres"@fr , "city and borough in London, England"@en ;
+        rdfs:label    "cité de Westminster"@fr , "City of Westminster"@en ;
+        owl:sameAs    wikipedia:City_of_Westminster , wikidata:Q179351 .
+
+city:Q9920  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "chef-lieu de la province de Hollande-Septentrionale"@fr , "municipality in the Netherlands and capital city of North Holland"@en ;
+        rdfs:label    "Haarlem"@fr , "Haarlem"@en ;
+        owl:sameAs    wikipedia:Haarlem , wikidata:Q9920 .
+
+city:Q68144  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de Suisse et chef-lieu du canton de Zoug"@fr , "capital of the canton of Zug, Switzerland"@en ;
+        rdfs:label    "Zoug"@fr , "Zug"@en ;
+        owl:sameAs    wikipedia:Zug , wikidata:Q68144 .
+
+city:Q10686  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city of the United Kingdom, capital of Northern Ireland"@en , "capitale de l'Irlande du Nord"@fr ;
+        rdfs:label    "Belfast"@en , "Belfast"@fr ;
+        owl:sameAs    wp:Belfast , wd:Q10686 .
+
+city:Q38555  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale du Nouveau-Mexique (États-Unis)"@fr , "city in and county seat of Santa Fe County, New Mexico, United States, and the capitol of New Mexico"@en ;
+        rdfs:label    "Santa Fe"@en , "Santa Fe"@fr ;
+        owl:sameAs    wd:Q38555 , <https://en.wikipedia.org/wiki/Santa_Fe,_New_Mexico> .
+
+city:Q491540  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in and county seat of Sarasota County, Florida, United States"@en , "ville de Floride, aux États-Unis"@fr ;
+        rdfs:label    "Sarasota"@en , "Sarasota"@fr ;
+        owl:sameAs    wd:Q491540 , <https://en.wikipedia.org/wiki/Sarasota,_Florida> .
+
+city:Q51685  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville en Arizona"@fr , "city in Maricopa County, Arizona, United States"@en ;
+        rdfs:label    "Tempe"@en , "Tempe"@fr ;
+        owl:sameAs    wd:Q51685 , <https://en.wikipedia.org/wiki/Tempe,_Arizona> .
+
+city:Q49172  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in Hartford County, Connecticut, United States"@en , "ville des États-Unis de l'état du Connecticut"@fr ;
+        rdfs:label    "New Britain"@en , "New Britain"@fr ;
+        owl:sameAs    wd:Q49172 , <https://en.wikipedia.org/wiki/New_Britain,_Connecticut> .
+
+city:Q174224  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in and county seat of New Castle County, Delaware, United States"@en , "ville américaine du Delaware"@fr ;
+        rdfs:label    "Wilmington"@en , "Wilmington"@fr ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Wilmington,_Delaware> , wd:Q174224 .
+
+city:Q209814  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Haut-Rhin"@fr , "commune in Haut-Rhin, France"@en ;
+        rdfs:label    "Guebwiller"@en , "Guebwiller"@fr ;
+        owl:sameAs    wd:Q209814 , wp:Guebwiller .
+
+city:Q492833  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville américaine de l'état du Minnesota"@fr , "city in Anoka County, Minnesota, United States"@en ;
+        rdfs:label    "Andover"@en , "Andover"@fr ;
+        owl:sameAs    wd:Q492833 , <https://en.wikipedia.org/wiki/Andover,_Minnesota> .
+
+city:Q23939248  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "region of England containing City of London and Greater London"@en , "région d'Angleterre"@fr ;
+        rdfs:label    "Londres"@fr , "London"@en ;
+        owl:sameAs    wd:Q23939248 .
+
+        

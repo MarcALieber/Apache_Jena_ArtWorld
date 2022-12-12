@@ -1,0 +1,1014 @@
+@prefix cont:      <http://www.art.org/ontology/world/continent#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix dbo:       <http://dbpedia.org/ontology/> .
+@prefix dbp:       <http://dbpedia.org/property/> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix mvmt:      <http://www.art.org/ontology/movement#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix p:         <http://marclieber.fr/ontology/src/> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:    <http://schema.org/> .
+@prefix wd:        <http://www.wikidata.org/entity/> .
+@prefix wikidata:  <http://www.wikidata.org/entity/> .
+@prefix wdt:       <http://www.wikidata.org/prop/direct/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+@prefix world:     <http://www.art.org/ontology/world#> .
+
+# in wikidata Vatican is a city and a country; we create 2 entries city:Q237 + ctry:Q237
+ctry:Q237  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "cité du Vatican"@fr , "City of Vatican; the city is also a country"@en ;
+        rdfs:label         "Vatican"@fr , "Vatican"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs    wikipedia:Vatican_City , wikidata:Q237 .
+        
+ctry:Q945  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays situé en Afrique de l’Ouest"@fr , "country in West Africa"@en ;
+        rdfs:label         "Togo"@fr , "Togo"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Togo , wd:Q945 .
+
+ctry:Q419  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "sovereign state in South America"@en , "pays d'Amérique du Sud"@fr ;
+        rdfs:label         "Pérou"@fr , "Peru"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wd:Q419 , wikipedia:Peru .
+
+ctry:Q774  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Amérique centrale"@fr , "sovereign state in Central America"@en ;
+        rdfs:label         "Guatemala"@fr , "Guatemala"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Guatemala , wd:Q774 .
+
+ctry:Q227  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays du Caucase"@fr , "country in the Caucasus in Eastern Europe"@en ;
+        rdfs:label         "Azerbaïdjan"@fr , "Azerbaijan"@en ;
+        world:inContinent  cont:northAsia ;
+        owl:sameAs         wikipedia:Azerbaijan , wd:Q227 .
+
+ctry:Q924  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Est"@fr , "country in East Africa"@en ;
+        rdfs:label         "Tanzanie"@fr , "Tanzania"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Tanzania , wd:Q924 .
+
+ctry:Q40  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Europe"@fr , "country in Central Europe"@en ;
+        rdfs:label         "Austria"@en , "Autriche"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q40 , wikipedia:Austria .
+
+ctry:Q711  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Asie, situé entre la Russie au nord et la Chine au sud"@fr , "country in East Asia"@en ;
+        rdfs:label         "Mongolie"@fr , "Mongolia"@en ;
+        world:inContinent  cont:eastAsia ;
+        owl:sameAs         wikipedia:Mongolia , wd:Q711 .
+
+ctry:Q1246  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays issu de l'ancienne Yougoslavie dont la reconnaissance est limitée"@fr , "partially recognized country in southeastern Europe"@en ;
+        rdfs:label         "Kosovo"@fr , "Kosovo"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Kosovo , wd:Q1246 .
+
+ctry:Q1033  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "république fédérale d’Afrique de l’Ouest"@fr , "sovereign state in West Africa"@en ;
+        rdfs:label         "Nigeria"@fr , "Nigeria"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Nigeria , wd:Q1033 .
+
+ctry:Q114  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d’Afrique de l'Est"@fr , "country in Eastern Africa"@en ;
+        rdfs:label         "Kenya"@fr , "Kenya"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Kenya , wd:Q114 .
+
+ctry:Q298  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Amérique du Sud"@fr , "country in South America"@en ;
+        rdfs:label         "Chile"@en , "Chili"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wd:Q298 , wikipedia:Chile .
+
+ctry:Q811  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state in Central America"@en , "république d’Amérique centrale"@fr ;
+        rdfs:label         "Nicaragua"@fr , "Nicaragua"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Nicaragua , wd:Q811 .
+
+ctry:Q974  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique centrale"@fr , "country in Central Africa"@en ;
+        rdfs:label         "République démocratique du Congo"@fr , "Democratic Republic of the Congo"@en ;
+        world:inContinent  cont:middleAfrica ;
+        owl:sameAs         wikipedia:Democratic_Republic_of_the_Congo , wd:Q974 .
+
+ctry:Q953  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique australe"@fr , "sovereign state in Southern Africa"@en ;
+        rdfs:label         "Zambie"@fr , "Zambia"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Zambia , wd:Q953 .
+
+ctry:Q214  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "country in Central Europe"@en , "pays d'Europe centrale"@fr ;
+        rdfs:label         "Slovakia"@en , "Slovaquie"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Slovakia , wd:Q214 .
+
+ctry:Q398  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays du Moyen-Orient"@fr , "country in the Persian Gulf"@en ;
+        rdfs:label         "Bahreïn"@fr , "Bahrain"@en ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wd:Q398 , wikipedia:Bahrain .
+
+ctry:Q27  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in north-western Europe"@en , "pays d'Europe"@fr ;
+        rdfs:label         "Republic of Ireland"@en , "Irlande"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q27 , wikipedia:Republic_of_Ireland .
+
+ctry:Q1041  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "country on the coast of West Africa"@en ;
+        rdfs:label         "Sénégal"@fr , "Senegal"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Senegal , wd:Q1041 .
+
+ctry:Q1020  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique australe"@fr , "sovereign state in Africa"@en ;
+        rdfs:label         "Malawi"@fr , "Malawi"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Malawi , wd:Q1020 .
+
+ctry:Q790  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "island sovereign state in the Caribbean Sea"@en , "pays dans les Caraïbes"@fr ;
+        rdfs:label         "Haïti"@fr , "Haiti"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wd:Q790 , wikipedia:Haiti .
+
+ctry:Q77  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Amérique du Sud"@fr , "sovereign state in South America"@en ;
+        rdfs:label         "Uruguay"@fr , "Uruguay"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Uruguay , wd:Q77 .
+
+ctry:Q414  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d’Amérique du Sud"@fr , "sovereign state in South America"@en ;
+        rdfs:label         "Argentina"@en , "Argentine"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wd:Q414 , wikipedia:Argentina .
+
+ctry:Q222  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Europe"@fr , "country in southeastern Europe"@en ;
+        rdfs:label         "Albanie"@fr , "Albania"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Albania , wd:Q222 .
+
+ctry:Q769  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "island sovereign state in the Caribbean Sea"@en , "État souverain insulaire de la mer des Caraïbes"@fr ;
+        rdfs:label         "Grenade"@fr , "Grenada"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wd:Q769 , wikipedia:Grenada .
+
+ctry:Q35  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d’Europe"@fr , "country in Northern Europe"@en ;
+        rdfs:label         "Danemark"@fr , "Denmark"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Denmark , wd:Q35 .
+
+ctry:Q1049  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique"@fr , "country in Northeast Africa"@en ;
+        rdfs:label         "Soudan"@fr , "Sudan"@en ;
+        world:inContinent  cont:northAfrica ;
+        owl:sameAs         wikipedia:Sudan , wd:Q1049 .
+
+ctry:Q869  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d’Asie du Sud-Est"@fr , "country in Southeast Asia"@en ;
+        rdfs:label         "Thaïlande"@fr , "Thailand"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Thailand , wd:Q869 .
+
+ctry:Q1028  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique du Nord"@fr , "sovereign state in North Africa"@en ;
+        rdfs:label         "Maroc"@fr , "Morocco"@en ;
+        world:inContinent  cont:northAfrica ;
+        owl:sameAs         wikipedia:Morocco , wd:Q1028 .
+
+ctry:Q1007  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in Western Africa"@en ;
+        rdfs:label         "Guinée-Bissau"@fr , "Guinea-Bissau"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Guinea-Bissau , wd:Q1007 .
+
+ctry:Q26273  rdf:type      world:country , owl:NamedIndividual ;
+        rdfs:comment       "État insulaire des Caraïbes, appartenant au Royaume des Pays-Bas"@fr , "country on the Caribbean island of Saint Martin, part of the Kingdom of the Netherlands"@en ;
+        rdfs:label         "Saint-Martin"@fr , "Sint Maarten"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Sint_Maarten , wd:Q26273 .
+
+ctry:Q948  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Afrique du Nord"@fr , "country in North Africa"@en ;
+        rdfs:label         "Tunisie"@fr , "Tunisia"@en ;
+        world:inContinent  cont:northAfrica ;
+        owl:sameAs         wd:Q948 , wikipedia:Tunisia .
+
+ctry:Q43  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "Pays situé en Europe du Sud-Est et en Asie occidentale"@fr , "transcontinental country straddling Western Asia and Southeastern Europe"@en ;
+        rdfs:label         "Turkey"@en , "Turquie"@fr ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wd:Q43 , wikipedia:Turkey .
+
+ctry:Q159  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays eurasiatique"@fr , "country spanning Europe and Asia"@en ;
+        rdfs:label         "Russie"@fr , "Russia"@en ;
+        world:inContinent  cont:northAsia ;
+        owl:sameAs         wikipedia:Russia , wd:Q159 .
+
+ctry:Q1036  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique équatoriale"@fr , "country in East-central Africa"@en ;
+        rdfs:label         "Ouganda"@fr , "Uganda"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Uganda , wd:Q1036 .
+
+ctry:Q664  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Océanie, au sud-ouest de l'océan Pacifique"@fr , "island country in the southwest Pacific Ocean"@en ;
+        rdfs:label         "New Zealand"@en , "Nouvelle-Zélande"@fr ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:New_Zealand , wd:Q664 .
+
+ctry:Q117  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in West Africa"@en ;
+        rdfs:label         "Ghana"@fr , "Ghana"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Ghana , wd:Q117 .
+
+ctry:Q977  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "sovereign state in Africa"@en , "pays d'Afrique de l'Est"@fr ;
+        rdfs:label         "Djibouti"@fr , "Djibouti"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Djibouti , wd:Q977 .
+
+ctry:Q30  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Amérique du Nord"@fr , "country in North America"@en ;
+        rdfs:label         "États-Unis"@fr , "United States of America"@en ;
+        world:inContinent  cont:northAmerica ;
+        owl:sameAs         wikipedia:United_States , wd:Q30 .
+
+ctry:Q1044  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in West Africa"@en ;
+        rdfs:label         "Sierra Leone"@fr , "Sierra Leone"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Sierra_Leone , wd:Q1044 .
+
+ctry:Q672  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "État et archipel polynésien"@fr , "island sovereign state in Oceania"@en ;
+        rdfs:label         "Tuvalu"@fr , "Tuvalu"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Tuvalu , wd:Q672 .
+
+ctry:Q822  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state in Western Asia"@en , "État du Proche-Orient"@fr ;
+        rdfs:label         "Lebanon"@en , "Liban"@fr ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wd:Q822 , wikipedia:Lebanon .
+
+ctry:Q21203  rdf:type      owl:NamedIndividual , world:country ;
+        rdfs:comment       "Caribbean island constituent country of the Netherlands"@en , "État insulaire des Caraïbes appartenant au royaume des Pays-Bas"@fr ;
+        rdfs:label         "Aruba"@en , "Aruba"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wd:Q21203 , wikipedia:Aruba .
+
+ctry:Q801  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "country in Western Asia"@en , "État du Proche-Orient"@fr ;
+        rdfs:label         "Israël"@fr , "Israel"@en ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wd:Q801 , wikipedia:Israel .
+
+ctry:Q38  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "État d'Europe du Sud"@fr , "country in Southern Europe"@en ;
+        rdfs:label         "Italie"@fr , "Italy"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q38 , wikipedia:Italy .
+
+ctry:Q17  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d’Asie de l’Est"@fr , "island country in East Asia"@en ;
+        rdfs:label         "Japon"@fr , "Japan"@en ;
+        world:inContinent  cont:eastAsia ;
+        owl:sameAs         wikipedia:Japan , wd:Q17 .
+
+ctry:Q709  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "island sovereign state in Oceania"@en , "État de Micronésie situé en Océanie"@fr ;
+        rdfs:label         "Marshall Islands"@en , "Îles Marshall"@fr ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Marshall_Islands , wd:Q709 .
+
+ctry:Q851  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays du Moyen-Orient"@fr , "country in Western Asia"@en ;
+        rdfs:label         "Arabie saoudite"@fr , "Saudi Arabia"@en ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wikipedia:Saudi_Arabia , wd:Q851 .
+
+ctry:Q233  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state in Southern Europe situated on an archipelago in the Mediterranean Sea"@en , "État insulaire de Méditerranée"@fr ;
+        rdfs:label         "Malta"@en , "Malte"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q233 , wikipedia:Malta .
+
+ctry:Q717  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state in northern South America"@en , "pays d'Amérique du Sud"@fr ;
+        rdfs:label         "Venezuela"@fr , "Venezuela"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Venezuela , wd:Q717 .
+
+ctry:Q183  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Central Europe"@en , "pays d'Europe"@fr ;
+        rdfs:label         "Allemagne"@fr , "Germany"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q183 , wikipedia:Germany .
+
+ctry:Q1039  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique"@fr , "island sovereign state in Africa"@en ;
+        rdfs:label         "Sao Tomé-et-Principe"@fr , "São Tomé and Príncipe"@en ;
+        world:inContinent  cont:middleAfrica ;
+        owl:sameAs         <https://en.wikipedia.org/wiki/S%C3%A3o_Tom%C3%A9_and_Pr%C3%ADncipe> , wd:Q1039 .
+
+ctry:Q262  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "country in North Africa"@en , "pays d'Afrique du Nord"@fr ;
+        rdfs:label         "Algérie"@fr , "Algeria"@en ;
+        world:inContinent  cont:northAfrica ;
+        owl:sameAs         wd:Q262 , wikipedia:Algeria .
+
+ctry:Q96  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "country in North America"@en , "pays d'Amérique du Nord"@fr ;
+        rdfs:label         "Mexico"@en , "Mexique"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Mexico , wd:Q96 .
+
+ctry:Q241  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays de l'archipel caraïbe"@fr , "sovereign state situated on an island in the Caribbean Sea"@en ;
+        rdfs:label         "Cuba"@fr , "Cuba"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Cuba , wd:Q241 .
+
+ctry:Q33  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Northern Europe"@en , "pays d'Europe du Nord"@fr ;
+        rdfs:label         "Finland"@en , "Finlande"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Finland , wd:Q33 .
+
+ctry:Q191  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Europe"@fr , "sovereign state in northeastern Europe"@en ;
+        rdfs:label         "Estonie"@fr , "Estonia"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q191 , wikipedia:Estonia .
+
+ctry:Q846  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "émirat du Moyen-Orient"@fr , "country in Western Asia"@en ;
+        rdfs:label         "Qatar"@fr , "Qatar"@en ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wikipedia:Qatar , wd:Q846 .
+
+ctry:Q1005  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in West Africa"@en ;
+        rdfs:label         "Gambie"@fr , "The Gambia"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:The_Gambia , wd:Q1005 .
+
+ctry:Q796  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state in western Asia"@en , "État du Moyen-Orient, situé au nord de la péninsule arabique"@fr ;
+        rdfs:label         "Iraq"@en , "Irak"@fr ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wikipedia:Iraq , wd:Q796 .
+
+ctry:Q967  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Est"@fr , "sovereign state in Africa"@en ;
+        rdfs:label         "Burundi"@fr , "Burundi"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Burundi , wd:Q967 .
+
+ctry:Q228  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "principauté d'Europe"@fr , "sovereign microstate between France and Spain, in Western Europe"@en ;
+        rdfs:label         "Andorre"@fr , "Andorra"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Andorra , wd:Q228 .
+
+ctry:Q754  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "island sovereign state in the Caribbean"@en , "État insulaire des Caraïbes"@fr ;
+        rdfs:label         "Trinidad and Tobago"@en , "Trinité-et-Tobago"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Trinidad_and_Tobago , wd:Q754 .
+
+ctry:Q41  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Europe"@fr , "country in Southeast Europe"@en ;
+        rdfs:label         "Greece"@en , "Grèce"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Greece , wd:Q41 .
+
+ctry:Q733  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "sovereign state in South America"@en , "république d’Amérique du Sud"@fr ;
+        rdfs:label         "Paraguay"@en , "Paraguay"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Paraguay , wd:Q733 .
+
+ctry:Q20  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in northern Europe"@en , "pays d'Europe du Nord et de la Scandinavie"@fr ;
+        rdfs:label         "Norvège"@fr , "Norway"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q20 , wikipedia:Norway .
+
+ctry:Q712  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "État insulaire d'Océanie"@fr , "island sovereign state in Oceania"@en ;
+        rdfs:label         "Fidji"@fr , "Fiji"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Fiji , wd:Q712 .
+
+ctry:Q1013  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique australe"@fr , "sovereign state in southern Africa"@en ;
+        rdfs:label         "Lesotho"@fr , "Lesotho"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Lesotho , wd:Q1013 .
+
+ctry:Q115  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Est"@fr , "country in the Horn of Africa"@en ;
+        rdfs:label         "Éthiopie"@fr , "Ethiopia"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Ethiopia , wd:Q115 .
+
+ctry:Q783  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Amérique centrale"@fr , "sovereign state in Central America"@en ;
+        rdfs:label         "Honduras"@fr , "Honduras"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Honduras , wd:Q783 .
+
+ctry:Q954  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "sovereign state in southern Africa"@en , "pays d'Afrique australe"@fr ;
+        rdfs:label         "Zimbabwe"@fr , "Zimbabwe"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Zimbabwe , wd:Q954 .
+
+ctry:Q215  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Central Europe"@en , "pays d'Europe"@fr ;
+        rdfs:label         "Slovenia"@en , "Slovénie"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q215 , wikipedia:Slovenia .
+
+ctry:Q399  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays du Caucase"@fr , "sovereign state in the South Caucasus region of Eurasia"@en ;
+        rdfs:label         "Armenia"@en , "Arménie"@fr ;
+        world:inContinent  cont:europe;
+        owl:sameAs         wikipedia:Armenia , wd:Q399 .
+
+ctry:Q912  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "country in West Africa"@en ;
+        rdfs:label         "Mali"@fr , "Mali"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Mali , wd:Q912 .
+
+ctry:Q28  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Europe"@fr , "country in Central Europe"@en ;
+        rdfs:label         "Hongrie"@fr , "Hungary"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Hungary , wd:Q28 .
+
+ctry:Q691  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Océanie occupant la moitié orientale de l'île de la Nouvelle-Guinée"@fr , "country in Oceania"@en ;
+        rdfs:label         "Papouasie-Nouvelle-Guinée"@fr , "Papua New Guinea"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Papua_New_Guinea , wd:Q691 .
+
+ctry:Q1042  rdf:type       owl:NamedIndividual , world:country ;
+        rdfs:comment       "island sovereign state off the eastern coast of Africa"@en , "pays insulaire à l’ouest de l’océan Indien"@fr ;
+        rdfs:label         "Seychelles"@fr , "Seychelles"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wd:Q1042 , wikipedia:Seychelles .
+
+ctry:Q265  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Asie centrale"@fr , "sovereign state in Central Asia"@en ;
+        rdfs:label         "Ouzbékistan"@fr , "Uzbekistan"@en ;
+        world:inContinent  cont:centralAsia ;
+        owl:sameAs         wikipedia:Uzbekistan , wd:Q265 .
+
+ctry:Q962  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in West Africa"@en ;
+        rdfs:label         "Bénin"@fr , "Benin"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Benin , wd:Q962 .
+
+ctry:Q16644  rdf:type      world:country , owl:NamedIndividual ;
+        rdfs:comment       "îles des États-Unis dans l'océan Pacifique"@fr , "American-dependent insular area in the western Pacific"@en ;
+        rdfs:label         "îles Mariannes du Nord"@fr , "Northern Mariana Islands"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Northern_Mariana_Islands , wd:Q16644 .
+
+ctry:Q36  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Central Europe"@en , "pays d'Europe centrale"@fr ;
+        rdfs:label         "Pologne"@fr , "Poland"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Poland , wd:Q36 .
+
+ctry:Q1029  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique australe"@fr , "country in Southeastern Africa"@en ;
+        rdfs:label         "Mozambique"@fr , "Mozambique"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Mozambique , wd:Q1029 .
+
+ctry:Q657  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique centrale"@fr , "sovereign state in central Africa"@en ;
+        rdfs:label         "Tchad"@fr , "Chad"@en ;
+        world:inContinent  cont:middleAfrica ;
+        owl:sameAs         wikipedia:Chad , wd:Q657 .
+
+ctry:Q1008  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in West Africa"@en ;
+        rdfs:label         "Côte d'Ivoire"@fr , "Ivory Coast"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Ivory_Coast , wd:Q1008 .
+
+ctry:Q252  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Asie"@fr , "country in Southeast Asia and Oceania"@en ;
+        rdfs:label         "Indonesia"@en , "Indonésie"@fr ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Indonesia , wd:Q252 .
+
+ctry:Q970  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays situé au nord du canal du Mozambique dans l'océan Indien"@fr , "sovereign state situated on an archipelago in the Indian Ocean off the eastern coast of Africa"@en ;
+        rdfs:label         "Comores"@fr , "Comoros"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Comoros , wd:Q970 .
+
+ctry:Q423  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Asie orientale"@fr , "sovereign state in East Asia"@en ;
+        rdfs:label         "Corée du Nord"@fr , "North Korea"@en ;
+        world:inContinent  cont:eastAsia ;
+        owl:sameAs         wikipedia:North_Korea , wd:Q423 .
+
+ctry:Q778  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "island sovereign state in the West Indies"@en , "État insulaire au large des Caraïbes"@fr ;
+        rdfs:label         "The Bahamas"@en , "Bahamas"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:The_Bahamas , wd:Q778 .
+
+ctry:Q757  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "état insulaire des Petites Antilles"@fr , "island sovereign state in the Caribbean Sea"@en ;
+        rdfs:label         "Saint-Vincent-et-les-Grenadines"@fr , "Saint Vincent and the Grenadines"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Saint_Vincent_and_the_Grenadines , wd:Q757 .
+
+ctry:Q928  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Asie du Sud-Est"@fr , "sovereign state in Southeast Asia"@en ;
+        rdfs:label         "Philippines"@fr , "Philippines"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Philippines , wd:Q928 .
+
+ctry:Q736  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Amérique du Sud"@fr , "sovereign state in South America"@en ;
+        rdfs:label         "Équateur"@fr , "Ecuador"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Ecuador , wd:Q736 .
+
+ctry:Q878  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "sovereign state in Southwest Asia"@en , "État fédéral du golfe Persique"@fr ;
+        rdfs:label         "Émirats arabes unis"@fr , "United Arab Emirates"@en ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wd:Q878 , wikipedia:United_Arab_Emirates .
+
+ctry:Q1037  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique équatoriale"@fr , "sovereign state in Africa"@en ;
+        rdfs:label         "Rwanda"@fr , "Rwanda"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Rwanda , wd:Q1037 .
+
+ctry:Q1016  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique du Nord"@fr , "sovereign state in north Africa"@en ;
+        rdfs:label         "Libye"@fr , "Libya"@en ;
+        world:inContinent  cont:northAfrica ;
+        owl:sameAs         wikipedia:Libya , wd:Q1016 .
+
+ctry:Q786  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "État des Antilles"@fr , "island sovereign state in the Caribbean Sea"@en ;
+        rdfs:label         "République dominicaine"@fr , "Dominican Republic"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Dominican_Republic , wd:Q786 .
+
+ctry:Q218  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "country in Central and Eastern Europe"@en , "pays d'Europe de l'Est"@fr ;
+        rdfs:label         "Roumanie"@fr , "Romania"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Romania , wd:Q218 .
+
+ctry:Q189  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays insulaire d'Europe du Nord"@fr , "country in the North Atlantic Ocean"@en ;
+        rdfs:label         "Islande"@fr , "Iceland"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q189 , wikipedia:Iceland .
+
+ctry:Q702  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "État d'Océanie"@fr , "island sovereign state in Oceania"@en ;
+        rdfs:label         "États fédérés de Micronésie"@fr , "Federated States of Micronesia"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Federated_States_of_Micronesia , wd:Q702 .
+
+ctry:Q29999  rdf:type      world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Europe occidentale"@fr , "sovereign state and constitutional monarchy"@en ;
+        rdfs:label         "Pays-Bas"@fr , "Kingdom of the Netherlands"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Kingdom_of_the_Netherlands , wd:Q29999 .
+
+ctry:Q865  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays insulaire d'Asie orientale dont la reconnaissance est limitée"@fr , "country in East Asia"@en ;
+        rdfs:label         "Taïwan"@fr , "Taiwan"@en ;
+        world:inContinent  cont:eastAsia ;
+        owl:sameAs         wikipedia:Taiwan , wd:Q865 .
+
+ctry:Q1045  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Est"@fr , "sovereign state in Africa"@en ;
+        rdfs:label         "Somalie"@fr , "Somalia"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Somalia , wd:Q1045 .
+
+ctry:Q986  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays de l'Afrique de l'Est"@fr , "country in the Horn of Africa"@en ;
+        rdfs:label         "Érythrée"@fr , "Eritrea"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Eritrea , wd:Q986 .
+
+ctry:Q794  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Western Asia"@en , "État d'Asie de l'Ouest"@fr ;
+        rdfs:label         "Iran"@fr , "Iran"@en ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wikipedia:Iran , wd:Q794 .
+
+ctry:Q965  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in Africa"@en ;
+        rdfs:label         "Burkina Faso"@fr , "Burkina Faso"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Burkina_Faso , wd:Q965 .
+
+ctry:Q39  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Europe centrale"@fr , "country in Central Europe"@en ;
+        rdfs:label         "Suisse"@fr , "Switzerland"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Switzerland , wd:Q39 .
+
+ctry:Q902  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Asie du Sud"@fr , "country in South Asia"@en ;
+        rdfs:label         "Bangladesh"@fr , "Bangladesh"@en ;
+        world:inContinent  cont:southAsia ;
+        owl:sameAs         wikipedia:Bangladesh , wd:Q902 .
+
+ctry:Q710  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "island sovereign state in the central Pacific Ocean"@en , "État insulaire d'Océanie"@fr ;
+        rdfs:label         "Kiribati"@fr , "Kiribati"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Kiribati , wd:Q710 .
+
+ctry:Q347  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "country in Central Europe"@en , "principauté d'Europe"@fr ;
+        rdfs:label         "Liechtenstein"@fr , "Liechtenstein"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q347 , wikipedia:Liechtenstein .
+
+ctry:Q155  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in South America"@en , "pays d'Amérique du Sud"@fr ;
+        rdfs:label         "Brésil"@fr , "Brazil"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Brazil , wd:Q155 .
+
+ctry:Q1032  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in western Africa"@en ;
+        rdfs:label         "Niger"@fr , "Niger"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Niger , wd:Q1032 .
+
+ctry:Q1011  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state comprising ten islands off the Western coast of Africa"@en , "pays insulaire d'Afrique occidentale"@fr ;
+        rdfs:label         "Cape Verde"@en , "Cap-Vert"@fr ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wd:Q1011 , wikipedia:Cape_Verde .
+
+ctry:Q810  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "État du Proche-Orient"@fr , "country in Western Asia"@en ;
+        rdfs:label         "Jordan"@en , "Jordanie"@fr ;
+        world:inContinent  cont:northAfrica ;
+        owl:sameAs         wikipedia:Jordan , wd:Q810 .
+
+ctry:Q781  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "island sovereign state in the Caribbean Sea"@en , "pays des Antilles"@fr ;
+        rdfs:label         "Antigua and Barbuda"@en , "Antigua-et-Barbuda"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Antigua_and_Barbuda , wd:Q781 .
+
+ctry:Q760  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "island sovereign state in the Caribbean Sea"@en , "État insulaire des Antilles"@fr ;
+        rdfs:label         "Saint Lucia"@en , "Sainte-Lucie"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wd:Q760 , wikipedia:Saint_Lucia .
+
+ctry:Q213  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d’Europe"@fr , "country in Central Europe"@en ;
+        rdfs:label         "Tchéquie"@fr , "Czech Republic"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q213 , wikipedia:Czech_Republic .
+
+ctry:Q739  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Amérique du Sud"@fr , "sovereign state in South America"@en ;
+        rdfs:label         "Colombie"@fr , "Colombia"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Colombia , wd:Q739 .
+
+ctry:Q184  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Europe orientale"@fr , "country in Eastern Europe"@en ;
+        rdfs:label         "Biélorussie"@fr , "Belarus"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Belarus , wd:Q184 .
+
+ctry:Q881  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Southeast Asia"@en , "pays d’Asie du Sud-Est"@fr ;
+        rdfs:label         "Viêt Nam"@fr , "Vietnam"@en ;
+        world:inContinent  cont:southAsia ;
+        owl:sameAs         wikipedia:Vietnam , wd:Q881 .
+
+ctry:Q334  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "cité-État d'Asie du Sud-Est"@fr , "city-state in maritime Southeast Asia"@en ;
+        rdfs:label         "Singapour"@fr , "Singapore"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wikipedia:Singapore , wd:Q334 .
+
+ctry:Q142  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays transcontinental au territoire métropolitain en Europe de l'Ouest"@fr , "country in Western Europe"@en ;
+        rdfs:label         "France"@en , "France"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q142 , wikipedia:France .
+        
+ctry:Q29  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Europe"@fr , "country in southwestern Europe with territories in Africa"@en ;
+        rdfs:label         "Spain"@en , "Espagne"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q29 , wikipedia:France .
+
+ctry:Q668  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Asie du Sud"@fr , "country in South Asia"@en ;
+        rdfs:label         "India"@en , "Inde"@fr ;
+        world:inContinent  cont:southAsia ;
+        owl:sameAs         wikipedia:India , wd:Q668 .
+
+ctry:Q1019  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays situé dans la partie occidentale de l'océan Indien"@fr , "island sovereign state off the coast of Southeast Africa, in the Indian Ocean"@en ;
+        rdfs:label         "Madagascar"@fr , "Madagascar"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Madagascar , wd:Q1019 .
+
+ctry:Q55  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Northwestern Europe with territories in the Caribbean"@en , "l'un des quatre pays constitutifs du royaume des Pays-Bas (partie européenne)"@fr ;
+        rdfs:label         "Pays-Bas"@fr , "Netherlands"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q55 , wikipedia:Netherlands .
+
+ctry:Q34  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Europe du Nord situé en Scandinavie"@fr , "country in Northern Europe"@en ;
+        rdfs:label         "Suède"@fr , "Sweden"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Sweden , wd:Q34 .
+
+ctry:Q1006  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in West Africa"@en ;
+        rdfs:label         "Guinée"@fr , "Guinea"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Guinea , wd:Q1006 .
+
+ctry:Q805  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state in western Asia"@en , "pays arabe situé à la pointe sud-ouest de la péninsule d'Arabie"@fr ;
+        rdfs:label         "Yemen"@en , "Yémen"@fr ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wikipedia:Yemen , wd:Q805 .
+
+ctry:Q229  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays insulaire méditerranéen"@fr , "sovereign state situated on an island in the Eastern Mediterranean Sea"@en ;
+        rdfs:label         "Chypre"@fr , "Cyprus"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Cyprus , wd:Q229 .
+
+ctry:Q734  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Amérique du Sud"@fr , "country in South America"@en ;
+        rdfs:label         "Guyana"@fr , "Guyana"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Guyana , wd:Q734 .
+
+ctry:Q1014  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Ouest"@fr , "sovereign state in West Africa"@en ;
+        rdfs:label         "Liberia"@fr , "Liberia"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Liberia , wd:Q1014 .
+
+ctry:Q258  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique"@fr , "country in Southern Africa"@en ;
+        rdfs:label         "Afrique du Sud"@fr , "South Africa"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:South_Africa , wd:Q258 .
+
+ctry:Q784  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays de l'archipel des Caraïbes"@fr , "island sovereign state in the Caribbean Sea"@en ;
+        rdfs:label         "Dominica"@en , "Dominique"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Dominica , wd:Q784 .
+
+ctry:Q408  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Oceania"@en , "pays d'Océanie"@fr ;
+        rdfs:label         "Australia"@en , "Australie"@fr ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wd:Q408 , wikipedia:Australia .
+
+ctry:Q763  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "island sovereign state in the Caribbean Sea"@en , "État situé dans les petites Antilles"@fr ;
+        rdfs:label         "Saint-Christophe-et-Niévès"@fr , "Saint Kitts and Nevis"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Saint_Kitts_and_Nevis , wd:Q763 .
+
+ctry:Q884  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Asie de l'Est"@fr , "country in East Asia"@en ;
+        rdfs:label         "South Korea"@en , "Corée du Sud"@fr ;
+        world:inContinent  cont:eastAsia ;
+        owl:sameAs         wd:Q884 , wikipedia:South_Korea .
+
+ctry:Q145  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in north-west Europe"@en , "pays d'Europe occidentale"@fr ;
+        rdfs:label         "Royaume-Uni"@fr , "United Kingdom"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:United_Kingdom , wd:Q145 .
+
+ctry:Q842  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "sultanat du Moyen-Orient, au sud-est de la péninsule d’Arabie"@fr , "sovereign state in western Asia"@en ;
+        rdfs:label         "Oman"@fr , "Oman"@en ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wd:Q842 , wikipedia:Oman .
+
+ctry:Q800  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Central America"@en , "pays d'Amérique centrale"@fr ;
+        rdfs:label         "Costa Rica"@fr , "Costa Rica"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Costa_Rica , wd:Q800 .
+
+ctry:Q34754  rdf:type      world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays de la corne de l'Afrique dont la reconnaissance est limitée"@fr , "de facto state in the Horn of Africa"@en ;
+        rdfs:label         "Somaliland"@fr , "Somaliland"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:Somaliland , wd:Q34754 .
+
+ctry:Q792  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Amérique centrale"@fr , "sovereign state in Central America"@en ;
+        rdfs:label         "El Salvador"@en , "Salvador"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wd:Q792 , wikipedia:El_Salvador .
+
+ctry:Q963  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique australe"@fr , "sovereign state in Southern Africa"@en ;
+        rdfs:label         "Botswana"@fr , "Botswana"@en ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wikipedia:Botswana , wd:Q963 .
+
+ctry:Q79  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state in North Africa and Asia"@en , "pays d'Afrique du Nord"@fr ;
+        rdfs:label         "Égypte"@fr , "Egypt"@en ;
+        world:inContinent  cont:northAfrica ;
+        owl:sameAs         wikipedia:Egypt , wd:Q79 .
+
+ctry:Q224  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Europe"@fr , "country in Southeast Europe"@en ;
+        rdfs:label         "Croatia"@en , "Croatie"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Croatia , wd:Q224 .
+
+ctry:Q750  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Amérique du Sud"@fr , "sovereign state in South America"@en ;
+        rdfs:label         "Bolivia"@en , "Bolivie"@fr ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Bolivia , wd:Q750 .
+
+ctry:Q37  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Eastern Europe"@en , "pays d'Europe"@fr ;
+        rdfs:label         "Lithuania"@en , "Lituanie"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wd:Q37 , wikipedia:Lithuania .
+
+ctry:Q16  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Amérique du Nord"@fr , "country in North America"@en ;
+        rdfs:label         "Canada"@fr , "Canada"@en ;
+        world:inContinent  cont:northAmerica ;
+        owl:sameAs         wikipedia:Canada , wd:Q16 .
+
+ctry:Q1030  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique australe"@fr , "country in Southern Africa"@en ;
+        rdfs:label         "Namibia"@en , "Namibie"@fr ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wd:Q1030 , wikipedia:Namibia .
+
+ctry:Q1009  rdf:type       world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique"@fr , "sovereign state in West Africa"@en ;
+        rdfs:label         "Cameroun"@fr , "Cameroon"@en ;
+        world:inContinent  cont:middleAfrica ;
+        owl:sameAs         wikipedia:Cameroon , wd:Q1009 .
+
+ctry:Q971  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique centrale dont la capitale est Brazzaville"@fr , "country in Central Africa"@en ;
+        rdfs:label         "République du Congo"@fr , "Republic of the Congo"@en ;
+        world:inContinent  cont:middleAfrica ;
+        owl:sameAs         wikipedia:Republic_of_the_Congo , wd:Q971 .
+
+ctry:Q232  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Asie centrale et en partie d'Europe de l'Est"@fr , "sovereign state in Eastern Europe and Central Asia"@en ;
+        rdfs:label         "Kazakhstan"@fr , "Kazakhstan"@en ;
+        world:inContinent  cont:centralAsia ;
+        owl:sameAs         wd:Q232 , wikipedia:Kazakhstan .
+
+ctry:Q211  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state in northeastern Europe"@en , "pays d'Europe du Nord-Est"@fr ;
+        rdfs:label         "Lettonie"@fr , "Latvia"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Latvia , wd:Q211 .
+
+ctry:Q929  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "État d'Afrique centrale"@fr , "country in Central Africa"@en ;
+        rdfs:label         "République centrafricaine"@fr , "Central African Republic"@en ;
+        world:inContinent  cont:middleAfrica ;
+        owl:sameAs         wikipedia:Central_African_Republic , wd:Q929 .
+
+ctry:Q45  rdf:type         owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Southwestern Europe"@en , "pays d'Europe"@fr ;
+        rdfs:label         "Portugal"@fr , "Portugal"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Portugal , wd:Q45 .
+
+ctry:Q858  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "sovereign state in western Asia"@en , "État arabe du Proche-Orient"@fr ;
+        rdfs:label         "Syrie"@fr , "Syria"@en ;
+        world:inContinent  cont:westernAsia ;
+        owl:sameAs         wikipedia:Syria , wd:Q858 .
+
+ctry:Q837  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "république fédérale d’Asie du Sud enclavée dans l’Himalaya"@fr , "country in South Asia"@en ;
+        rdfs:label         "Népal"@fr , "Nepal"@en ;
+        world:inContinent  cont:southAsia ;
+        owl:sameAs         wikipedia:Nepal , wd:Q837 .
+
+ctry:Q958  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique de l'Est"@fr , "country in East Africa"@en ;
+        rdfs:label         "Soudan du Sud"@fr , "South Sudan"@en ;
+        world:inContinent  cont:eastAfrica ;
+        owl:sameAs         wikipedia:South_Sudan , wd:Q958 .
+
+ctry:Q766  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "État insulaire des Caraïbes"@fr , "country in the Caribbean Sea"@en ;
+        rdfs:label         "Jamaïque"@fr , "Jamaica"@en ;
+        world:inContinent  cont:southAmerica ;
+        owl:sameAs         wikipedia:Jamaica , wd:Q766 .
+
+ctry:Q219  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Southeast Europe"@en , "pays d'Europe"@fr ;
+        rdfs:label         "Bulgarie"@fr , "Bulgaria"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Bulgaria , wd:Q219 .
+
+ctry:Q916  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Afrique du sud-ouest"@fr , "sovereign state in Africa"@en ;
+        rdfs:label         "Angola"@fr , "Angola"@en ;
+        world:inContinent  cont:middleAfrica ;
+        owl:sameAs         wikipedia:Angola , wd:Q916 .
+
+ctry:Q695  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "island sovereign state in Oceania"@en , "pays d'Océanie"@fr ;
+        rdfs:label         "Palaos"@fr , "Palau"@en ;
+        world:inContinent  cont:oceania ;
+        owl:sameAs         wd:Q695 , wikipedia:Palau .
+
+ctry:Q148  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays d'Asie"@fr , "country in East Asia"@en ;
+        rdfs:label         "République populaire de Chine"@fr , "People's Republic of China"@en ;
+        world:inContinent  cont:eastAsia ;
+        owl:sameAs         wd:Q148 , wikipedia:China .
+
+ctry:Q1025  rdf:type       owl:NamedIndividual , world:country ;
+        rdfs:comment       "pays du nord-ouest africain"@fr , "sovereign state in West Africa and North Africa"@en ;
+        rdfs:label         "Mauritania"@en , "Mauritanie"@fr ;
+        world:inContinent  cont:africa ;
+        owl:sameAs         wd:Q1025 , wikipedia:Mauritania .
+        
+ctry:Q31  rdf:type         world:country , owl:NamedIndividual ;
+        rdfs:comment       "country in western Europe"@en , "État d'Europe occidentale"@fr ;
+        rdfs:label         "Belgium"@en , "Belgique"@fr ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Belgium , wikidata:Q31 .
+
+ctry:Q403  rdf:type        world:country , owl:NamedIndividual ;
+        rdfs:comment       "pays d'Europe du Sud"@fr , "country in southeastern Europe"@en ;
+        rdfs:label         "Serbie"@fr , "Serbia"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikipedia:Serbia , wikidata:Q403 .  
+
+ctry:Q212  rdf:type        owl:NamedIndividual , world:country ;
+        rdfs:comment       "country in Eastern Europe"@en , "pays d'Europe de l'Est"@fr ;
+        rdfs:label         "Ukraine"@fr , "Ukraine"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs         wikidata:Q212 , wikipedia:Ukraine .             
+        
+ctry:Q235  rdf:type   world:country , owl:NamedIndividual ;
+        rdfs:comment  "principauté européenne"@fr , "sovereign city-state on the French Riviera"@en ;
+        rdfs:label    "Monaco"@fr , "Monaco"@en ;
+        world:inContinent  cont:europe ;
+        owl:sameAs    wikipedia:Monaco , wikidata:Q235 .
+                        

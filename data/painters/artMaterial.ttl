@@ -1,0 +1,13 @@
+prefix art: <http://www.art.org/ontology/art#> 
+prefix mat: <http://www.art.org/ontology/art/material#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix wikidata:  <http://www.wikidata.org/entity/> 
+
+mat:Q296955 rdf:type art:paintingMaterial; rdfs:label "oil painting"@en , "peinture à l'huile"@fr ; owl:sameAs wikidata:Q296955 .
+mat:Q207849 rdf:type art:paintingMaterial; rdfs:label "acrylic paint"@en , "peinture acrylique"@fr ; owl:sameAs wikidata:Q207849 .

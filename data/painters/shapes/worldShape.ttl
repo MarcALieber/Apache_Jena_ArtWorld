@@ -1,0 +1,91 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix : <http://www.art.org/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix art:       <http://www.art.org/ontology/art#> .
+@prefix world:     <http://www.art.org/ontology/world#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+schema:continentShape
+    a sh:NodeShape ;
+    sh:targetClass world:continent ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:minCount 1;
+        sh:maxCount 2;
+        sh:name "label" ;
+        sh:description "the label of the country must exist";
+    ] .
+
+schema:countryShape
+    a sh:NodeShape ;
+    sh:targetClass world:country ;
+    sh:property [
+        sh:path world:inContinent  ;
+        sh:nodeKind sh:IRI ;
+        sh:name "continent" ;
+        sh:minCount 1;
+        sh:maxCount 1;
+        sh:message "A country must belong to a unique Continent";
+    ] ;
+    sh:property [
+        sh:path world:inContinent ;
+        sh:node schema:continentShape ;
+        sh:message "Unknown Continent for that Country";
+    ] ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:minCount 1;
+        sh:maxCount 2;
+        sh:name "label" ;
+        sh:description "the label of the country must exist";
+    ] ;
+    sh:property [
+        sh:path rdfs:comment ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:name "comment" ;
+    ] .
+
+schema:cityShape
+    a sh:NodeShape ;
+      sh:targetClass world:city ;
+      #sh:closed true ;
+        sh:property [
+        sh:path world:isCityOf  ;
+        sh:nodeKind sh:IRI ;
+        sh:name "continent" ;
+        sh:minCount 1;
+        sh:maxCount 1;
+        sh:message "A city must belong to a unique Country";
+    ] ;
+    sh:property [
+        sh:path world:isCityOf ;
+        sh:node schema:countryShape ;
+        sh:message "Unknown Country for that City";
+    ] ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:minCount 1;
+        sh:maxCount 2;
+        sh:name "label" ;
+        sh:description "the label of the city must exist";
+        sh:message "A city must have a label with language declaration";
+    ] ;
+    sh:property [
+        sh:path rdfs:comment ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:name "comment" ;
+        sh:message "comment must have unique language declaration";
+    ] .

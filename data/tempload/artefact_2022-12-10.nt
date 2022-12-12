@@ -1,0 +1,1195 @@
+@prefix art:       <http://www.art.org/ontology/art#> .
+@prefix mat:       <http://www.art.org/ontology/art/material#> .
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix mvmt:      <http://www.art.org/ontology/movement#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix person:    <http://www.art.org/ontology/person#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:    <http://schema.org/> .
+@prefix wd:        <http://www.wikidata.org/entity/> .
+@prefix wdt:       <http://www.wikidata.org/prop/direct/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+art:Q28061187  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Vermeer van Haarlem"@en , "peinture de J. II van der Meer (1628 - 1691)"@fr ;
+        rdfs:label       "Landscape"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       "53"^^xsd:decimal ;
+        art:inception    1670 ;
+        art:location     mus:Q28058409 , mus:Q1053735 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/J.%20II%20van%20der%20Meer%20-%20Een%20bosweg%20-%20NK2658%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg> ;
+        art:width        "66"^^xsd:decimal ;
+        owl:sameAs       wd:Q28061187 .
+
+art:Q19912828  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Paysage horticole italien"@fr , "Italian horticultural landscape"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "110"^^xsd:decimal ;
+        art:inception    1913 ;
+        art:location     mus:Q18410543 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Italienische%20Gartenlandschaft%20%28Klimt%29.jpg> ;
+        art:width        "110"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912828 .
+
+art:Q98955374  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Portrait of Friedericke Maria Beer"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "168"^^xsd:decimal ;
+        art:inception    1916 ;
+        art:location     mus:Q1267958 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Friedericke%20Maria%20Beer.jpg> ;
+        art:width        "130"^^xsd:decimal ;
+        owl:sameAs       wd:Q98955374 .
+
+art:Q104532781  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "peinture de Jan van der Meer II"@fr , "painting by Jan van der Meer II"@en ;
+        rdfs:label       "Waterside landscape"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       54.2 ;
+        art:location     mus:Q153306 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20II%20-%20Waterside%20landscape%20-%20M.Ob.416%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg> ;
+        art:width        64.3 ;
+        owl:sameAs       wd:Q104532781 .
+
+art:Q20354609  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Jan van der Meer d.Y."@en , "tableau de Jan Vermeer van Haarlem le jeune"@fr ;
+        rdfs:label       "Wooded Country with Cattle"@en ;
+        art:createdBy    person:Q944834 ;
+        art:inception    1679 ;
+        art:location     mus:Q671384 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20d.Y.%20-%20Wooded%20Country%20with%20Cattle%20-%20KMSsp643%20-%20Statens%20Museum%20for%20Kunst.jpg> ;
+        owl:sameAs       wd:Q20354609 .
+
+art:Q106522623  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:label       "Woman with fan"@en , "Dame à l'éventail"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "100"^^xsd:decimal ;
+        art:inception    1917 ;
+        art:location     mus:Q59435 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Dame%20mit%20F%C3%A4cher.jpeg> ;
+        owl:sameAs       wd:Q106522623 .
+
+art:Q19912822  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "A Morning by the Pond"@en , "Étang calme"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "751"^^xsd:decimal ;
+        art:inception    1899 ;
+        art:location     mus:Q59435 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Tranquil%20Pond%20%28Egelsee%20near%20Golling%2C%20Salzburg%29%20-%20Google%20Art%20Project.jpg> ;
+        art:width        "751"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912822 .
+
+art:Q11776859  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt in University of Vienna"@en ;
+        rdfs:label       "Medicine"@en ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1907 ;
+        art:location     mus:Q165980 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Fakult%C3%A4tsbild%20Medizin.jpg> ;
+        owl:sameAs       wd:Q11776859 .
+
+art:Q19912807  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Approaching Thunderstorm (The Large Poplar II)"@en , "Orage approchant (Le Grand Peuplier II)"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "1008"^^xsd:decimal ;
+        art:inception    1903 ;
+        art:location     mus:Q59435 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Approaching%20Thunderstorm%20%28The%20Large%20Poplar%20II%29%20-%20Google%20Art%20Project.jpg> ;
+        art:width        "1007"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912807 .
+
+art:Q4311873  rdf:type   owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "peinture de Gustav Klimt"@fr ;
+        rdfs:label       "L'Espoir"@fr , "Hope"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "189"^^xsd:decimal ;
+        art:inception    1903 ;
+        art:location     mus:Q1068063 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Hoffnung%20I%20-%201903.jpeg> ;
+        art:width        "67"^^xsd:decimal ;
+        owl:sameAs       wd:Q4311873 , wikipedia:Hope_I .
+
+art:Q3829156  rdf:type   art:painting , owl:NamedIndividual ;
+        rdfs:comment     "peinture de Gustav Klimt"@fr , "Painting"@en ;
+        rdfs:label       "Les Trois Âges de la femme"@fr , "The Three Ages of the Woman"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "5110"^^xsd:decimal ;
+        art:inception    1905 ;
+        art:location     mus:Q1492387 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Les%20trois%20%C3%A2ges%20de%20G.%20Klimt%20%28GNAM%2C%20Rome%29%20%285974941554%29.jpg> ;
+        art:width        "180"^^xsd:decimal ;
+        owl:sameAs       wd:Q3829156 , <https://en.wikipedia.org/wiki/The_Three_Ages_of_Woman_(Klimt)> .
+
+art:Q104120179  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Goldfish"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "181"^^xsd:decimal ;
+        art:inception    1902 ;
+        art:location     mus:Q683163 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Goldfische%20-%201901-02.jpeg> ;
+        art:width        "67"^^xsd:decimal ;
+        owl:sameAs       wd:Q104120179 .
+
+art:Q5967091  rdf:type   art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "peinture de Gustav Klimt"@fr ;
+        rdfs:label       "The Virgin"@en , "Les Vierges"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "190"^^xsd:decimal ;
+        art:inception    1913 ;
+        art:location     mus:Q496259 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/KlimtDieJungfrau.jpg> ;
+        art:width        "200"^^xsd:decimal ;
+        owl:sameAs       wd:Q5967091 , <https://en.wikipedia.org/wiki/The_Maiden_(Klimt)> .
+
+art:Q111648942  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Jan d. J. Vermeer van Haarlem (1656-1705)"@en ;
+        rdfs:label       "landscape with a white horse"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       29.5 ;
+        art:inception    1681 ;
+        art:location     mus:Q1053735 , mus:Q475667 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20d.%20J.%20Vermeer%20van%20Haarlem%20%281656-1705%29%20-%20Landschaft%2C%20im%20Vordergrund%20ein%20Schimmel%20-%203421%20-%20F%C3%BChrermuseum.jpg> ;
+        art:width        "36"^^xsd:decimal ;
+        owl:sameAs       wd:Q111648942 .
+
+art:Q16917809  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Pear Tree"@en , "Poirier"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "101"^^xsd:decimal ;
+        art:inception    1903 ;
+        art:location     mus:Q1017269 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Pear%20Tree%20-%20BR66.4%20-%20Busch%E2%80%93Reisinger%20Museum.jpg> ;
+        art:width        "101"^^xsd:decimal ;
+        owl:sameAs       <https://en.wikipedia.org/wiki/Birnbaum_(painting)> , wd:Q16917809 .
+
+art:Q28797757  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Blind Man"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "660"^^xsd:decimal ;
+        art:inception    1896 ;
+        art:location     mus:Q59435 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Blind%20Man%20-%20Google%20Art%20Project.jpg> ;
+        art:width        "532"^^xsd:decimal ;
+        owl:sameAs       wd:Q28797757 .
+
+art:Q28002664  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "110"^^xsd:decimal ;
+        art:inception    1910 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Schloss%20Kammer%20am%20Attersee%20III%20-%204318%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "110"^^xsd:decimal ;
+        owl:sameAs       wd:Q28002664 .
+
+art:Q104535351  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Jan van der Meer II"@en , "peinture de Jan van der Meer II"@fr ;
+        rdfs:label       "Mountain landscape with travellers"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       48.2 ;
+        art:inception    1677 ;
+        art:location     mus:Q153306 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20II%20-%20Mountain%20landscape%20with%20travellers%20-%20M.Ob.1814%20MNW%20-%20National%20Museum%20in%20Warsaw.jpg> ;
+        art:width        64.5 ;
+        owl:sameAs       wd:Q104535351 .
+
+art:Q26713913  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "peinture de Gustav Klimt"@fr ;
+        rdfs:label       "Portrait de Hermine Gallia"@fr , "Portrait of Hermine Gallia"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       170.5 ;
+        art:inception    1904 ;
+        art:location     mus:Q180788 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20053.jpg> ;
+        art:width        96.5 ;
+        owl:sameAs       wd:Q26713913 .
+
+art:Q24860753  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "peinture de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Portrait of Eugenia Primavesi"@en , "Eugenia Primavesi"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "140"^^xsd:decimal ;
+        art:inception    1913 ;
+        art:location     mus:Q4461630 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Bildnis%20Eugenia%20Primaesi.jpg> ;
+        art:width        "85"^^xsd:decimal ;
+        owl:sameAs       wd:Q24860753 .
+
+art:Q6058798  rdf:type   owl:NamedIndividual , art:painting ;
+        rdfs:comment     "peinture de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Pallas Athena"@en , "Pallas Athéna"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "75"^^xsd:decimal ;
+        art:inception    1899 ;
+        art:location     mus:Q505873 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20045.jpg> ;
+        art:width        "75"^^xsd:decimal ;
+        owl:sameAs       wd:Q6058798 .
+
+art:Q30093545  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Jan Vermeer van Haarlem le jeune"@fr , "painting by Jan van der Meer d. J. (Vermeer)"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       "38"^^xsd:decimal ;
+        art:inception    1680 ;
+        art:location     mus:Q154568 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20d.%20J.%20%28Vermeer%29%20-%20Waldweg%20-%201926%20-%20Bavarian%20State%20Painting%20Collections.jpg> ;
+        art:width        "30"^^xsd:decimal ;
+        owl:sameAs       wd:Q30093545 .
+
+art:Q102320121  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Portrait d'Emilie Flöge"@fr , "Portrait of Emilie Flöge"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "181"^^xsd:decimal ;
+        art:inception    1902 ;
+        art:location     mus:Q50379321 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20Emilie%20Fl%C3%B6ge%20Gustav%20Klimt%201902.jpg> ;
+        art:width        "84"^^xsd:decimal ;
+        owl:sameAs       wd:Q102320121 .
+
+art:Q64527604  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Jan Vermeer van Haarlem III"@fr , "painting by Jan Vermeer van Haarlem III"@en ;
+        rdfs:label       "Mountain Landscape with Cattle and Herders"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       67.8 ;
+        art:inception    1680 ;
+        art:location     mus:Q566661 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Vermeer%20van%20Haarlem%20III%20-%20Berglandschaft%20mit%20Vieh%20und%20Landleuten.jpg> ;
+        art:width        86.2 ;
+        owl:sameAs       wd:Q64527604 .
+
+art:Q17319990  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "peinture de Jan Vermeer van Haarlem le jeune"@fr , "painting by Jan van der (II) Meer"@en ;
+        rdfs:label       "Le berger qui dort"@fr , "The Sleeping Shepherd"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       "65"^^xsd:decimal ;
+        art:inception    1678 ;
+        art:location     mus:Q190804 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/De%20slapende%20herder%20Rijksmuseum%20SK-A-248.jpeg> ;
+        art:width        "83"^^xsd:decimal ;
+        owl:sameAs       wd:Q17319990 .
+
+art:Q28007512  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Portrait de Amalie Zuckerkandl"@fr , "Portrait of Amalie Zuckerkandl"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "128"^^xsd:decimal ;
+        art:inception    1917 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Amalie%20Zuckerkandl%20-%207700%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "128"^^xsd:decimal ;
+        owl:sameAs       wd:Q28007512 .
+
+art:Q19912819  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Champ de coquelicots"@fr , "Mohnfeld"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "110"^^xsd:decimal ;
+        art:inception    1907 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Bl%C3%BChender%20Mohn%20-%205166%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "110"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912819 .
+
+art:Q2041139  rdf:type   art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "peinture de Gustav Klimt"@fr ;
+        rdfs:label       "Judith II"@fr , "Judith II"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "178"^^xsd:decimal ;
+        art:inception    1909 ;
+        art:location     mus:Q3940563 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20038.jpg> ;
+        art:width        "46"^^xsd:decimal ;
+        owl:sameAs       wd:Q2041139 .
+
+art:Q18685954  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "peinture de Gustav Klimt"@fr ;
+        rdfs:label       "Beech Grove I"@en , "Forêt de hêtres"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "1000"^^xsd:decimal ;
+        art:inception    1902 ;
+        art:location     mus:Q472706 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Beech%20Grove%20I%20-%20Google%20Art%20Project.jpg> ;
+        art:width        "1000"^^xsd:decimal ;
+        owl:sameAs       wd:Q18685954 .
+
+art:Q107534436  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Auditorium of the old Burgtheater"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       91.2 ;
+        art:inception    1888 ;
+        art:location     mus:Q505873 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Burgtheater%20Auditorium.jpg> ;
+        art:width        "103"^^xsd:decimal ;
+        owl:sameAs       wd:Q107534436 .
+
+art:Q19912813  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Jardin de campagne avec tournesols"@fr , "Bauerngarten mit Sonnenblumen"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "110"^^xsd:decimal ;
+        art:inception    1906 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20035.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Bauerngarten%20mit%20Sonnenblumen%20-%20ca1907.jpeg> ;
+        art:width        "110"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912813 .
+
+art:Q17029800  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "L'Arbre de Vie, Frise Stoclet"@fr , "The Tree of Life"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "195"^^xsd:decimal ;
+        art:inception    1909 ;
+        art:location     mus:Q478455 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/KlimtLebensbaum.jpg> ;
+        owl:sameAs       wd:Q17029800 , <https://en.wikipedia.org/wiki/The_Tree_of_Life,_Stoclet_Frieze> .
+
+art:Q28002801  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Sonja Knips"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "145"^^xsd:decimal ;
+        art:inception    1898 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Sonja%20Knips%20-%204403%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "146"^^xsd:decimal ;
+        owl:sameAs       wd:Q28002801 .
+
+art:Q17635088  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "peinture de Gustav Klimt"@fr ;
+        rdfs:label       "Le Bébé"@fr , "Baby (Cradle)"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       110.9 ;
+        art:inception    1917 ;
+        art:location     mus:Q214867 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Baby%20%28Cradle%29%20A18969.jpg> ;
+        art:width        110.4 ;
+        owl:sameAs       wd:Q17635088 .
+
+art:Q19912826  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Paysage horticole avec un sommet de colline"@fr , "Horticultural Landscape with a Hilltop (Parish Garden)"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "110"^^xsd:decimal ;
+        art:inception    1916 ;
+        art:location     mus:Q18410543 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gartenlandschaft%20mit%20Bergkuppe%20%28Pfarrgarten%29.jpg> ;
+        art:width        "110"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912826 .
+
+art:Q19883512  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "peinture de Gustav Klimt, Museum of Modern Art, New York"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Hope II"@en , "L'Espoir"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "1105"^^xsd:decimal ;
+        art:inception    1907 ;
+        art:location     mus:Q188740 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Hope%2C%20II%20-%20Google%20Art%20Project.jpg> ;
+        art:width        "1105"^^xsd:decimal ;
+        owl:sameAs       wikipedia:Hope_II , wd:Q19883512 .
+
+art:Q698487  rdf:type    art:painting , owl:NamedIndividual ;
+        rdfs:comment     "peinture de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "The Kiss"@en , "Le Baiser"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "180"^^xsd:decimal ;
+        art:inception    1907 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/The%20Kiss%20-%20Gustav%20Klimt%20-%20Google%20Cultural%20Institute.jpg> ;
+        art:width        "180"^^xsd:decimal ;
+        owl:sameAs       wd:Q698487 , <https://en.wikipedia.org/wiki/The_Kiss_(Klimt)> .
+
+art:Q354396  rdf:type    owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Portrait d'Adele Bloch-Bauer I"@fr , "Portrait of Adele Bloch-Bauer I"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "138"^^xsd:decimal ;
+        art:inception    1907 ;
+        art:location     mus:Q59468 , mus:Q40 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%2C%201907%2C%20Adele%20Bloch-Bauer%20I%2C%20Neue%20Galerie%20New%20York.jpg> ;
+        art:width        "147"^^xsd:decimal ;
+        owl:sameAs       wikipedia:Portrait_of_Adele_Bloch-Bauer_I , wd:Q354396 .
+
+art:Q58427154  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "part of center wall of mural painting by Gustav Klimt in Secession Building in Vienna"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Beethoven Frieze (plate 6, center wall): The Hostile Powers"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "215"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Nagender%20Kummer.jpeg> ;
+        art:width        315.5 ;
+        owl:sameAs       wd:Q58427154 .
+
+art:Q28061029  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "peinture de Vermeer van Haarlem (1628 - 1691)"@fr , "painting by Vermeer van Haarlem"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       "61"^^xsd:decimal ;
+        art:inception    1670 ;
+        art:location     mus:Q28058409 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Vermeer%20van%20Haarlem%20-%20Landschap%20met%20grote%20bomen%20en%20rustende%20reizigers%20bij%20een%20landweg%20-%20NK2095%20-%20Cultural%20Heritage%20Agency%20of%20the%20Netherlands%20Art%20Collection.jpg> ;
+        art:width        "83"^^xsd:decimal ;
+        owl:sameAs       wd:Q28061029 .
+
+art:Q19912820  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Oberösterreichisches Bauernhaus"@en , "Maison de campagne de Haute-Autriche"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "110"^^xsd:decimal ;
+        art:inception    1911 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Ober%C3%B6sterreichisches%20Bauernhaus.jpeg> ;
+        art:width        "110"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912820 .
+
+art:Q28442857  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Klimt"@en ;
+        rdfs:label       "Portrait of a Lady"@en , "Portrait d'une Dame"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "60"^^xsd:decimal ;
+        art:inception    1910 ;
+        art:location     mus:Q3757722 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav-Klimt%2C%20Portrait%20of%20a%20Lady%2C%201917%2C%20Galleria%20d%27Arte%20Moderna%20Ricci%20Oddi.jpg> ;
+        art:width        "55"^^xsd:decimal ;
+        owl:sameAs       wd:Q28442857 , <https://en.wikipedia.org/wiki/Portrait_of_a_Lady_(Klimt)> .
+
+art:Q26258071  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Portrait of Margaret Stonborough-Wittgenstein"@en , "Portrait de Margarethe Stonborough-Wittgenstein"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       179.8 ;
+        art:inception    1905 ;
+        art:location     mus:Q170152 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20055.jpg> ;
+        art:width        90.5 ;
+        owl:sameAs       wd:Q26258071 .
+
+art:Q30093544  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Jan van der Meer d. J. (Vermeer)"@en , "tableau de Jan Vermeer van Haarlem le jeune"@fr ;
+        art:createdBy    person:Q944834 ;
+        art:height       "125"^^xsd:decimal ;
+        art:inception    1680 ;
+        art:location     mus:Q154568 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20d.%20J.%20%28Vermeer%29%20-%20Waldlandschaft%20mit%20%C3%9Cberfall%20-%201225%20-%20Bavarian%20State%20Painting%20Collections.jpg> ;
+        art:width        136.8 ;
+        owl:sameAs       wd:Q30093544 .
+
+art:Q58427233  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "part of right wall of mural painting by Gustav Klimt in Secession Building in Vienna"@en ;
+        rdfs:label       "Beethoven Frieze (plate 7, right wall): Yearning for happiness is assuaged in poetry"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "215"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Beethovenfries%2C%20%22Die%20Sehnsucht%20nach%20Gl%C3%BCck%20findet%20Stillung%20in%20der%20Poesie%22%20%28Tafel%207%2C%20rechte%20Langwand%29%20-%205987-7%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "516"^^xsd:decimal ;
+        owl:sameAs       wd:Q58427233 .
+
+art:Q58427095  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "part of left wall of mural painting by Gustav Klimt in Secession Building in Vienna"@en ;
+        rdfs:label       "Beethoven Frieze (plate 3, left wall): Yearning for Happiness"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "215"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Beethovenfries%2C%20%22Die%20Leiden%20der%20schwachen%20Menschheit%22%20und%20%22Der%20wohlger%C3%BCstete%20Starke%22%20%28Tafel%203%2C%20linke%20Langwand%29%20-%205987-3%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "276"^^xsd:decimal ;
+        owl:sameAs       wd:Q58427095 .
+
+art:Q28009398  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       30.4 ;
+        art:inception    1899 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Alter%20Mann%20auf%20dem%20Totenbett%20-%208507%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        44.8 ;
+        owl:sameAs       wd:Q28009398 .
+
+art:Q55408969  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1895 ;
+        art:location     mus:Q95569 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Dame%20mit%20lila%20Schal%2C%20um%201895.jpg> ;
+        owl:sameAs       wd:Q55408969 .
+
+art:Q28001663  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Fritza Riedler"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "153"^^xsd:decimal ;
+        art:inception    1906 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Fritza%20Riedler%20-%203379%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "133"^^xsd:decimal ;
+        owl:sameAs       wd:Q28001663 .
+
+art:Q3818154  rdf:type   owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "peinture de Gustav Klimt"@fr ;
+        rdfs:label       "Fulfillment"@en , "L'Accomplissement"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "200"^^xsd:decimal ;
+        art:inception    1907 ;
+        art:location     mus:Q478455 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/KlimtDieUmarmung.jpg> ;
+        art:width        "121"^^xsd:decimal ;
+        owl:sameAs       wd:Q3818154 .
+
+art:Q27998620  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       38.5 ;
+        art:inception    1885 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Entwurf%20f%C3%BCr%20die%20Allegorie%20der%20Musik%20%28Orgelspielerin%29%20-%201459%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "50"^^xsd:decimal ;
+        owl:sameAs       wd:Q27998620 .
+
+art:Q58427061  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "part of left wall of mural painting by Gustav Klimt in Secession Building in Vienna, Austria"@en ;
+        rdfs:label       "Beethoven Frieze (plate 1, left wall): Yearning for Happiness"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "215"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Beethovenfries%2C%20%22Die%20Sehnsucht%20nach%20Gl%C3%BCck%22%20%28Tafel%201%2C%20linke%20Langwand%29%20-%205987-1%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "300"^^xsd:decimal ;
+        owl:sameAs       wd:Q58427061 .
+
+art:Q17495516  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Rosiers sous les arbres"@fr , "Rosebushes under the Trees"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "1100"^^xsd:decimal ;
+        art:inception    1905 ;
+        art:location     mus:Q23402 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Rosebushes%20under%20the%20Trees%20-%20Google%20Art%20Project.jpg> ;
+        art:width        "1100"^^xsd:decimal ;
+        owl:sameAs       wd:Q17495516 .
+
+art:Q1445107  rdf:type   art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Danaë"@en , "Danaé"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "77"^^xsd:decimal ;
+        art:inception    1907 ;
+        art:location     mus:Q59435 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20010.jpg> ;
+        art:width        "83"^^xsd:decimal ;
+        owl:sameAs       <https://en.wikipedia.org/wiki/Dana%C3%AB_(Klimt)> , wd:Q1445107 .
+
+art:Q107534335  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Fable"@fr , "Fable"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       83.5 ;
+        art:inception    1883 ;
+        art:location     mus:Q505873 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Fabel.jpg> ;
+        art:width        "116"^^xsd:decimal ;
+        owl:sameAs       wd:Q107534335 .
+
+art:Q58427112  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "part of left wall of mural painting by Gustav Klimt in Secession Building in Vienna"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Beethoven Frieze (plate 4, left wall): Yearning for Happiness"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "215"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Beethovenfries%2C%20%22Die%20Sehnsucht%20nach%20Gl%C3%BCck%22%20%28Tafel%204%2C%20linke%20Langwand%29%20-%205987-4%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "365"^^xsd:decimal ;
+        owl:sameAs       wd:Q58427112 .
+
+art:Q28015487  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Sunflower"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "110"^^xsd:decimal ;
+        art:inception    1907 ;
+        art:location     mus:Q87193291 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Sonnenblume%20-%2010500%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "110"^^xsd:decimal ;
+        owl:sameAs       wd:Q28015487 .
+
+art:Q19912226  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "peinture de Gustav Klimt"@fr , "painting by Gustav Klimt (MET, 1980.412)"@en ;
+        rdfs:label       "Serena Pulitzer Lederer"@fr , "Serena Pulitzer Lederer (1867–1943)"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       190.8 ;
+        art:inception    1899 ;
+        art:location     mus:Q160236 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Serena%20Pulitzer%20Lederer%20%281867%E2%80%931943%29%20MET%20DP120567.jpg> ;
+        art:width        85.4 ;
+        owl:sameAs       wd:Q19912226 .
+
+art:Q107645867  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Portrait of the pianist Joseph Pembauer"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "65"^^xsd:decimal ;
+        art:inception    1890 ;
+        art:location     mus:Q2436253 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Bildnis%20Joseph%20Pembauer.jpeg> ;
+        art:width        "55"^^xsd:decimal ;
+        owl:sameAs       wd:Q107645867 .
+
+art:Q2324643  rdf:type   owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Judith I"@fr , "Judith and the Head of Holofernes"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "84"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Judith%201%20%28cropped%29.jpg> ;
+        art:width        "42"^^xsd:decimal ;
+        owl:sameAs       wd:Q2324643 , wikipedia:Judith_and_the_Head_of_Holofernes .
+
+art:Q111649287  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Jan d. J. Vermeer van Haarlem (1656-1705)"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       "36"^^xsd:decimal ;
+        art:inception    1681 ;
+        art:location     mus:Q475667 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20d.%20J.%20Vermeer%20van%20Haarlem%20%281656-1705%29%20-%20Abendliche%20Landschaft%20mit%20Staffage%20-%203689%20-%20F%C3%BChrermuseum.jpg> ;
+        art:width        58.5 ;
+        owl:sameAs       wd:Q111649287 .
+
+art:Q111602702  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Allegory of Sculpture"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       43.5 ;
+        art:inception    1889 ;
+        art:location     mus:Q478455 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Allegory%20of%20Sculpture%20-%201889.jpg> ;
+        art:width        "30"^^xsd:decimal ;
+        owl:sameAs       wd:Q111602702 .
+
+art:Q29920763  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "The Music"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       27.5 ;
+        art:inception    1895 ;
+        art:location     mus:Q170152 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Musik1.jpeg> ;
+        art:width        35.5 ;
+        owl:sameAs       wd:Q29920763 .
+
+art:Q58427217  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "part of right wall of mural painting by Gustav Klimt in Secession Building in Vienna"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Beethoven Frieze (plate 8, right wall): Yearning for happiness is assuaged in poetry"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "215"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Beethovenfries%2C%20%22Die%20K%C3%BCnste%22%2C%20%22Paradieschor%22%20und%20%22Umarmung%22%20%28Tafel%208%2C%20rechte%20Langwand%29%20-%205987-8%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "481"^^xsd:decimal ;
+        owl:sameAs       wd:Q58427217 .
+
+art:Q45668156  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Florence of the Cinquecento and Quattrocento"@en ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1850 ;
+        art:location     mus:Q95569 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Florence%20of%20the%20Cinquecento%20and%20Quattrocento.jpg> ;
+        owl:sameAs       wd:Q45668156 .
+
+art:Q28009030  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "The Bride"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "191"^^xsd:decimal , "165"^^xsd:decimal ;
+        art:inception    1917 ;
+        art:location     mus:Q303139 , mus:Q17817436 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20The%20Bride%20%28unfinished%29%2C%201917.jpg> , <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Die%20Braut.jpg> ;
+        art:width        "191"^^xsd:decimal , "165"^^xsd:decimal ;
+        owl:sameAs       wd:Q28009030 .
+
+art:Q107273681  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "The Knight"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "197"^^xsd:decimal ;
+        art:inception    1905 ;
+        art:location     mus:Q478455 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%2C%20Stoclet%20Frieze%2C%20Goldener%20Ritter.jpg> ;
+        art:width        "91"^^xsd:decimal ;
+        owl:sameAs       wd:Q107273681 .
+
+art:Q28002620  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "70"^^xsd:decimal ;
+        art:inception    1917 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Dame%20in%20Wei%C3%9F%20-%204286%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "70"^^xsd:decimal ;
+        owl:sameAs       wd:Q28002620 .
+
+art:Q19912824  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Country House at the Attersee"@en , "Maison de campagne sur l'Attersee"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1914 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt-landhaus-am-attersee.jpg> ;
+        owl:sameAs       wd:Q19912824 .
+
+art:Q113939857  rdf:type  owl:NamedIndividual , art:painting ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1913 ;
+        art:location     mus:Q768717 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Kirche%20in%20Cassone%20-%201913.jpeg> ;
+        owl:sameAs       wd:Q113939857 .
+
+art:Q107273139  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "L'Attente"@fr , "Expectation"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       193.5 ;
+        art:inception    1911 ;
+        art:location     mus:Q478455 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Expectation.jpg> ;
+        art:width        "115"^^xsd:decimal ;
+        owl:sameAs       wd:Q107273139 .
+
+art:Q30094370  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Jan van der Meer d. J. (Vermeer)"@en , "tableau de Jan Vermeer van Haarlem le jeune"@fr ;
+        art:createdBy    person:Q944834 ;
+        art:height       "27"^^xsd:decimal ;
+        art:inception    1680 ;
+        art:location     mus:Q154568 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20d.%20J.%20%28Vermeer%29%20-%20Waldlandschaft%20-%2012489%20-%20Bavarian%20State%20Painting%20Collections.jpg> ;
+        art:width        32.8 ;
+        owl:sameAs       wd:Q30094370 .
+
+art:Q29856066  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Jan van der Meer (II)"@en , "tableau de Jan Vermeer van Haarlem le jeune"@fr ;
+        rdfs:label       "Italian Landscape"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       53.4 ;
+        art:inception    1685 ;
+        art:location     mus:Q679527 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20%28II%29%20-%20Italiaans%20landschap%20-%201501%20%28OK%29%20-%20Museum%20Boijmans%20Van%20Beuningen.jpg> ;
+        art:width        "67"^^xsd:decimal ;
+        owl:sameAs       wd:Q29856066 .
+
+art:Q19912809  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Attersee"@fr , "Attersee"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "802"^^xsd:decimal ;
+        art:inception    1900 ;
+        art:location     mus:Q59435 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Attersee%20-%20Google%20Art%20Project.jpg> ;
+        art:width        "802"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912809 .
+
+art:Q28004404  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "41"^^xsd:decimal ;
+        art:inception    1897 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Dame%20am%20Kamin%20-%205434%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "66"^^xsd:decimal ;
+        owl:sameAs       wd:Q28004404 .
+
+art:Q28005437  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "68"^^xsd:decimal ;
+        art:inception    1883 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20M%C3%A4nnlicher%20Akt%20-%205992%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        54.8 ;
+        owl:sameAs       wd:Q28005437 .
+
+art:Q19912225  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt (MET, 64.148)"@en , "peinture de Gustav Klimt"@fr ;
+        rdfs:label       "Mäda Primavesi"@fr , "Mäda Primavesi (1903–2000)"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       149.9 ;
+        art:inception    1912 ;
+        art:location     mus:Q160236 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/M%C3%A4da%20Primavesi%20%281903%E2%80%932000%29%20MET%20DP243354.jpg> ;
+        art:width        110.5 ;
+        owl:sameAs       wd:Q19912225 .
+
+art:Q20054387  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Salomé II"@fr , "Salomé II"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "178"^^xsd:decimal ;
+        art:inception    1909 ;
+        art:location     mus:Q756807 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt-Salome.jpg> ;
+        art:width        "46"^^xsd:decimal ;
+        owl:sameAs       wd:Q20054387 .
+
+art:Q107540284  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "oil on canvas painting by Gustav Klimt"@en ;
+        rdfs:label       "Friends I"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "125"^^xsd:decimal ;
+        art:inception    1907 ;
+        art:location     mus:Q87193291 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Friends%20I%20%28Sisters%29%2C%201907.jpg> ;
+        art:width        "42"^^xsd:decimal ;
+        owl:sameAs       wd:Q107540284 .
+
+art:Q3879244  rdf:type   art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Nuda Veritas"@fr , "Nuda Veritas"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "252"^^xsd:decimal ;
+        art:inception    1899 ;
+        art:location     mus:Q306724 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20044.jpg> ;
+        art:width        55.2 ;
+        owl:sameAs       wd:Q3879244 .
+
+art:Q29920489  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Jan Vermeer van Haarlem le jeune"@fr , "painting by Jan van der Meer d. J. (Vermeer)"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       "70"^^xsd:decimal ;
+        art:inception    1676 ;
+        art:location     mus:Q812285 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20d.%20J.%20%28Vermeer%29%20-%20Ideallandschaft%20italienischen%20Charakters%20-%207272%20-%20Bavarian%20State%20Painting%20Collections.jpg> ;
+        art:width        "65"^^xsd:decimal ;
+        owl:sameAs       wd:Q29920489 .
+
+art:Q2551417  rdf:type   owl:NamedIndividual , art:painting ;
+        rdfs:comment     "peinture de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "The Hydra"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "50"^^xsd:decimal ;
+        art:inception    1906 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20067.jpg> ;
+        art:width        "20"^^xsd:decimal ;
+        owl:sameAs       wd:Q2551417 .
+
+art:Q28004609  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Portrait of Johanna Staude"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "70"^^xsd:decimal ;
+        art:inception    1917 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Johanna%20Staude%20-%205551%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "50"^^xsd:decimal ;
+        owl:sameAs       wd:Q28004609 .
+
+art:Q19259111  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Old Italian Art"@en ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1850 ;
+        art:location     mus:Q95569 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Old%20Italian%20Art%20-%20left.jpg> ;
+        owl:sameAs       wd:Q19259111 .
+
+art:Q19912816  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Orchard"@en , "Champ en fleur"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       98.74 ;
+        art:inception    1907 ;
+        art:location     mus:Q1043967 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20007.jpg> ;
+        art:width        99.38 ;
+        owl:sameAs       wd:Q19912816 .
+
+art:Q58427078  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "part of left wall of mural painting by Gustav Klimt in Secession Building in Vienna"@en ;
+        rdfs:label       "Beethoven Frieze (plate 2, left wall): Yearning for Happiness"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "215"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Beethovenfries%2C%20%22Die%20Sehnsucht%20nach%20Gl%C3%BCck%22%20%28Tafel%202%2C%20linke%20Langwand%29%20-%205987-2%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "454"^^xsd:decimal ;
+        owl:sameAs       wd:Q58427078 .
+
+art:Q58427131  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "part of center wall of mural painting by Gustav Klimt in Secession Building in Vienna"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Beethoven Frieze (plate 5, center wall): The Hostile Powers"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "215"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q303139 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Die%20feindlichen%20Gewalten.jpeg> ;
+        art:width        "314"^^xsd:decimal ;
+        owl:sameAs       wd:Q58427131 .
+
+art:Q27982683  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Jan Vermeer van Haarlem le jeune"@fr , "painting by Jan III. van der Meer (van Haarlem)"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       33.7 ;
+        art:location     mus:Q95569 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20III.%20van%20der%20Meer%20%28van%20Haarlem%29%20-%20D%C3%BCnenlandschaft%20-%20GG%209681%20-%20Kunsthistorisches%20Museum.jpg> ;
+        art:width        67.5 ;
+        owl:sameAs       wd:Q27982683 .
+
+art:Q28009588  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       52.7 ;
+        art:inception    1884 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Opona%20v%20karlovarsk%C3%A9m%20divadle%2C%201886.jpg> ;
+        art:width        42.5 ;
+        owl:sameAs       wd:Q28009588 .
+
+art:Q20441136  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Jan van der Meer d.Y."@en , "tableau de Jan Vermeer van Haarlem le jeune"@fr ;
+        rdfs:label       "Landscape with Sheep"@en ;
+        art:createdBy    person:Q944834 ;
+        art:inception    1695 ;
+        art:location     mus:Q671384 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20d.Y.%20-%20Landscape%20with%20Sheep%20-%20KMSsp644%20-%20Statens%20Museum%20for%20Kunst.jpg> ;
+        owl:sameAs       wd:Q20441136 .
+
+art:Q19483805  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "center wall of mural painting by Gustav Klimt in Secession Building in Vienna"@en , "peinture de Gustav Klimt"@fr ;
+        rdfs:label       "Les Forces du Mal et les trois Gorgones"@fr , "The Hostile Powers, the Titan Typhoeus, the Three Gorgons"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "217"^^xsd:decimal ;
+        art:inception    1902 ;
+        art:location     mus:Q265129 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Beethovenfries%20-%20Mittelwand.jpg> ;
+        art:width        "639"^^xsd:decimal ;
+        owl:sameAs       wd:Q19483805 .
+
+art:Q18020558  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "mural  by Gustav Klimt"@en ;
+        rdfs:label       "Ancient Greece and Ancient Egypt"@en ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1850 ;
+        art:location     mus:Q95569 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Griechische%20Antike%20und%20Aegypten%20-%20Detail%20Kopf%20Athene%20Isis.jpg> ;
+        owl:sameAs       wd:Q18020558 .
+
+art:Q19912810  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Avenue in the Park of Schloss Kammer"@en , "Avenue dans le parc de Schloss Kammer"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "110"^^xsd:decimal ;
+        art:inception    1912 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Allee%20zum%20Schloss%20Kammer%20-%202892%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "110"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912810 .
+
+art:Q28002799  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Adam et Ève"@fr , "Adam und Eva"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "173"^^xsd:decimal ;
+        art:inception    1917 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Adam%20und%20Eva%20-%204402%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "60"^^xsd:decimal ;
+        owl:sameAs       wd:Q28002799 .
+
+art:Q19883563  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "peinture de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Park"@en , "Le Parc"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1909 ;
+        art:location     mus:Q188740 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Park.jpg> ;
+        owl:sameAs       wd:Q19883563 .
+
+art:Q28006469  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "60"^^xsd:decimal ;
+        art:inception    1895 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Josef%20Lewinsky%20als%20Carlos%20in%20Clavigo%20-%20494%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "44"^^xsd:decimal ;
+        owl:sameAs       wd:Q28006469 .
+
+art:Q106364676  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "peinture de Jan van der Meer d.y."@fr , "painting by Jan van der Meer d.y."@en ;
+        rdfs:label       "Cattle in a Landscape"@en ;
+        art:createdBy    person:Q944834 ;
+        art:height       23.6 ;
+        art:inception    1688 ;
+        art:location     mus:Q842858 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Jan%20van%20der%20Meer%20%28II%29%20-%20Landschap%20met%20koeien%20-%20NM%20509%20-%20Nationalmuseum.jpg> ;
+        art:width        28.9 ;
+        owl:sameAs       wd:Q106364676 .
+
+art:Q55175328  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        rdfs:label       "Tragedy"@en , "La Tragédie"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1897 ;
+        art:location     mus:Q505873 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/%D0%90%D0%BB%D0%B5%D0%B3%D0%BE%D1%80%D1%96%D1%8F%20%D0%A2%D1%80%D0%B0%D0%B3%D0%B5%D0%B4%D1%96%D1%97.jpg> ;
+        owl:sameAs       wd:Q55175328 .
+
+art:Q17001535  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "peinture de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "La Vie et la Mort"@fr , "Death and Life"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "1805"^^xsd:decimal ;
+        art:inception    1910 ;
+        art:location     mus:Q59435 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Death%20and%20Life%20-%20Gustav%20Klimt.jpg> ;
+        art:width        "2005"^^xsd:decimal ;
+        owl:sameAs       wd:Q17001535 , wikipedia:Death_and_Life .
+
+art:Q28006328  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en , "tableau de Gustav Klimt"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "80"^^xsd:decimal ;
+        art:inception    1898 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Nach%20dem%20Regen%20-%20374%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "40"^^xsd:decimal ;
+        owl:sameAs       wd:Q28006328 .
+
+art:Q28015592  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "90"^^xsd:decimal ;
+        art:inception    1909 ;
+        art:location     mus:Q303139 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Mutter%20mit%20zwei%20Kindern%20%28Familie%29%20-%2010501%20-%20%C3%96sterreichische%20Galerie%20Belvedere.jpg> ;
+        art:width        "90"^^xsd:decimal ;
+        owl:sameAs       wd:Q28015592 .
+
+art:Q114046497  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "painting by Max Ernst"@en ;
+        rdfs:label       "Silberfische (Nixen, Sirenen)"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "86"^^xsd:decimal ;
+        art:inception    1899 ;
+        art:location     mus:Q371908 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt%20-%20Nixen%20%28Silberfische%29.jpeg> ;
+        art:width        "67"^^xsd:decimal ;
+        owl:sameAs       wd:Q114046497 .
+
+art:Q15694929  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "The Quattrocento in Rome and in Venice"@en ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1850 ;
+        art:location     mus:Q95569 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Roemisches%20und%20Venezianisches%20Quattrocento%20-%20Kunsthistorisches%20Museum%20Wien.jpg> ;
+        owl:sameAs       wd:Q15694929 .
+
+art:Q19912830  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Fir Wood I"@en , "Forêt de sapins I"@fr ;
+        art:createdBy    person:Q34661 ;
+        art:height       "90"^^xsd:decimal ;
+        art:inception    1901 ;
+        art:location     mus:Q18410543 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Klimt-tannenwald.jpg> ;
+        art:width        "90"^^xsd:decimal ;
+        owl:sameAs       wd:Q19912830 .
+
+art:Q111821770  rdf:type  owl:NamedIndividual , art:painting ;
+        rdfs:comment     "painting by Gustav Klimt"@en ;
+        rdfs:label       "Church in Unterach"@en ;
+        art:createdBy    person:Q34661 ;
+        art:inception    1916 ;
+        art:location     mus:Q768717 ;
+        art:madeOf       mat:Q296955 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20028.jpg> ;
+        owl:sameAs       wd:Q111821770 .
+
+art:Q28797758  rdf:type  art:painting , owl:NamedIndividual ;
+        rdfs:comment     "tableau de Gustav Klimt"@fr , "painting by Gustav Klimt"@en ;
+        rdfs:label       "Seated Young Girl"@en ;
+        art:createdBy    person:Q34661 ;
+        art:height       "140"^^xsd:decimal ;
+        art:inception    1894 ;
+        art:location     mus:Q59435 ;
+        art:pictureLink  <http://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20-%20Seated%20Young%20Girl%20-%20Google%20Art%20Project.jpg> ;
+        art:width        "96"^^xsd:decimal ;
+        owl:sameAs       wd:Q28797758 .

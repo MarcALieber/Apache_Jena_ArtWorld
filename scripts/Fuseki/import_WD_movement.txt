@@ -1,0 +1,71 @@
+#Select mouvement does not exist
+PREFIX art: <http://www.art.org/ontology/art#>
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix person: <http://www.art.org/ontology/person#> 
+select ?mvmt ?movementName
+where {
+    ?painter person:isPartofMovement ?mvmt .
+     FILTER NOT EXISTS { GRAPH <http://www.art.org/movement> {?mvmt rdfs:label ?movementName FILTER ( lang(?movementName) = "en" ) . }}
+  }
+group by ?mvmt ?movementName
+order by ?mvmt
+
+
+#import missing movement
+PREFIX art: <http://www.art.org/ontology/art#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix person: <http://www.art.org/ontology/person#> 
+CONSTRUCT {?movement a owl:NamedIndividual, mvmt:movement ; rdfs:label ?mvmtName1 ,?mvmtName2; rdfs:comment ?desc1,?desc2 ; owl:sameAs ?mvmt ;owl:sameAs ?wpLink .  }
+#select ?movement ?mvmt ?movementName ?mvmtName2
+where {
+   {select distinct ?movement where {
+    ?painter person:isPartofMovement ?movement .
+     FILTER NOT EXISTS { GRAPH <http://www.art.org/movement> {?movement rdfs:label ?movementName . }}
+     }
+  }
+   BIND(replace(str(?movement),"http://www.art.org/ontology/movement#","") as ?itemID )
+   BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?mvmt ) .
+  {SERVICE <https://query.wikidata.org/sparql> {?mvmt wdt:P31 wd:Q968159 .
+     OPTIONAL { ?mvmt rdfs:label ?mvmtName1 . FILTER(lang(?mvmtName1)="fr") . } 
+     OPTIONAL { ?mvmt schema:description ?desc1 . FILTER(lang(?desc1)="fr") .  }
+     OPTIONAL { ?mvmt rdfs:label ?mvmtName2 . FILTER(lang(?mvmtName2)="en") . } 
+     OPTIONAL { ?mvmt schema:description ?desc2 . FILTER(lang(?desc2)="en") .  }
+     OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?mvmt . }
+     }
+  }
+}
+
+
+#import movement
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+CONSTRUCT {?mvmtID a owl:NamedIndividual, mvmt:movement ; rdfs:label ?mvmtName1 ,?mvmtName2; rdfs:comment ?desc1,?desc2 ; owl:sameAs ?mvmt ;owl:sameAs ?wpLink .  }
+WHERE
+{SERVICE <https://query.wikidata.org/sparql> 
+{
+  ?mvmt wdt:P31 wd:Q968159 FILTER (?mvmt IN (wd:Q15885248, wd:Q42934 )) .  # instance of art movement; example wd:Q42934 
+  #mvmt wdt:P279 wd:Q11629 FILTER (?mvmt IN (wd:Q15885248, wd:Q42934 )) .   # subclass of art of painting; example wd:Q15885248 
+  OPTIONAL { ?mvmt rdfs:label ?mvmtName1 . FILTER(lang(?mvmtName1)="fr") . } 
+  OPTIONAL { ?mvmt schema:description ?desc1 . FILTER(lang(?desc1)="fr") .  }
+  OPTIONAL { ?mvmt rdfs:label ?mvmtName2 . FILTER(lang(?mvmtName2)="en") . } 
+  OPTIONAL { ?mvmt schema:description ?desc2 . FILTER(lang(?desc2)="en") .  }
+  OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?mvmt . }
+  BIND(replace(str(?mvmt),"http://www.wikidata.org/entity/","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.art.org/ontology/movement#", ?itemID   ))  AS ?mvmtID ) .
+}
+}
+
+

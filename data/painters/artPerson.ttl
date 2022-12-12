@@ -1,0 +1,189 @@
+@prefix :          <http://www.art.org/ontology#> .
+@prefix art:       <http://www.art.org/ontology/art#> .
+@prefix city:      <http://www.art.org/ontology/world/city#> .
+@prefix cont:      <http://www.art.org/ontology/world/continent#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix dbo:       <http://dbpedia.org/ontology/> .
+@prefix dbp:       <http://dbpedia.org/property/> .
+@prefix dbpedia:   <http://dbpedia.org/resource/> .
+@prefix dc:        <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix g:         <http://www.art.org/ontology/geography#> .
+@prefix gender:    <http://www.art.org/ontology/person/gender#> .
+@prefix lod:       <http://www.art.org/ontology/LinkedOpenData#> .
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix mvmt:      <http://www.art.org/ontology/movement#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix p:         <http://marclieber.fr/ontology/src/> .
+@prefix painting:  <http://www.art.org/ontology/artPainting#> .
+@prefix period:    <http://www.art.org/ontology/period#> .
+@prefix person:    <http://www.art.org/ontology/person#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:       <http://www.art.org/ontology/world/countryRegion#> .
+@prefix remote:    <http://www.art.org/ontology/remote#> .
+@prefix schema:    <http://schema.org/> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd:        <http://www.wikidata.org/entity/> .
+@prefix wdp:       <https://www.wikidata.org/wiki/Property/> .
+@prefix wdt:       <http://www.wikidata.org/prop/direct/> .
+@prefix wikidata:  <http://www.wikidata.org/entity/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+@prefix wm:        <https://commons.wikimedia.org/wiki/> .
+@prefix world:     <http://www.art.org/ontology/world#> .
+@prefix wp:        <https://en.wikipedia.org/wiki/> .
+@prefix xml:       <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+person:Q5593  rdf:type           owl:NamedIndividual , person:painter ;
+        rdfs:comment             "Spanish painter and sculptor (1881–1973)"@en , "peintre, dessinateur, sculpteur et graveur espagnol"@fr ;
+        rdfs:label               "Pablo Picasso"@fr , "Pablo Picasso"@en ;
+        person:dateOfBirth       "1881-10-25T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1973-04-08T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Picasso" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q29 ;
+        person:isPartofMovement  mvmt:Q166713 , mvmt:Q39427 , mvmt:Q42934 ;
+        owl:sameAs               wikipedia:Pablo_Picasso , wikidata:Q5593 .
+
+person:Q39931  rdf:type          person:painter , owl:NamedIndividual ;
+        rdfs:comment             "peintre et sculpteur français"@fr , "French painter and sculptor (1841–1919)"@en ;
+        rdfs:label               "Auguste Renoir"@fr , "Pierre-Auguste Renoir"@en ;
+        person:dateOfBirth       "1841-02-25T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1919-12-03T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Renoir" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q142 ;
+        person:isPartofMovement  mvmt:Q40415 ;
+        owl:sameAs               wikidata:Q39931 , wikipedia:Pierre-Auguste_Renoir .
+
+person:Q134741  rdf:type         owl:NamedIndividual , person:painter ;
+        rdfs:comment             "peintre français"@fr , "Danish-French painter"@en ;
+        rdfs:label               "Camille Pissarro"@fr , "Camille Pissarro"@en ;
+        person:dateOfBirth       "1830-07-10T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1903-11-13T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Pissarro" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q142 ;
+        person:isPartofMovement  mvmt:Q40415 , mvmt:Q150091 ;
+        owl:sameAs               wikidata:Q134741 , wikipedia:Camille_Pissarro .
+
+person:Q105320  rdf:type         person:painter , owl:NamedIndividual ;
+        rdfs:comment             "peintre française"@fr , "French painter (1841-1895)"@en ;
+        rdfs:label               "Berthe Morisot"@en , "Berthe Morisot"@fr ;
+        person:dateOfBirth       "1841-01-14T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1895-03-02T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Morisot" ;
+        person:hasGender         gender:female ;
+        person:isCitizenOf       ctry:Q142 ;
+        person:isPartofMovement  mvmt:Q40415 ;
+        owl:sameAs               wikipedia:Berthe_Morisot , wikidata:Q105320 .
+
+person:Q35548  rdf:type          person:painter , owl:NamedIndividual ;
+        rdfs:comment             "French painter"@en , "peintre français"@fr ;
+        rdfs:label               "Paul Cézanne"@fr , "Paul Cézanne"@en ;
+        person:dateOfBirth       "1839-01-19T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1906-10-22T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Cézanne" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q142 ;
+        person:isPartofMovement  mvmt:Q166713 ;
+        owl:sameAs               wikidata:Q35548 , <https://en.wikipedia.org/wiki/Paul_C%C3%A9zanne> .
+
+person:Q296  rdf:type            person:painter , owl:NamedIndividual ;
+        rdfs:comment             "French impressionist painter (1840-1926)"@en , "peintre impressionniste français"@fr ;
+        rdfs:label               "Claude Monet"@fr , "Claude Monet"@en ;
+        person:dateOfBirth       "1840-11-14T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1926-12-05T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Monet" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q142 ;
+        person:isPartofMovement  mvmt:Q40415 ;
+        owl:sameAs               wikidata:Q296 , wikipedia:Claude_Monet .
+
+person:Q333668  rdf:type    owl:NamedIndividual , person:painter ;
+        rdfs:comment        "réalisateur, dessinateur et scénariste de bande dessinée français"@fr , "French comic book creator, comics artist and film director"@en ;
+        rdfs:label          "Enki Bilal"@fr , "Enki Bilal"@en ;
+        person:dateOfBirth  "1951-10-07T00:00:00Z"^^xsd:dateTime ;
+        person:familyName   "Bilal" ;
+        person:hasGender    gender:male ;
+        person:isCitizenOf  ctry:Q142 ;
+        owl:sameAs          wikipedia:Enki_Bilal , wikidata:Q333668 .
+        
+person:Q34661  rdf:type          person:painter , owl:NamedIndividual ;
+        rdfs:comment             "Austrian symbolist painter (1862-1918)"@en , "peintre symboliste autrichien"@fr ;
+        rdfs:label               "Gustav Klimt"@fr , "Gustav Klimt"@en ;
+        person:dateOfBirth       "1862-07-14T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1918-02-06T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Klimt" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q40 ;
+        person:isPartofMovement  mvmt:Q164800 , mvmt:Q34636 ;
+        owl:sameAs               wikidata:Q34661 , wikipedia:Gustav_Klimt .
+
+person:Q5592  rdf:type           owl:NamedIndividual , person:painter ;
+        rdfs:comment             "Italian sculptor, painter, architect and poet (1475–1564)"@en , "peintre, sculpteur, poète, architecte et urbaniste italien au XIVe siècle"@fr ;
+        rdfs:label               "Michelangelo"@en , "Michel-Ange Buronarroti"@fr ;
+        person:dateOfBirth       "1475-03-15T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1564-02-28T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Buonarroti" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q148540 ;
+        person:isPartofMovement  mvmt:Q15885248 , mvmt:Q1474884 ;
+        owl:sameAs               wikipedia:Michelangelo , wikidata:Q5592 .
+
+person:Q944834  rdf:type    owl:NamedIndividual , person:painter ;
+        rdfs:comment        "peintre néerlandais (1656-1705)"@fr , "Dutch landscape painter (1656-1705)"@en ;
+        rdfs:label          "Jan Vermeer van Haarlem"@en , "Jan Vermeer van Haarlem le jeune"@fr ;
+        person:dateOfBirth  "1656-11-29T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath  "1705-05-28T00:00:00Z"^^xsd:dateTime ;
+        person:hasGender    gender:male ;
+        person:familyName   "Vermeer" ;
+        person:isCitizenOf  ctry:Q55 ;
+        owl:sameAs          wikidata:Q944834 , wikipedia:Jan_Vermeer_van_Haarlem .
+
+person:Q157194  rdf:type         person:painter , owl:NamedIndividual ;
+        rdfs:comment             "Swiss sculptor and painter"@en , "sculpteur et peintre suisse"@fr ;
+        rdfs:label               "Alberto Giacometti"@fr , "Alberto Giacometti"@en ;
+        person:dateOfBirth       "1901-10-10T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1966-01-11T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Giacometti" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q39 ;
+        person:isPartofMovement  mvmt:Q39427 ;
+        owl:sameAs               wikidata:Q157194 , wikipedia:Alberto_Giacometti .
+
+person:Q154340  rdf:type         owl:NamedIndividual , person:painter ;
+        rdfs:comment             "Irish-born British figurative painter, 1909–1992"@en , "peintre anglais"@fr ;
+        rdfs:label               "Francis Bacon"@fr , "Francis Bacon"@en ;
+        person:dateOfBirth       "1909-10-28T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1992-04-28T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Bacon" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q145 ;
+        person:isPartofMovement  mvmt:Q42934 , mvmt:Q38166 , mvmt:Q80113 , mvmt:Q39427 ;
+        owl:sameAs               <https://en.wikipedia.org/wiki/Francis_Bacon_(artist)> , wikidata:Q154340 .
+
+person:Q203401  rdf:type         owl:NamedIndividual , person:painter ;
+        rdfs:comment             "peintre et graveur américain"@fr , "American realist painter and printmaker (1882-1967)"@en ;
+        rdfs:label               "Edward Hopper"@fr , "Edward Hopper"@en ;
+        person:dateOfBirth       "1882-07-22T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1967-05-15T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Hopper" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q30 ;
+        person:isPartofMovement  mvmt:Q858436 , mvmt:Q4745527 , mvmt:Q469913 ;
+        owl:sameAs               wikipedia:Edward_Hopper , wikidata:Q203401 .
+
+person:Q937373  rdf:type    owl:NamedIndividual , person:ceramicist ;
+        rdfs:comment        "ceramic artist"@en , "céramiste, administrateur de la Manufacture de Sèvres"@fr ;
+        rdfs:label          "Théodore Deck"@fr , "Théodore Deck"@en ;
+        person:dateOfBirth  "1823-01-02T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath  "1891-05-15T00:00:00Z"^^xsd:dateTime ;
+        person:familyName   "Deck" ;
+        person:hasGender    gender:male ;
+        person:isCitizenOf  ctry:Q142 ;
+        owl:sameAs          wikidata:Q937373 , <https://en.wikipedia.org/wiki/Th%C3%A9odore_Deck> .
+
+      
+                    

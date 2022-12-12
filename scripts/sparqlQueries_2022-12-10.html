@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+</style>
+<title>Fuseki ArtWorld SPARQL</title>
+</head>
+<body>
+<h1>Jena TDB ArtWorld SPARQL Query examples</h1>
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>description</th>
+    <th>comment</th>
+    <th>Query text</th>
+    <th>Query type</th>
+  </tr><tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=PREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aprefix+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E+%0Aprefix+mvmt%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fmovement%23%3E+%0APREFIX+wdt%3A+%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0APREFIX+wd%3A+%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2F%3E%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix+world%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%23%3E+%0Aprefix+ctry%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcountry%23%3E+%0Aprefix+city%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcity%23%3E+%0Aprefix+cont%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcontinent%23%3E+%0Aprefix+wikipedia%3A+%3Chttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2F%3E+%0Aprefix+mus%3A+++++++%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fmuseum%23%3E+%0Aselect+distinct+%3Fmuseum+%3FmuseumName+%3Fcity+%3FcityName+%3FcountryName+%3FcontinentName+%3Fwikidata%0Awhere+%7B+GRAPH+%3Chttp%3A%2F%2Fwww.art.org%2Fmuseum%3E+%7B%3Fmuseum+a+mus%3Amuseum+%3B+mus%3AinCity+%3Fcity++.%0A+++++++++++++++++++++++++++++++++++++++++++OPTIONAL%7B%3Fmuseum+owl%3AsameAs+%3Fwikidata++FILTER%28regex%28STR%28%3Fwikidata%29%2C%22wikidata%22%29%29+.%7D+%0A+++++++++++++++++++++++++++++++++++++++++++%3Fmuseum+rdfs%3Alabel+%3FmuseumName+FILTER+%28+lang%28%3FmuseumName%29+%3D+%22en%22+%29+.%0A++++++++%7D%0A++++++++GRAPH+%3Chttp%3A%2F%2Fwww.art.org%2Fworld%3E+%7B%3Fcity+a+world%3Acity%3B+world%3AisCityOf+%3Fcountry++FILTER+%28%3Fcountry+%3D+ctry%3AQ39%29+.+%0A++++++++++++++++++++++++++++++++++++++++++%3Fcity+rdfs%3Alabel+%3FcityName+FILTER+%28+lang%28%3FcityName%29+%3D+%22en%22+%29+.%0A++++++++%3Fcountry+rdfs%3Alabel+%3FcountryName+FILTER+%28+lang%28%3FcountryName%29+%3D+%22en%22+%29+.%0A++++++++%3Fcountry+world%3AinContinent+%3Fcontinent+.%0A++++++++%3Fcontinent+rdfs%3Alabel+%3FcontinentName+FILTER+%28+lang%28%3FcontinentName%29+%3D+%22en%22+%29+.%0A++%7D%0A%7D%0Aorder+by+%3FcityName%0A%09%09">101</a></td>
+<td>list of Swiss museum and link to wikidata</td>
+<td>none</td>
+<td><textarea cols=105 rows=10>PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix city: <http://www.art.org/ontology/world/city#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix mus:       <http://www.art.org/ontology/museum#> 
+select distinct ?museum ?museumName ?city ?cityName ?countryName ?continentName ?wikidata
+where { GRAPH <http://www.art.org/museum> {?museum a mus:museum ; mus:inCity ?city  .
+                                           OPTIONAL{?museum owl:sameAs ?wikidata  FILTER(regex(STR(?wikidata),"wikidata")) .} 
+                                           ?museum rdfs:label ?museumName FILTER ( lang(?museumName) = "en" ) .
+        }
+        GRAPH <http://www.art.org/world> {?city a world:city; world:isCityOf ?country  FILTER (?country = ctry:Q39) . 
+                                          ?city rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) .
+        ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) .
+        ?country world:inContinent ?continent .
+        ?continent rdfs:label ?continentName FILTER ( lang(?continentName) = "en" ) .
+  }
+}
+order by ?cityName
+		</textarea></td>
+<td>query museum</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=%23+list+of+all+painters+and+the+movement+associated+%28some+painter+do+not+belong+to+a+movement%29%0Aprefix+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E+%0Aprefix+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E+%0Aprefix+mvmt%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fmovement%23%3E+%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+%0Aprefix+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E+%0Aprefix+world%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%23%3E+%0Aprefix+person%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fperson%23%3E+%0Aselect+%3Fpainter+%3Fwikidata+%3Fname+%3Fmovement+%3FmovementName++%3FwdMvmt%0Awhere+%7B%0A++++%3Fpainter+a+person%3Apainter%3B+rdfs%3Alabel+%3Fname+FILTER+%28+lang%28%3Fname%29+%3D+%22en%22+%29++.%0A++++OPTIONAL%7B%3Fpainter+owl%3AsameAs+%3Fwikidata+FILTER+%28+regex%28str%28%3Fwikidata%29%2C+%27wikidata%27%2C+%22i%22%29++%29+.+%7D+%0A++++OPTIONAL+%7B%3Fpainter+person%3AisPartofMovement+%3Fmovement+.+%0A+++++++OPTIONAL+%7B+GRAPH+%3Chttp%3A%2F%2Fwww.art.org%2Fmovement%3E+%7B%3Fmovement+rdfs%3Alabel+%3FmovementName+FILTER+%28+lang%28%3FmovementName%29+%3D+%22en%22+%29+.+%7D%7D%0A+++++++OPTIONAL+%7B+GRAPH+%3Chttp%3A%2F%2Fwww.art.org%2Fmovement%3E+%7B%3Fmovement+owl%3AsameAs+%3FwdMvmt+FILTER+%28+regex%28str%28%3FwdMvmt%29%2C+%27wikidata%27%2C+%22i%22%29++%29+.+%7D+%7D%0A++%7D%0A++%7D%0Aorder+by+%3Fpainter%0A%09%09">102</a></td>
+<td>list of all painters and the movement associated
+		</td>
+<td>some painter do not belong to a movement</td>
+<td><textarea cols=105 rows=10># list of all painters and the movement associated (some painter do not belong to a movement)
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+prefix world: <http://www.art.org/ontology/world#> 
+prefix person: <http://www.art.org/ontology/person#> 
+select ?painter ?wikidata ?name ?movement ?movementName  ?wdMvmt
+where {
+    ?painter a person:painter; rdfs:label ?name FILTER ( lang(?name) = "en" )  .
+    OPTIONAL{?painter owl:sameAs ?wikidata FILTER ( regex(str(?wikidata), 'wikidata', "i")  ) . } 
+    OPTIONAL {?painter person:isPartofMovement ?movement . 
+       OPTIONAL { GRAPH <http://www.art.org/movement> {?movement rdfs:label ?movementName FILTER ( lang(?movementName) = "en" ) . }}
+       OPTIONAL { GRAPH <http://www.art.org/movement> {?movement owl:sameAs ?wdMvmt FILTER ( regex(str(?wdMvmt), 'wikidata', "i")  ) . } }
+  }
+  }
+order by ?painter
+		</textarea></td>
+<td>query painters</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=PREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aprefix+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E+%0Aprefix+mvmt%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fmovement%23%3E+%0APREFIX+wdt%3A+%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0APREFIX+wd%3A+%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2F%3E%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix+world%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%23%3E+%0Aprefix+ctry%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcountry%23%3E+%0Aprefix+city%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcity%23%3E+%0Aprefix+cont%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcontinent%23%3E+%0Aprefix+wikipedia%3A+%3Chttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2F%3E+%0Aselect+%3Fcity+%3FcityName+%3Fcountry+%3FcountryName+%3Fcontinent+%3FcontinentName%0Awhere+%7BGRAPH+%3Chttp%3A%2F%2Fwww.art.org%2Fworld%3E+%7B%3Fcity+a+world%3Acity%3B+world%3AisCityOf+%3Fcountry+%3B+rdfs%3Alabel+%3FcityName+FILTER+%28+lang%28%3FcityName%29+%3D+%22en%22+%29+.%0A++++++++%3Fcountry+rdfs%3Alabel+%3FcountryName+FILTER+%28+lang%28%3FcountryName%29+%3D+%22en%22+%29+.%0A++++++++%3Fcountry+world%3AinContinent+%3Fcontinent+.%0A++++++++%3Fcontinent+rdfs%3Alabel+%3FcontinentName+FILTER+%28+lang%28%3FcontinentName%29+%3D+%22en%22+%29+.%0A++%7D%0A%7D%0Aorder+by+%3FcontinentName+%3FcountryName%0A%09%09">103</a></td>
+<td>list of cities, countries and continent </td>
+<td>none</td>
+<td><textarea cols=105 rows=10>PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix city: <http://www.art.org/ontology/world/city#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+select ?city ?cityName ?country ?countryName ?continent ?continentName
+where {GRAPH <http://www.art.org/world> {?city a world:city; world:isCityOf ?country ; rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) .
+        ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) .
+        ?country world:inContinent ?continent .
+        ?continent rdfs:label ?continentName FILTER ( lang(?continentName) = "en" ) .
+  }
+}
+order by ?continentName ?countryName
+		</textarea></td>
+<td>query cities</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=%23Theodore+Deck%0APREFIX+art%3A++%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fart%23%3E+%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0Aprefix+person%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fperson%23%3E+%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0Aprefix+mus%3A+++++++%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fmuseum%23%3E%0Aprefix+world%3A+++++++%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%23%3E%0Aselect+%3Fperson+%3Fname+%3Fmuseum+%3FmuseumName+%3Fcity+%3FcityName+%3Fcountry+%3FcountryName%0Awhere+%7B%3Fperson+rdf%3Atype+owl%3ANamedIndividual+FILTER+%28%3Fperson+%3D+person%3AQ937373%29+.%0A+++++++%3Fperson+rdfs%3Alabel+%3Fname+FILTER+%28+lang%28%3Fname%29+%3D+%22en%22+%29+.%0A+++++++%3Fperson+art%3AexposedIn+%3Fmuseum+.%0A+++++++OPTIONAL+%7B+Graph+%3Chttp%3A%2F%2Fwww.art.org%2Fmuseum%3E+%7B+%3Fmuseum+rdfs%3Alabel+%3FmuseumName+FILTER+%28+lang%28%3FmuseumName%29+%3D+%22fr%22+%29+.%0A+++++++OPTIONAL+%7B++%3Fmuseum+mus%3AinCity++%3Fcity+.%0A++++++++++++++++++Graph+%3Chttp%3A%2F%2Fwww.art.org%2Fworld%3E+%7B+%3Fcity+rdfs%3Alabel+%3FcityName+FILTER+%28+lang%28%3FcityName%29+%3D+%22en%22+%29+.+%0A+++++++++++++++++++++++++++++++++++++++++++++++++++++%3Fcity+world%3AisCityOf+%3Fcountry+.%0A+++++++++++++++++++++++++++++++++++++++++++++++++++++%3Fcountry+rdfs%3Alabel+%3FcountryName+FILTER+%28+lang%28%3FcountryName%29+%3D+%22en%22+%29+.+%0A++++++++%7D%7D%0A++++%7D++%0A++%7D%0A%7D%0A%09%09">104</a></td>
+<td>display one artist = Theodore Deck</td>
+<td>todo: exposed in should be optional</td>
+<td><textarea cols=105 rows=10>#Theodore Deck
+PREFIX art:  <http://www.art.org/ontology/art#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+prefix person: <http://www.art.org/ontology/person#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix mus:       <http://www.art.org/ontology/museum#>
+prefix world:       <http://www.art.org/ontology/world#>
+select ?person ?name ?museum ?museumName ?city ?cityName ?country ?countryName
+where {?person rdf:type owl:NamedIndividual FILTER (?person = person:Q937373) .
+       ?person rdfs:label ?name FILTER ( lang(?name) = "en" ) .
+       ?person art:exposedIn ?museum .
+       OPTIONAL { Graph <http://www.art.org/museum> { ?museum rdfs:label ?museumName FILTER ( lang(?museumName) = "fr" ) .
+       OPTIONAL {  ?museum mus:inCity  ?city .
+                  Graph <http://www.art.org/world> { ?city rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) . 
+                                                     ?city world:isCityOf ?country .
+                                                     ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) . 
+        }}
+    }  
+  }
+}
+		</textarea></td>
+<td>query one artist</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=PREFIX+art%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fart%23%3E%0Aprefix+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E+%0Aprefix+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E+%0Aprefix+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E+%0Aprefix+person%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fperson%23%3E+%0Aselect+%3Fmvmt+%3FmovementName%0Awhere+%7B%0A++++%3Fpainter+person%3AisPartofMovement+%3Fmvmt+.%0A+++++FILTER+NOT+EXISTS+%7B+GRAPH+%3Chttp%3A%2F%2Fwww.art.org%2Fmovement%3E+%7B%3Fmvmt+rdfs%3Alabel+%3FmovementName+FILTER+%28+lang%28%3FmovementName%29+%3D+%22en%22+%29+.+%7D%7D%0A++%7D%0Agroup+by+%3Fmvmt+%3FmovementName%0Aorder+by+%3Fmvmt%0A%09%09">108</a></td>
+<td>list movement and show missing mouvement</td>
+<td>todo: show all movement</td>
+<td><textarea cols=105 rows=10>PREFIX art: <http://www.art.org/ontology/art#>
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix person: <http://www.art.org/ontology/person#> 
+select ?mvmt ?movementName
+where {
+    ?painter person:isPartofMovement ?mvmt .
+     FILTER NOT EXISTS { GRAPH <http://www.art.org/movement> {?mvmt rdfs:label ?movementName FILTER ( lang(?movementName) = "en" ) . }}
+  }
+group by ?mvmt ?movementName
+order by ?mvmt
+		</textarea></td>
+<td>query movement</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=todo%0A%09%09">105</a></td>
+<td>statistics number of painting per artists</td>
+<td></td>
+<td><textarea cols=105 rows=10>todo
+		</textarea></td>
+<td>query statistics</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=todo%0A%09%09">106</a></td>
+<td>statistics number of museum per country</td>
+<td></td>
+<td><textarea cols=105 rows=10>todo
+		</textarea></td>
+<td>query statistics</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=todo%0A%09%09">107</a></td>
+<td>statistics number of artists per movement</td>
+<td></td>
+<td><textarea cols=105 rows=10>todo
+		</textarea></td>
+<td>query statistics</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=todo%0A%09%09">108</a></td>
+<td>statistics number of museum per painter</td>
+<td></td>
+<td><textarea cols=105 rows=10>todo
+		</textarea></td>
+<td>query statistics</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=%23+check+for+missing+world%3AisCityOf+in+city%0Aprefix+wikipedia%3A+%3Chttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2F%3E+%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0APREFIX+mus%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fmuseum%23%3E%0Aprefix+art%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fart%23%3E+%0Aprefix+city%3A++%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcity%23%3E+%0Aprefix+world%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%23%3E+%0APREFIX+person%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fperson%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+distinct+%3Fcity+%3FwdID%0Awhere+%7B+graph+%3Chttp%3A%2F%2Fwww.art.org%2Fworld%3E+%7B+%3Fcity+rdf%3Atype+++world%3Acity+.+%7D%0A++FILTER+NOT+EXISTS+%7Bgraph+%3Chttp%3A%2F%2Fwww.art.org%2Fworld%3E+%7B%3Fcity++world%3AisCityOf+%3Fcountry+%7D++%7D.%0A++BIND%28replace%28str%28%3Fcity%29%2C%22http%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcity%23%22%2C%22%22%29+as+%3FitemID+%29%0A++++BIND%28IRI%28CONCAT%28%22http%3A%2F%2Fwww.wikidata.org%2Fentity%2F%22%2C+%3FitemID+++%29%29++AS+%3FwdID+%29+.%0A++%23graph+%3Chttp%3A%2F%2Fwww.art.org%2Fworld%3E+%7B%3Fcity++%3Fcity++world%3AisCityOf+%3Fcountry+%7D+%0A%7D+%0A%09%09">201</a></td>
+<td>check for missing world:isCityOf in city</td>
+<td>none</td>
+<td><textarea cols=105 rows=10># check for missing world:isCityOf in city
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?city ?wdID
+where { graph <http://www.art.org/world> { ?city rdf:type   world:city . }
+  FILTER NOT EXISTS {graph <http://www.art.org/world> {?city  world:isCityOf ?country }  }.
+  BIND(replace(str(?city),"http://www.art.org/ontology/world/city#","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  #graph <http://www.art.org/world> {?city  ?city  world:isCityOf ?country } 
+} 
+		</textarea></td>
+<td>check isCityOf</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=%23+check+for+missing+country%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0Aprefix+wikipedia%3A+%3Chttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2F%3E+%0APREFIX+mus%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fmuseum%23%3E%0Aprefix+art%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fart%23%3E+%0Aprefix+city%3A++%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcity%23%3E+%0Aprefix+world%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fworld%23%3E+%0APREFIX+person%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fperson%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aselect+distinct+%3Fcountry+%3FwdID%0Awhere+%7B+graph+%3Chttp%3A%2F%2Fwww.art.org%2Fworld%3E+%7B+%3Fcity++world%3AisCityOf+%3Fcountry+.+%7D%0A++FILTER+NOT+EXISTS+%7Bgraph+%3Chttp%3A%2F%2Fwww.art.org%2Fworld%3E+%7B%3Fcountry++rdf%3Atype+world%3Acountry+%7D++%7D.%0A++BIND%28replace%28str%28%3Fcountry%29%2C%22http%3A%2F%2Fwww.art.org%2Fontology%2Fworld%2Fcountry%23%22%2C%22%22%29+as+%3FitemID+%29%0A++++BIND%28IRI%28CONCAT%28%22http%3A%2F%2Fwww.wikidata.org%2Fentity%2F%22%2C+%3FitemID+++%29%29++AS+%3FwdID+%29+.%0A++%23graph+%3Chttp%3A%2F%2Fwww.art.org%2Fworld%3E+%7B%3Fcity++%3Fcity++world%3AisCityOf+%3Fcountry+%7D+%0A%7D++%0A%09%09">202</a></td>
+<td>check for missing country</td>
+<td>The country is declared in museum but not found in world
+		</td>
+<td><textarea cols=105 rows=10># check for missing country
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?country ?wdID
+where { graph <http://www.art.org/world> { ?city  world:isCityOf ?country . }
+  FILTER NOT EXISTS {graph <http://www.art.org/world> {?country  rdf:type world:country }  }.
+  BIND(replace(str(?country),"http://www.art.org/ontology/world/country#","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  #graph <http://www.art.org/world> {?city  ?city  world:isCityOf ?country } 
+}  
+		</textarea></td>
+<td>check country</td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=%23+check+for+missing+country%0A%7D++">203</a></td>
+<td>Harsh</td>
+<td>Singh</td>
+<td><textarea cols=105 rows=10># check for missing country
+}  </textarea></td>
+<td>check </td>
+</tr>
+<tr><td><a href="http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=%23import+missing+movement%0APREFIX+art%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fart%23%3E%0APREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0Aprefix+mvmt%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fmovement%23%3E+%0APREFIX+wdt%3A+%3Chttp%3A%2F%2Fwww.wikidata.org%2Fprop%2Fdirect%2F%3E%0APREFIX+wd%3A+%3Chttp%3A%2F%2Fwww.wikidata.org%2Fentity%2F%3E%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0Aprefix+wikipedia%3A+%3Chttps%3A%2F%2Fen.wikipedia.org%2Fwiki%2F%3E+%0Aprefix+person%3A+%3Chttp%3A%2F%2Fwww.art.org%2Fontology%2Fperson%23%3E+%0ACONSTRUCT+%7B%3Fmovement+a+owl%3ANamedIndividual%2C+mvmt%3Amovement+%3B+rdfs%3Alabel+%3FmvmtName1+%2C%3FmvmtName2%3B+rdfs%3Acomment+%3Fdesc1%2C%3Fdesc2+%3B+owl%3AsameAs+%3Fmvmt+%3Bowl%3AsameAs+%3FwpLink+.++%7D%0A%23select+%3Fmovement+%3Fmvmt+%3FmovementName+%3FmvmtName2%0Awhere+%7B%0A+++%7Bselect+distinct+%3Fmovement+where+%7B%0A++++%3Fpainter+person%3AisPartofMovement+%3Fmovement+.%0A+++++FILTER+NOT+EXISTS+%7B+GRAPH+%3Chttp%3A%2F%2Fwww.art.org%2Fmovement%3E+%7B%3Fmovement+rdfs%3Alabel+%3FmovementName+.+%7D%7D%0A+++++%7D%0A++%7D%0A+++BIND%28replace%28str%28%3Fmovement%29%2C%22http%3A%2F%2Fwww.art.org%2Fontology%2Fmovement%23%22%2C%22%22%29+as+%3FitemID+%29%0A+++BIND%28IRI%28CONCAT%28%22http%3A%2F%2Fwww.wikidata.org%2Fentity%2F%22%2C+%3FitemID+++%29%29++AS+%3Fmvmt+%29+.%0A++%7BSERVICE+%3Chttps%3A%2F%2Fquery.wikidata.org%2Fsparql%3E+%7B%3Fmvmt+wdt%3AP31+wd%3AQ968159+.%0A+++++OPTIONAL+%7B+%3Fmvmt+rdfs%3Alabel+%3FmvmtName1+.+FILTER%28lang%28%3FmvmtName1%29%3D%22fr%22%29+.+%7D+%0A+++++OPTIONAL+%7B+%3Fmvmt+schema%3Adescription+%3Fdesc1+.+FILTER%28lang%28%3Fdesc1%29%3D%22fr%22%29+.++%7D%0A+++++OPTIONAL+%7B+%3Fmvmt+rdfs%3Alabel+%3FmvmtName2+.+FILTER%28lang%28%3FmvmtName2%29%3D%22en%22%29+.+%7D+%0A+++++OPTIONAL+%7B+%3Fmvmt+schema%3Adescription+%3Fdesc2+.+FILTER%28lang%28%3Fdesc2%29%3D%22en%22%29+.++%7D%0A+++++OPTIONAL%7B%3FwpLink+schema%3AisPartOf+%3Chttps%3A%2F%2Fen.wikipedia.org%2F%3E%3B+schema%3Aabout+%3Fmvmt+.+%7D%0A+++++%7D%0A++%7D%0A%7D%0A">301</a></td>
+<td>Wikidata movement</td>
+<td>retrieve only missing movement infos</td>
+<td><textarea cols=105 rows=10>#import missing movement
+PREFIX art: <http://www.art.org/ontology/art#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix person: <http://www.art.org/ontology/person#> 
+CONSTRUCT {?movement a owl:NamedIndividual, mvmt:movement ; rdfs:label ?mvmtName1 ,?mvmtName2; rdfs:comment ?desc1,?desc2 ; owl:sameAs ?mvmt ;owl:sameAs ?wpLink .  }
+#select ?movement ?mvmt ?movementName ?mvmtName2
+where {
+   {select distinct ?movement where {
+    ?painter person:isPartofMovement ?movement .
+     FILTER NOT EXISTS { GRAPH <http://www.art.org/movement> {?movement rdfs:label ?movementName . }}
+     }
+  }
+   BIND(replace(str(?movement),"http://www.art.org/ontology/movement#","") as ?itemID )
+   BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?mvmt ) .
+  {SERVICE <https://query.wikidata.org/sparql> {?mvmt wdt:P31 wd:Q968159 .
+     OPTIONAL { ?mvmt rdfs:label ?mvmtName1 . FILTER(lang(?mvmtName1)="fr") . } 
+     OPTIONAL { ?mvmt schema:description ?desc1 . FILTER(lang(?desc1)="fr") .  }
+     OPTIONAL { ?mvmt rdfs:label ?mvmtName2 . FILTER(lang(?mvmtName2)="en") . } 
+     OPTIONAL { ?mvmt schema:description ?desc2 . FILTER(lang(?desc2)="en") .  }
+     OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?mvmt . }
+     }
+  }
+}
+</textarea></td>
+<td>CONSTRUCT</td>
+</tr>
+</table><br/>
+</body></html>

@@ -1,0 +1,561 @@
+@prefix : <http://www.art.org/ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix wm: <https://commons.wikimedia.org/wiki/> .
+@prefix art: <http://www.art.org/ontology/art#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix lod: <http://www.art.org/ontology/LinkedOpenData#> .
+@prefix mat: <http://www.art.org/ontology/art/material#> .
+@prefix mus: <http://www.art.org/ontology/museum#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix wdp: <https://www.wikidata.org/wiki/Property/> .
+@prefix wdt: <http://www.wikidata.org/prop/direct/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mvmt: <http://www.art.org/ontology/movement#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix world: <http://www.art.org/ontology/world#> .
+@prefix gender: <http://www.art.org/ontology/person/gender#> .
+@prefix period: <http://www.art.org/ontology/artPeriod#> .
+@prefix person: <http://www.art.org/ontology/person#> .
+@prefix remote: <http://www.art.org/ontology/remote#> .
+@prefix schema: <http://schema.org/> .
+@prefix painting: <http://www.art.org/ontology/art/painting#> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+@base <http://www.art.org/ontology> .
+
+<http://www.art.org/ontology> rdf:type owl:Ontology ;
+                               rdfs:comment "Painters ,sculptors and architects ontology" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#note
+skos:note rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.art.org/ontology/art#createdBy
+art:createdBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf person:isCreatorOf ;
+              rdfs:domain :artefact ;
+              rdfs:range :person .
+
+
+###  http://www.art.org/ontology/art#exposedIn
+art:exposedIn rdf:type owl:ObjectProperty ;
+              rdfs:domain person:artist ;
+              rdfs:range mus:museum ;
+              rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P6379> ;
+              rdfs:label "exposed in"@en ,
+                         "exposé dans musée"@fr .
+
+
+###  http://www.art.org/ontology/art#inMuseum
+art:inMuseum rdf:type owl:ObjectProperty ;
+             rdfs:domain :artefact ;
+             rdfs:range mus:museum ;
+             rdfs:label "in Museum"@en .
+
+
+###  http://www.art.org/ontology/art#madeOf
+art:madeOf rdf:type owl:ObjectProperty ;
+           rdfs:domain art:painting ;
+           rdfs:range art:paintingMaterial ;
+           rdfs:label "made of"@en .
+
+
+###  http://www.art.org/ontology/artPainting#madeOf
+<http://www.art.org/ontology/artPainting#madeOf> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain art:painting ;
+                                                 rdfs:range art:paintingMaterial ;
+                                                 rdfs:comment <https://www.wikidata.org/wiki/Property:P186> .
+
+
+###  http://www.art.org/ontology/movement#inArtPeriod
+mvmt:inArtPeriod rdf:type owl:ObjectProperty ;
+                 rdfs:domain :movement ;
+                 rdfs:range :artPeriod .
+
+
+###  http://www.art.org/ontology/museum#inCity
+mus:inCity rdf:type owl:ObjectProperty ;
+           rdfs:domain mus:museum ;
+           rdfs:range world:city ;
+           rdfs:label "in City"@en .
+
+
+###  http://www.art.org/ontology/person#hasGender
+person:hasGender rdf:type owl:ObjectProperty ;
+                 rdfs:domain :person ;
+                 rdfs:range :gender ;
+                 rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P21> .
+
+
+###  http://www.art.org/ontology/person#hasWorkInCollection
+person:hasWorkInCollection rdf:type owl:ObjectProperty ;
+                           rdfs:domain person:artist ;
+                           rdfs:range mus:museum ;
+                           rdfs:comment <https://www.wikidata.org/wiki/Property:P6379> .
+
+
+###  http://www.art.org/ontology/person#isCitizenOf
+person:isCitizenOf rdf:type owl:ObjectProperty ;
+                   rdfs:domain :person ;
+                   rdfs:range world:country ;
+                   rdfs:comment "country of citizenship"@en ;
+                   rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P27> ;
+                   rdfs:label "est citoyen de"@fr ,
+                              "is citizen of"@en .
+
+
+###  http://www.art.org/ontology/person#isCreatorOf
+person:isCreatorOf rdf:type owl:ObjectProperty ,
+                            owl:TransitiveProperty ;
+                   rdfs:domain :person ;
+                   rdfs:range :artefact .
+
+
+###  http://www.art.org/ontology/person#isPartofMovement
+person:isPartofMovement rdf:type owl:ObjectProperty ;
+                        rdfs:domain person:artist ;
+                        rdfs:range :movement ;
+                        rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P106> ;
+                        rdfs:label "fait parti du mouvement"@fr ,
+                                   "is part of the movement"@en .
+
+
+###  http://www.art.org/ontology/person#workLocation
+person:workLocation rdf:type owl:ObjectProperty ;
+                    rdfs:domain :person ;
+                    rdfs:range world:city ;
+                    rdfs:comment "location where persons or organisations were actively participating in employment, business or other work"@en ;
+                    rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P937> ;
+                    rdfs:label "work location"@en .
+
+
+###  http://www.art.org/ontology/world#hasCapital
+world:hasCapital rdf:type owl:ObjectProperty ;
+                 rdfs:domain world:country ;
+                 rdfs:range world:city ;
+                 rdfs:comment "The capital of a country." ;
+                 rdfs:label "hasCapital" .
+
+
+###  http://www.art.org/ontology/world#hasCity
+world:hasCity rdf:type owl:ObjectProperty ;
+              owl:inverseOf world:isCityOf ;
+              rdfs:domain world:country ;
+              rdfs:range world:city .
+
+
+###  http://www.art.org/ontology/world#hasCountry
+world:hasCountry rdf:type owl:ObjectProperty ;
+                 owl:inverseOf world:inContinent ;
+                 rdfs:domain world:continent ;
+                 rdfs:range world:country .
+
+
+###  http://www.art.org/ontology/world#hasRegion
+world:hasRegion rdf:type owl:ObjectProperty ;
+                rdfs:domain world:country ;
+                rdfs:range world:region .
+
+
+###  http://www.art.org/ontology/world#inContinent
+world:inContinent rdf:type owl:ObjectProperty ;
+                  rdfs:domain world:country ;
+                  rdfs:range world:continent .
+
+
+###  http://www.art.org/ontology/world#isCityOf
+world:isCityOf rdf:type owl:ObjectProperty ;
+               rdfs:domain world:city ;
+               rdfs:range world:country .
+
+
+###  http://www.art.org/ontology/world#regionOf
+world:regionOf rdf:type owl:ObjectProperty ;
+               rdfs:domain world:region ;
+               rdfs:range world:country .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.art.org/ontology/LinkedOpenData#sparqlEndPoint
+lod:sparqlEndPoint rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :linkedOpenData ;
+                   rdfs:range xsd:anyURI .
+
+
+###  http://www.art.org/ontology/art#height
+art:height rdf:type owl:DatatypeProperty ;
+           rdfs:domain art:painting ;
+           rdfs:range xsd:decimal ;
+           rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P2048> .
+
+
+###  http://www.art.org/ontology/art#inception
+art:inception rdf:type owl:DatatypeProperty ;
+              rdfs:domain art:painting ;
+              rdfs:range xsd:integer ;
+              rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P571> .
+
+
+###  http://www.art.org/ontology/art#pictureLink
+art:pictureLink rdf:type owl:DatatypeProperty ;
+                rdfs:domain art:painting ;
+                rdfs:range xsd:anyURI ;
+                rdfs:comment "link to wikidata or wikimedia"@en ;
+                rdfs:label "picture link"@en .
+
+
+###  http://www.art.org/ontology/art#width
+art:width rdf:type owl:DatatypeProperty ;
+          rdfs:domain art:painting ;
+          rdfs:range xsd:decimal ;
+          rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P2049> .
+
+
+###  http://www.art.org/ontology/person#dateOfBirth
+person:dateOfBirth rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :person ;
+                   rdfs:range xsd:dateTimeStamp ;
+                   rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P569> .
+
+
+###  http://www.art.org/ontology/person#dateOfDeath
+person:dateOfDeath rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :person ;
+                   rdfs:range xsd:dateTimeStamp ;
+                   rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P570> .
+
+
+###  http://www.art.org/ontology/person#familyName
+person:familyName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :person ;
+                  rdfs:range xsd:string ;
+                  rdfs:isDefinedBy <https://www.wikidata.org/wiki/Property:P734> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.art.org/ontology#artPeriod
+:artPeriod rdf:type owl:Class ;
+           rdfs:label "art period"@en .
+
+
+###  http://www.art.org/ontology#artefact
+:artefact rdf:type owl:Class ;
+          owl:equivalentClass [ rdf:type owl:Restriction ;
+                                owl:onProperty art:createdBy ;
+                                owl:someValuesFrom :person
+                              ] ;
+          rdfs:comment "objects that are the result of human activity"@en ;
+          rdfs:label "artefact"@en .
+
+
+###  http://www.art.org/ontology#gender
+:gender rdf:type owl:Class ;
+        rdfs:label "gender"@en .
+
+
+###  http://www.art.org/ontology#geographicalArea
+:geographicalArea rdf:type owl:Class ;
+                  rdfs:comment "representing any geographical area" ;
+                  rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q104098715> .
+
+
+###  http://www.art.org/ontology#linkedOpenData
+:linkedOpenData rdf:type owl:Class ;
+                rdfs:label "linked Open Data"@en .
+
+
+###  http://www.art.org/ontology#movement
+:movement rdf:type owl:Class ;
+          rdfs:comment "artistic movement or school with which artist is associated"@en ;
+          rdfs:isDefinedBy <http://www.art.org/ontology> ,
+                           <https://dbpedia.org/ontology/movement> ,
+                           <https://www.wikidata.org/wiki/Property:P135> ;
+          rdfs:label "artistic movement"@en ,
+                     "mouvement artistique"@fr .
+
+
+###  http://www.art.org/ontology#person
+:person rdf:type owl:Class ;
+        rdfs:label "person"@en ,
+                   "personne"@fr .
+
+
+###  http://www.art.org/ontology/art#artObject
+art:artObject rdf:type owl:Class ;
+              rdfs:subClassOf :artefact .
+
+
+###  http://www.art.org/ontology/art#books
+art:books rdf:type owl:Class ;
+          rdfs:subClassOf :artefact .
+
+
+###  http://www.art.org/ontology/art#building
+art:building rdf:type owl:Class ;
+             rdfs:subClassOf :artefact .
+
+
+###  http://www.art.org/ontology/art#ceramic
+art:ceramic rdf:type owl:Class ;
+            rdfs:subClassOf art:artObject ;
+            rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q13464614> ;
+            rdfs:label "ceramic"@en ,
+                       "céramique d'art"@fr .
+
+
+###  http://www.art.org/ontology/art#material
+art:material rdf:type owl:Class .
+
+
+###  http://www.art.org/ontology/art#painting
+art:painting rdf:type owl:Class ;
+             rdfs:subClassOf art:artObject ;
+             rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q3305213> ;
+             rdfs:label "Tableau"@fr ,
+                        "painting"@en .
+
+
+###  http://www.art.org/ontology/art#paintingMaterial
+art:paintingMaterial rdf:type owl:Class ;
+                     rdfs:subClassOf art:material ;
+                     rdfs:comment "oil painting, acrylic, pastel, fusain, etc ...."@en ;
+                     rdfs:label "painting Material"@en .
+
+
+###  http://www.art.org/ontology/art#sculpture
+art:sculpture rdf:type owl:Class ;
+              rdfs:subClassOf art:artObject .
+
+
+###  http://www.art.org/ontology/movement#artMovement
+mvmt:artMovement rdf:type owl:Class ;
+                 rdfs:subClassOf :movement ;
+                 rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q968159> .
+
+
+###  http://www.art.org/ontology/movement#literaryMovement
+mvmt:literaryMovement rdf:type owl:Class ;
+                      rdfs:subClassOf :movement ;
+                      rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q3326717> .
+
+
+###  http://www.art.org/ontology/museum#artCollection
+mus:artCollection rdf:type owl:Class ;
+                  rdfs:subClassOf mus:museum ;
+                  rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q7328910> ;
+                  rdfs:label "art collection"@en ,
+                             "collection d'art"@fr .
+
+
+###  http://www.art.org/ontology/museum#artMuseum
+mus:artMuseum rdf:type owl:Class ;
+              owl:equivalentClass mus:foundation ;
+              rdfs:subClassOf mus:museum ;
+              rdfs:comment "building or space for the exhibition of art (for institution, use Q3196771)"@fr ;
+              rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q207694> ;
+              rdfs:label "Musée d'art"@fr ,
+                         "art Museum"@en .
+
+
+###  http://www.art.org/ontology/museum#foundation
+mus:foundation rdf:type owl:Class ;
+               rdfs:subClassOf mus:museum ;
+               rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q207694> ;
+               rdfs:label "Fondation"@fr ,
+                          "foundation"@en .
+
+
+###  http://www.art.org/ontology/museum#monument
+mus:monument rdf:type owl:Class ;
+             rdfs:subClassOf mus:museum ;
+             rdfs:comment """not really a museum, but any monument that holds a painting or a scuplture
+Example: Phidias is a sculptor. His work was in the Partheno (Athenes) or in Olympia"""@en ;
+             rdfs:label "monument"@en ,
+                        "monument"@fr .
+
+
+###  http://www.art.org/ontology/museum#museum
+mus:museum rdf:type owl:Class ;
+           rdfs:isDefinedBy <https://dbpedia.org/ontology/Museum> ,
+                            <https://www.wikidata.org/wiki/Q33506> ;
+           rdfs:label "Musée"@fr ,
+                      "museum"@en .
+
+
+###  http://www.art.org/ontology/museum#private
+mus:private rdf:type owl:Class ;
+            rdfs:subClassOf mus:museum ;
+            rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q5> ,
+                             <https://www.wikidata.org/wiki/Q768717> ;
+            rdfs:label "private Collection"@en .
+
+
+###  http://www.art.org/ontology/museum#ruine
+mus:ruine rdf:type owl:Class ;
+          rdfs:subClassOf mus:monument ;
+          rdfs:comment """the monument has been destroyed
+Example : Ephesus temple of Artemis"""@en ;
+          rdfs:label "ruine"@en .
+
+
+###  http://www.art.org/ontology/person#actor
+person:actor rdf:type owl:Class ;
+             rdfs:subClassOf person:artist .
+
+
+###  http://www.art.org/ontology/person#architect
+person:architect rdf:type owl:Class ;
+                 rdfs:subClassOf :person ;
+                 rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q42973> ;
+                 rdfs:label "architect"@en ,
+                            "architecte"@fr .
+
+
+###  http://www.art.org/ontology/person#artist
+person:artist rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( :person
+                                                         [ rdf:type owl:Restriction ;
+                                                           owl:onProperty person:isCreatorOf ;
+                                                           owl:someValuesFrom art:artObject
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:label "artist"@en ,
+                         "artiste"@fr .
+
+
+###  http://www.art.org/ontology/person#bookAuthor
+person:bookAuthor rdf:type owl:Class ;
+                  rdfs:subClassOf person:artist .
+
+
+###  http://www.art.org/ontology/person#cartoonAuthor
+person:cartoonAuthor rdf:type owl:Class ;
+                     rdfs:subClassOf person:bookAuthor ;
+                     skos:note "Enki Bilal is a bookAuthor, cartoonAuthor and a painter"@en .
+
+
+###  http://www.art.org/ontology/person#ceramicist
+person:ceramicist rdf:type owl:Class ;
+                  rdfs:subClassOf person:artist ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty person:isCreatorOf ;
+                                    owl:allValuesFrom art:ceramic
+                                  ] ;
+                  rdfs:comment "practitioner of ceramic arts"@en ;
+                  rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q7541856> ;
+                  rdfs:label "ceramicist"@en ,
+                             "céramiste"@fr .
+
+
+###  http://www.art.org/ontology/person#musicComposer
+person:musicComposer rdf:type owl:Class ;
+                     rdfs:subClassOf person:artist .
+
+
+###  http://www.art.org/ontology/person#musician
+person:musician rdf:type owl:Class ;
+                rdfs:subClassOf person:artist .
+
+
+###  http://www.art.org/ontology/person#painter
+person:painter rdf:type owl:Class ;
+               rdfs:subClassOf person:artist ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty person:isCreatorOf ;
+                                 owl:allValuesFrom art:painting
+                               ] ;
+               rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q1028181> ;
+               rdfs:label "painter"@en ,
+                          "peintre"@fr .
+
+
+###  http://www.art.org/ontology/person#sculptor
+person:sculptor rdf:type owl:Class ;
+                rdfs:subClassOf person:artist ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty person:isCreatorOf ;
+                                  owl:allValuesFrom art:sculpture
+                                ] ;
+                rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q1281618> ;
+                rdfs:label "sculpteur"@fr ,
+                           "sculptor"@en .
+
+
+###  http://www.art.org/ontology/world#city
+world:city rdf:type owl:Class ;
+           rdfs:subClassOf :geographicalArea ;
+           rdfs:comment "representing an city in the world" ;
+           rdfs:isDefinedBy dbo:city ,
+                            <https://www.wikidata.org/wiki/Q515> ;
+           rdfs:label "Cité"@fr ,
+                      "city"@en .
+
+
+###  http://www.art.org/ontology/world#continent
+world:continent rdf:type owl:Class ;
+                rdfs:subClassOf :geographicalArea ;
+                rdfs:comment "representing a Continent" ;
+                rdfs:isDefinedBy dbo:continent ,
+                                 wikidata:Q5107 ;
+                rdfs:label "Continent"@fr ,
+                           "continent"@en .
+
+
+###  http://www.art.org/ontology/world#country
+world:country rdf:type owl:Class ;
+              rdfs:subClassOf :geographicalArea ;
+              rdfs:comment "representing an country in the world" ;
+              rdfs:isDefinedBy dbo:country ,
+                               <https://www.wikidata.org/wiki/Q6256> ;
+              rdfs:label "country" .
+
+
+###  http://www.art.org/ontology/world#region
+world:region rdf:type owl:Class ;
+             rdfs:subClassOf :geographicalArea ;
+             rdfs:comment "representing an country region" ;
+             rdfs:isDefinedBy dbo:Region ,
+                              wikidata:Q3455524 ;
+             rdfs:label "Région"@fr ,
+                        "region"@en .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.art.org/ontology/person/gender#female
+gender:female rdf:type owl:NamedIndividual ,
+                       :gender ;
+              rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q6581072> ;
+              rdfs:label "female"@en ,
+                         "feminin"@fr .
+
+
+###  http://www.art.org/ontology/person/gender#male
+gender:male rdf:type owl:NamedIndividual ,
+                     :gender ;
+            rdfs:isDefinedBy <https://www.wikidata.org/wiki/Q6581097> ;
+            rdfs:label "male"@en ,
+                       "masculin"@fr .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<SPARQL>
+	<query queryID="101" type="query museum">
+		<description>list of Swiss museum and link to wikidata</description>
+		<comment>none</comment>
+		<querytext><![CDATA[PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix city: <http://www.art.org/ontology/world/city#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix mus:       <http://www.art.org/ontology/museum#> 
+select distinct ?museum ?museumName ?city ?cityName ?countryName ?continentName ?wikidata
+where { GRAPH <http://www.art.org/museum> {?museum a mus:museum ; mus:inCity ?city  .
+                                           OPTIONAL{?museum owl:sameAs ?wikidata  FILTER(regex(STR(?wikidata),"wikidata")) .} 
+                                           ?museum rdfs:label ?museumName FILTER ( lang(?museumName) = "en" ) .
+        }
+        GRAPH <http://www.art.org/world> {?city a world:city; world:isCityOf ?country  FILTER (?country = ctry:Q39) . 
+                                          ?city rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) .
+        ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) .
+        ?country world:inContinent ?continent .
+        ?continent rdfs:label ?continentName FILTER ( lang(?continentName) = "en" ) .
+  }
+}
+order by ?cityName]]>
+		</querytext>
+	</query>
+	<query queryID="102" type="query painters">
+		<description>list of all painters and the movement associated
+		</description>
+		<comment>some painter do not belong to a movement</comment>
+		<querytext><![CDATA[# list of all painters and the movement associated (some painter do not belong to a movement)
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix skos: <http://www.w3.org/2004/02/skos/core#> 
+prefix world: <http://www.art.org/ontology/world#> 
+prefix person: <http://www.art.org/ontology/person#> 
+select ?painter ?wikidata ?name ?movement ?movementName  ?wdMvmt
+where {
+    ?painter a person:painter; rdfs:label ?name FILTER ( lang(?name) = "en" )  .
+    OPTIONAL{?painter owl:sameAs ?wikidata FILTER ( regex(str(?wikidata), 'wikidata', "i")  ) . } 
+    OPTIONAL {?painter person:isPartofMovement ?movement . 
+       OPTIONAL { GRAPH <http://www.art.org/movement> {?movement rdfs:label ?movementName FILTER ( lang(?movementName) = "en" ) . }}
+       OPTIONAL { GRAPH <http://www.art.org/movement> {?movement owl:sameAs ?wdMvmt FILTER ( regex(str(?wdMvmt), 'wikidata', "i")  ) . } }
+  }
+  }
+order by ?painter]]>
+		</querytext>
+	</query>
+	<query queryID="103" type="query cities">
+		<description>list of cities, countries and continent </description>
+		<comment>none</comment>
+		<querytext><![CDATA[PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix world: <http://www.art.org/ontology/world#> 
+prefix ctry: <http://www.art.org/ontology/world/country#> 
+prefix city: <http://www.art.org/ontology/world/city#> 
+prefix cont: <http://www.art.org/ontology/world/continent#> 
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+select ?city ?cityName ?country ?countryName ?continent ?continentName
+where {GRAPH <http://www.art.org/world> {?city a world:city; world:isCityOf ?country ; rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) .
+        ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) .
+        ?country world:inContinent ?continent .
+        ?continent rdfs:label ?continentName FILTER ( lang(?continentName) = "en" ) .
+  }
+}
+order by ?continentName ?countryName]]>
+		</querytext>
+	</query>
+	<query queryID="104" type="query one artist">
+		<description>display one artist = Theodore Deck</description>
+		<comment>todo: exposed in should be optional</comment>
+		<querytext><![CDATA[#Theodore Deck
+PREFIX art:  <http://www.art.org/ontology/art#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+prefix person: <http://www.art.org/ontology/person#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix mus:       <http://www.art.org/ontology/museum#>
+prefix world:       <http://www.art.org/ontology/world#>
+select ?person ?name ?museum ?museumName ?city ?cityName ?country ?countryName
+where {?person rdf:type owl:NamedIndividual FILTER (?person = person:Q937373) .
+       ?person rdfs:label ?name FILTER ( lang(?name) = "en" ) .
+       ?person art:exposedIn ?museum .
+       OPTIONAL { Graph <http://www.art.org/museum> { ?museum rdfs:label ?museumName FILTER ( lang(?museumName) = "fr" ) .
+       OPTIONAL {  ?museum mus:inCity  ?city .
+                  Graph <http://www.art.org/world> { ?city rdfs:label ?cityName FILTER ( lang(?cityName) = "en" ) . 
+                                                     ?city world:isCityOf ?country .
+                                                     ?country rdfs:label ?countryName FILTER ( lang(?countryName) = "en" ) . 
+        }}
+    }  
+  }
+}]]>
+		</querytext>
+	</query>
+	
+	<query queryID="108" type="query movement">
+		<description>list movement and show missing mouvement</description>
+		<comment>todo: show all movement</comment>
+		<querytext><![CDATA[PREFIX art: <http://www.art.org/ontology/art#>
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+prefix person: <http://www.art.org/ontology/person#> 
+select ?mvmt ?movementName
+where {
+    ?painter person:isPartofMovement ?mvmt .
+     FILTER NOT EXISTS { GRAPH <http://www.art.org/movement> {?mvmt rdfs:label ?movementName FILTER ( lang(?movementName) = "en" ) . }}
+  }
+group by ?mvmt ?movementName
+order by ?mvmt]]>
+		</querytext>
+	</query>
+	
+<!-- ************** QUERY STATISTICS ********************* -->	
+	<query queryID="105" type="query statistics">
+		<description>statistics number of painting per artists</description>
+		<comment></comment>
+		<querytext><![CDATA[todo]]>
+		</querytext>
+	</query>
+
+    <query queryID="106" type="query statistics">
+		<description>statistics number of museum per country</description>
+		<comment></comment>
+		<querytext><![CDATA[todo]]>
+		</querytext>
+	</query>
+    <query queryID="107" type="query statistics">
+		<description>statistics number of artists per movement</description>
+		<comment></comment>
+		<querytext><![CDATA[todo]]>
+		</querytext>
+	</query>
+    <query queryID="108" type="query statistics">
+		<description>statistics number of museum per painter</description>
+		<comment></comment>
+		<querytext><![CDATA[todo]]>
+		</querytext>
+	</query>
+
+
+<!-- ************** CHECKS ********************* -->		
+	<query queryID="201" type="check isCityOf">
+		<description>check for missing world:isCityOf in city</description>
+		<comment>none</comment>
+		<querytext><![CDATA[# check for missing world:isCityOf in city
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?city ?wdID
+where { graph <http://www.art.org/world> { ?city rdf:type   world:city . }
+  FILTER NOT EXISTS {graph <http://www.art.org/world> {?city  world:isCityOf ?country }  }.
+  BIND(replace(str(?city),"http://www.art.org/ontology/world/city#","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  #graph <http://www.art.org/world> {?city  ?city  world:isCityOf ?country } 
+} ]]>
+		</querytext>
+	</query>
+
+	<query queryID="202" type="check country">
+		<description>check for missing country</description>
+		<comment>The country is declared in museum but not found in world
+		</comment>
+		<querytext><![CDATA[# check for missing country
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+PREFIX mus: <http://www.art.org/ontology/museum#>
+prefix art: <http://www.art.org/ontology/art#> 
+prefix city:  <http://www.art.org/ontology/world/city#> 
+prefix world: <http://www.art.org/ontology/world#> 
+PREFIX person: <http://www.art.org/ontology/person#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+select distinct ?country ?wdID
+where { graph <http://www.art.org/world> { ?city  world:isCityOf ?country . }
+  FILTER NOT EXISTS {graph <http://www.art.org/world> {?country  rdf:type world:country }  }.
+  BIND(replace(str(?country),"http://www.art.org/ontology/world/country#","") as ?itemID )
+    BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?wdID ) .
+  #graph <http://www.art.org/world> {?city  ?city  world:isCityOf ?country } 
+}  ]]>
+		</querytext>
+	</query>
+
+	<query queryID="203" type="check ">
+		<description>Harsh</description>
+		<comment>Singh</comment>
+		<querytext><![CDATA[# check for missing country
+}  ]]></querytext>
+	</query>
+<!-- 
+     ************** CONSTRUCTS ********************* 
+-->
+	<query queryID="301" type="CONSTRUCT">
+		<description>Wikidata movement</description>
+		<comment>retrieve only missing movement infos</comment>
+		<querytext><![CDATA[#import missing movement
+PREFIX art: <http://www.art.org/ontology/art#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix mvmt: <http://www.art.org/ontology/movement#> 
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX wd: <http://www.wikidata.org/entity/>
+PREFIX schema: <http://schema.org/>
+prefix wikipedia: <https://en.wikipedia.org/wiki/> 
+prefix person: <http://www.art.org/ontology/person#> 
+CONSTRUCT {?movement a owl:NamedIndividual, mvmt:movement ; rdfs:label ?mvmtName1 ,?mvmtName2; rdfs:comment ?desc1,?desc2 ; owl:sameAs ?mvmt ;owl:sameAs ?wpLink .  }
+#select ?movement ?mvmt ?movementName ?mvmtName2
+where {
+   {select distinct ?movement where {
+    ?painter person:isPartofMovement ?movement .
+     FILTER NOT EXISTS { GRAPH <http://www.art.org/movement> {?movement rdfs:label ?movementName . }}
+     }
+  }
+   BIND(replace(str(?movement),"http://www.art.org/ontology/movement#","") as ?itemID )
+   BIND(IRI(CONCAT("http://www.wikidata.org/entity/", ?itemID   ))  AS ?mvmt ) .
+  {SERVICE <https://query.wikidata.org/sparql> {?mvmt wdt:P31 wd:Q968159 .
+     OPTIONAL { ?mvmt rdfs:label ?mvmtName1 . FILTER(lang(?mvmtName1)="fr") . } 
+     OPTIONAL { ?mvmt schema:description ?desc1 . FILTER(lang(?desc1)="fr") .  }
+     OPTIONAL { ?mvmt rdfs:label ?mvmtName2 . FILTER(lang(?mvmtName2)="en") . } 
+     OPTIONAL { ?mvmt schema:description ?desc2 . FILTER(lang(?desc2)="en") .  }
+     OPTIONAL{?wpLink schema:isPartOf <https://en.wikipedia.org/>; schema:about ?mvmt . }
+     }
+  }
+}
+]]></querytext>
+	</query>
+
+</SPARQL>  

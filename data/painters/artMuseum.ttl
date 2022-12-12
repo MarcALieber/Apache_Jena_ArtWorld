@@ -1,0 +1,2443 @@
+@prefix :          <http://www.art.org/ontology#> .
+@prefix art:       <http://www.art.org/ontology/art#> .
+@prefix city:      <http://www.art.org/ontology/world/city#> .
+@prefix cont:      <http://www.art.org/ontology/world/continent#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix dbo:       <http://dbpedia.org/ontology/> .
+@prefix dbp:       <http://dbpedia.org/property/> .
+@prefix dbpedia:   <http://dbpedia.org/resource/> .
+@prefix dc:        <http://purl.org/dc/elements/1.1/> .
+@prefix foaf:      <http://xmlns.com/foaf/0.1/> .
+@prefix g:         <http://www.art.org/ontology/geography#> .
+@prefix gender:    <http://www.art.org/ontology/person/gender#> .
+@prefix lod:       <http://www.art.org/ontology/LinkedOpenData#> .
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix mvmt:      <http://www.art.org/ontology/movement#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix p:         <http://marclieber.fr/ontology/src/> .
+@prefix painting:  <http://www.art.org/ontology/artPainting#> .
+@prefix period:    <http://www.art.org/ontology/period#> .
+@prefix person:    <http://www.art.org/ontology/person#> .
+@prefix rdf:       <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix reg:       <http://www.art.org/ontology/world/countryRegion#> .
+@prefix remote:    <http://www.art.org/ontology/remote#> .
+@prefix schema:    <http://schema.org/> .
+@prefix skos:      <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd:        <http://www.wikidata.org/entity/> .
+@prefix wdp:       <https://www.wikidata.org/wiki/Property/> .
+@prefix wdt:       <http://www.wikidata.org/prop/direct/> .
+@prefix wikidata:  <http://www.wikidata.org/entity/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+@prefix wm:        <https://commons.wikimedia.org/wiki/> .
+@prefix world:     <http://www.art.org/ontology/world#> .
+@prefix wp:        <https://en.wikipedia.org/wiki/> .
+@prefix xml:       <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+mus:Q731126  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain, en Californie"@fr , "art museum in Los Angeles, California"@en ;
+        rdfs:label    "J. Paul Getty Museum"@fr , "J. Paul Getty Museum"@en ;
+        mus:inCity  city:Q65 ;
+        owl:sameAs    wikipedia:J._Paul_Getty_Museum , wikidata:Q731126 .
+
+mus:Q18751939  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée en Italie"@fr , "group of city museums in Brescia, Italy"@en ;
+        rdfs:label    "Civic Museums of Brescia"@fr , "Civic Museums of Brescia"@en ;
+        mus:inCity  city:Q6221 ;
+        owl:sameAs    wikidata:Q18751939 .
+
+mus:Q496040  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée en Irlande"@fr , "art gallery in Parnell Square North, Dublin"@en ;
+        rdfs:label    "Hugh Lane Municipal Gallery"@fr , "Dublin City Gallery The Hugh Lane"@en ;
+        mus:inCity  city:Q1761 ;
+        owl:sameAs    wikipedia:Hugh_Lane_Gallery , wikidata:Q496040 .
+
+mus:Q865736  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Birmingham, Alabama"@en ;
+        rdfs:label    "Birmingham Museum of Art"@fr , "Birmingham Museum of Art"@en ;
+        mus:inCity  city:Q79867 ;
+        owl:sameAs    wikipedia:Birmingham_Museum_of_Art , wikidata:Q865736 .
+
+mus:Q1976985  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art américain"@fr , "art museum in Kansas City, Missouri"@en ;
+        rdfs:label    "musée d'art Nelson-Atkins"@fr , "The Nelson-Atkins Museum of Art"@en ;
+        mus:inCity  city:Q41819 ;
+        owl:sameAs    wikipedia:Nelson-Atkins_Museum_of_Art , wikidata:Q1976985 .
+
+mus:Q1565911  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Houston au Texas, États-Unis"@fr , "art museum in Houston, Texas"@en ;
+        rdfs:label    "musée des Beaux-Arts de Houston"@fr , "Museum of Fine Arts, Houston"@en ;
+        mus:inCity  city:Q16555 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_of_Fine_Arts,_Houston> , wikidata:Q1565911 .
+
+mus:Q2404549  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Tours, France"@fr , "museum in Tours, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Tours"@fr , "Musée des Beaux-Arts de Tours"@en ;
+        mus:inCity  city:Q288 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts_de_Tours> , wikidata:Q2404549 .
+
+mus:Q511  rdf:type    mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée des Beaux-arts de Lyon, France"@fr , "art museum in Lyon, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Lyon"@fr , "Museum of Fine Arts of Lyon"@en ;
+        mus:inCity  city:Q456 ;
+        owl:sameAs    wikipedia:Museum_of_Fine_Arts_of_Lyon , wikidata:Q511 .
+
+mus:Q1464509  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Melbourne, Australie"@fr , "art museum in Melbourne, Australia"@en ;
+        rdfs:label    "musée national du Victoria"@fr , "National Gallery of Victoria"@en ;
+        mus:inCity  city:Q3141 ;
+        owl:sameAs    wikipedia:National_Gallery_of_Victoria , wikidata:Q1464509 .
+
+mus:Q2105170  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "non-profit organisation in the USA"@en ;
+        rdfs:label    "Portland Museum of Art"@en ;
+        mus:inCity  city:Q49201 ;
+        owl:sameAs    wikipedia:Portland_Museum_of_Art , wikidata:Q2105170 .
+
+mus:Q657415  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Cleveland"@fr , "art museum in Cleveland, Ohio"@en ;
+        rdfs:label    "Cleveland Museum of Art"@fr , "Cleveland Museum of Art"@en ;
+        mus:inCity  city:Q37320 ;
+        owl:sameAs    wikipedia:Cleveland_Museum_of_Art , wikidata:Q657415 .
+
+mus:Q1792552  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée suisse"@fr , "museum in St. Gallen (Switzerland)"@en ;
+        rdfs:label    "Kunstmuseum, Saint-Gall"@fr , "St. Gallen museum of art"@en ;
+        mus:inCity  city:Q25607 ;
+        owl:sameAs    wikipedia:Kunstmuseum_St._Gallen , wikidata:Q1792552 .
+
+mus:Q1641836  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "Encyclopedic, Art museum in Los Angeles, United States"@en ;
+        rdfs:label    "musée d'Art du comté de Los Angeles"@fr , "Los Angeles County Museum of Art"@en ;
+        mus:inCity  city:Q65 ;
+        owl:sameAs    wikipedia:Los_Angeles_County_Museum_of_Art , wikidata:Q1641836 .
+
+mus:Q3492931  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Louisville, Kentucky, USA"@en ;
+        rdfs:label    "Speed Art Museum"@fr , "Speed Art Museum"@en ;
+        mus:inCity  city:Q43668 ;
+        owl:sameAs    wikipedia:Speed_Art_Museum , wikidata:Q3492931 .
+
+mus:Q18563658  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Nashville, États-Unis"@fr , "art museum at Vanderbilt University in Nashville, Tennessee, USA"@en ;
+        rdfs:label    "Vanderbilt University Fine Arts Gallery"@fr , "Vanderbilt University Fine Arts Gallery"@en ;
+        mus:inCity  city:Q23197 ;
+        owl:sameAs    wikidata:Q18563658 .
+
+mus:Q7673984  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Tacoma, Washington"@en ;
+        rdfs:label    "Tacoma Art Museum"@fr , "Tacoma Art Museum"@en ;
+        mus:inCity  city:Q199797 ;
+        owl:sameAs    wikipedia:Tacoma_Art_Museum , wikidata:Q7673984 .
+
+mus:Q2383136  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Columbia, South Carolina"@en ;
+        rdfs:label    "Columbia Museum of Art"@fr , "Columbia Museum of Art"@en ;
+        mus:inCity  city:Q38453 ;
+        owl:sameAs    wikipedia:Columbia_Museum_of_Art , wikidata:Q2383136 .
+
+mus:Q745866  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Dallas, Texas"@en ;
+        rdfs:label    "musée d'Art de Dallas"@fr , "Dallas Museum of Art"@en ;
+        mus:inCity  city:Q16557 ;
+        owl:sameAs    wikipedia:Dallas_Museum_of_Art , wikidata:Q745866 .
+
+mus:Q2018379  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée National à Dublin (Irlande)"@fr , "art museum in Dublin"@en ;
+        rdfs:label    "Galerie nationale d'Irlande"@fr , "National Gallery of Ireland"@en ;
+        mus:inCity  city:Q1761 ;
+        owl:sameAs    wikipedia:National_Gallery_of_Ireland , wikidata:Q2018379 .
+
+mus:Q10333663  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Rio de Janeiro"@fr , "museum in Rio de Janeiro"@en ;
+        rdfs:label    "Museu da Chácara do Céu"@fr , "Museu da Chácara do Céu"@en ;
+        mus:inCity  city:Q8678 ;
+        owl:sameAs    wikidata:Q10333663 .
+
+mus:Q666331  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée suisse"@fr , "Art museum in Zurich, Switzerland"@en ;
+        rdfs:label    "Fondation et Collection Emil G. Bührle"@fr , "Foundation E.G. Bührle Collection"@en ;
+        mus:inCity  city:Q72 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Foundation_E._G._B%C3%BChrle> , wikidata:Q666331 .
+
+mus:Q578485  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Washington, D.C."@fr , "Art museum in Washington, D.C."@en ;
+        rdfs:label    "The Phillips Collection"@fr , "The Phillips Collection"@en ;
+        mus:inCity  city:Q61 ;
+        owl:sameAs    wikipedia:The_Phillips_Collection , wikidata:Q578485 .
+
+mus:Q1264942  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "hôtel particulier avec jardin botanique, à Washington"@fr , "research institution concerning Byzantine and Pre-Columbian studies and garden and landscape studies"@en ;
+        rdfs:label    "Dumbarton Oaks"@fr , "Dumbarton Oaks"@en ;
+        mus:inCity  city:Q61 ;
+        owl:sameAs    wikipedia:Dumbarton_Oaks , wikidata:Q1264942 .
+
+mus:Q6379617  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "DIC"@fr , "Kawamura Memorial DIC Museum of Art"@en ;
+        mus:inCity  city:Q498011 ;
+        owl:sameAs    wikipedia:Kawamura_Memorial_DIC_Museum_of_Art , wikidata:Q6379617 .
+
+mus:Q2338135  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée situé à Québec"@fr , "art museum in Quebec City, Canada"@en ;
+        rdfs:label    "Musée national des beaux-arts du Québec"@fr , "Musée national des beaux-arts du Québec"@en ;
+        mus:inCity  city:Q2145 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_national_des_beaux-arts_du_Qu%C3%A9bec> , wikidata:Q2338135 .
+
+mus:Q1519002  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "institution de la Communauté d'Agglomération de Montpellier"@fr , "municipal museum of Montpellier Urban Community"@en ;
+        rdfs:label    "musée Fabre"@fr , "Fabre museum"@en ;
+        mus:inCity  city:Q6441 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_Fabre> , wikidata:Q1519002 .
+
+mus:Q683163  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée suisse"@fr , "museum building in the city of Solothurn, Switzerland"@en ;
+        rdfs:label    "musée d'Art de Soleure"@fr , "Museum of Art (building)"@en ;
+        mus:inCity  city:Q68965 ;
+        owl:sameAs    wikipedia:Kunstmuseum_Solothurn , wikidata:Q683163 .
+
+mus:Q2983474  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "organization of three museums that make up the largest art museum institution of Finland"@en ;
+        rdfs:label    "Galerie nationale de Finlande"@fr , "Finnish National Gallery"@en ;
+        mus:inCity  city:Q1757 ;
+        owl:sameAs    wikipedia:Finnish_National_Gallery , wikidata:Q2983474 .
+
+mus:Q1783956  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée des arts situé à Nantes, France"@fr , "arts museum in Nantes, France"@en ;
+        rdfs:label    "musée d'Arts de Nantes"@fr , "Nantes Museum of Arts"@en ;
+        mus:inCity  city:Q12191 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Arts_de_Nantes> , wikidata:Q1783956 .
+
+mus:Q673833  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "collection du musée à Riehen, dans le canton de Bâle-Ville, en Suisse"@fr , "museum collection in Riehen in the canton of Basel-Stadt, Switzerland"@en ;
+        rdfs:label    "Fondation Beyeler"@fr , "Beyeler Foundation"@en ;
+        mus:inCity  city:Q5262 ;
+        owl:sameAs    wikipedia:Beyeler_Foundation , wikidata:Q673833 .
+
+mus:Q705551  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée en Australie"@fr , "public art gallery in New South Wales, Australia"@en ;
+        rdfs:label    "Galerie d'art de Nouvelle-Galles du Sud"@fr , "Art Gallery of New South Wales"@en ;
+        mus:inCity  city:Q3130 ;
+        owl:sameAs    wikipedia:Art_Gallery_of_New_South_Wales , wikidata:Q705551 .
+
+mus:Q430682  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "institution artistique britannique"@fr , "art institution in the United Kingdom"@en ;
+        rdfs:label    "Tate"@fr , "Tate"@en ;
+        mus:inCity  city:Q84 ;
+        owl:sameAs    wikipedia:Tate , wikidata:Q430682 .
+
+mus:Q5263501  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Des Moines, Iowa"@en ;
+        rdfs:label    "Des Moines Art Center"@fr , "Des Moines Art Center"@en ;
+        mus:inCity  city:Q39709 ;
+        owl:sameAs    wikipedia:Des_Moines_Art_Center , wikidata:Q5263501 .
+
+mus:Q2148186  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art & design museum in Providence, Rhode Island"@en ;
+        rdfs:label    "Rhode Island School of Design Museum"@fr , "Rhode Island School of Design Museum"@en ;
+        mus:inCity  city:Q18383 ;
+        owl:sameAs    wikipedia:Rhode_Island_School_of_Design_Museum , wikidata:Q2148186 .
+
+mus:Q1368166  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à San Diego, Californie"@fr , "Art museum in San Diego, California"@en ;
+        rdfs:label    "musée d'art de San Diego"@fr , "San Diego Museum of Art"@en ;
+        mus:inCity  city:Q16552 ;
+        owl:sameAs    wikipedia:San_Diego_Museum_of_Art , wikidata:Q1368166 .
+
+mus:Q3329541  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée français"@fr , "museum in Le Havre, France"@en ;
+        rdfs:label    "musée d'art moderne André-Malraux"@fr , "MuMa Museum of modern art André Malraux"@en ;
+        mus:inCity  city:Q42810 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_of_modern_art_Andr%C3%A9_Malraux_-_MuMa> , wikidata:Q3329541 .
+
+mus:Q2097646  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art de la ville de Mexico (Mexique)"@fr , "art museum in Mexico City, Mexico, with two venues: Plaza Carso and Plaza Loreto."@en ;
+        rdfs:label    "musée Soumaya"@fr , "Museo Soumaya"@en ;
+        mus:inCity  city:Q1489 ;
+        owl:sameAs    wikipedia:Museo_Soumaya , wikidata:Q2097646 .
+
+mus:Q468458  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Mannheim"@fr , "art museum in Mannheim"@en ;
+        rdfs:label    "Kunsthalle Mannheim"@fr , "Kunsthalle Mannheim"@en ;
+        mus:inCity  city:Q2119 ;
+        owl:sameAs    wikipedia:Kunsthalle_Mannheim , wikidata:Q468458 .
+
+mus:Q954222  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Bordeaux, France"@fr , "museum of fine arts in Bordeaux, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Bordeaux"@fr , "Musée des Beaux-Arts de Bordeaux"@en ;
+        mus:inCity  city:Q1479 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts_de_Bordeaux> , wikidata:Q954222 .
+
+mus:Q3329620  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée suisse, à Neuchâtel"@fr , "historical museum in Neuchâtel (Switzerland)"@en ;
+        rdfs:label    "musée d'art et d'histoire"@fr , "Musée d'Art et d'Histoire"@en ;
+        mus:inCity  city:Q69345 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Art_et_d%27Histoire_(Neuch%C3%A2tel)> , wikidata:Q3329620 .
+
+mus:Q845468  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Strasbourg, France"@fr , "art museum in Strasbourg, France"@en ;
+        rdfs:label    "Musée d’Art moderne et contemporain de Strasbourg"@fr , "Strasbourg Museum of Modern and Contemporary Art"@en ;
+        mus:inCity  city:Q6602 ;
+        owl:sameAs    wikipedia:Strasbourg_Museum_of_Modern_and_Contemporary_Art , wikidata:Q845468 .
+
+mus:Q1954748  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "museum in St. Petersburg, Florida"@en ;
+        rdfs:label    "Museum of Fine Arts (St. Petersburg)"@fr , "Museum of Fine Arts, St. Petersburg, Florida, USA"@en ;
+        mus:inCity  city:Q49236 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_of_Fine_Arts_(St._Petersburg,_Florida)> , wikidata:Q1954748 .
+
+mus:Q2912600  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art en Algérie"@fr , "Art Museum n Algeria"@en ;
+        rdfs:label    "Musée national des Beaux-Arts d'Alger"@fr , "National Museum of Fine Arts of Algiers"@en ;
+        mus:inCity  city:Q3561 ;
+        owl:sameAs    wikipedia:National_Museum_of_Fine_Arts_of_Algiers , wikidata:Q2912600 .
+
+mus:Q4819492  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Auckland, en Nouvelle-Zélande"@fr , "art museum in Auckland, New Zealand"@en ;
+        rdfs:label    "Auckland Art Gallery"@fr , "Auckland Art Gallery"@en ;
+        mus:inCity  city:Q37100 ;
+        owl:sameAs    wikipedia:Auckland_Art_Gallery , wikidata:Q4819492 .
+
+mus:Q11417787  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "Musée des Beaux-Arts Kubosō"@fr , "Kubosō Memorial Museum of Arts"@en ;
+        mus:inCity  city:Q696412 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Kubos%C5%8D_Memorial_Museum_of_Arts,_Izumi> , wikidata:Q11417787 .
+
+mus:Q428765  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Nancy, France"@fr , "museum in Nancy, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Nancy"@fr , "Museum of Fine Arts of Nancy"@en ;
+        mus:inCity  city:Q40898 ;
+        owl:sameAs    wikipedia:Museum_of_Fine_Arts_of_Nancy , wikidata:Q428765 .
+
+mus:Q569079  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Caen, France"@fr , "Art museum in Caen, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Caen"@fr , "Musée des Beaux-Arts de Caen"@en ;
+        mus:inCity  city:Q41185 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts_de_Caen> , wikidata:Q569079 .
+
+mus:Q403080  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Hartford, Connecticut"@en ;
+        rdfs:label    "Wadsworth Atheneum"@fr , "Wadsworth Atheneum Museum of Art"@en ;
+        mus:inCity  city:Q33486 ;
+        owl:sameAs    wikipedia:Wadsworth_Atheneum , wikidata:Q403080 .
+
+mus:Q46815  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'Israël à Jérusalem"@fr , "national museum of the state of Israel in Jerusalem"@en ;
+        rdfs:label    "musée d'Israël"@fr , "Israel Museum"@en ;
+        mus:inCity  city:Q1218 ;
+        owl:sameAs    wikipedia:Israel_Museum , wikidata:Q46815 .
+
+mus:Q2655425  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "musée d'art de Shimane"@fr , "Shimane Art Museum"@en ;
+        mus:inCity  city:Q207321 ;
+        owl:sameAs    wikipedia:Shimane_Art_Museum , wikidata:Q2655425 .
+
+mus:Q1787100  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Washington, D.C."@en ;
+        rdfs:label    "Kreeger Museum"@fr , "Kreeger Museum"@en ;
+        mus:inCity  city:Q61 ;
+        owl:sameAs    wikipedia:Kreeger_Museum , wikidata:Q1787100 .
+
+mus:Q41512158  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Springfield, Massachusetts"@fr , "art museum in Springfield, Massachusetts"@en ;
+        rdfs:label    "Michele & Donald D'Amour Museum of Fine Arts"@fr , "Michele & Donald D'Amour Museum of Fine Arts"@en ;
+        mus:inCity  city:Q49158 ;
+        owl:sameAs    wikidata:Q41512158 .
+
+mus:Q11609688  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "art museum in Gunma, Japan"@en ;
+        rdfs:label    "Musée d'art moderne de Gunma"@fr , "The Museum of Modern Art, Gunma"@en ;
+        mus:inCity  city:Q336438 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/The_Museum_of_Modern_Art,_Gunma> , wikidata:Q11609688 .
+
+mus:Q2628596  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Lille, France"@fr , "art museum in Lille, France"@en ;
+        rdfs:label    "palais des Beaux-Arts de Lille"@fr , "Palais des Beaux-Arts de Lille"@en ;
+        mus:inCity  city:Q648 ;
+        owl:sameAs    wikipedia:Palais_des_Beaux-Arts_de_Lille , wikidata:Q2628596 .
+
+mus:Q1848918  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art situé à Buenos Aires, en Argentine"@fr , "National and art museum in Buenos Aires, Argentina"@en ;
+        rdfs:label    "musée national des Beaux-Arts"@fr , "National Museum of Fine Arts"@en ;
+        mus:inCity  city:Q1486 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museo_Nacional_de_Bellas_Artes_(Buenos_Aires)> , wikidata:Q1848918 .
+
+mus:Q46625757  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "bibliothèque et musée en France"@fr , "library"@en ;
+        rdfs:label    "Bibliothèque-musée de la Comédie-Française"@fr , "Library-museum of the Comédie-Française"@en ;
+        mus:inCity  city:Q90 ;
+        owl:sameAs    wikidata:Q46625757 .
+
+mus:Q977015  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Phoenix, Arizona"@en ;
+        rdfs:label    "Phoenix Art Museum"@fr , "Phoenix Art Museum"@en ;
+        mus:inCity  city:Q16556 ;
+        owl:sameAs    wikipedia:Phoenix_Art_Museum , wikidata:Q977015 .
+
+mus:Q1778179  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "Musée d'art de la ville de Tournai"@fr , "Art museum in Tournai, Belgium"@en ;
+        rdfs:label    "musée des Beaux-Arts de Tournai"@fr , "Musée des Beaux-Arts Tournai"@en ;
+        mus:inCity  city:Q173219 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts,_Tournai> , wikidata:Q1778179 .
+
+mus:Q1956195  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "national historic site in Bucharest, Romania"@en ;
+        rdfs:label    "Musée Zambaccian"@fr , "Zambaccian Museum"@en ;
+        mus:inCity  city:Q19660 ;
+        owl:sameAs    wikipedia:Zambaccian_Museum , wikidata:Q1956195 .
+
+mus:Q5547611  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "museum in Athens, Georgia, USA"@en ;
+        rdfs:label    "Georgia Museum of Art"@en ;
+        mus:inCity  city:Q203263 ;
+        owl:sameAs    wikipedia:Georgia_Museum_of_Art , wikidata:Q5547611 .
+
+mus:Q1700481  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Minneapolis, Minnesota"@en ;
+        rdfs:label    "Minneapolis Institute of Art"@fr , "Minneapolis Institute of Art"@en ;
+        mus:inCity  city:Q36091 ;
+        owl:sameAs    wikipedia:Minneapolis_Institute_of_Art , wikidata:Q1700481 .
+
+mus:Q314082  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Hanovre"@fr , "museum in Hannover"@en ;
+        rdfs:label    "musée d'État de Basse-Saxe"@fr , "Landesmuseum Hannover"@en ;
+        mus:inCity  city:Q1715 ;
+        owl:sameAs    wikipedia:Landesmuseum_Hannover , wikidata:Q314082 .
+
+mus:Q3329523  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Lausanne, Suisse"@fr , "museum in Lausanne (Switzerland)"@en ;
+        rdfs:label    "musée cantonal des beaux-arts de Lausanne"@fr , "Cantonal Museum of Fine Arts"@en ;
+        mus:inCity  city:Q807 ;
+        owl:sameAs    wikipedia:Cantonal_Museum_of_Fine_Arts , wikidata:Q3329523 .
+
+mus:Q176251  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art près du Prado, à Madrid"@fr , "art museum in Madrid, Spain"@en ;
+        rdfs:label    "musée Thyssen-Bornemisza"@fr , "Thyssen-Bornemisza Museum"@en ;
+        mus:inCity  city:Q2807 ;
+        owl:sameAs    wikipedia:Thyssen-Bornemisza_Museum , wikidata:Q176251 .
+
+mus:Q5507735  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de la ville de Fukushima, Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "musée d'art de la préfecture de Fukushima"@fr , "Fukushima Prefectural Museum of Art"@en ;
+        mus:inCity  city:Q161176 ;
+        owl:sameAs    wikipedia:Fukushima_Prefectural_Museum_of_Art , wikidata:Q5507735 .
+
+mus:Q685038  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art suisse"@fr , "art museum in Zürich, Switzerland"@en ;
+        rdfs:label    "Kunsthaus de Zurich"@fr , "Kunsthaus Zürich"@en ;
+        mus:inCity  city:Q72 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Kunsthaus_Z%C3%BCrich> , wikidata:Q685038 .
+
+mus:Q1752085  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Pasadena, California"@en ;
+        rdfs:label    "Norton Simon Museum"@fr , "Norton Simon Museum"@en ;
+        mus:inCity  city:Q485176 ;
+        owl:sameAs    wikipedia:Norton_Simon_Museum , wikidata:Q1752085 .
+
+mus:Q1416890  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art"@fr , "public arts institution in the city of San Francisco; comprises the de Young Museum in Golden Gate Park and the Legion of Honor in Lincoln Park"@en ;
+        rdfs:label    "musée des beaux-arts de San Francisco"@fr , "fine arts museums of san francisco"@en ;
+        mus:inCity  city:Q62 ;
+        owl:sameAs    wikipedia:Fine_Arts_Museums_of_San_Francisco , wikidata:Q1416890 .
+
+mus:Q1741629  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Fort-Worth, Texas"@fr , "art museum in Fort Worth, Texas"@en ;
+        rdfs:label    "musée d'Art Kimbell"@fr , "Kimbell Art Museum"@en ;
+        mus:inCity  city:Q16558 ;
+        owl:sameAs    wikipedia:Kimbell_Art_Museum , wikidata:Q1741629 .
+
+mus:Q1970945  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in New York, US"@en ;
+        rdfs:label    "galerie d'art Albright-Knox"@fr , "Albright-Knox Art Gallery"@en ;
+        mus:inCity  city:Q40435 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Albright%E2%80%93Knox_Art_Gallery> , wikidata:Q1970945 .
+
+mus:Q371908  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art, à Vienne en Autriche"@fr , "museum of art in the Innere Stadt of Vienna, Austria"@en ;
+        rdfs:label    "Albertina"@fr , "Albertina"@en ;
+        mus:inCity  city:Q1741 ;
+        owl:sameAs    wikipedia:Albertina , wikidata:Q371908 .
+
+mus:Q194622  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée dans la ville de Berne, Suisse"@fr , "museum in the city of Bern, Switzerland"@en ;
+        rdfs:label    "musée des Beaux-Arts de Berne"@fr , "Kunstmuseum Bern"@en ;
+        mus:inCity  city:Q70 ;
+        owl:sameAs    wikipedia:Museum_of_Fine_Arts_Bern , wikidata:Q194622 .
+
+mus:Q1324926  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Besançon, France"@fr , "museum in Besançon, France"@en ;
+        rdfs:label    "musée des Beaux-Arts et d'Archéologie de Besançon"@fr , "Musée des Beaux-Arts et d'Archéologie de Besançon"@en ;
+        mus:inCity  city:Q37776 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts_et_d%27Arch%C3%A9ologie_de_Besan%C3%A7on> , wikidata:Q1324926 .
+
+mus:Q677561  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "museum in Los Angeles, California"@en ;
+        rdfs:label    "musée Hammer"@fr , "Hammer Museum"@en ;
+        mus:inCity  city:Q65 ;
+        owl:sameAs    wikipedia:Hammer_Museum , wikidata:Q677561 .
+
+mus:Q7419233  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "museum in Santa Barbara, California"@en ;
+        rdfs:label    "Santa Barbara Museum of Art"@fr , "Santa Barbara Museum of Art"@en ;
+        mus:inCity  city:Q159288 ;
+        owl:sameAs    wikipedia:Santa_Barbara_Museum_of_Art , wikidata:Q7419233 .
+
+mus:Q2098074  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "open air museum in Antwerp, Belgium"@en ;
+        rdfs:label    "musée Middelheim"@fr , "Middelheim Museum"@en ;
+        mus:inCity  city:Q12892 ;
+        owl:sameAs    wikipedia:Middelheim_Open_Air_Sculpture_Museum , wikidata:Q2098074 .
+
+mus:Q672759  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Little Rock, Arkansas"@en ;
+        rdfs:label    "Arkansas Arts Center"@fr , "Arkansas Museum of Fine Arts"@en ;
+        mus:inCity  city:Q33405 ;
+        owl:sameAs    wikipedia:Arkansas_Museum_of_Fine_Arts , wikidata:Q672759 .
+
+mus:Q239303  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée et école d'art de Chicago"@fr , "art museum and school in Chicago, United States"@en ;
+        rdfs:label    "Art Institute of Chicago"@fr , "Art Institute of Chicago"@en ;
+        mus:inCity  city:Q1297 ;
+        owl:sameAs    wikipedia:Art_Institute_of_Chicago , wikidata:Q239303 .
+
+mus:Q1816301  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Seattle, Washington"@en ;
+        rdfs:label    "Seattle Art Museum"@fr , "Seattle Art Museum"@en ;
+        mus:inCity  city:Q5083 ;
+        owl:sameAs    wikipedia:Seattle_Art_Museum , wikidata:Q1816301 .
+
+mus:Q25045355  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "building in Kagoshima Prefecture, Japan"@en ;
+        rdfs:label    "Matsushita Museum of Art"@en ;
+        mus:inCity  city:Q858352 ;
+        owl:sameAs    wikipedia:Matsushita_Museum_of_Art , wikidata:Q25045355 .
+
+mus:Q7492669  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "organization"@en ;
+        rdfs:label    "Sheffield Galleries and Museums Trust"@fr , "Sheffield Galleries and Museums Trust"@en ;
+        mus:inCity  city:Q42448 ;
+        owl:sameAs    wikipedia:Sheffield_Galleries_and_Museums_Trust , wikidata:Q7492669 .
+
+mus:Q6815343  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum at the University of Rochester"@en ;
+        rdfs:label    "Memorial Art Gallery"@fr , "Memorial Art Gallery"@en ;
+        mus:inCity  city:Q49218 ;
+        owl:sameAs    wikipedia:Memorial_Art_Gallery , wikidata:Q6815343 .
+
+mus:Q878253  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "château allemand"@fr , "palace in Weimar, Germany"@en ;
+        rdfs:label    "château de Weimar"@fr , "Schloss Weimar"@en ;
+        mus:inCity  city:Q3955 ;
+        owl:sameAs    wikipedia:Schloss_Weimar , wikidata:Q878253 .
+
+mus:Q1233913  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "Art museum in Tokyo, Japan"@en ;
+        rdfs:label    "Musée d'art Fuji de Tokyo"@fr , "Tokyo Fuji Art Museum"@en ;
+        mus:inCity  city:Q208863 ;
+        owl:sameAs    wikipedia:Tokyo_Fuji_Art_Museum , wikidata:Q1233913 .
+
+mus:Q2365880  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Gand"@fr , "museum of fine arts in Ghent, Belgium"@en ;
+        rdfs:label    "musée des Beaux-Arts Gand"@fr , "Museum of Fine Arts Ghent (MSK)"@en ;
+        mus:inCity  city:Q1296 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_of_Fine_Arts,_Ghent> , wikidata:Q2365880 .
+
+mus:Q1341595  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "collection de musée à Baden dans le canton d'Argovie, Suisse"@fr , "museum collection in Baden in the canton of Aargau, Switzerland"@en ;
+        rdfs:label    "Musée Langmatt  Fondation Sidney et Jenny Brown"@fr , "Museum Langmatt Sidney and Jenny Brown Foundation"@en ;
+        mus:inCity  city:Q63939 ;
+        owl:sameAs    wikidata:Q1341595 .
+
+mus:Q1721563  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée en Allemagne"@fr , "museum in Germany"@en ;
+        rdfs:label    "Kaiser Wilhelm Museum"@fr , "Kaiser Wilhelm Museum"@en ;
+        mus:inCity  city:Q2805 ;
+        owl:sameAs    wikidata:Q1721563 .
+
+mus:Q11617518  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "museum in Japan"@en ;
+        rdfs:label    "Musée d'art moderne, Ibaraki"@fr , "Museum of Modern Art, Ibaraki"@en ;
+        mus:inCity  city:Q204249 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/The_Museum_of_Modern_Art,_Ibaraki> , wikidata:Q11617518 .
+
+mus:Q1952944  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée des beaux-arts et d'égyptologie"@fr , "museum of fine arts in Grenoble, France"@en ;
+        rdfs:label    "musée de Grenoble"@fr , "Museum of Grenoble"@en ;
+        mus:inCity  city:Q1289 ;
+        owl:sameAs    wikipedia:Museum_of_Grenoble , wikidata:Q1952944 .
+
+mus:Q5368756  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de São Paulo, Brésil"@fr , "art museum in São Paulo, Brazil"@en ;
+        rdfs:label    "fondation culturelle Ema Gordon Klabin"@fr , "Ema Gordon Klabin Cultural Foundation"@en ;
+        mus:inCity  city:Q174 ;
+        owl:sameAs    wikipedia:Ema_Gordon_Klabin_Cultural_Foundation , wikidata:Q5368756 .
+
+mus:Q286389  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in San Antonio, Texas"@en ;
+        rdfs:label    "McNay Art Museum"@fr , "McNay Art Museum"@en ;
+        mus:inCity  city:Q975 ;
+        owl:sameAs    wikipedia:McNay_Art_Museum , wikidata:Q286389 .
+
+mus:Q16303680  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Toulouse"@fr , "art gallery in Toulouse"@en ;
+        rdfs:label    "Fondation Bemberg"@fr , "Fondation Bemberg"@en ;
+        mus:inCity  city:Q7880 ;
+        owl:sameAs    wikidata:Q16303680 .
+
+mus:Q1955739  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Dijon, France"@fr , "art museum in Dijon, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Dijon"@fr , "Musée des Beaux-Arts de Dijon"@en ;
+        mus:inCity  city:Q7003 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts_de_Dijon> , wikidata:Q1955739 .
+
+mus:Q1068063  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Ottawa"@fr , "museum of art in Ottawa"@en ;
+        rdfs:label    "Musée des beaux-arts du Canada"@fr , "National Gallery of Canada"@en ;
+        mus:inCity  city:Q1930 ;
+        owl:sameAs    wikipedia:National_Gallery_of_Canada , wikidata:Q1068063 .
+
+mus:Q252071  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "galerie d'art située dans le Château de Buda à Budapest"@fr , "national art museum in Hungary"@en ;
+        rdfs:label    "Galerie nationale hongroise"@fr , "Hungarian National Gallery"@en ;
+        mus:inCity  city:Q1781 ;
+        owl:sameAs    wikipedia:Hungarian_National_Gallery , wikidata:Q252071 .
+
+mus:Q1189960  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'Art de Denver"@fr , "museum in Denver, Colorado, United States"@en ;
+        rdfs:label    "musée d'art de Denver"@fr , "Denver Art Museum"@en ;
+        mus:inCity  city:Q16554 ;
+        owl:sameAs    wikipedia:Denver_Art_Museum , wikidata:Q1189960 .
+
+mus:Q3329100  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "Museum in Bogota, Colombia"@en ;
+        rdfs:label    "musée Botero"@fr , "Botero Museum"@en ;
+        mus:inCity  city:Q2841 ;
+        owl:sameAs    wikipedia:Museo_Botero , wikidata:Q3329100 .
+
+mus:Q1277393  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "museum in Belgrade, Serbia"@en ;
+        rdfs:label    "musée national de Belgrade"@fr , "National Museum of Serbia"@en ;
+        mus:inCity  city:Q3711 ;
+        owl:sameAs    wikipedia:National_Museum_of_Serbia , wikidata:Q1277393 .
+
+mus:Q128316  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Honolulu, Hawaii"@en ;
+        rdfs:label    "Honolulu Museum of Art"@fr , "Honolulu Museum of Art"@en ;
+        mus:inCity  city:Q18094 ;
+        owl:sameAs    wikipedia:Honolulu_Museum_of_Art , wikidata:Q128316 .
+
+mus:Q3003161  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Sacramento, California"@en ;
+        rdfs:label    "Crocker Art Museum"@fr , "Crocker Art Museum"@en ;
+        mus:inCity  city:Q18013 ;
+        owl:sameAs    wikipedia:Crocker_Art_Museum , wikidata:Q3003161 .
+
+mus:Q2184071  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "art museum in Caracas, Venezuela"@en ;
+        rdfs:label    "musée d'art contemporain de Caracas"@fr , "Contemporary Art Museum of Caracas"@en ;
+        mus:inCity  city:Q1533 ;
+        owl:sameAs    wikipedia:Caracas_Museum_of_Contemporary_Art , wikidata:Q2184071 .
+
+mus:Q658725  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "bâtiment de Innenstadt-West, Karlsruhe, Bade-Wurtemberg, Allemagne"@fr , "museum in Karlsruhe, Germany"@en ;
+        rdfs:label    "Staatliche Kunsthalle Karlsruhe"@fr , "Staatliche Kunsthalle Karlsruhe"@en ;
+        mus:inCity  city:Q1040 ;
+        owl:sameAs    wikipedia:Staatliche_Kunsthalle_Karlsruhe , wikidata:Q658725 .
+
+mus:Q194533  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée national situé à Poznań"@fr , "art museum in Poland, town of Poznan"@en ;
+        rdfs:label    "musée national de Poznań"@fr , "National Museum in Poznań"@en ;
+        mus:inCity  city:Q268 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/National_Museum,_Pozna%C5%84> , wikidata:Q194533 .
+
+mus:Q913672  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à San Francisco, Californie"@fr , "modern art museum in San Francisco, California, USA"@en ;
+        rdfs:label    "musée d'Art moderne de San Francisco"@fr , "San Francisco Museum of Modern Art"@en ;
+        mus:inCity  city:Q62 ;
+        owl:sameAs    wikipedia:San_Francisco_Museum_of_Modern_Art , wikidata:Q913672 .
+
+mus:Q670250  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art au Canada"@fr , "art museum in Toronto"@en ;
+        rdfs:label    "Musée des beaux-arts de l'Ontario"@fr , "Art Gallery of Ontario"@en ;
+        mus:inCity  city:Q172 ;
+        owl:sameAs    wikipedia:Art_Gallery_of_Ontario , wikidata:Q670250 .
+
+mus:Q843638  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Atami, Japon"@fr , "art museum"@en ;
+        rdfs:label    "musée d'art MOA"@fr , "MOA Museum of Art"@en ;
+        mus:inCity  city:Q653364 ;
+        owl:sameAs    wikipedia:MOA_Museum_of_Art , wikidata:Q843638 .
+
+mus:Q975240  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Turin, Italie"@fr , "museum in Turin, Italy"@en ;
+        rdfs:label    "pinacothèque Giovanni et Marella Agnelli"@fr , "Pinacoteca Giovanni e Marella Agnelli"@en ;
+        mus:inCity  city:Q495 ;
+        owl:sameAs    wikipedia:Pinacoteca_Giovanni_e_Marella_Agnelli , wikidata:Q975240 .
+
+mus:Q5572991  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art au Pays de Galles"@fr , "art gallery in Swansea, Wales"@en ;
+        rdfs:label    "Glynn Vivian Art Gallery"@fr , "Glynn Vivian Art Gallery"@en ;
+        mus:inCity  city:Q23051 ;
+        owl:sameAs    wikipedia:Glynn_Vivian_Art_Gallery , wikidata:Q5572991 .
+
+mus:Q1568434  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain à New Haven, Connecticut"@fr , "art museum in New Haven, Connecticut"@en ;
+        rdfs:label    "Yale University Art Gallery"@fr , "Yale University Art Gallery"@en ;
+        mus:inCity  city:Q49145 ;
+        owl:sameAs    wikipedia:Yale_University_Art_Gallery , wikidata:Q1568434 .
+
+mus:Q860812  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Montréal"@fr , "art museum in Montreal, Quebec, Canada"@en ;
+        rdfs:label    "Musée des beaux-arts de Montréal"@fr , "Montreal Museum of Fine Arts"@en ;
+        mus:inCity  city:Q340 ;
+        owl:sameAs    wikipedia:Montreal_Museum_of_Fine_Arts , wikidata:Q860812 .
+
+mus:Q769765  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée en Israël"@fr ;
+        rdfs:label    "Hecht Museum"@fr , "Hecht Museum"@en ;
+        mus:inCity  city:Q41621 ;
+        owl:sameAs    wikipedia:Hecht_Museum , wikidata:Q769765 .
+
+mus:Q377500  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "regroupement de musées belges, situé à Bruxelles"@fr , "Group of art museums in Brussels, Belgium"@en ;
+        rdfs:label    "Musées royaux des Beaux-Arts de Belgique"@fr , "Royal Museums of Fine Arts of Belgium"@en ;
+        mus:inCity  city:Q240 ;
+        owl:sameAs    wikipedia:Royal_Museums_of_Fine_Arts_of_Belgium , wikidata:Q377500 .
+
+mus:Q1743116  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Toledo"@fr , "Art museum in Toledo, Ohio"@en ;
+        rdfs:label    "musée d'art de Toledo"@fr , "Toledo Museum of Art"@en ;
+        mus:inCity  city:Q49239 ;
+        owl:sameAs    wikipedia:Toledo_Museum_of_Art , wikidata:Q1743116 .
+
+mus:Q1267958  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Tel Aviv, Israël"@fr , "Art museum"@en ;
+        rdfs:label    "musée d'Art de Tel Aviv"@fr , "Tel Aviv Museum of Art"@en ;
+        mus:inCity  city:Q33935 ;
+        owl:sameAs    wikipedia:Tel_Aviv_Museum_of_Art , wikidata:Q1267958 .
+
+mus:Q829296  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée en Allemagne"@fr , "museum in Saarbrücken"@en ;
+        rdfs:label    "musée de la Sarre"@fr , "Saarland Museum"@en ;
+        mus:inCity  city:Q1724 ;
+        owl:sameAs    wikipedia:Saarland_Museum , wikidata:Q829296 .
+
+mus:Q1043967  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "museum in Pittsburgh, Pennsylvania"@en ;
+        rdfs:label    "Carnegie Museum of Art"@fr , "Carnegie Museum of Art"@en ;
+        mus:inCity  city:Q1342 ;
+        owl:sameAs    wikipedia:Carnegie_Museum_of_Art , wikidata:Q1043967 .
+
+mus:Q325712  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art américain à Milwaukee, Wisconsin"@fr , "art museum in Milwaukee, Wisconsin"@en ;
+        rdfs:label    "Milwaukee Art Museum"@fr , "Milwaukee Art Museum"@en ;
+        mus:inCity  city:Q37836 ;
+        owl:sameAs    wikipedia:Milwaukee_Art_Museum , wikidata:Q325712 .
+
+mus:Q768446  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée situé à Washington"@fr , "former museum in D.C., part of whose collection moved to the National Gallery of Art in 2014"@en ;
+        rdfs:label    "Galerie Corcoran"@fr , "Corcoran Gallery of Art"@en ;
+        mus:inCity  city:Q61 ;
+        owl:sameAs    wikipedia:Corcoran_Gallery_of_Art , wikidata:Q768446 .
+
+mus:Q3783572  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museums at Harvard University"@en ;
+        rdfs:label    "musées d'art de Harvard"@fr , "Harvard Art Museums"@en ;
+        mus:inCity  city:Q49111 ;
+        owl:sameAs    wikipedia:Harvard_Art_Museums , wikidata:Q3783572 .
+
+mus:Q3086934  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Rouen, France"@fr , "Art museum in Rouen, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Rouen"@fr , "Musée des Beaux-Arts de Rouen"@en ;
+        mus:inCity  city:Q30974 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts_de_Rouen> , wikidata:Q3086934 .
+
+mus:Q7367636  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Waltham, Massachusetts"@en ;
+        rdfs:label    "Rose art museum. Waltham, Mass."@fr , "Rose Art Museum"@en ;
+        mus:inCity  city:Q49190 ;
+        owl:sameAs    wikipedia:Rose_Art_Museum , wikidata:Q7367636 .
+
+mus:Q1132918  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Oslo"@fr , "National Museum in Oslo"@en ;
+        rdfs:label    "musée national de l'art, de l'architecture et du design de Norvège"@fr , "National Museum of Art, Architecture and Design"@en ;
+        mus:inCity  city:Q585 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/National_Museum_of_Art,_Architecture_and_Design> , wikidata:Q1132918 .
+
+mus:Q1321874  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "Musée britannique"@fr , "main site of the national museum of Wales"@en ;
+        rdfs:label    "National Museum Cardiff"@fr , "National Museum Cardiff"@en ;
+        mus:inCity  city:Q10690 ;
+        owl:sameAs    wikipedia:National_Museum_Cardiff , wikidata:Q1321874 .
+
+mus:Q1920251  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "Art museum in Komaki, Japan"@en ;
+        rdfs:label    "Musée d'Art Menard"@fr , "Menard Art Museum"@en ;
+        mus:inCity  city:Q389537 ;
+        owl:sameAs    wikipedia:Menard_Art_Museum , wikidata:Q1920251 .
+
+mus:Q2916280  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée et cinémathèque américaine"@fr , "art museum and archive in Berkeley, California"@en ;
+        rdfs:label    "Berkeley Art Museum and Pacific Film Archive"@fr , "Berkeley Art Museum and Pacific Film Archive"@en ;
+        mus:inCity  city:Q484678 ;
+        owl:sameAs    wikipedia:Berkeley_Art_Museum_and_Pacific_Film_Archive , wikidata:Q2916280 .
+
+mus:Q82941  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "art museum in São Paulo, Brazil"@en ;
+        rdfs:label    "musée d'art de São Paulo"@fr , "São Paulo Museum of Art"@en ;
+        mus:inCity  city:Q174 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_Museum_of_Art> , wikidata:Q82941 .
+
+mus:Q1954623  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art en Lettonie"@fr , "museum in Latvia"@en ;
+        rdfs:label    "Musée des arts étrangers"@fr , "Latvian Museum of Foreign Art"@en ;
+        mus:inCity  city:Q1773 ;
+        owl:sameAs    wikipedia:Art_Museum_Riga_Bourse , wikidata:Q1954623 .
+
+mus:Q11467765  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Yamagata, Japon"@fr , "art museum in Yamagata, Japan"@en ;
+        rdfs:label    "Musée d'art Yamadera Gotō"@fr , "Yamadera Gotō Museum of Art"@en ;
+        mus:inCity  city:Q205526 ;
+        owl:sameAs    wikidata:Q11467765 .
+
+mus:Q1117704  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'arts à Indianapolis"@fr , "art museum in Indianapolis"@en ;
+        rdfs:label    "musée d'art d'Indianapolis"@fr , "Indianapolis Museum of Art"@en ;
+        mus:inCity  city:Q6346 ;
+        owl:sameAs    wikipedia:Indianapolis_Museum_of_Art , wikidata:Q1117704 .
+
+mus:Q2468251  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "museum in San Francisco, California"@en ;
+        rdfs:label    "California Palace of the Legion of Honor"@fr , "Legion of Honor"@en ;
+        mus:inCity  city:Q62 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Legion_of_Honor_(museum)> , wikidata:Q2468251 .
+
+mus:Q7895562  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Iowa City dans l'Iowa"@fr , "museum in Iowa City, Iowa"@en ;
+        rdfs:label    "University of Iowa Stanley Museum of Art"@fr , "University of Iowa Stanley Museum of Art"@en ;
+        mus:inCity  city:Q487977 ;
+        owl:sameAs    wikipedia:University_of_Iowa_Stanley_Museum_of_Art , wikidata:Q7895562 .
+
+mus:Q80784  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Liège, Belgique"@fr , "art museum in Liège, Belgium"@en ;
+        rdfs:label    "musée des beaux-arts de Liège"@fr , "Musée des beaux-arts de Liège"@en ;
+        mus:inCity  city:Q3992 ;
+        owl:sameAs    wikidata:Q80784 .
+
+mus:Q812285  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée en Allemagne"@fr , "artworks held by the Free State of Bavaria for Alte Pinakothek, Aschaffenburg, Bamberg, Bayreuth, Schleissheim and others"@en ;
+        rdfs:label    "Collection de peintures de l'État de Bavière"@fr , "Bavarian State Painting Collections"@en ;
+        mus:inCity  city:Q1726 ;
+        owl:sameAs    wikipedia:Bavarian_State_Painting_Collections , wikidata:Q812285 .
+
+mus:Q847508  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Worcester, Massachusetts"@en ;
+        rdfs:label    "Worcester Art Museum"@fr , "Worcester Art Museum"@en ;
+        mus:inCity  city:Q49179 ;
+        owl:sameAs    wikipedia:Worcester_Art_Museum , wikidata:Q847508 .
+
+mus:Q2526644  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Liège, en Belgique"@fr , "museum in Liège, Belgium"@en ;
+        rdfs:label    "Musée d'Art moderne et d'Art contemporain"@fr , "Musée d'Art moderne et d'Art contemporain"@en ;
+        mus:inCity  city:Q3992 ;
+        owl:sameAs    wikidata:Q2526644 .
+
+mus:Q2063082  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain, en Louisiane"@fr , "Art museum in New Orleans, Louisiana"@en ;
+        rdfs:label    "musée d'Art de La Nouvelle-Orléans"@fr , "New Orleans Museum of Art"@en ;
+        mus:inCity  city:Q34404 ;
+        owl:sameAs    wikipedia:New_Orleans_Museum_of_Art , wikidata:Q2063082 .
+
+mus:Q23785329  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée en Allemagne"@fr , "art museum in Potsdam"@en ;
+        rdfs:label    "Muzeum Barberini"@fr , "Museum Barberini"@en ;
+        mus:inCity  city:Q1711 ;
+        owl:sameAs    wikipedia:Museum_Barberini , wikidata:Q23785329 .
+
+mus:Q56875825  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Lugano (Suisse)"@fr , "art museum in Lugano (Switzerland)"@en ;
+        rdfs:label    "Museo d'arte della Svizzera italiana"@fr , "Museo d'arte della Svizzera italiana"@en ;
+        mus:inCity  city:Q7024 ;
+        owl:sameAs    wikidata:Q56875825 .
+
+mus:Q1994770  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée néerlandais"@fr , "museum in Venlo, the Netherlands"@en ;
+        rdfs:label    "Museum van Bommel van Dam"@fr , "Museum van Bommel van Dam"@en ;
+        mus:inCity  city:Q9777 ;
+        owl:sameAs    wikipedia:Museum_van_Bommel_van_Dam , wikidata:Q1994770 .
+
+mus:Q6803132  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "art museum in Amherst, Massachusetts"@en ;
+        rdfs:label    "Mead Art Museum"@fr , "Mead Art Museum"@en ;
+        mus:inCity  city:Q49164 ;
+        owl:sameAs    wikipedia:Mead_Art_Museum , wikidata:Q6803132 .
+
+mus:Q214867  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Washington"@fr , "national art museum in Washington, D.C."@en ;
+        rdfs:label    "National Gallery of Art"@fr , "National Gallery of Art"@en ;
+        mus:inCity  city:Q61 ;
+        owl:sameAs    wikipedia:National_Gallery_of_Art , wikidata:Q214867 .
+
+mus:Q3007727  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Manchester, New Hampshire, Ètats Unis"@fr , "art museum in Manchester, New Hampshire, United States"@en ;
+        rdfs:label    "Currier Museum of Art"@fr , "Currier Museum of Art"@en ;
+        mus:inCity  city:Q48370 ;
+        owl:sameAs    wikipedia:Currier_Museum_of_Art , wikidata:Q3007727 .
+
+mus:Q1201549  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Detroit, Michigan"@en ;
+        rdfs:label    "Detroit Institute of Arts"@fr , "Detroit Institute of Arts"@en ;
+        mus:inCity  city:Q12439 ;
+        owl:sameAs    wikipedia:Detroit_Institute_of_Arts , wikidata:Q1201549 .
+
+mus:Q795228  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Canberra"@fr , "National art museum in Canberra, Australia"@en ;
+        rdfs:label    "Galerie nationale d'Australie"@fr , "National Gallery of Australia"@en ;
+        mus:inCity  city:Q3114 ;
+        owl:sameAs    wikipedia:National_Gallery_of_Australia , wikidata:Q795228 .
+
+mus:Q11551651  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "Ikeda Museum of 20th Century Art"@en ;
+        mus:inCity  city:Q721163 ;
+        owl:sameAs    wikidata:Q11551651 .
+
+mus:Q7569107  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "galerie d'art à Southampton"@fr , "art gallery in Southampton"@en ;
+        rdfs:label    "Southampton City Art Gallery"@fr , "Southampton City Art Gallery"@en ;
+        mus:inCity  city:Q79848 ;
+        owl:sameAs    wikipedia:Southampton_City_Art_Gallery , wikidata:Q7569107 .
+
+mus:Q3329511  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée suisse"@fr , "Art museum in Lugano (Switzerland)"@en ;
+        rdfs:label    "Musée cantonal d'art de Lugano"@fr , "Museo Cantonale d’Arte"@en ;
+        mus:inCity  city:Q7024 ;
+        owl:sameAs    wikidata:Q3329511 .
+
+mus:Q5935366  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "Museum in Columbus, Ohio, United States"@en ;
+        rdfs:label    "Columbus Museum of Art"@fr , "Columbus Museum of Art"@en ;
+        mus:inCity  city:Q16567 ;
+        owl:sameAs    wikipedia:Columbus_Museum_of_Art , wikidata:Q5935366 .
+
+mus:Q14715853  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "art museum at Smith College in Northampton, Massachusetts"@en ;
+        rdfs:label    "Smith College Museum of Art"@fr , "Smith College Museum of Art"@en ;
+        mus:inCity  city:Q49186 ;
+        owl:sameAs    wikipedia:Smith_College_Museum_of_Art , wikidata:Q14715853 .
+
+mus:Q1760539  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Saint-Louis, Missouri"@fr , "art museum in St. Louis, Missouri"@en ;
+        rdfs:label    "musée d'art de Saint-Louis"@fr , "Saint Louis Art Museum"@en ;
+        mus:inCity  city:Q38022 ;
+        owl:sameAs    wikipedia:Saint_Louis_Art_Museum , wikidata:Q1760539 .
+
+mus:Q2977589  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Kurashiki (Japon)"@fr , "museum in Japan"@en ;
+        rdfs:label    "musée Ohara"@fr , "Ohara Museum of Art"@en ;
+        mus:inCity  city:Q467487 ;
+        owl:sameAs    wikipedia:Ohara_Museum_of_Art , wikidata:Q2977589 .
+
+mus:Q5638699  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Stockton, California"@en ;
+        rdfs:label    "Haggin Museum"@fr , "Haggin Museum"@en ;
+        mus:inCity  city:Q49240 ;
+        owl:sameAs    wikipedia:Haggin_Museum , wikidata:Q5638699 .
+
+mus:Q682406  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art suisse"@fr , "1915 villa in Winterthur, former home of Oskar Reinhart"@en ;
+        rdfs:label    "musée Oskar Reinhart « Am Römerholz »"@fr , "museum collection Am Römerholz"@en ;
+        mus:inCity  city:Q9125 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Am_R%C3%B6merholz> , wikidata:Q682406 .
+
+mus:Q7895060  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "Art museum in Tuscon, Arizona"@en ;
+        rdfs:label    "University of Arizona Museum of Art"@fr , "University of Arizona Museum of Art"@en ;
+        mus:inCity  city:Q18575 ;
+        owl:sameAs    wikipedia:University_of_Arizona_Museum_of_Art , wikidata:Q7895060 .
+
+mus:Q14917275  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Stuttgart, Allemagne"@fr , "art museum in Stuttgart, Germany"@en ;
+        rdfs:label    "Staatsgalerie"@fr , "Staatsgalerie Stuttgart"@en ;
+        mus:inCity  city:Q1022 ;
+        owl:sameAs    wikipedia:Staatsgalerie_Stuttgart , wikidata:Q14917275 .
+
+mus:Q3330225  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée de Reims, France"@fr , "museum in Reims, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Reims"@fr , "Museum of Fine Arts of Reims"@en ;
+        mus:inCity  city:Q41876 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_of_Fine_Arts,_Reims> , wikidata:Q3330225 .
+
+mus:Q597355  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Dayton"@fr , "art museum and school in Dayton, Ohio"@en ;
+        rdfs:label    "Dayton Art Institute"@fr , "Dayton Art Institute"@en ;
+        mus:inCity  city:Q34739 ;
+        owl:sameAs    wikipedia:Dayton_Art_Institute , wikidata:Q597355 .
+
+mus:Q475667  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée non-realisée en Autriche"@fr , "unrealized art museum planned by Adolf Hitler"@en ;
+        rdfs:label    "Führermuseum"@fr , "Führermuseum"@en ;
+        mus:inCity  city:Q41329 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/F%C3%BChrermuseum> , wikidata:Q475667 .
+
+mus:Q3330204  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée suisse"@fr , "museum in La Chaux-de-Fonds (Switzerland)"@en ;
+        rdfs:label    "musée des beaux-arts de La Chaux-de-Fonds"@fr , "Musée des beaux-arts de La Chaux-de-Fonds"@en ;
+        mus:inCity  city:Q68124 ;
+        owl:sameAs    wikidata:Q3330204 .
+
+mus:Q809600  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "museum in Cambridge, Massachusetts; part of Harvard Art Museums"@en ;
+        rdfs:label    "Fogg Art Museum"@fr , "Fogg Museum"@en ;
+        mus:inCity  city:Q49111 ;
+        owl:sameAs    wikipedia:Fogg_Museum , wikidata:Q809600 .
+
+mus:Q3757721  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art moderne à Milan, Italie"@fr , "Modern Art Museum in Milan"@en ;
+        rdfs:label    "Galleria d'Arte Moderna"@fr , "Galleria d'arte moderna di Milano"@en ;
+        mus:inCity  city:Q490 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Galleria_d%27Arte_Moderna,_Milan> , wikidata:Q3757721 .
+
+mus:Q132783  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Saint-Pétersbourg"@fr , "art museum in St. Petersburg, Russia"@en ;
+        rdfs:label    "musée de l'Ermitage"@fr , "Hermitage Museum"@en ;
+        mus:inCity  city:Q656 ;
+        owl:sameAs    wikipedia:Hermitage_Museum , wikidata:Q132783 .
+
+mus:Q11357837  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "Musée préfectoral de Mie. Tsu"@fr , "Mie Prefectural Art Museum"@en ;
+        mus:inCity  city:Q203027 ;
+        owl:sameAs    wikipedia:Mie_Prefectural_Art_Museum , wikidata:Q11357837 .
+
+mus:Q1459878  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "museum in Raleigh, North Carolina"@en ;
+        rdfs:label    "North Carolina Museum of Art"@fr , "North Carolina Museum of Art"@en ;
+        mus:inCity  city:Q41087 ;
+        owl:sameAs    wikipedia:North_Carolina_Museum_of_Art , wikidata:Q1459878 .
+
+mus:Q194626  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée suisse à Bâle, Suisse"@fr , "Art museum in Basel, Switzerland"@en ;
+        rdfs:label    "Kunstmuseum Bâle"@fr , "Kunstmuseum Basel"@en ;
+        mus:inCity  city:Q12172 ;
+        owl:sameAs    wikipedia:Kunstmuseum_Basel , wikidata:Q194626 .
+
+mus:Q11599987  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Ibaraki, Japan"@en ;
+        rdfs:label    "Kasama Nichidō Museum of Art"@en ;
+        mus:inCity  city:Q845851 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Kasama_Nichid%C5%8D_Museum_of_Art> , wikidata:Q11599987 .
+
+mus:Q1319192  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Bucarest"@fr , "major art museum in Bucharest, Romania"@en ;
+        rdfs:label    "musée national d'Art de Roumanie"@fr , "National Museum of Art of Romania"@en ;
+        mus:inCity  city:Q19660 ;
+        owl:sameAs    wikipedia:National_Museum_of_Art_of_Romania , wikidata:Q1319192 .
+
+mus:Q653002  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée en Allemagne"@fr , "cultural institution in Dresden, Germany"@en ;
+        rdfs:label    "Collections nationales de Dresde"@fr , "Staatliche Kunstsammlungen Dresden"@en ;
+        mus:inCity  city:Q1731 ;
+        owl:sameAs    wikipedia:Staatliche_Kunstsammlungen_Dresden , wikidata:Q653002 .
+
+mus:Q49133  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Boston, Massachusetts, USA"@fr , "art museum in Boston, Massachusetts, United States"@en ;
+        rdfs:label    "musée des Beaux-Arts de Boston"@fr , "Museum of Fine Arts Boston"@en ;
+        mus:inCity  city:Q100 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_of_Fine_Arts,_Boston> , wikidata:Q49133 .
+
+mus:Q650299  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée suisse"@fr , "municipal museum in Winterthur, Switzerland"@en ;
+        rdfs:label    "musée des Beaux-Arts de Winterthour"@fr , "The Winterthur Museum of Art"@en ;
+        mus:inCity  city:Q9125 ;
+        owl:sameAs    wikipedia:Kunstmuseum_Winterthur , wikidata:Q650299 .
+
+mus:Q3330717  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée français"@fr , "museum in France"@en ;
+        rdfs:label    "musée national des Douanes"@fr , "Musée national des douanes"@en ;
+        mus:inCity  city:Q1479 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_national_des_douanes> , wikidata:Q3330717 .
+
+mus:Q163804  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Francfort-sur-le-Main, en Allemagne"@fr , "art museum in Frankfurt, Germany"@en ;
+        rdfs:label    "musée Städel"@fr , "Städel Museum"@en ;
+        mus:inCity  city:Q1794 ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/St%C3%A4del> , wikidata:Q163804 .
+
+mus:Q22032181  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "Uehara Museum of Modern Art"@en ;
+        mus:inCity  city:Q653402 ;
+        owl:sameAs    wikipedia:Uehara_Museum_of_Modern_Art , wikidata:Q22032181 .
+
+mus:Q1419555  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée à Prague"@fr , "art museum in Prague, Czech Republic"@en ;
+        rdfs:label    "Galerie nationale de Prague"@fr , "National Gallery Prague"@en ;
+        mus:inCity  city:Q1085 ;
+        owl:sameAs    wikipedia:National_Gallery_Prague , wikidata:Q1419555 .
+
+mus:Q3757708  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "musée italien"@fr , "modern and contemporary art museum in Torino, Northern Italy"@en ;
+        rdfs:label    "Galerie civique d'art moderne et contemporain de Turin"@fr , "Civic Gallery of Modern and Contemporary Art"@en ;
+        mus:inCity  city:Q495 ;
+        owl:sameAs    wikipedia:Turin_Civic_Gallery_of_Modern_and_Contemporary_Art , wikidata:Q3757708 .
+
+mus:Q11535226  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "building in Tochigi Prefecture, Japan"@en ;
+        rdfs:label    "Tochigi Prefectural Museum"@en ;
+        mus:inCity  city:Q200589 ;
+        owl:sameAs    wikipedia:Tochigi_Prefectural_Museum , wikidata:Q11535226 .
+        
+mus:Q190804  rdf:type  mus:museum ;
+        rdfs:comment  "musée national néerlandais, consacré aux beaux-arts et à l’histoire"@fr , "museum in Amsterdam, Netherlands"@en ;
+        rdfs:label    "Rijksmuseum"@fr , "Rijksmuseum"@en ;
+        owl:sameAs    wikipedia:Rijksmuseum , wikidata:Q190804 .
+
+mus:Q279049  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "Art museum in Portland, Oregon"@en ;
+        rdfs:label    "musée d'art de Portland"@fr , "Portland Art Museum"@en ;
+        owl:sameAs    wikipedia:Portland_Art_Museum , wikidata:Q279049 .
+
+mus:Q5459526  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art school and museum in Flint, Michigan"@en ;
+        rdfs:label    "Flint Institute of Arts"@en ;
+        owl:sameAs    wikipedia:Flint_Institute_of_Arts , wikidata:Q5459526 .
+
+mus:Q632682  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art de Brooklyn dans la ville de New York"@fr , "art museum in Brooklyn, New York"@en ;
+        rdfs:label    "Brooklyn Museum"@fr , "Brooklyn Museum"@en ;
+        owl:sameAs    wikipedia:Brooklyn_Museum , wikidata:Q632682 .
+
+mus:Q7412332  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "museum in Gainesville, Florida"@en ;
+        rdfs:label    "Samuel P. Harn Museum of Art"@en ;
+        owl:sameAs    wikipedia:Samuel_P._Harn_Museum_of_Art , wikidata:Q7412332 .
+
+mus:Q1618645  rdf:type  mus:museum ;
+        rdfs:comment  "museum in Farmington, Connecticut"@en ;
+        rdfs:label    "Hill-Stead Museum"@fr , "Hill-Stead Museum"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Hill%E2%80%93Stead_Museum> , wikidata:Q1618645 .
+
+mus:Q639791  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "Art museum in New York, New York"@en ;
+        rdfs:label    "Whitney Museum of American Art"@fr , "Whitney Museum of American Art"@en ;
+        mus:inCity  city:Q60 ;
+        owl:sameAs    wikipedia:Whitney_Museum , wikidata:Q639791 .
+
+mus:Q1851283  rdf:type  mus:museum ;
+        rdfs:comment  "musée situé à Colmar, en France"@fr , "art and history museum in Colmar, France"@en ;
+        rdfs:label    "musée Unterlinden"@fr , "Unterlinden Museum"@en ;
+        owl:sameAs    wikipedia:Unterlinden_Museum , wikidata:Q1851283 .
+
+mus:Q693591  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Bremen"@fr , "museum of arts in Bremen"@en ;
+        rdfs:label    "Kunsthalle de Brême"@fr , "Kunsthalle Bremen"@en ;
+        owl:sameAs    wikipedia:Kunsthalle_Bremen , wikidata:Q693591 .
+
+mus:Q11426772  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Saitama, Japon"@fr , "Art museum in Saitama, Japan"@en ;
+        rdfs:label    "Musée d'art moderne de la préfecture de Saitama"@fr , "Museum of Modern Art, Saitama"@en ;
+        owl:sameAs    wikidata:Q11426772 .
+
+mus:Q687778  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Martigny dans le canton de Valais, Suisse"@fr , "museum in Martigny in the canton of Valais, Switzerland"@en ;
+        rdfs:label    "Fondation Pierre-Gianadda"@fr , "Fondation Pierre Gianadda"@en ;
+        owl:sameAs    wikipedia:Fondation_Pierre_Gianadda , wikidata:Q687778 .
+
+mus:Q99346823  rdf:type  mus:museum ;
+        rdfs:comment  "museum in Apeldoorn, Netherlands"@en ;
+        rdfs:label    "CODA Museum"@fr , "CODA Museum"@en ;
+        owl:sameAs    wikidata:Q99346823 .
+
+mus:Q700959  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Cologne"@fr , "art museum in Cologne, Germany"@en ;
+        rdfs:label    "musée Wallraf-Richartz"@fr , "Wallraf–Richartz Museum"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Wallraf%E2%80%93Richartz_Museum> , wikidata:Q700959 .
+
+mus:Q108838951  rdf:type  mus:museum ;
+        owl:sameAs  wikidata:Q108838951 .
+
+mus:Q3329033  rdf:type  mus:museum ;
+        rdfs:comment  "musée français"@fr , "museum in France"@en ;
+        rdfs:label    "musée Albert-André"@fr , "musée Albert-André"@en ;
+        owl:sameAs    wikidata:Q3329033 .
+
+mus:Q1478423  rdf:type  mus:museum ;
+        rdfs:comment  "bibliothèque et musée américain"@fr , "library and museum in New York, New York"@en ;
+        rdfs:label    "Morgan Library and Museum"@fr , "The Morgan Library & Museum"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Morgan_Library_%26_Museum> , wikidata:Q1478423 .
+
+mus:Q3567825  rdf:type  mus:museum ;
+        rdfs:comment  "art gallery in Manchester, England"@en ;
+        rdfs:label    "Whitworth Art Gallery"@fr , "Whitworth Art Gallery"@en ;
+        owl:sameAs    wikipedia:The_Whitworth , wikidata:Q3567825 .
+
+mus:Q15694044  rdf:type  mus:museum ;
+        rdfs:comment  "art museum in Wellesley, Massachusetts"@en ;
+        rdfs:label    "Davis Museum, Wellesley"@fr , "Davis Museum and Cultural Center"@en ;
+        owl:sameAs    wikipedia:Davis_Museum_at_Wellesley_College , wikidata:Q15694044 .
+
+mus:Q3140304  rdf:type  mus:museum ;
+        rdfs:comment  "art museum in Hanover, New Hampshire"@en ;
+        rdfs:label    "Hood Museum of Art"@fr , "Hood Museum of Art"@en ;
+        owl:sameAs    wikipedia:Hood_Museum_of_Art , wikidata:Q3140304 .
+
+mus:Q2087788  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Arménie"@fr , "art museum in Yerevan, Armenia"@en ;
+        rdfs:label    "Galerie nationale d'Arménie"@fr , "National Gallery of Armenia"@en ;
+        owl:sameAs    wikipedia:National_Gallery_of_Armenia , wikidata:Q2087788 .
+
+mus:Q4556499  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Naoshima, Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "musée d'art de Chichū"@fr , "Chichu Art Museum"@en ;
+        owl:sameAs    wikipedia:Chichu_Art_Museum , wikidata:Q4556499 .
+
+mus:Q3878590  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "museum in West Palm Beach, Florida"@en ;
+        rdfs:label    "Norton Museum of Art"@fr , "Norton Museum of Art"@en ;
+        owl:sameAs    wikipedia:Norton_Museum_of_Art , wikidata:Q3878590 .
+
+mus:Q3753155  rdf:type  mus:museum ;
+        rdfs:comment  "cluster of museums and historical buildings in Pittsburgh, Pennsylvania"@en ;
+        rdfs:label    "Frick Art & Historical Center"@fr , "Frick Art & Historical Center"@en ;
+        owl:sameAs    wikipedia:The_Frick_Pittsburgh , wikidata:Q3753155 .
+
+mus:Q3747192  rdf:type  mus:museum ;
+        rdfs:comment  "musée italien"@fr , "Italian art museum"@en ;
+        rdfs:label    "Fondation Magnani-Rocca"@fr , "Fondazione Magnani-Rocca"@en ;
+        owl:sameAs    wikipedia:Magnani-Rocca_Foundation , wikidata:Q3747192 .
+
+mus:Q3329546  rdf:type  mus:museum ;
+        rdfs:comment  "musée britannique"@fr , "British museum"@en ;
+        rdfs:label    "musée d'Ipswich"@fr , "Ipswich Museum"@en ;
+        owl:sameAs    wikipedia:Ipswich_Museum , wikidata:Q3329546 .
+
+mus:Q2495870  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Ann Arbor, Michigan"@en ;
+        rdfs:label    "musée d'art de l'Université du Michigan"@fr , "University of Michigan Museum of Art"@en ;
+        owl:sameAs    wikipedia:University_of_Michigan_Museum_of_Art , wikidata:Q2495870 .
+
+mus:Q861588  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "art museum"@en ;
+        rdfs:label    "musée d'art de Yokohama"@fr , "Yokohama Museum of Art"@en ;
+        owl:sameAs    wikipedia:Yokohama_Museum_of_Art , wikidata:Q861588 .
+
+mus:Q3330707  rdf:type  mus:museum ;
+        rdfs:comment  "depuis 2003 part du Musée National de l'art, de l'architecture et du design de Norvège"@fr , "in Oslo, Norway, since 2003 administratively a part of the National Museum of Art, Architecture and Design"@en ;
+        rdfs:label    "Galerie nationale d'Oslo"@fr , "National Gallery of Norway"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/National_Gallery_(Norway)> , wikidata:Q3330707 .
+
+mus:Q3329646  rdf:type  mus:museum ;
+        rdfs:comment  "musée français"@fr , "museum of Contemporary Art"@en ;
+        rdfs:label    "musée d'art moderne de Saint-Étienne"@fr , "Musée d'art moderne (Saint-Étienne)"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27art_moderne_(Saint-%C3%89tienne)> , wikidata:Q3329646 .
+
+mus:Q8015837  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art en Angleterre"@fr , "museum and exhibitions in Walthamstow, London"@en ;
+        rdfs:label    "William Morris Gallery"@fr , "William Morris Gallery"@en ;
+        owl:sameAs    wikipedia:William_Morris_Gallery , wikidata:Q8015837 .
+
+mus:Q3094628  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Florence, Italie"@fr , "museum in Firenze, Italy"@en ;
+        rdfs:label    "Galleria d'Arte Moderna"@fr , "Galleria d'arte moderna di Firenze"@en ;
+        owl:sameAs    wikidata:Q3094628 .
+
+mus:Q15818188  rdf:type  mus:museum ;
+        rdfs:comment  "musée français en Bretagne"@fr , "museum in Brittany"@en ;
+        rdfs:label    "musée des Beaux-Arts de Morlaix"@fr , "Musée des Beaux-Arts de Morlaix"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_beaux-arts_de_Morlaix> , wikidata:Q15818188 .
+
+mus:Q4328346  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "museum in New Jersey, United States"@en ;
+        rdfs:label    "Newark Museum"@fr , "The Newark Museum of Art"@en ;
+        owl:sameAs    wikipedia:The_Newark_Museum_of_Art , wikidata:Q4328346 .
+
+mus:Q1327886  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Paris, France"@fr , "art museum in Paris, France"@en ;
+        rdfs:label    "musée Marmottan Monet"@fr , "Musée Marmottan Monet"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_Marmottan_Monet> , wikidata:Q1327886 .
+
+mus:Q98546069  rdf:type  mus:museum ;
+        owl:sameAs  wikidata:Q98546069 .
+
+mus:Q1992004  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Göteborg, Suède"@fr , "art museum in Gothenburg, Sweden"@en ;
+        rdfs:label    "musée des Beaux-Arts de Göteborg"@fr , "Gothenburg Museum of Art"@en ;
+        owl:sameAs    wikipedia:Gothenburg_Museum_of_Art , wikidata:Q1992004 .
+
+mus:Q2603905  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain à Princeton, New Jersey"@fr , "art museum in Princeton, New Jersey"@en ;
+        rdfs:label    "musée d'Art de l'université de Princeton"@fr , "Princeton University Art Museum"@en ;
+        owl:sameAs    wikipedia:Princeton_University_Art_Museum , wikidata:Q2603905 .
+
+mus:Q671384  rdf:type  mus:museum ;
+        rdfs:comment  "musée national d'art, Copenhague"@fr , "Art Museum in Copenhagen, Denmark"@en ;
+        rdfs:label    "Statens Museum for Kunst"@fr , "Statens Museum for Kunst"@en ;
+        owl:sameAs    wikipedia:National_Gallery_of_Denmark , wikidata:Q671384 .
+
+mus:Q98556638  rdf:type  mus:museum ;
+        owl:sameAs  wikidata:Q98556638 .
+
+mus:Q1465805  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Berkshire, Massachusetts"@en ;
+        rdfs:label    "Clark Art Institute"@fr , "Clark Art Institute"@en ;
+        owl:sameAs    wikipedia:Clark_Art_Institute , wikidata:Q1465805 .
+
+mus:Q303139  rdf:type  mus:museum ;
+        rdfs:comment  "musée situé à Vienne, Autriche"@fr , "museum housed in the Belvedere palace, in Vienna, Austria"@en ;
+        rdfs:label    "Österreichische Galerie Belvedere"@fr , "Belvedere"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/%C3%96sterreichische_Galerie_Belvedere> , wikidata:Q303139 .
+
+mus:Q924335  rdf:type  mus:museum ;
+        rdfs:comment  "musée municipal d'art moderne néerlandais"@fr , "art museum in Amsterdam, Netherlands"@en ;
+        rdfs:label    "Stedelijk Museum Amsterdam"@fr , "Stedelijk Museum Amsterdam"@en ;
+        owl:sameAs    wikipedia:Stedelijk_Museum_Amsterdam , wikidata:Q924335 .
+
+mus:Q965780  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art français situé à Aix-en-Provence"@fr , "museum in the quartier Mazarin, Aix-en-Provence, France"@en ;
+        rdfs:label    "musée Granet"@fr , "Musée Granet"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_Granet> , wikidata:Q965780 .
+
+mus:Q684556  rdf:type  mus:museum ;
+        rdfs:comment  "musée suisse"@fr , "museum in Winterthur (Switzerland)"@en ;
+        rdfs:label    "villa Flora"@fr , "Villa Flora"@en ;
+        mus:inCity  city:Q9125 ;
+        owl:sameAs    wikidata:Q684556 .
+
+mus:Q1128657  rdf:type  mus:museum ;
+        rdfs:comment  "musée français à Paris et au château de Chambord consacré à la chasse et à la nature"@fr , "museum in Paris and in château de Chambord devoted to hunting and nature"@en ;
+        rdfs:label    "musée de la Chasse et de la Nature"@fr , "Musée de la Chasse et de la Nature"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_de_la_Chasse_et_de_la_Nature> , wikidata:Q1128657 .
+
+mus:Q510324  rdf:type  mus:museum ;
+        rdfs:comment  "musée situé à Philadelphie, aux USA"@fr , "art museum in Philadelphia, Pennsylvania"@en ;
+        rdfs:label    "Philadelphia Museum of Art"@fr , "Philadelphia Museum of Art"@en ;
+        owl:sameAs    wikipedia:Philadelphia_Museum_of_Art , wikidata:Q510324 .
+
+mus:Q913808  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Tokyo"@fr , "art museum in Tokyo, Japan"@en ;
+        rdfs:label    "musée Artizon"@fr , "Artizon Museum"@en ;
+        owl:sameAs    wikipedia:Artizon_Museum , wikidata:Q913808 .
+
+mus:Q18342548  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Muskegon, Michigan"@en ;
+        rdfs:label    "musée d'art de Muskegon"@fr , "Muskegon Museum of Art"@en ;
+        owl:sameAs    wikidata:Q18342548 .
+
+mus:Q3297769  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "Kitakyushu Municipal Museum of Art"@en ;
+        owl:sameAs    wikipedia:Kitakyushu_Municipal_Museum_of_Art , wikidata:Q3297769 .
+
+mus:Q2277827  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "non-profit organization in the USA"@en ;
+        rdfs:label    "Shelburne Museum"@fr , "Shelburne Museum"@en ;
+        owl:sameAs    wikipedia:Shelburne_Museum , wikidata:Q2277827 .
+
+mus:Q7082143  rdf:type  mus:museum ;
+        rdfs:comment  "museum in Oklahoma City, Oklahoma"@en ;
+        rdfs:label    "Oklahoma City Museum of Art"@fr , "Oklahoma City Museum of Art"@en ;
+        owl:sameAs    wikipedia:Oklahoma_City_Museum_of_Art , wikidata:Q7082143 .
+
+mus:Q169542  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art de Hambourg, Allemagne"@fr , "art museum in Hamburg, Germany"@en ;
+        rdfs:label    "Kunsthalle de Hambourg"@fr , "Hamburger Kunsthalle"@en ;
+        owl:sameAs    wikipedia:Hamburger_Kunsthalle , wikidata:Q169542 .
+
+mus:Q2452513  rdf:type  mus:museum ;
+        rdfs:comment  "villa à Saint-Jean-Cap-Ferrat (Alpes-Maritimes)"@fr , "museum in France"@en ;
+        rdfs:label    "villa Ephrussi de Rothschild"@fr , "Villa Ephrussi de Rothschild"@en ;
+        owl:sameAs    wikipedia:Villa_Ephrussi_de_Rothschild , wikidata:Q2452513 .
+
+mus:Q1061094  rdf:type  mus:museum ;
+        rdfs:comment  "museum and art gallery near Glasgow in Scotland"@en ;
+        rdfs:label    "Kelvingrove Art Gallery and Museum"@fr , "Kelvingrove Art Gallery and Museum"@en ;
+        owl:sameAs    wikipedia:Kelvingrove_Art_Gallery_and_Museum , wikidata:Q1061094 .
+
+mus:Q4872  rdf:type   mus:museum ;
+        rdfs:comment  "musée à Moscou"@fr , "museum of European art in Moscow"@en ;
+        rdfs:label    "musée des Beaux-Arts Pouchkine"@fr , "Pushkin Museum of Fine Arts"@en ;
+        owl:sameAs    wikipedia:Pushkin_Museum , wikidata:Q4872 .
+
+mus:Q28843765  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Mâcon"@fr , "museum in France"@en ;
+        rdfs:label    "musée des Ursulines"@fr , "Musée des Ursulines"@en ;
+        owl:sameAs    wikidata:Q28843765 .
+
+mus:Q2970522  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Cincinnati, Ohio"@fr , "art museum in Cincinnati, Ohio"@en ;
+        rdfs:label    "Cincinnati Art Museum"@fr , "Cincinnati Art Museum"@en ;
+        owl:sameAs    wikipedia:Cincinnati_Art_Museum , wikidata:Q2970522 .
+
+mus:Q5284947  rdf:type  mus:museum ;
+        rdfs:comment  "museum in Memphis, Tennessee"@en ;
+        rdfs:label    "Dixon Gallery and Gardens"@en ;
+        owl:sameAs    wikipedia:Dixon_Gallery_and_Gardens , wikidata:Q5284947 .
+
+mus:Q11663204  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "art museum in Shizuoka Prefecture, Japan"@en ;
+        rdfs:label    "Shizuoka Prefectural Museum of Art"@en ;
+        owl:sameAs    wikipedia:Shizuoka_Prefectural_Museum_of_Art , wikidata:Q11663204 .
+
+mus:Q3329052  rdf:type  mus:museum ;
+        rdfs:comment  "musée français"@fr , "museum in Avignon, France"@en ;
+        rdfs:label    "musée Angladon"@fr , "Musée Angladon"@en ;
+        owl:sameAs    wikipedia:Angladon_Museum , wikidata:Q3329052 .
+
+mus:Q3478488  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Kyoto, Japon"@fr , "art museum in Kyoto, Japan"@en ;
+        rdfs:label    "Sen-oku Hakuko Kan"@fr , "Sen-oku Hakuko Kan"@en ;
+        owl:sameAs    wikipedia:Sen-oku_Hakuko_Kan , wikidata:Q3478488 .
+
+mus:Q1362629  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Tokyo"@fr , "art museum in Tokyo, Japan"@en ;
+        rdfs:label    "musée national de l'art occidental"@fr , "National Museum of Western Art"@en ;
+        owl:sameAs    wikipedia:National_Museum_of_Western_Art , wikidata:Q1362629 .
+
+mus:Q3837886  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "museum in Coral Gables, Florida"@en ;
+        rdfs:label    "Lowe Art Museum"@fr , "Lowe Art Museum"@en ;
+        owl:sameAs    wikipedia:Lowe_Art_Museum , wikidata:Q3837886 .
+
+mus:Q1465387  rdf:type  mus:museum ;
+        rdfs:comment  "musée public écossais"@fr , "museum in Glasgow, Scotland, UK"@en ;
+        rdfs:label    "Hunterian Museum and Art Gallery"@fr , "Hunterian Museum and Art Gallery"@en ;
+        owl:sameAs    wikipedia:Hunterian_Museum_and_Art_Gallery , wikidata:Q1465387 .
+
+mus:Q1050032  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Barcelone"@fr , "art museum in Barcelona, Spain dedicated to the work of Pablo Picasso"@en ;
+        rdfs:label    "musée Picasso"@fr , "Museu Picasso"@en ;
+        owl:sameAs    wikipedia:Museu_Picasso , wikidata:Q1050032 .
+
+mus:Q6815803  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Memphis, Tennessee"@en ;
+        rdfs:label    "Memphis Brooks Museum of Art"@en ;
+        owl:sameAs    wikipedia:Memphis_Brooks_Museum_of_Art , wikidata:Q6815803 .
+
+mus:Q33119180  rdf:type  mus:museum ;
+        rdfs:comment  "Musée d'art moderne et contemporain en Grèce"@fr , "museum in Greece"@en ;
+        rdfs:label    "Musée d'art contemporain Goulandrís (Athènes)"@fr , "Basil & Elise Goulandris Foundation Museum, Athens"@en ;
+        owl:sameAs    wikipedia:Goulandris_Museum_of_Contemporary_Art , wikidata:Q33119180 .
+
+mus:Q1428076  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Kiev (Ukraine)"@fr , "art museum in Kyiv, Ukraine"@en ;
+        rdfs:label    "Musée Khanenko"@fr , "Khanenko Museum"@en ;
+        owl:sameAs    wikipedia:Khanenko_Museum , wikidata:Q1428076 .
+
+mus:Q1142334  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Bentonville, Arkansas"@en ;
+        rdfs:label    "Crystal Bridges Museum of American Art"@fr , "Crystal Bridges Museum of American Art"@en ;
+        owl:sameAs    wikipedia:Crystal_Bridges_Museum_of_American_Art , wikidata:Q1142334 .
+
+mus:Q1229770  rdf:type  mus:museum ;
+        rdfs:comment  "art museum"@en ;
+        rdfs:label    "musée de la collection de Jean-Paul II - Varsovie"@fr , "Museum of John Paul II Collection"@en ;
+        owl:sameAs    wikipedia:Museum_of_John_Paul_II_Collection , wikidata:Q1229770 .
+
+mus:Q1492387  rdf:type  mus:museum ;
+        rdfs:comment  "musée italien à Rome"@fr , "art gallery in Rome, Italy"@en ;
+        rdfs:label    "galerie nationale d'Art moderne et contemporain"@fr , "Galleria Nazionale d'Arte Moderna e Contemporanea"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Galleria_Nazionale_d%27Arte_Moderna> , wikidata:Q1492387 .
+
+mus:Q201469  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in New York, New York"@en ;
+        rdfs:label    "musée Solomon R. Guggenheim"@fr , "Solomon R. Guggenheim Museum"@en ;
+        owl:sameAs    wikipedia:Solomon_R._Guggenheim_Museum , wikidata:Q201469 .
+
+mus:Q953345  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Atlanta"@fr , "art museum in Atlanta, Georgia, USA"@en ;
+        rdfs:label    "High Museum of Art"@fr , "High Museum of Art"@en ;
+        owl:sameAs    wikipedia:High_Museum_of_Art , wikidata:Q953345 .
+
+mus:Q861252  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art, à Barcelone, Catalogne"@fr , "art museum in Barcelona"@en ;
+        rdfs:label    "musée national d'Art de Catalogne"@fr , "Museu Nacional d'Art de Catalunya"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museu_Nacional_d%27Art_de_Catalunya> , wikidata:Q861252 .
+
+mus:Q636400  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Oxford"@fr , "museum in Oxford, England, UK"@en ;
+        rdfs:label    "Ashmolean Museum"@fr , "Ashmolean Museum"@en ;
+        owl:sameAs    wikipedia:Ashmolean_Museum , wikidata:Q636400 .
+
+mus:Q105027234  rdf:type  mus:museum ;
+        owl:sameAs  wikidata:Q105027234 .
+
+mus:Q3822143  rdf:type  mus:museum ;
+        rdfs:label  "Fundació Palau"@fr , "Palau Foundation"@en ;
+        owl:sameAs  wikipedia:Palau_Foundation , wikidata:Q3822143 .
+
+mus:Q1756399  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Iran"@fr , "art museum in Tehran, Iran"@en ;
+        rdfs:label    "musée d'art contemporain de Téhéran"@fr , "Tehran Museum of Contemporary Art"@en ;
+        owl:sameAs    wikipedia:Tehran_Museum_of_Contemporary_Art , wikidata:Q1756399 .
+
+mus:Q6436109  rdf:type  mus:museum ;
+        rdfs:comment  "musée  américain"@fr , "art museum in Champaign, Illinois"@en ;
+        rdfs:label    "Krannert Art Museum"@en ;
+        owl:sameAs    wikipedia:Krannert_Art_Museum , wikidata:Q6436109 .
+
+mus:Q1536471  rdf:type  mus:museum ;
+        rdfs:comment  "art museum in Liverpool, England"@en ;
+        rdfs:label    "Walker Art Gallery"@fr , "Walker Art Gallery"@en ;
+        owl:sameAs    wikipedia:Walker_Art_Gallery , wikidata:Q1536471 .
+
+mus:Q5945433  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "non-profit organization in the USA"@en ;
+        rdfs:label    "Huntington Museum of Art"@fr , "Huntington Museum of Art"@en ;
+        owl:sameAs    wikipedia:Huntington_Museum_of_Art , wikidata:Q5945433 .
+
+mus:Q1274511  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Stockholm"@fr , "modern and contemporary art museum in Stockholm, Sweden"@en ;
+        rdfs:label    "Moderna Museet"@fr , "Moderna Museet"@en ;
+        owl:sameAs    wikipedia:Moderna_Museet , wikidata:Q1274511 .
+
+mus:Q11345132  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "Yamazaki Mazak Museum of Art"@fr , "Yamazaki Mazak Museum of Art"@en ;
+        owl:sameAs    wikidata:Q11345132 .
+
+mus:Q6868358  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Winona, Minnesota"@en ;
+        rdfs:label    "Minnesota Marine Art Museum"@fr , "Minnesota Marine Art Museum"@en ;
+        owl:sameAs    wikipedia:Minnesota_Marine_Art_Museum , wikidata:Q6868358 .
+
+mus:Q6305638  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum at Auburn University"@en ;
+        rdfs:label    "Jule Collins Smith Museum of Fine Art"@en ;
+        owl:sameAs    wikipedia:Jule_Collins_Smith_Museum_of_Fine_Art , wikidata:Q6305638 .
+
+mus:Q59546080  rdf:type  mus:museum ;
+        rdfs:comment  "musée en France"@fr , "museum of fine arts, one of 14 museums of the City of Paris"@en ;
+        rdfs:label    "musée des Beaux-Arts de la ville de Paris"@fr , "Musée des Beaux-Arts de la ville de Paris"@en ;
+        owl:sameAs    wikidata:Q59546080 .
+
+mus:Q1059456  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "American history museum and library located in New York City"@en ;
+        rdfs:label    "New-York Historical Society"@fr , "New-York Historical Society"@en ;
+        owl:sameAs    wikipedia:New-York_Historical_Society , wikidata:Q1059456 .
+
+mus:Q1519050  rdf:type  mus:museum ;
+        rdfs:comment  "art museum"@en ;
+        rdfs:label    "McMaster Museum of Art"@fr , "McMaster Museum of Art"@en ;
+        owl:sameAs    wikipedia:McMaster_Museum_of_Art , wikidata:Q1519050 .
+
+mus:Q1049033  rdf:type  mus:museum ;
+        rdfs:comment  "musée italien"@fr , "modern art museum on the Grand Canal in Venice"@en ;
+        rdfs:label    "Collection Peggy Guggenheim"@fr , "Peggy Guggenheim Collection"@en ;
+        owl:sameAs    wikipedia:Peggy_Guggenheim_Collection , wikidata:Q1049033 .
+
+mus:Q3361180  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Avignon (Vaucluse)"@fr , "museum in France"@en ;
+        rdfs:label    "palais du Roure"@fr , "Palais du Roure"@en ;
+        owl:sameAs    wikipedia:Palais_du_Roure , wikidata:Q3361180 .
+
+mus:Q6129019  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in St. Louis, Missouri"@en ;
+        rdfs:label    "Mildred Lane Kemper Art Museum"@en ;
+        owl:sameAs    wikipedia:Mildred_Lane_Kemper_Art_Museum , wikidata:Q6129019 .
+
+mus:Q23402  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Paris, France"@fr , "art museum in Paris, France"@en ;
+        rdfs:label    "musée d'Orsay"@fr , "Musée d'Orsay"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Orsay> , wikidata:Q23402 .
+
+mus:Q2638817  rdf:type  mus:museum ;
+        rdfs:comment  "publicly owned art gallery in Manchester, UK"@en ;
+        rdfs:label    "Manchester City Art Galleries"@fr , "Manchester Art Gallery"@en ;
+        owl:sameAs    wikipedia:Manchester_Art_Gallery , wikidata:Q2638817 .
+
+mus:Q3176133  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Abou Dabi"@fr , "Art museum in Abu Dhabi, United Arab Emirates"@en ;
+        rdfs:label    "Louvre Abou Dabi"@fr , "Louvre Abu Dhabi"@en ;
+        owl:sameAs    wikipedia:Louvre_Abu_Dhabi , wikidata:Q3176133 .
+
+mus:Q1499958  rdf:type  mus:museum ;
+        rdfs:comment  "musée néerlandais"@fr , "art museum in The Hague, Netherlands"@en ;
+        rdfs:label    "Musée d'Art de La Haye"@fr , "Kunstmuseum Den Haag"@en ;
+        owl:sameAs    wikipedia:Kunstmuseum_Den_Haag , wikidata:Q1499958 .
+
+mus:Q1372546  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Omaha, Nebraska"@en ;
+        rdfs:label    "Joslyn Art Museum"@fr , "Joslyn Art Museum"@en ;
+        owl:sameAs    wikipedia:Joslyn_Art_Museum , wikidata:Q1372546 .
+
+mus:Q153306  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Pologne"@fr , "national museum in Warsaw, Poland"@en ;
+        rdfs:label    "musée national de Varsovie"@fr , "National Museum in Warsaw"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/National_Museum,_Warsaw> , wikidata:Q153306 .
+
+mus:Q23498495  rdf:type  mus:museum ;
+        rdfs:comment  "musée municipal français d'Eure-et-Loir"@fr , "French municipal museum of Dreux, Eure-et-Loir"@en ;
+        rdfs:label    "musée d'Art et d'Histoire de Dreux"@fr , "Dreux museum of Art and History"@en ;
+        owl:sameAs    wikidata:Q23498495 .
+
+mus:Q3329155  rdf:type  mus:museum ;
+        rdfs:comment  "musée français"@fr , "museum in France"@en ;
+        rdfs:label    "musée Eugène-Boudin de Honfleur"@fr , "musée Eugène-Boudin de Honfleur"@en ;
+        owl:sameAs    wikidata:Q3329155 .
+
+mus:Q2317145  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Cagnes-sur-Mer, France"@fr , "museum in Cagnes-sur-Mer, France"@en ;
+        rdfs:label    "musée Renoir"@fr , "musée Renoir"@en ;
+        owl:sameAs    wikidata:Q2317145 .
+
+mus:Q12110695  rdf:type  mus:museum ;
+        rdfs:comment  "art museum of the Courtauld Institute of Art, located in Somerset House, London"@en ;
+        rdfs:label    "Courtauld Gallery"@fr , "Courtauld Gallery"@en ;
+        owl:sameAs    wikipedia:Courtauld_Gallery , wikidata:Q12110695 .
+
+mus:Q1782422  rdf:type  mus:museum ;
+        rdfs:comment  "musée néerlandais"@fr , "art museum in Eindhoven, Netherlands"@en ;
+        rdfs:label    "musée Van Abbe"@fr , "Van Abbemuseum"@en ;
+        owl:sameAs    wikipedia:Van_Abbemuseum , wikidata:Q1782422 .
+
+mus:Q5506587  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Seattle"@en ;
+        rdfs:label    "Frye Art Museum"@en ;
+        owl:sameAs    wikipedia:Frye_Art_Museum , wikidata:Q5506587 .
+
+mus:Q705557  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Australie"@fr , "arts museum in the Australian state of South Australia"@en ;
+        rdfs:label    "Art Gallery of South Australia"@fr , "Art Gallery of South Australia"@en ;
+        owl:sameAs    wikipedia:Art_Gallery_of_South_Australia , wikidata:Q705557 .
+
+mus:Q3329255  rdf:type  mus:museum ;
+        rdfs:comment  "musée français situé à Saint-Denis (La Réunion)"@fr , "art museum in Saint-Denis, Réunion"@en ;
+        rdfs:label    "musée Léon-Dierx"@fr , "Musée Léon-Dierx"@en ;
+        owl:sameAs    wikidata:Q3329255 .
+
+mus:Q840886  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Budapest"@fr , "art museum in Budapest, Hungary"@en ;
+        rdfs:label    "musée des Beaux-Arts de Budapest"@fr , "Museum of Fine Arts, Budapest"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_of_Fine_Arts_(Budapest)> , wikidata:Q840886 .
+
+mus:Q1055037  rdf:type  mus:museum ;
+        rdfs:comment  "situé à Osaka, Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "musée national d'art"@fr , "National Museum of Art, Osaka"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/National_Museum_of_Art,_Osaka> , wikidata:Q1055037 .
+
+mus:Q4968867  rdf:type  mus:museum ;
+        rdfs:comment  "museum"@en ;
+        rdfs:label    "Bristol City Museum and Art Gallery"@fr , "Bristol City Museum and Art Gallery"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Bristol_Museum_%26_Art_Gallery> , wikidata:Q4968867 .
+
+mus:Q125634  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Allemagne"@fr , "museum in Essen, Germany"@en ;
+        rdfs:label    "musée Folkwang"@fr , "Museum Folkwang"@en ;
+        owl:sameAs    wikipedia:Museum_Folkwang , wikidata:Q125634 .
+
+mus:Q2114028  rdf:type  mus:museum ;
+        rdfs:comment  "modern art museum in Arnhem, Netherlands"@en ;
+        rdfs:label    "Museum of Modern Art Arnhem"@fr , "Museum Arnhem"@en ;
+        owl:sameAs    wikipedia:Museum_Arnhem , wikidata:Q2114028 .
+
+mus:Q5314986  rdf:type  mus:museum ;
+        rdfs:comment  "art gallery in Dunedin New Zealand"@en ;
+        rdfs:label    "Dunedin Public Art Gallery"@en ;
+        owl:sameAs    wikipedia:Dunedin_Public_Art_Gallery , wikidata:Q5314986 .
+
+mus:Q2711480  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Toulouse, France"@fr , "fine arts museum of Toulouse, France"@en ;
+        rdfs:label    "musée des Augustins de Toulouse"@fr , "Musée des Augustins"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Augustins> , wikidata:Q2711480 .
+
+mus:Q1895953  rdf:type  mus:museum ;
+        rdfs:comment  "musée national français d'art moderne et contemporain, intégré au centre Pompidou"@fr , "national museum for modern art of France located in the Centre Pompidou in Paris"@en ;
+        rdfs:label    "Musée national d'art moderne"@fr , "National museum of modern art"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_National_d%27Art_Moderne> , wikidata:Q1895953 .
+
+mus:Q1888308  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Houston, Texas"@en ;
+        rdfs:label    "Menil Collection"@fr , "Menil Collection"@en ;
+        owl:sameAs    wikipedia:Menil_Collection , wikidata:Q1888308 .
+
+mus:Q1984633  rdf:type  mus:museum ;
+        rdfs:comment  "Iranian national heritage site"@en ;
+        rdfs:label    "palais de Niavaran"@fr , "Niavaran Palace Complex"@en ;
+        owl:sameAs    wikipedia:Niavaran_Complex , wikidata:Q1984633 .
+
+mus:Q3345073  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Monaco"@fr , "Art museum in Monaco"@en ;
+        rdfs:label    "Nouveau musée national de Monaco"@fr , "New National Museum of Monaco"@en ;
+        owl:sameAs    wikipedia:New_National_Museum_of_Monaco , wikidata:Q3345073 .
+
+mus:Q10854956  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "art museum in Kagoshima"@en ;
+        rdfs:label    "Kagoshima City Museum of Art"@en ;
+        owl:sameAs    wikipedia:Kagoshima_City_Museum_of_Art , wikidata:Q10854956 .
+
+mus:Q2217420  rdf:type  mus:museum ;
+        rdfs:comment  "musée suisse"@fr , "museum in Lucerne (Switzerland)"@en ;
+        rdfs:label    "Collection Rosengart"@fr , "Sammlung Rosengart Luzern"@en ;
+        owl:sameAs    wikipedia:Rosengart_Collection_Museum , wikidata:Q2217420 .
+
+mus:Q3329050  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Vernon, France"@fr , "museum in Vernon, France"@en ;
+        rdfs:label    "musée Alphonse-Georges-Poulain"@fr , "Musée Alphonse-Georges-Poulain"@en ;
+        owl:sameAs    wikidata:Q3329050 .
+
+mus:Q1016909  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art situé à Glasgow"@fr , "art collection in Glasgow, Scotland, UK"@en ;
+        rdfs:label    "Collection Burrell"@fr , "Burrell Collection"@en ;
+        owl:sameAs    wikipedia:Burrell_Collection , wikidata:Q1016909 .
+
+mus:Q819504  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art"@fr , "art museum in Wuppertal, Germany"@en ;
+        rdfs:label    "musée Von der Heydt"@fr , "Von der Heydt Museum"@en ;
+        owl:sameAs    wikipedia:Von_der_Heydt_Museum , wikidata:Q819504 .
+
+mus:Q650519  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Paris, France"@fr , "museum in Paris, France"@en ;
+        rdfs:label    "musée Rodin"@fr , "Musée Rodin"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_Rodin> , wikidata:Q650519 .
+
+mus:Q3816734  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "museum in Oberlin, Ohio"@en ;
+        rdfs:label    "Allen Memorial Art Museum"@fr , "Allen Memorial Art Museum"@en ;
+        owl:sameAs    wikipedia:Allen_Memorial_Art_Museum , wikidata:Q3816734 .
+
+mus:Q840618  rdf:type  mus:museum ;
+        rdfs:comment  "historical and archeological museum in Tel Aviv, Israel"@en ;
+        rdfs:label    "musée Eretz Israël"@fr , "Eretz Israel Museum"@en ;
+        owl:sameAs    wikipedia:Eretz_Israel_Museum , wikidata:Q840618 .
+
+mus:Q63828  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Hiroshima, Japon"@fr , "art museum"@en ;
+        rdfs:label    "musée d'art de Hiroshima"@fr , "Hiroshima Museum of Art"@en ;
+        owl:sameAs    wikipedia:Hiroshima_Museum_of_Art , wikidata:Q63828 .
+
+mus:Q246821  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art hispanique de Castres, France"@fr , "art museum in Castres, France"@en ;
+        rdfs:label    "musée Goya"@fr , "Goya Museum"@en ;
+        owl:sameAs    wikipedia:Goya_Museum , wikidata:Q246821 .
+
+mus:Q7012302  rdf:type  mus:museum ;
+        rdfs:comment  "museum in Leicester, England"@en ;
+        rdfs:label    "Leicester Museum & Art Gallery"@fr , "Leicester Museum & Art Gallery"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Leicester_Museum_%26_Art_Gallery> , wikidata:Q7012302 .
+
+mus:Q11283175  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "art museum in Ōyamazaki, Japan"@en ;
+        rdfs:label    "Asahi Beer Oyamazaki Villa Museum of Art"@en ;
+        owl:sameAs    wikidata:Q11283175 .
+
+mus:Q770918  rdf:type  mus:museum ;
+        rdfs:comment  "state-owned art museum in Denmark"@en ;
+        rdfs:label    "Ordrupgaard museum de Copenhague"@fr , "Ordrupgaard"@en ;
+        owl:sameAs    wikipedia:Ordrupgaard , wikidata:Q770918 .
+
+mus:Q842858  rdf:type  mus:museum ;
+        rdfs:comment  "musée national et le plus grand musée d'art de Suède, situé à Stockholm"@fr , "art museum in Stockholm, Sweden"@en ;
+        rdfs:label    "Nationalmuseum (Stockholm)"@fr , "Nationalmuseum"@en ;
+        owl:sameAs    wikipedia:Nationalmuseum , wikidata:Q842858 .
+
+mus:Q95999613  rdf:type  mus:museum ;
+        owl:sameAs  wikidata:Q95999613 .
+
+mus:Q566661  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Leipzig"@fr , "Art museum in Leipzig, Germany"@en ;
+        rdfs:label    "musée des Beaux-Arts de Leipzig"@fr , "Museum der bildenden Künste"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_der_bildenden_K%C3%BCnste> , wikidata:Q566661 .
+
+mus:Q160236  rdf:type  mus:museum ;
+        rdfs:comment  "musée situé à New York, aux États-Unis"@fr , "art museum in New York City, United States"@en ;
+        rdfs:label    "Metropolitan Museum of Art"@fr , "Metropolitan Museum of Art"@en ;
+        owl:sameAs    wikipedia:Metropolitan_Museum_of_Art , wikidata:Q160236 .
+
+mus:Q726781  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Paris, France"@fr , "art museum in Paris, France"@en ;
+        rdfs:label    "musée de l'Orangerie"@fr , "Musée de l'Orangerie"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Orangerie> , wikidata:Q726781 .
+
+mus:Q3329642  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Céret, France"@fr , "museum in Céret, France"@en ;
+        rdfs:label    "musée d'Art moderne de Céret"@fr , "musée d'Art moderne de Céret"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Art_Moderne_de_C%C3%A9ret> , wikidata:Q3329642 .
+
+mus:Q91353383  rdf:type  mus:museum ;
+        owl:sameAs  wikidata:Q91353383 .
+
+mus:Q11530056  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "Matsuoka Museum of Art"@en ;
+        owl:sameAs    wikipedia:Matsuoka_Museum_of_Art , wikidata:Q11530056 .
+
+mus:Q3001838  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Douai, France"@fr , "museum in Douai, France"@en ;
+        rdfs:label    "musée de la Chartreuse de Douai"@fr , "Musée de la Chartreuse de Douai"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_de_la_Chartreuse_de_Douai> , wikidata:Q3001838 .
+
+mus:Q7741188  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Glens Falls, New York"@en ;
+        rdfs:label    "The Hyde Collection"@fr , "The Hyde Collection"@en ;
+        owl:sameAs    wikipedia:The_Hyde_Collection , wikidata:Q7741188 .
+
+mus:Q3458883  rdf:type  mus:museum ;
+        rdfs:comment  "musée"@fr , "Art museum at Rutgers University in New Brunswick, New Jersey"@en ;
+        rdfs:label    "Zimmerli Art Museum"@fr , "Zimmerli Art Museum at Rutgers University"@en ;
+        owl:sameAs    wikipedia:Zimmerli_Art_Museum_at_Rutgers_University , wikidata:Q3458883 .
+
+mus:Q3330248  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Giverny, France"@fr , "museum in Giverny, France"@en ;
+        rdfs:label    "musée des impressionnismes Giverny"@fr , "musée des impressionnismes Giverny"@en ;
+        owl:sameAs    wikidata:Q3330248 .
+
+mus:Q1319378  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Paris, France"@fr , "museum of the decorative arts and design located in the Louvre's northwest wing, Paris"@en ;
+        rdfs:label    "musée des Arts décoratifs"@fr , "Musée des Arts décoratifs"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Arts_d%C3%A9coratifs,_Paris> , wikidata:Q1319378 .
+
+mus:Q1051928  rdf:type  mus:museum ;
+        rdfs:comment  "musée néerlandais"@fr , "art museum and sculpture garden in Otterlo, Netherlands"@en ;
+        rdfs:label    "musée Kröller-Müller"@fr , "Kröller-Müller Museum"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Kr%C3%B6ller-M%C3%BCller_Museum> , wikidata:Q1051928 .
+
+mus:Q1955692  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art situé à Pontoise, en France"@fr , "French art museum in Pontoise"@en ;
+        rdfs:label    "musée Camille-Pissarro"@fr , "Musée Camille Pissarro"@en ;
+        owl:sameAs    wikidata:Q1955692 .
+
+mus:Q2051997  rdf:type  mus:museum ;
+        rdfs:comment  "executive non-departmental public body"@en ;
+        rdfs:label    "Galeries nationales d'Écosse"@fr , "National Galleries of Scotland"@en ;
+        owl:sameAs    wikipedia:National_Galleries_of_Scotland , wikidata:Q2051997 .
+
+mus:Q4894835  rdf:type  mus:museum ;
+        rdfs:comment  "musée espagnol"@fr , "cultural property in Sitges, Spain"@en ;
+        rdfs:label    "musée Cau Ferrat"@fr , "Cau Ferrat Museum"@en ;
+        owl:sameAs    wikipedia:Cau_Ferrat_Museum , wikidata:Q4894835 .
+
+mus:Q4859590  rdf:type  mus:museum ;
+        rdfs:comment  "art gallery and concert hall in Birmingham, England"@en ;
+        rdfs:label    "Barber Institute of Fine Arts"@fr , "Barber Institute of Fine Arts"@en ;
+        owl:sameAs    wikipedia:Barber_Institute_of_Fine_Arts , wikidata:Q4859590 .
+
+mus:Q318289  rdf:type  mus:museum ;
+        rdfs:comment  "musée et un centre de restauration de textiles anciens suisse"@fr , "museum collection in Riggisberg in the canton of Bern, Switzerland"@en ;
+        rdfs:label    "Fondation Abegg"@fr , "collection Abegg foundation"@en ;
+        owl:sameAs    wikidata:Q318289 .
+
+mus:Q212281  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Caracas, Venezuela"@fr , "art museum in Caracas, Venezuela"@en ;
+        rdfs:label    "Galería de Arte Nacional"@fr , "National Art Gallery"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/National_Art_Gallery_(Caracas)> , wikidata:Q212281 .
+
+mus:Q1601838  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Lawrence, Kansas"@fr , "museum in Lawrence, Kansas"@en ;
+        rdfs:label    "Spencer Museum of Art"@fr , "Spencer Museum of Art"@en ;
+        owl:sameAs    wikipedia:Spencer_Museum_of_Art , wikidata:Q1601838 .
+
+mus:Q861608  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Washington, D.C."@en ;
+        rdfs:label    "National Museum of Women in the Arts"@fr , "National Museum of Women in the Arts"@en ;
+        owl:sameAs    wikipedia:National_Museum_of_Women_in_the_Arts , wikidata:Q861608 .
+
+mus:Q1421440  rdf:type  mus:museum ;
+        rdfs:comment  "musée de beaux art à Cambridge"@fr , "art and antiquities museum of the University of Cambridge"@en ;
+        rdfs:label    "Fitzwilliam Museum"@fr , "Fitzwilliam Museum"@en ;
+        owl:sameAs    wikipedia:Fitzwilliam_Museum , wikidata:Q1421440 .
+
+mus:Q99237584  rdf:type  mus:museum ;
+        owl:sameAs  wikidata:Q99237584 .
+
+mus:Q5495608  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "museum in Norman, Oklahoma"@en ;
+        rdfs:label    "Fred Jones Jr. Museum of Art"@fr , "Fred Jones Jr. Museum of Art"@en ;
+        owl:sameAs    wikipedia:Fred_Jones_Jr._Museum_of_Art , wikidata:Q5495608 .
+
+mus:Q12072937  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Williamstown, Massachusetts"@en ;
+        rdfs:label    "Williams College Museum of Art"@fr , "Williams College Museum of Art"@en ;
+        owl:sameAs    wikipedia:Williams_College_Museum_of_Art , wikidata:Q12072937 .
+
+mus:Q6023573  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "museum at Indiana University in Bloomington, Indiana"@en ;
+        rdfs:label    "musée d'art de l'université de l'Indiana"@fr , "Eskenazi Museum of Art"@en ;
+        owl:sameAs    wikipedia:Eskenazi_Museum_of_Art , wikidata:Q6023573 .
+
+mus:Q377579  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art américain"@fr , "Art museum in Baltimore, Maryland"@en ;
+        rdfs:label    "musée d'art de Baltimore"@fr , "Baltimore Museum of Art"@en ;
+        owl:sameAs    wikipedia:Baltimore_Museum_of_Art , wikidata:Q377579 .
+
+mus:Q641630  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Allemagne"@fr , "museum in Germany"@en ;
+        rdfs:label    "musée Berggruen"@fr , "Berggruen Museum"@en ;
+        owl:sameAs    wikipedia:Berggruen_Museum , wikidata:Q641630 .
+
+mus:Q1798475  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art et de culture en Allemagne"@fr , "museum of art and culture in Germany"@en ;
+        rdfs:label    "LWL-Museum für Kunst und Kultur"@fr , "Westphalian State Museum of Art and Cultural History"@en ;
+        owl:sameAs    wikipedia:Westphalian_State_Museum_of_Art_and_Cultural_History , wikidata:Q1798475 .
+
+mus:Q857276  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Paris, France"@fr , "museum dedicated to modern and contemporary art of the 20th and 21st centuries, Paris"@en ;
+        rdfs:label    "musée d'Art moderne de Paris"@fr , "Musée d'art moderne de Paris"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Art_Moderne_de_Paris> , wikidata:Q857276 .
+
+mus:Q703640  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Allemagne, Cologne,"@fr , "museum in Cologne, Germany"@en ;
+        rdfs:label    "musée Ludwig"@fr , "Museum Ludwig"@en ;
+        owl:sameAs    wikipedia:Museum_Ludwig , wikidata:Q703640 .
+
+mus:Q592116  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain à New York"@fr , "museum in New York City"@en ;
+        rdfs:label    "musée juif"@fr , "Jewish Museum"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Jewish_Museum_(Manhattan)> , wikidata:Q592116 .
+
+mus:Q4666883  rdf:type  mus:museum ;
+        rdfs:comment  "visual arts exhibition space in the city of Aberdeen, Scotland, UK"@en ;
+        rdfs:label    "Aberdeen Art Gallery"@en ;
+        owl:sameAs    wikipedia:Aberdeen_Art_Gallery , wikidata:Q4666883 .
+
+mus:Q188740  rdf:type  mus:museum ;
+        rdfs:comment  "Musée d'art moderne de New York, États-Unis"@fr , "art museum in Manhattan in New York City, New York, United States"@en ;
+        rdfs:label    "Museum of Modern Art"@fr , "Museum of Modern Art"@en ;
+        owl:sameAs    wikipedia:Museum_of_Modern_Art , wikidata:Q188740 .
+
+mus:Q2343008  rdf:type  mus:museum ;
+        owl:sameAs  wikidata:Q2343008 .
+
+mus:Q5114675  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Norfolk, Virginia"@en ;
+        rdfs:label    "Chrysler Museum of Art"@fr , "Chrysler Museum of Art"@en ;
+        owl:sameAs    wikipedia:Chrysler_Museum_of_Art , wikidata:Q5114675 .
+
+mus:Q3330222  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Valenciennes, France"@fr , "museum in Valenciennes, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Valenciennes"@fr , "Musée des Beaux-Arts de Valenciennes"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts_de_Valenciennes> , wikidata:Q3330222 .
+
+mus:Q1574475  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "art museum"@en ;
+        rdfs:label    "musée Pola"@fr , "Pola Museum of Art"@en ;
+        owl:sameAs    wikipedia:Pola_Museum_of_Art , wikidata:Q1574475 .
+
+mus:Q3329161  rdf:type  mus:museum ;
+        rdfs:comment  "musée français"@fr , "art museum situated at Aix-les-Bains in France"@en ;
+        rdfs:label    "musée Faure"@fr , "Faure Museum"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Faure_Museum_(Aix-les-Bains)> , wikidata:Q3329161 .
+
+mus:Q5415088  rdf:type  mus:museum ;
+        rdfs:comment  "Private historic-house museum"@en ;
+        rdfs:label    "Eva Klabin House Museum"@en ;
+        owl:sameAs    wikipedia:Eva_Klabin_House_Museum , wikidata:Q5415088 .
+
+mus:Q679527  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Rotterdam"@fr , "art museum in Rotterdam, Netherlands"@en ;
+        rdfs:label    "musée Boijmans Van Beuningen"@fr , "Museum Boijmans Van Beuningen"@en ;
+        owl:sameAs    wikipedia:Museum_Boijmans_Van_Beuningen , wikidata:Q679527 .
+
+mus:Q1011471  rdf:type  mus:museum ;
+        rdfs:comment  "museum in Dieppe, France"@en ;
+        rdfs:label    "Musée de Dieppe"@fr , "Museum of Dieppe"@en ;
+        owl:sameAs    wikidata:Q1011471 .
+
+mus:Q2527311  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "center at Ohio State University"@en ;
+        rdfs:label    "Wexner Center for the Arts"@fr , "Wexner Center for the Arts"@en ;
+        owl:sameAs    wikipedia:Wexner_Center_for_the_Arts , wikidata:Q2527311 .
+
+mus:Q3329787  rdf:type  mus:museum ;
+        rdfs:comment  "musée au château de Versailles"@fr , "museum in the castle of Versailles"@en ;
+        rdfs:label    "musée de l’Histoire de France"@fr , "Museum of the History of France"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_de_l%27Histoire_de_France_(Versailles)> , wikidata:Q3329787 .
+
+mus:Q526170  rdf:type  mus:museum ;
+        rdfs:comment  "bibliothèque en Espagne"@fr , "library in Spain"@en ;
+        rdfs:label    "bibliothèque-musée Víctor Balaguer"@fr , "Biblioteca Museu Víctor Balaguer"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Biblioteca_Museu_V%C3%ADctor_Balaguer> , wikidata:Q526170 .
+
+mus:Q4115728  rdf:type  mus:museum ;
+        rdfs:comment  "museum in Egypt"@en ;
+        rdfs:label    "musée Mohamed Mamoud Khalil"@fr , "Mohamed Mahmoud Khalil Museum"@en ;
+        owl:sameAs    wikipedia:Mohamed_Mahmoud_Khalil_Museum , wikidata:Q4115728 .
+
+mus:Q3329574  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Mougins, France"@fr , "museum in Mougins, France"@en ;
+        rdfs:label    "musée d'art classique de Mougins"@fr , "Mougins Museum of Classical Art"@en ;
+        owl:sameAs    wikipedia:Mougins_Museum_of_Classical_Art , wikidata:Q3329574 .
+
+mus:Q180788  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Londres"@fr , "art museum in London, England"@en ;
+        rdfs:label    "National Gallery"@fr , "National Gallery"@en ;
+        owl:sameAs    wikipedia:National_Gallery , wikidata:Q180788 .
+
+mus:Q1614504  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "art museum"@en ;
+        rdfs:label    "Sompo Museum of Art"@en ;
+        owl:sameAs    wikidata:Q1614504 .
+
+mus:Q211262  rdf:type  mus:museum ;
+        rdfs:comment  "Musée d'art à Lisbonne"@fr , "art Museum, Lisbon, Portugal"@en ;
+        rdfs:label    "Musée Calouste Gulbenkian"@fr , "Calouste Gulbenkian Museum"@en ;
+        owl:sameAs    wikipedia:Calouste_Gulbenkian_Museum , wikidata:Q211262 .
+
+mus:Q775376  rdf:type  mus:museum ;
+        rdfs:comment  "musée national du Chili"@fr , "national monument of Chile"@en ;
+        rdfs:label    "musée national des beaux-arts"@fr , "Chilean National Museum of Fine Arts"@en ;
+        owl:sameAs    wikipedia:Chilean_National_Museum_of_Fine_Arts , wikidata:Q775376 .
+
+mus:Q1140507  rdf:type  mus:museum ;
+        rdfs:comment  "Glyptothèque de Carlsberg"@fr , "museum in Copenhagen founded by Carl Jacobsen"@en ;
+        rdfs:label    "Ny Carlsberg Glyptotek"@fr , "Ny Carlsberg Glyptotek"@en ;
+        owl:sameAs    wikipedia:Ny_Carlsberg_Glyptotek , wikidata:Q1140507 .
+
+mus:Q6217142  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Afrique du Sud"@fr , "art museum in Joubert Park, Johannesburg"@en ;
+        rdfs:label    "Johannesburg Art Gallery"@fr , "Johannesburg Art Gallery"@en ;
+        owl:sameAs    wikipedia:Johannesburg_Art_Gallery , wikidata:Q6217142 .
+
+mus:Q1359908  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "Art museum in Tokyo, Japan"@en ;
+        rdfs:label    "musée national d’Art moderne de Tokyo"@fr , "The National Museum of Modern Art, Tokyo"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/National_Museum_of_Modern_Art,_Tokyo> , wikidata:Q1359908 .
+
+mus:Q808462  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Philadephia, Pennsylvania"@en ;
+        rdfs:label    "Fondation Barnes"@fr , "Barnes Foundation"@en ;
+        owl:sameAs    wikipedia:Barnes_Foundation , wikidata:Q808462 .
+
+mus:Q4674272  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "museum in Chapel Hill, North Carolina"@en ;
+        rdfs:label    "Ackland Art Museum"@fr , "Ackland Art Museum"@en ;
+        owl:sameAs    wikipedia:Ackland_Art_Museum , wikidata:Q4674272 .
+
+mus:Q162111  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Berlin"@fr , "art museum in Berlin, Germany"@en ;
+        rdfs:label    "Alte Nationalgalerie"@fr , "Alte Nationalgalerie"@en ;
+        mus:inCity  city:Q64 ;
+        owl:sameAs    wikipedia:Alte_Nationalgalerie , wikidata:Q162111 .
+
+mus:Q1528356  rdf:type  mus:museum ;
+        rdfs:comment  "collection de peintures françaises de Michimasa Murauchi (Tokyo)"@fr , "art museum"@en ;
+        rdfs:label    "Musée d'art Murauchi"@fr , "Murauchi Art Museum"@en ;
+        owl:sameAs    wikidata:Q1528356 .
+
+mus:Q1505892  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Enschede, Pays-Bas"@fr , "national museum in Enschede, the Netherlands"@en ;
+        rdfs:label    "Rijksmuseum Twenthe"@fr , "Rijksmuseum Twenthe"@en ;
+        owl:sameAs    wikipedia:Rijksmuseum_Twenthe , wikidata:Q1505892 .
+
+mus:Q6829008  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Atlanta, Georgia, United States"@en ;
+        rdfs:label    "musée Michael C. Carlos"@fr , "Michael C. Carlos Museum"@en ;
+        owl:sameAs    wikipedia:Michael_C._Carlos_Museum , wikidata:Q6829008 .
+
+mus:Q743206  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Paris, France"@fr , "museum in Paris, France"@en ;
+        rdfs:label    "musée Picasso"@fr , "Musée Picasso"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_Picasso> , wikidata:Q743206 .
+
+mus:Q3330217  rdf:type  mus:museum ;
+        rdfs:comment  "musée de Pau, France"@fr , "museum in Pau, France"@en ;
+        rdfs:label    "musée des Beaux-Arts de Pau"@fr , "Musée des Beaux-Arts de Pau"@en ;
+        owl:sameAs    wikidata:Q3330217 .
+
+mus:Q3912134  rdf:type  mus:museum ;
+        rdfs:comment  "municipal archive of Rotterdam"@en ;
+        rdfs:label    "archives communales de Rotterdam"@fr , "Stadsarchief Rotterdam"@en ;
+        owl:sameAs    wikidata:Q3912134 .
+
+mus:Q7753511  rdf:type  mus:museum ;
+        rdfs:comment  "Modern and contemporary art gallery in Walsall, England"@en ;
+        rdfs:label    "New art gallery Walsall"@fr , "The New Art Gallery Walsall"@en ;
+        owl:sameAs    wikipedia:The_New_Art_Gallery_Walsall , wikidata:Q7753511 .
+
+mus:Q193375  rdf:type  mus:museum ;
+        rdfs:comment  "musée de la Tate à Londres"@fr , "modern art gallery located in Bankside, London, England"@en ;
+        rdfs:label    "Tate Modern"@fr , "Tate Modern"@en ;
+        owl:sameAs    wikipedia:Tate_Modern , wikidata:Q193375 .
+
+mus:Q32659772  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Allemagne"@fr , "art museum in Berlin, Germany"@en ;
+        rdfs:label    "Neue Nationalgalerie"@fr , "Neue Nationalgalerie"@en ;
+        owl:sameAs    wikipedia:Neue_Nationalgalerie , wikidata:Q32659772 .
+
+mus:Q3383883  rdf:type  mus:museum ;
+        rdfs:comment  "musée néerlandais"@fr , "museum in Zaandam, the Netherlands"@en ;
+        rdfs:label    "Zaans Museum"@fr , "Zaans Museum"@en ;
+        owl:sameAs    wikipedia:Zaans_Museum , wikidata:Q3383883 .
+
+mus:Q210081  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Baltimore"@fr , "art museum in Baltimore, Maryland, United States"@en ;
+        rdfs:label    "Walters Art Museum"@fr , "Walters Art Museum"@en ;
+        owl:sameAs    wikipedia:Walters_Art_Museum , wikidata:Q210081 .
+
+mus:Q460889  rdf:type  mus:museum ;
+        rdfs:comment  "musée espagnol"@fr , "National and art museum in Madrid, Spain"@en ;
+        rdfs:label    "musée national centre d'art Reina Sofía"@fr , "Museo Nacional Centro de Arte Reina Sofía"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museo_Nacional_Centro_de_Arte_Reina_Sof%C3%ADa> , wikidata:Q460889 .
+
+mus:Q3248015  rdf:type  mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "museum in Japan"@en ;
+        rdfs:label    "Musée d'art moderne Morohashi"@fr , "Morohashi Museum of Modern Art"@en ;
+        owl:sameAs    wikipedia:Morohashi_Museum_of_Modern_Art , wikidata:Q3248015 .
+
+mus:Q4013975  rdf:type  mus:museum ;
+        rdfs:comment  "musée à Richmond (Virginie)"@fr , "art museum in Richmond, Virginia"@en ;
+        rdfs:label    "musée des Beaux-Arts de Virginie"@fr , "Virginia Museum of Fine Arts"@en ;
+        owl:sameAs    wikipedia:Virginia_Museum_of_Fine_Arts , wikidata:Q4013975 .
+
+mus:Q3329201  rdf:type  mus:museum ;
+        rdfs:comment  "musée français"@fr , "municipal museum in Perpignan"@en ;
+        rdfs:label    "musée Hyacinthe-Rigaud"@fr , "Musée Hyacinthe-Rigaud"@en ;
+        owl:sameAs    wikidata:Q3329201 .
+
+mus:Q679075  rdf:type  mus:museum ;
+        rdfs:comment  "musée situé à Genève, en Suisse"@fr , "museum in Geneva (Switzerland)"@en ;
+        rdfs:label    "Musée d’Art et d’Histoire de Genève"@fr , "Musée d’Art et d’Histoire de Genève"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_d%27Art_et_d%27Histoire_(Geneva)> , wikidata:Q679075 .
+
+mus:Q428559  rdf:type  mus:museum ;
+        rdfs:comment  "musée en Espagne"@fr , "art and archeological Museum in Catalonia"@en ;
+        rdfs:label    "musée de Montserrat"@fr , "Museum of Montserrat"@en ;
+        owl:sameAs    wikipedia:Museum_of_Montserrat , wikidata:Q428559 .
+
+mus:Q2046319  rdf:type  mus:museum ;
+        rdfs:comment  "National Museum Wales"@fr , "network of national museums in Wales"@en ;
+        rdfs:label    "Musée national du pays de Galles"@fr , "National Museum Wales"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Amgueddfa_Cymru_%E2%80%93_National_Museum_Wales> , wikidata:Q2046319 .
+
+mus:Q682827  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à New York"@fr , "art museum in New York City"@en ;
+        rdfs:label    "The Frick Collection"@fr , "The Frick Collection"@en ;
+        owl:sameAs    wikipedia:Frick_Collection , wikidata:Q682827 .
+
+mus:Q5478803  rdf:type  mus:museum ;
+        rdfs:comment  "musée américain du Vassar College"@fr , "art center for Vassar College"@en ;
+        rdfs:label    "Frances Lehman Loeb Art Center"@fr , "Frances Lehman Loeb Art Center"@en ;
+        owl:sameAs    wikipedia:Frances_Lehman_Loeb_Art_Center , wikidata:Q5478803 .
+
+mus:Q224124  rdf:type  mus:museum ;
+        rdfs:comment  "musée d'art à Amsterdam"@fr , "art museum in Amsterdam, Netherlands"@en ;
+        rdfs:label    "musée van Gogh"@fr , "Van Gogh Museum"@en ;
+        owl:sameAs    wikipedia:Van_Gogh_Museum , wikidata:Q224124 .
+
+mus:Q1236032  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée français dans le château de Chantilly"@fr , "museum in France in the Château de Chantilly"@en ;
+        rdfs:label    "musée Condé"@fr , "Condé Museum"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_Cond%C3%A9> , wikidata:Q1236032 .
+
+mus:Q2418618  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée italien"@fr , "museum in Italy"@en ;
+        rdfs:label    "Casa Buonarroti"@fr , "Casa Buonarroti"@en ;
+        owl:sameAs    wikipedia:Casa_Buonarroti , wikidata:Q2418618 .
+
+mus:Q1200696  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée en Italie"@fr , "art museum in Florence, Italy"@en ;
+        rdfs:label    "Museo dell'Opera del Duomo"@fr , "Museo dell'Opera del Duomo"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museo_dell%27Opera_del_Duomo_(Florence)> , wikidata:Q1200696 .
+
+mus:Q10855544  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'art à Florence"@fr , "art museum in Florence, Italy"@en ;
+        rdfs:label    "Galleria dell'Accademia de Florence"@fr , "Galleria dell'Accademia"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Galleria_dell%27Accademia> , wikidata:Q10855544 .
+
+mus:Q574961  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée de peinture des XVIe et XVIIe siècles à Haarlem, aux Pays-Bas"@fr , "joint museum with a modern and a 17th century painting collection  in Haarlem, The Netherlands"@en ;
+        rdfs:label    "musée Frans-Hals"@fr , "Frans Hals Museum"@en ;
+        owl:sameAs    wikipedia:Frans_Hals_Museum , wikidata:Q574961 .
+
+mus:Q555946  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'art à Berlin"@fr , "art museum in Berlin"@en ;
+        rdfs:label    "Kupferstichkabinett Berlin"@fr , "Kupferstichkabinett Berlin"@en ;
+        owl:sameAs    wikipedia:Kupferstichkabinett_Berlin , wikidata:Q555946 .
+
+mus:Q51252  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "palais de Florence"@fr , "museum building in Florence, Italy"@en ;
+        rdfs:label    "galerie des Offices"@fr , "Uffizi Gallery"@en ;
+        owl:sameAs    wikipedia:Uffizi , wikidata:Q51252 .
+
+mus:Q917183  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "édifice religieux belge"@fr , "church in Bruges, Belgium"@en ;
+        rdfs:label    "église Notre-Dame de Bruges"@fr , "Church of Our Lady"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Church_of_Our_Lady,_Bruges> , wikidata:Q917183 .
+
+mus:Q1017269  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum"@en ;
+        rdfs:label    "musée Busch-Reisinger"@fr , "Busch–Reisinger Museum"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Busch%E2%80%93Reisinger_Museum> , wikidata:Q1017269 .
+
+mus:Q1192305  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'art à Washington"@fr , "fine arts museum in Washington, D.C., a division of the Smithsonian Institution"@en ;
+        rdfs:label    "Smithsonian American Art Museum"@fr , "Smithsonian American Art Museum"@en ;
+        owl:sameAs    wikipedia:Smithsonian_American_Art_Museum , wikidata:Q1192305 .
+
+mus:Q3757722  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée italien"@fr , "museum in Piacenza, Italy"@en ;
+        rdfs:label    "Musée d'art moderne Ricci Oddi"@fr , "Galleria d'arte moderna Ricci Oddi"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Galleria_d%27arte_moderna_Ricci_Oddi> , wikidata:Q3757722 .
+
+mus:Q306724  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée en Autriche"@fr , "museum in Vienna, Austria"@en ;
+        rdfs:label    "Österreichisches Theatermuseum. Vienne"@fr , "Austrian Theatre Museum"@en ;
+        owl:sameAs    wikipedia:Austrian_Theatre_Museum , wikidata:Q306724 .
+
+mus:Q270920  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "institution britannique dédiée aux arts"@fr , "Art institution in London, England"@en ;
+        rdfs:label    "Royal Academy"@fr , "Royal Academy of Arts"@en ;
+        owl:sameAs    wikipedia:Royal_Academy_of_Arts , wikidata:Q270920 .
+
+mus:Q505873  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée en Autriche"@fr , "group of museums in Vienna"@en ;
+        rdfs:label    "musée de Vienne"@fr , "Vienna Museum"@en ;
+        owl:sameAs    wikipedia:Vienna_Museum , wikidata:Q505873 .
+
+mus:Q388448  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée de Florence"@fr , "Art museum in Florence, Italy"@en ;
+        rdfs:label    "musée national du Bargello"@fr , "Bargello National Museum"@en ;
+        owl:sameAs    wikipedia:Bargello , wikidata:Q388448 .
+
+mus:Q18410543  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée en Suisse"@fr , "art museum in Zug"@en ;
+        rdfs:label    "Kunsthaus Zug"@en ;
+        owl:sameAs    wikidata:Q18410543 .
+
+mus:Q464404  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée en Allemagne"@fr , "collection of drawings, prints and engravings"@en ;
+        rdfs:label    "Staatliche graphische Sammlung. Munich, Allemagne"@fr , "Staatliche Graphische Sammlung München"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Staatliche_Graphische_Sammlung_M%C3%BCnchen> , wikidata:Q464404 .
+
+mus:Q6373  rdf:type   owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée de l’histoire et de la culture humaine, situé à Londres"@fr , "national museum in the Bloomsbury area of London"@en ;
+        rdfs:label    "British Museum"@fr , "British Museum"@en ;
+        owl:sameAs    wikipedia:British_Museum , wikidata:Q6373 .
+
+mus:Q160112  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'œuvres d'art à Madrid (Espagne)"@fr , "Spanish national art museum in Madrid, Spain"@en ;
+        rdfs:label    "musée du Prado"@fr , "Museo del Prado"@en ;
+        owl:sameAs    wikipedia:Museo_del_Prado , wikidata:Q160112 .
+
+mus:Q478455  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée en Autriche"@fr , "museum in Vienna, Austria"@en ;
+        rdfs:label    "Musée des arts appliqués"@fr , "MAK - Museum of Applied Arts"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_of_Applied_Arts,_Vienna> , wikidata:Q478455 .
+
+mus:Q2599177  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée dédiée à Victor Hugo à Paris, France"@fr , "museum dedicated to Victor Hugo in Paris, France"@en ;
+        rdfs:label    "maison de Victor Hugo"@fr , "Maison de Victor Hugo"@en ;
+        owl:sameAs    wikipedia:Maison_de_Victor_Hugo , wikidata:Q2599177 .
+
+mus:Q59468  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in New York, New York"@en ;
+        rdfs:label    "Neue Galerie"@fr , "Neue Galerie"@en ;
+        owl:sameAs    wikipedia:Neue_Galerie_New_York , wikidata:Q59468 .
+
+mus:Q686531  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée en Autriche"@fr , "art museum in Upper Austria, successor to the Neuen Galerie der Stadt Linz"@en ;
+        rdfs:label    "Lentos Art Museum"@fr , "Lentos Art Museum"@en ;
+        owl:sameAs    wikipedia:Lentos_Art_Museum , wikidata:Q686531 .
+
+mus:Q28647411  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "complexe muséal à Florence"@fr , "network of museums in Florence, Italy"@en ;
+        rdfs:label    "Galeries des Offices"@fr , "Gallerie degli Uffizi"@en ;
+        owl:sameAs    wikidata:Q28647411 .
+
+mus:Q2362660  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée à Louvain en Belgique"@fr , "museum in Leuven, Belgium"@en ;
+        rdfs:label    "M Leuven"@fr , "M Leuven"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/M_%E2%80%93_Museum_Leuven> , wikidata:Q2362660 .
+
+mus:Q1127079  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "archeological and art museum in Nijmegen, Netherlands"@en ;
+        rdfs:label    "Museum Het Valkhof"@fr , "Museum Het Valkhof"@en ;
+        owl:sameAs    wikipedia:Valkhof_Museum , wikidata:Q1127079 .
+
+mus:Q756807  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "palace et musée situé à Venise, en Italiie"@fr , "palace and museum in Venice, Italy"@en ;
+        rdfs:label    "Ca' Pesaro"@fr , "Ca' Pesaro"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Ca%27_Pesaro> , wikidata:Q756807 .
+
+mus:Q182955  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée dans la Cité du Vatican"@fr , "museums of the Vatican City"@en ;
+        rdfs:label    "musées du Vatican"@fr , "Vatican Museums"@en ;
+        owl:sameAs    wikipedia:Vatican_Museums , wikidata:Q182955 .
+
+mus:Q1357573  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée italien"@fr , "structures at the Basilica of San Lorenzo, Florence, Italy"@en ;
+        rdfs:label    "chapelles des Médicis"@fr , "Medici Chapels"@en ;
+        owl:sameAs    wikipedia:Medici_Chapel , wikidata:Q1357573 .
+
+mus:Q806615  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée en Autriche"@fr , "museum and art gallery"@en ;
+        rdfs:label    "Bank Austria Kunstforum Wien"@en ;
+        owl:sameAs    wikidata:Q806615 .
+
+mus:Q4461630  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée au Japon"@fr , "art museum in Aichi, Japan"@en ;
+        rdfs:label    "Toyota Municipal Museum of Art"@en ;
+        owl:sameAs    wikipedia:Toyota_Municipal_Museum_of_Art , wikidata:Q4461630 .
+
+mus:Q271928  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "palais à Florence, Italie"@fr , "palace in Florence, Italy"@en ;
+        rdfs:label    "palais de la Seigneurie"@fr , "Palazzo Vecchio"@en ;
+        owl:sameAs    wikipedia:Palazzo_Vecchio , wikidata:Q271928 .
+
+mus:Q1624722  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "large 18th-century Palladian country house in Norfolk, England"@en ;
+        rdfs:label    "Holkham Hall"@fr , "Holkham Hall"@en ;
+        owl:sameAs    wikipedia:Holkham_Hall , wikidata:Q1624722 .
+
+mus:Q474563  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée néerlandais"@fr , "art, natural history, and science museum in Haarlem, Netherlands"@en ;
+        rdfs:label    "musée Teyler"@fr , "Teylers Museum"@en ;
+        owl:sameAs    wikipedia:Teylers_Museum , wikidata:Q474563 .
+
+mus:Q95569  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'art à Vienne, Autriche"@fr , "art museum in Vienna, Austria"@en ;
+        rdfs:label    "musée d'Histoire de l'art de Vienne"@fr , "Kunsthistorisches Museum"@en ;
+        owl:sameAs    wikipedia:Kunsthistorisches_Museum , wikidata:Q95569 .
+
+mus:Q213322  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée national d'art situé à Londres"@fr , "museum in London, England"@en ;
+        rdfs:label    "Victoria and Albert Museum"@fr , "Victoria and Albert Museum"@en ;
+        owl:sameAs    wikipedia:Victoria_and_Albert_Museum , wikidata:Q213322 .
+
+mus:Q6352575  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "la plus complète collection  d’art britannique en dehors du Royaume-Uni á New Haven, Connecticut"@fr , "largest collection of British art outside the United Kingdom in New Haven, Connecticut"@en ;
+        rdfs:label    "centre d'art britannique de Yale"@fr , "Yale Center for British Art"@en ;
+        owl:sameAs    wikipedia:Yale_Center_for_British_Art , wikidata:Q6352575 .
+
+mus:Q4681251  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Andover, Massachusetts"@en ;
+        rdfs:label    "Addison Gallery of American Art"@en ;
+        owl:sameAs    wikipedia:Addison_Gallery_of_American_Art , wikidata:Q4681251 .
+
+mus:Q3547979  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "part of the National Museum of Northern Ireland"@en ;
+        rdfs:label    "Ulster Museum"@fr , "Ulster Museum"@en ;
+        owl:sameAs    wikipedia:Ulster_Museum , wikidata:Q3547979 .
+
+mus:Q1952033  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "école des beaux-arts et musée américain"@fr , "museum and art school in Philadelphia, Pennsylvania"@en ;
+        rdfs:label    "Pennsylvania Academy of the Fine Arts"@fr , "Pennsylvania Academy of the Fine Arts"@en ;
+        owl:sameAs    wikipedia:Pennsylvania_Academy_of_the_Fine_Arts , wikidata:Q1952033 .
+
+mus:Q7005718  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in New Britain, Connecticut"@en ;
+        rdfs:label    "New Britain Museum of American Art"@fr , "New Britain Museum of American Art"@en ;
+        owl:sameAs    wikipedia:New_Britain_Museum_of_American_Art , wikidata:Q7005718 .
+
+mus:Q612530  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée américain, en Floride"@fr , "art museum in Sarasota, Florida"@en ;
+        rdfs:label    "musée d'Art John-et-Mable-Ringling"@fr , "John and Mable Ringling Museum of Art"@en ;
+        owl:sameAs    wikipedia:John_and_Mable_Ringling_Museum_of_Art , wikidata:Q612530 .
+
+mus:Q1620553  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "art museum in Washington, D.C., a division of the Smithsonian Institution"@en ;
+        rdfs:label    "Hirshhorn Museum and Sculpture Garden"@fr , "Hirshhorn Museum and Sculpture Garden"@en ;
+        owl:sameAs    wikipedia:Hirshhorn_Museum_and_Sculpture_Garden , wikidata:Q1620553 .
+
+mus:Q1435689  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'art français"@fr , "art museum in France with sculpturegarden by Joan Miró"@en ;
+        rdfs:label    "Fondation Maeght"@fr , "Fondation Maeght"@en ;
+        owl:sameAs    wikipedia:Fondation_Maeght , wikidata:Q1435689 .
+
+mus:Q49135  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d’art à Boston, Massachusetts"@fr , "art museum in Boston, Massachusetts, United States"@en ;
+        rdfs:label    "musée Isabella-Stewart-Gardner"@fr , "Isabella Stewart Gardner Museum"@en ;
+        owl:sameAs    wikipedia:Isabella_Stewart_Gardner_Museum , wikidata:Q49135 .
+
+mus:Q3329364  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée français"@fr , "museum in France"@en ;
+        rdfs:label    "musée Théodore-Deck"@fr ;
+        owl:sameAs    wikidata:Q3329364 .
+
+mus:Q1851516  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée américain"@fr , "contemporary art center in Minneapolis, Minnesota, United States"@en ;
+        rdfs:label    "Walker Art Center"@fr , "Walker Art Center"@en ;
+        owl:sameAs    wikipedia:Walker_Art_Center , wikidata:Q1851516 .
+
+mus:Q59435  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée en Autriche"@fr , "museum of modern Austrian art in Vienna, Austria"@en ;
+        rdfs:label    "musée Leopold"@fr , "Leopold Museum"@en ;
+        owl:sameAs    wikipedia:Leopold_Museum , wikidata:Q59435 .
+
+mus:Q559229  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Santa Fe, New Mexico"@en ;
+        rdfs:label    "New Mexico Museum of Art"@fr , "New Mexico Museum of Art"@en ;
+        owl:sameAs    wikipedia:New_Mexico_Museum_of_Art , wikidata:Q559229 .
+
+mus:Q2191491  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'art moderne et contemporain à Lisbonne"@fr , "museum of modern and contemporary art in Portugal"@en ;
+        rdfs:label    "musée Berardo"@fr , "Berardo Collection Museum"@en ;
+        owl:sameAs    wikipedia:Berardo_Collection_Museum , wikidata:Q2191491 .
+
+mus:Q1183941  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'art de Wilmington, Delaware"@fr , "art museum located on the Kentmere Parkway in Wilmington, Delaware, USA"@en ;
+        rdfs:label    "Delaware Art Museum"@fr , "Delaware Art Museum"@en ;
+        owl:sameAs    wikipedia:Delaware_Art_Museum , wikidata:Q1183941 .
+
+mus:Q7493533  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'art de la ville de Lincoln, au Nebraska, dans le Midwest des États-Unis"@fr , "art museum in Lincoln, Nebraska"@en ;
+        rdfs:label    "Sheldon Museum of Art"@fr , "Sheldon Museum of Art"@en ;
+        owl:sameAs    wikipedia:Sheldon_Museum_of_Art , wikidata:Q7493533 .
+
+mus:Q1540707  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée d'art contemporain à Gand, Belgique"@fr , "contemporary art museum in Ghent, Belgium"@en ;
+        rdfs:label    "S.M.A.K. - Stedelijk Museum voor Actuele Kunst"@fr , "S.M.A.K. - Stedelijk Museum voor Actuele Kunst"@en ;
+        owl:sameAs    wikipedia:Stedelijk_Museum_voor_Actuele_Kunst , wikidata:Q1540707 .
+
+mus:Q779736  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "art gallery"@en ;
+        rdfs:label    "Hayward Gallery"@fr , "Hayward Gallery"@en ;
+        owl:sameAs    wikipedia:Hayward_Gallery , wikidata:Q779736 .
+
+mus:Q283998  rdf:type  owl:NamedIndividual , mus:museum ;
+        rdfs:comment  "musée américain"@fr , "art museum in Tempe, Arizona"@en ;
+        rdfs:label    "Arizona State University Art Museum"@fr , "Arizona State University Art Museum"@en ;
+        owl:sameAs    wikipedia:Arizona_State_University_Art_Museum , wikidata:Q283998 .
+
+mus:Q98546069  rdf:type  mus:museum , owl:NamedIndividual , mus:private ;
+        rdfs:comment  "collector"@en ;
+        rdfs:label    "Diane Venet"@en , "Diane Venet"@fr ;
+        owl:sameAs    wd:Q98546069 .
+
+mus:Q105027234  rdf:type  mus:museum , owl:NamedIndividual , mus:artCollection ;
+        rdfs:comment  "Print collection of the New York Public Library"@en ;
+        rdfs:label    "Collection d'estampes de la bibliothèque publique de New York"@fr , "Print Collection of The New York Public Library"@en ;
+        owl:sameAs    wd:Q105027234 .
+
+mus:Q91353383  rdf:type  mus:museum , owl:NamedIndividual , mus:private ;
+        rdfs:comment  "jewellery collector"@en ;
+        rdfs:label    "Nelly Van den Abbeele"@en , "Nelly Van den Abbeele"@fr ;
+        owl:sameAs    wd:Q91353383 .
+
+mus:Q98556638  rdf:type  mus:museum , owl:NamedIndividual , mus:private ;
+        rdfs:comment  "collector of contemporary jewellery"@en ;
+        rdfs:label    "Clo Fleiss"@en , "Clo Fleiss"@fr ;
+        owl:sameAs    wd:Q98556638 .
+
+mus:Q108838951  rdf:type  mus:museum , owl:NamedIndividual , mus:artCollection ;
+        rdfs:label  "Jill & Byron Crawford collection"@en ;
+        owl:sameAs  wd:Q108838951 .
+
+mus:Q95999613  rdf:type  mus:museum , owl:NamedIndividual , mus:private ;
+        rdfs:comment  "chercheur"@fr , "researcher"@en ;
+        rdfs:label    "Daniela Gilardi"@en ;
+        owl:sameAs    wd:Q95999613 .
+
+mus:Q2343008  rdf:type  mus:museum , owl:NamedIndividual , mus:private ;
+        rdfs:comment  "American writer, editor and artist (1908-2009)"@en ;
+        rdfs:label    "Fleur Cowles"@en , "Fleur Cowles"@fr ;
+        owl:sameAs    wp:Fleur_Cowles , wd:Q2343008 .
+
+mus:Q99237584  rdf:type  mus:museum , owl:NamedIndividual , mus:private ;
+        rdfs:comment  "art collector"@en ;
+        rdfs:label    "Daphne Farago"@en , "Daphne Farago"@fr ;
+        owl:sameAs    wd:Q99237584 , wp:Daphne_Farago .
+
+mus:Q3329364  rdf:type  mus:museum , owl:NamedIndividual ;
+        rdfs:comment  "museum in France"@en , "musée français"@fr ;
+        rdfs:label    "Theodore-Deck museum"@en , "musée Théodore-Deck"@fr ;
+        owl:sameAs    wd:Q3329364 .
+
+mus:Q17745628  rdf:type  mus:museum , owl:NamedIndividual  ;
+        rdfs:comment  "architecte américain"@fr , "American architect"@en ;
+        rdfs:label    "Peter Marino"@en , "Peter Marino"@fr ;
+        owl:sameAs    wd:Q17745628 , wp:Peter_Marino .
+               

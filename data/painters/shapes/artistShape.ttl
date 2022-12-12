@@ -1,0 +1,104 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix : <http://www.art.org/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix person:    <http://www.art.org/ontology/person#> .
+@prefix gender:    <http://www.art.org/ontology/person/gender#> .
+@prefix mvmt:      <http://www.art.org/ontology/movement#> .
+@prefix art:       <http://www.art.org/ontology/art#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#country must exist
+#rdfs:label in english must always exist
+# add closed shapes to list allowed properties
+
+schema:PersonShape
+    a sh:NodeShape ;
+    sh:targetClass person:painter, person:sculptor, person:ceramicist, person:architect ;
+    sh:property [
+        sh:path person:familyName ;
+        sh:datatype xsd:string ;
+        sh:name "family name" ;
+        sh:minCount 1;
+        sh:description "A Person's last name (aka family name)." ;
+        sh:message "The Person should have a name";
+    ] ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:name "label" ;
+    ] ;
+    sh:property [
+        sh:path rdfs:comment ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:name "comment" ;
+    ] ;
+    sh:property [
+        sh:path person:dateOfBirth ;
+        sh:lessThan person:dateOfDeath;
+        sh:message "The person should have a unique date of Birth";
+        sh:maxCount 1 ;
+        sh:minCount 1 ;
+    ] ;
+    sh:property [
+        sh:path person:dateOfDeath ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path person:hasGender ;
+        sh:class :gender ;
+        sh:in ( gender:male gender:female ) ;
+        sh:description "A Person's gender (can only be male of female)" ;
+        sh:nodeKind sh:IRI ;
+        sh:maxCount 1 ;
+    ] ;
+    # to be verified stem not working
+    sh:property [
+      sh:path person:isPartofMovement ;
+      sh:nodeKind sh:IRI ; 
+      #sh:stem "http://www.art.org/ontology/" ; 
+      sh:maxCount 4 ;
+      sh:message "must be an URI and max 4 movement allowed";
+    ] ;
+    sh:property [
+        sh:path person:isPartofMovement ;
+        sh:node schema:movementShape ;
+        sh:message "Unknown Movement for that Artist";
+    ] ;
+    # todo
+    sh:property [
+        sh:path art:exposedIn ;
+        sh:nodeKind sh:IRI ; 
+        sh:message "unknown Museum exposed in" ;
+    ];
+    sh:property [
+        sh:path person:isCitizenOf ;
+        sh:description "only one country of citizenship is allowed" ;
+        sh:maxCount 1 ;
+    ] .
+
+schema:movementShape
+    a sh:NodeShape ;
+    sh:targetClass mvmt:movement ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:minCount 1;
+        sh:maxCount 2;
+        sh:name "label" ;
+        sh:description "the label of the artefact must exist";
+        sh:message "A Movement must have a label with language declaration";
+    ] ;
+    sh:property [
+        sh:path rdfs:comment ;
+        sh:datatype rdf:langString ;
+        sh:uniqueLang true ;
+        sh:name "comment" ;
+        sh:message "Movement comment must have unique language declaration";
+    ] .
+    

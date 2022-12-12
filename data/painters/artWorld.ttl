@@ -1,0 +1,79 @@
+@prefix : <http://www.art.org/ontology#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix wm: <https://commons.wikimedia.org/wiki/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix mus: <http://www.art.org/ontology/museum#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mvmt: <http://www.art.org/ontology/movement#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix world: <http://www.art.org/ontology/world#> .
+@prefix city: <http://www.art.org/ontology/world/city#> .
+@prefix ctry: <http://www.art.org/ontology/world/country#> .
+@prefix reg: <http://www.art.org/ontology/world/countryRegion#> .
+@prefix cont: <http://www.art.org/ontology/world/continent#> .
+@prefix person: <http://www.art.org/ontology/person#> .
+@prefix schema: <http://schema.org/> .
+@prefix wikidata: <http://www.wikidata.org/entity/> .
+#################################################################
+#    Individuals
+#################################################################
+cont:europe rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "Europe"@en .
+                      
+cont:northAmerica rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "North America"@en .
+                      
+cont:southAmerica rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "South America"@en .
+
+cont:africa  rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "Africa"@en .
+                                                                  
+cont:northAfrica  rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "North Africa"@en .
+
+cont:middleAfrica  rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "Middle Africa"@en .
+
+cont:eastAfrica  rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "East Africa"@en .
+
+
+cont:eastAsia  rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "East Asia"@en .
+                      
+cont:northAsia  rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "North Asia"@en .
+
+cont:southAsia rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "South Asia"@en .
+
+cont:westernAsia  rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "Western Asia"@en .
+
+cont:centralAsia  rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "Central Asia"@en .
+                                            
+cont:oceania  rdf:type owl:NamedIndividual ,
+                      world:continent ;
+                      rdfs:label "Oceania"@en .                      
+                   
+reg:alsace rdf:type owl:NamedIndividual ,
+                     world:region ; world:regionOf ctry:France ;
+                     rdfs:label "Alsace"@en .
