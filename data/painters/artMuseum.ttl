@@ -2440,4 +2440,346 @@ mus:Q17745628  rdf:type  mus:museum , owl:NamedIndividual  ;
         rdfs:comment  "architecte américain"@fr , "American architect"@en ;
         rdfs:label    "Peter Marino"@en , "Peter Marino"@fr ;
         owl:sameAs    wd:Q17745628 , wp:Peter_Marino .
-               
+
+mus:Q386570  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "Art museum in Madrid, Spain"@en , "musée à Madrid"@fr ;
+        rdfs:label    "musée Lazaro Galdiano"@fr , "Museo Lázaro Galdiano"@en ;
+        owl:sameAs    wd:Q386570 , <https://en.wikipedia.org/wiki/L%C3%A1zaro_Galdiano_Museum> .
+
+mus:Q1673285  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "museum in Germany"@en , "musée en Allemagne"@fr ;
+        rdfs:label    "Kulturhistorisches Museum Magdeburg"@en , "Kulturhistorisches Museum de Magdebourg"@fr ;
+        owl:sameAs    wd:Q1673285 , wp:Kulturhistorisches_Museum_Magdeburg .
+
+mus:Q16579767  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "municipal museum of El Bonillo, Spain"@en ;
+        rdfs:label    "Museo Parroquial de el Bonillo"@en , "Museo Parroquial de el Bonillo"@fr ;
+        owl:sameAs    wd:Q16579767 .
+
+mus:Q1471477  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q2945282 ;
+        rdfs:comment  "musée d'art à Anvers"@fr , "Belgian art museum"@en ;
+        rdfs:label    "musée royal des Beaux-Arts d'Anvers"@fr , "Royal Museum of Fine Arts Antwerp"@en ;
+        owl:sameAs    wd:Q1471477 , wp:Royal_Museum_of_Fine_Arts_Antwerp .
+
+mus:Q11289011  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "museum in Japan"@en , "musée au Japon"@fr ;
+        rdfs:label    "Woodone Museum of Art"@en ;
+        owl:sameAs    wd:Q11289011 , wp:Wood_One_Museum_of_Art .
+
+mus:Q3107709  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "museum in Amiens, France"@en , "musée français à Amiens"@fr ;
+        rdfs:label    "musée de Picardie"@fr , "Musée de Picardie"@en ;
+        owl:sameAs    wd:Q3107709 , <https://en.wikipedia.org/wiki/Mus%C3%A9e_de_Picardie> .
+
+mus:Q4318653  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "art museum in Russia"@en ;
+        rdfs:label    "Nizhny Novgorod State Art Museum"@en , "Musée des Beaux-Arts de Nijni Novgorod"@fr ;
+        owl:sameAs    wd:Q4318653 .
+
+mus:Q689829  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q1497649 ;
+        rdfs:comment  "museum in Winterthur founded by Oskar Reinhart (Switzerland)"@en , "musée suisse"@fr ;
+        rdfs:label    "Kunst Museum Winterthur | Reinhart am Stadtgarten"@en , "Kunst Museum Winterthur | Reinhart am Stadtgarten"@fr ;
+        owl:sameAs    wd:Q689829 .
+
+mus:Q1103550  rdf:type  mus:museum , wd:Q207694 , wd:Q3867560 , owl:NamedIndividual , wd:Q108860593 , wd:Q33506 ;
+        rdfs:comment  "museum of arts in Bologna"@en , "musée italien"@fr ;
+        rdfs:label    "Pinacoteca Nazionale di Bologna"@en , "Pinacothèque nationale"@fr ;
+        owl:sameAs    wp:Pinacoteca_Nazionale_di_Bologna , wd:Q1103550 .
+
+mus:Q1639759  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q1970365 , wd:Q18233199 ;
+        rdfs:comment  "présente des objets géologiques, des pièces représentatives de 14 000 ans d'art régional de Poméranie, des peintures"@fr , "public museum primarily dedicated to Pomeranian history and arts"@en ;
+        rdfs:label    "Pomeranian State Museum"@en , "Musée régional de Poméranie"@fr ;
+        owl:sameAs    wp:Pomeranian_State_Museum , wd:Q1639759 .
+
+mus:Q3329346  rdf:type  mus:museum , wd:Q1128397 , owl:NamedIndividual , wd:Q4989906 , wd:Q178706 , wd:Q33506 ;
+        rdfs:comment  "musée espagnol"@fr , "an ethnographic and art museum in San Sebastian Spain"@en ;
+        rdfs:label    "musée San Telmo"@fr , "San Telmo Museum"@en ;
+        owl:sameAs    wd:Q3329346 , wp:San_Telmo_Museoa .
+
+mus:Q1411180  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "museum in Paris, France"@en , "musée de Paris, France"@fr ;
+        rdfs:label    "musée du Luxembourg"@fr , "Luxembourg Museum"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_du_Luxembourg> , wd:Q1411180 .
+
+mus:Q2274725  rdf:type  mus:museum , wd:Q64578911 , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "musée espagnol"@fr , "museum in Toledo. Spain"@en ;
+        rdfs:label    "musée Santa Cruz de Tolède"@fr , "Museum of Santa Cruz"@en ;
+        owl:sameAs    wp:Museum_of_Santa_Cruz , wd:Q2274725 .
+
+mus:Q290549  rdf:type  mus:museum , wd:Q684740 , wd:Q207694 , wd:Q3867560 , owl:NamedIndividual , wd:Q17431399 , wd:Q108860593 ;
+        rdfs:comment  "art museum and historic site in Naples, Italy"@en , "musée italien"@fr ;
+        rdfs:label    "National Museum of Capodimonte"@en , "musée de Capodimonte"@fr ;
+        owl:sameAs    wd:Q290549 , wp:Museo_di_Capodimonte .
+
+mus:Q1135243  rdf:type  mus:museum , owl:NamedIndividual , wd:Q1865249 , wd:Q7075 ;
+        rdfs:comment  "musée américain"@fr , "museum and library in Philadelphia, Pennsylvania"@en ;
+        rdfs:label    "Rosenbach Museum"@fr , "Rosenbach Museum & Library"@en ;
+        owl:sameAs    wp:Rosenbach_Museum_and_Library , wd:Q1135243 .
+
+mus:Q1576793  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "art museum"@en ;
+        rdfs:label    "Municipal Gallery of Athens"@en ;
+        owl:sameAs    wd:Q1576793 , wp:Municipal_Gallery_of_Athens .
+
+mus:Q6033277  rdf:type  mus:museum , owl:NamedIndividual , wd:Q1231888 ;
+        rdfs:comment  "musée en Espagne"@fr ;
+        rdfs:label    "Museo Diocesano de Arte Antiguo (Sigüenza)"@en ;
+        owl:sameAs    wd:Q6033277 .
+
+mus:Q4693034  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "art museum in Ontario, Canada"@en ;
+        rdfs:label    "Agnes Etherington Art Centre"@en , "Agnes Etherington Art Centre"@fr ;
+        owl:sameAs    wp:Agnes_Etherington_Art_Centre , wd:Q4693034 .
+
+mus:Q2620702  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "musée français"@fr , "museum in Bayonne"@en ;
+        rdfs:label    "musée Bonnat-Helleu"@fr , "Musée Bonnat-Helleu"@en ;
+        owl:sameAs    wd:Q2620702 , <https://en.wikipedia.org/wiki/Mus%C3%A9e_Bonnat> .
+
+mus:Q2034945  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "branch of the Vatican Museums"@en , "partie des Musées du Vatican"@fr ;
+        rdfs:label    "Collection religieuse d'art moderne"@fr , "Collection of Modern Religious Art, Vatican Museums"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Collection_of_Modern_and_Contemporary_Art,_Vatican_Museums> , wd:Q2034945 .
+
+mus:Q1535963  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "museum in Strasbourg, France"@en , "musée de Strasbourg, France"@fr ;
+        rdfs:label    "musée des Beaux-Arts de Strasbourg"@fr , "Musée des Beaux-Arts de Strasbourg"@en ;
+        owl:sameAs    wd:Q1535963 , <https://en.wikipedia.org/wiki/Mus%C3%A9e_des_Beaux-Arts_de_Strasbourg> .
+
+mus:Q12060910  rdf:type  mus:museum , wd:Q1847467 , wd:Q207694 , owl:NamedIndividual , wd:Q3950 ;
+        rdfs:comment  "municipal museum in Mar del Plata, Argentina"@en , "musée d'art municipal de Mar del Plata"@fr ;
+        rdfs:label    "Villa Ortiz Basualdo"@en , "Villa Ortiz Basualdo"@fr ;
+        owl:sameAs    wp:Juan_Carlos_Castagnino_Municipal_Museum_of_Art , wd:Q12060910 .
+
+mus:Q256200  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 , wd:Q879050 ;
+        rdfs:comment  "museum in Brussels"@en ;
+        rdfs:label    "musée Charlier"@fr , "Charliermuseum"@en ;
+        owl:sameAs    wd:Q256200 , wp:Charlier_Museum .
+
+mus:Q11786951  rdf:type  mus:museum , owl:NamedIndividual , wd:Q1231888 ;
+        rdfs:label  "Muzeum Diecezjalne w Siedlcach"@en ;
+        owl:sameAs  wd:Q11786951 .
+
+mus:Q2400378  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q2085381 , wd:Q1497649 ;
+        rdfs:comment  "musée suisse"@fr , "museum in Vevey (Switzerland)"@en ;
+        rdfs:label    "Musée Jenisch"@en , "musée Jenisch Vevey"@fr ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Mus%C3%A9e_Jenisch> , wd:Q2400378 .
+
+mus:Q2037255  rdf:type  mus:museum , wd:Q64578911 , wd:Q24699794 , owl:NamedIndividual ;
+        rdfs:comment  "ancien hôpital, maintenant musée à Tolède, Espagne"@fr , "Art museum and former hospital in Toledo, Spain"@en ;
+        rdfs:label    "Hospital de Tavera"@en , "Hospital de Tavera"@fr ;
+        owl:sameAs    wd:Q2037255 , wp:Hospital_de_Tavera .
+
+mus:Q1820897  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "musée néerlandais"@fr , "museum in Amsterdam"@en ;
+        rdfs:label    "Amsterdam Museum"@en , "musée d'Amsterdam"@fr ;
+        owl:sameAs    wd:Q1820897 , wp:Amsterdam_Museum .
+
+mus:Q16579764  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "art museum in Cuenca, Spain"@en , "musée espagnol"@fr ;
+        rdfs:label    "Museo Diocesano de Cuenca"@en , "Museo Diocesano de Arte Religioso"@fr ;
+        owl:sameAs    wd:Q16579764 .
+
+mus:Q3303786  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "musée américain"@fr , "art museum in Dallas, Texas"@en ;
+        rdfs:label    "Meadows Museum"@en , "Meadows Museum"@fr ;
+        owl:sameAs    wp:Meadows_Museum , wd:Q3303786 .
+
+mus:Q12013217  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "museum in 's-Hertogenbosch (the Netherlands)"@en , "musée à Bois-le-Duc, Pays-Bas"@fr ;
+        rdfs:label    "Noordbrabants Museum"@en , "musée du Brabant-Septentrional"@fr ;
+        owl:sameAs    wd:Q12013217 , wp:Noordbrabants_Museum .
+
+mus:Q9046913  rdf:type  mus:museum , wd:Q207694 , wd:Q3329412 , owl:NamedIndividual , wd:Q4989906 , wd:Q12104174 ;
+        rdfs:comment  "musée à Pontevedra, Espagne"@fr , "museum in Pontevedra, Spain"@en ;
+        rdfs:label    "Pontevedra Museum"@en , "musée de Pontevedra"@fr ;
+        owl:sameAs    wd:Q9046913 , wp:Pontevedra_Museum .
+
+mus:Q2266081  rdf:type  mus:museum , wd:Q207694 , wd:Q3867560 , owl:NamedIndividual , wd:Q17431399 ;
+        rdfs:comment  "art gallery in Palazzo Barberini and Palazzo Corsini in Rome, Italy"@en , "musée d'art in Palazzo Barberini et Palazzo Corsini à Rome, Italie"@fr ;
+        rdfs:label    "Galerie nationale d'art ancien"@fr , "Galleria Nazionale d'Arte Antica"@en ;
+        owl:sameAs    wd:Q2266081 , <https://en.wikipedia.org/wiki/Galleria_Nazionale_d%27Arte_Antica> .
+
+mus:Q338367  rdf:type  mus:museum , wd:Q1007870 , wd:Q207694 , wd:Q740437 , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "Italian art gallery and academy of fine arts in Bergamo"@en , "musee dans Bergamo, Italie"@fr ;
+        rdfs:label    "Académie Carrara"@fr , "Accademia Carrara"@en ;
+        owl:sameAs    wd:Q338367 , wp:Accademia_Carrara .
+
+mus:Q431431  rdf:type  mus:museum , wd:Q24354 , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "musée et salle de spectacle, situé à Laren, aux Pays-Bas"@fr , "museum and concert hall in Laren, Netherlands"@en ;
+        rdfs:label    "Singer Laren"@en , "Singer Laren"@fr ;
+        owl:sameAs    wd:Q431431 , wp:Singer_Laren .
+
+mus:Q1542668  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "musée néerlandais"@fr , "art museum in the city of Groningen in the Netherlands"@en ;
+        rdfs:label    "Groninger Museum"@en , "musée de Groningue"@fr ;
+        owl:sameAs    wp:Groninger_Museum , wd:Q1542668 .
+
+mus:Q3757690  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q16735822 , wd:Q12104174 , wd:Q2087181 ;
+        rdfs:comment  "museum in Reggio Emilia, Italy"@en , "musée italien"@fr ;
+        rdfs:label    "Galleria Parmeggiani"@en , "Galleria Parmeggiani"@fr ;
+        owl:sameAs    wd:Q3757690 .
+
+mus:Q1136338  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q17431399 , wd:Q33506 ;
+        rdfs:comment  "museum in Buenos Aires, Argentina"@en , "musée à Buenos Aires, Argentine"@fr ;
+        rdfs:label    "musée national des Arts décoratifs"@fr , "National Museum of Decorative Arts"@en ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/National_Museum_of_Decorative_Arts,_Buenos_Aires> , wd:Q1136338 .
+
+mus:Q895434  rdf:type  wd:Q708676 , mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "art museum in Barnard Catle, England"@en ;
+        rdfs:label    "Bowes Museum"@en , "Bowes Museum"@fr ;
+        owl:sameAs    wp:Bowes_Museum , wd:Q895434 .
+
+mus:Q774128  rdf:type  mus:museum , wd:Q684740 , wd:Q207694 , wd:Q3867560 , wd:Q3329412 , owl:NamedIndividual , wd:Q17431399 , wd:Q108860593 , wd:Q33506 , wd:Q2087181 ;
+        rdfs:comment  "musée d'art italien à Modena"@fr , "art museum in Modena"@en ;
+        rdfs:label    "Galleria Estense"@en , "Galleria Estense"@fr ;
+        owl:sameAs    wd:Q774128 , wp:Galleria_Estense .
+
+mus:Q2436387  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "art museum with two locations in the province of Overijssel in the Netherlands"@en ;
+        rdfs:label    "Museum de Fundatie"@en , "Museum de Fundatie"@fr ;
+        owl:sameAs    wp:Museum_de_Fundatie , wd:Q2436387 .
+
+mus:Q3368135  rdf:type  mus:museum , owl:NamedIndividual , wd:Q41176 , wd:Q1747681 ;
+        rdfs:comment  "bâtiment de Frederikssund, Danemark"@fr , "art museum dedicated to the works of Jens Ferdinand Willumsen"@en ;
+        rdfs:label    "Willumsens Museum"@en ;
+        owl:sameAs    wp:Willumsens_Museum , wd:Q3368135 .
+
+mus:Q816669  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "musée à Athènes"@fr , "museum in Kolonaki, Athens"@en ;
+        rdfs:label    "Benaki Museum"@en , "musée Benáki"@fr ;
+        owl:sameAs    wp:Benaki_Museum , wd:Q816669 .
+
+mus:Q976019  rdf:type  mus:museum , owl:NamedIndividual , wd:Q4989906 , wd:Q33506 ;
+        rdfs:comment  "musée espagnol"@fr , "museum in Madrid"@en ;
+        rdfs:label    "Museum Cerralbo"@en , "Museo Cerralbo. Madrid"@fr ;
+        owl:sameAs    wd:Q976019 , wp:Cerralbo_Museum .
+
+mus:Q3773707  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q4989906 ;
+        rdfs:comment  "musée national espagnol des Asturies"@fr , "cultural property in Oviedo, Spain"@en ;
+        rdfs:label    "Fine Arts Museum of Asturias"@en , "Musée des Beaux-Arts des Asturies"@fr ;
+        owl:sameAs    wd:Q3773707 , wp:Museum_of_Fine_Arts_of_Asturias .
+
+mus:Q1779837  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q17431399 ;
+        rdfs:comment  "art museum in Havana, Cuba"@en , "musée à La Havane"@fr ;
+        rdfs:label    "musée national des Beaux-Arts de Cuba"@fr , "National Museum of Fine Arts of Cuba"@en ;
+        owl:sameAs    wp:Museo_Nacional_de_Bellas_Artes_de_La_Habana , wd:Q1779837 .
+
+mus:Q5484867  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "museum in Valencia, Spain"@en , "musée espagnol"@fr ;
+        rdfs:label    "Patriarch Museum"@en ;
+        owl:sameAs    wd:Q5484867 .
+
+mus:Q880898  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "musée en Allemagne"@fr , "museum in Schweinfurt, Germany"@en ;
+        rdfs:label    "Museum Georg Schäfer"@en , "Museum Georg Schäfer"@fr ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Museum_Georg_Sch%C3%A4fer> , wd:Q880898 .
+
+mus:Q5760427  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:label  "Hikaru Museum"@en ;
+        owl:sameAs  wp:Hikaru_Memorial_Hall , wd:Q5760427 .
+
+mus:Q150066  rdf:type  mus:museum , wd:Q1007870 , wd:Q207694 , wd:Q3867560 , owl:NamedIndividual , wd:Q2385804 , wd:Q108860593 ;
+        rdfs:comment  "art museum in Milan, Italy"@en , "musée italien"@fr ;
+        rdfs:label    "pinacothèque de Brera"@fr , "Pinacoteca di Brera"@en ;
+        owl:sameAs    wp:Pinacoteca_di_Brera , wd:Q150066 .
+
+mus:Q4204518  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "musée en Crète"@fr , "museum in Greece"@en ;
+        rdfs:label    "musée historique de Crète"@fr , "Historical Museum of Crete"@en ;
+        owl:sameAs    wd:Q4204518 , wp:Historical_Museum_of_Crete .
+
+mus:Q18755349  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "musée à Tolède, en Espagne"@fr , "museum in the Hospital de Tavera, Toledo, Spain"@en ;
+        rdfs:label    "Museo Fundación Lerma"@en , "Museo Fundación Lerma"@fr ;
+        owl:sameAs    wd:Q18755349 .
+
+mus:Q772890  rdf:type  mus:museum , wd:Q1007870 , wd:Q207694 , owl:NamedIndividual , wd:Q108860593 ;
+        rdfs:comment  "musée en Italie"@fr , "museum in Parma"@en ;
+        rdfs:label    "Galerie nationale de Parme"@fr , "Galleria nazionale di Parma"@en ;
+        owl:sameAs    wp:Galleria_nazionale_di_Parma , wd:Q772890 .
+
+mus:Q127064  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q4989906 ;
+        rdfs:comment  "musée au Pays basque espagnol"@fr , "Art museum located in the city of Bilbao, Spain"@en ;
+        rdfs:label    "musée des Beaux-Arts de Bilbao"@fr , "Bilbao Fine Arts Museum"@en ;
+        owl:sameAs    wd:Q127064 , wp:Bilbao_Fine_Arts_Museum .
+
+mus:Q3683040  rdf:type  mus:museum , owl:NamedIndividual , wd:Q7328910 , wd:Q33506 ;
+        rdfs:comment  "collection of the Uffizi"@en , "collection dans les offices"@fr ;
+        rdfs:label    "collection Contini Bonacossi"@fr , "Contini Bonacossi collection"@en ;
+        owl:sameAs    wd:Q3683040 .
+
+mus:Q260913  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "musée situé à Utrecht, aux Pays-Bas"@fr , "museum in Utrecht, Netherlands"@en ;
+        rdfs:label    "Centraal Museum"@en , "Centraal Museum"@fr ;
+        owl:sameAs    wd:Q260913 , wp:Centraal_Museum .
+
+mus:Q2163496  rdf:type  mus:museum , wd:Q1128397 , owl:NamedIndividual , wd:Q4989906 , wd:Q33506 ;
+        rdfs:comment  "cultural property in Sevilla, Spain"@en , "musée espagnol"@fr ;
+        rdfs:label    "Museo de Bellas Artes de Sevilla"@en , "musée des Beaux-Arts de Séville"@fr ;
+        owl:sameAs    wp:Museum_of_Fine_Arts_of_Seville , wd:Q2163496 .
+
+mus:Q3848124  rdf:type  wd:Q10624527 , mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q2087181 ;
+        rdfs:comment  "museum in Toledo, Spain"@en , "musée espagnol"@fr ;
+        rdfs:label    "musée du Greco"@fr , "El Greco Museum"@en ;
+        owl:sameAs    wd:Q3848124 , <https://en.wikipedia.org/wiki/El_Greco_Museum,_Toledo> .
+
+mus:Q1167467  rdf:type  mus:museum , wd:Q207694 , wd:Q740437 , owl:NamedIndividual , wd:Q17431399 ;
+        rdfs:comment  "national gallery of Greece"@en , "musée d'art à Athènes"@fr ;
+        rdfs:label    "Pinacothèque nationale d'Athènes"@fr , "National Gallery of Athens"@en ;
+        owl:sameAs    wd:Q1167467 , <https://en.wikipedia.org/wiki/National_Gallery_(Athens)> .
+
+mus:Q2420849  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q955824 , wd:Q7075 ;
+        rdfs:comment  "musée américain"@fr , "museum and reference library in New York City for the study of the arts and cultures of Spain and Portugal and their former colonies"@en ;
+        rdfs:label    "The Hispanic Society of America"@fr , "Hispanic Society of America"@en ;
+        owl:sameAs    wp:Hispanic_Society_of_America , wd:Q2420849 .
+
+mus:Q405543  rdf:type  wd:Q3591561 , mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "art museum in Lens, France"@en , "musée de Lens, France"@fr ;
+        rdfs:label    "Louvre-Lens"@en , "Louvre-Lens"@fr ;
+        owl:sameAs    wd:Q405543 , wp:Louvre-Lens .
+
+mus:Q17153751  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 , wd:Q2668072 ;
+        rdfs:comment  "musée ethnographique aux Pays-Bas"@fr , "ethnographic museum in the Netherlands"@en ;
+        rdfs:label    "Nationaal Museum van Wereldculturen"@fr , "National Museum of World Cultures"@en ;
+        owl:sameAs    wp:Nationaal_Museum_van_Wereldculturen , wd:Q17153751 .
+
+mus:Q414219  rdf:type  mus:museum , wd:Q207694 , wd:Q3918 , owl:NamedIndividual , wd:Q875538 , wd:Q383092 ;
+        rdfs:comment  "musée en Autriche"@fr , "art school in Vienna, Austria"@en ;
+        rdfs:label    "Académie des Beaux-Arts de Vienne"@fr , "Academy of Fine Arts Vienna"@en ;
+        owl:sameAs    wp:Academy_of_Fine_Arts_Vienna , wd:Q414219 .
+
+mus:Q1322403  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q1966910 , wd:Q33506 , wd:Q383092 ;
+        rdfs:comment  "académie des beaux-arts à Madrid"@fr , "Spanish art school, museum and gallery in Madrid, Spain"@en ;
+        rdfs:label    "Académie royale des beaux-arts de San Fernando"@fr , "Real Academia de Bellas Artes de San Fernando"@en ;
+        owl:sameAs    wp:Real_Academia_de_Bellas_Artes_de_San_Fernando , wd:Q1322403 .
+
+mus:Q1258370  rdf:type  mus:museum , owl:NamedIndividual , wd:Q33506 ;
+        rdfs:comment  "musée néerlandais"@fr , "museum in Assen"@en ;
+        rdfs:label    "musée régional de Drenthe"@fr , "Drents Museum"@en ;
+        owl:sameAs    wp:Drents_Museum , wd:Q1258370 .
+
+mus:Q28664145  rdf:type  mus:museum , owl:NamedIndividual , wd:Q4989906 , wd:Q33506 ;
+        rdfs:comment  "cultural property in Segovia, Spain"@en ;
+        rdfs:label    "Museo Zuloaga"@en ;
+        owl:sameAs    wd:Q28664145 .
+
+mus:Q714163  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "museum in Moscow"@en ;
+        rdfs:label    "Musée d'architecture Shchusev"@fr , "Shchusev State Museum of Architecture"@en ;
+        owl:sameAs    wp:Shchusev_Museum_of_Architecture , wd:Q714163 .
+
+mus:Q165631  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "Art museum in Berlin, Germany"@en , "musée d'art à Berlin"@fr ;
+        rdfs:label    "Gemäldegalerie"@en , "Gemäldegalerie"@fr ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Gem%C3%A4ldegalerie,_Berlin> , wd:Q165631 .
+
+mus:Q1581475  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual , wd:Q4989906 , wd:Q17431399 ;
+        rdfs:comment  "musée espagnol"@fr , "museum in Valladolid, Spain"@en ;
+        rdfs:label    "National Sculpture Museum"@en , "musée national de la sculpture"@fr ;
+        owl:sameAs    wd:Q1581475 , <https://en.wikipedia.org/wiki/Museo_Nacional_de_Escultura,_Valladolid> .
+
+mus:Q1748404  rdf:type  mus:museum , wd:Q207694 , owl:NamedIndividual ;
+        rdfs:comment  "musée d'art à Valence, Espagne"@fr , "art museum in Valencia, Spain"@en ;
+        rdfs:label    "Museu de Belles Arts de València"@en , "musée des beaux-arts de Valence"@fr ;
+        owl:sameAs    wd:Q1748404 , <https://en.wikipedia.org/wiki/Museu_de_Belles_Arts_de_Val%C3%A8ncia> .               

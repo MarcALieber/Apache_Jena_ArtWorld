@@ -24,6 +24,7 @@ public class generateFiles		extends ArtistBase
 				//paintings found in museum
 				createPainting task1 = new createPainting();
 				task1.run();
+				System.out.println("End of file generation");
 		    
 		    }
 		    

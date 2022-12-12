@@ -128,4 +128,11 @@ mvmt:Q38166  rdf:type  :movement , owl:NamedIndividual ;
 mvmt:Q469913  rdf:type  :movement , owl:NamedIndividual ;
         rdfs:comment  "art movement"@en , "mouvement artistique américain"@fr ;
         rdfs:label    "American scene painting"@en , "régionalisme"@fr ;
-        owl:sameAs    wikipedia:American_scene_painting , wikidata:Q469913 .                        
+        owl:sameAs    wikipedia:American_scene_painting , wikidata:Q469913 . 
+        
+mvmt:Q430167  rdf:type  :movement , owl:NamedIndividual ;
+        rdfs:comment  "cultural movement"@en , "mouvement artistique espagnol"@fr ;
+        rdfs:label    "Spanish Renaissance"@en , "Renaissance espagnole"@fr ;
+        owl:sameAs    wikipedia:Spanish_Renaissance , wikidata:Q430167 . 
+
+                               

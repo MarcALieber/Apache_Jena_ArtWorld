@@ -29,6 +29,8 @@ public class generateFiles2		extends ArtistBase
 		    	// check missing City
 		    	createCity task2 = new createCity();
 		    	task2.run();
+		    	
+		    	System.out.println("End of file generation");
    
 		    }
 		    

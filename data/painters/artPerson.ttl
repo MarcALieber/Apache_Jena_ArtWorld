@@ -185,5 +185,26 @@ person:Q937373  rdf:type    owl:NamedIndividual , person:ceramicist ;
         person:isCitizenOf  ctry:Q142 ;
         owl:sameAs          wikidata:Q937373 , <https://en.wikipedia.org/wiki/Th%C3%A9odore_Deck> .
 
+person:Q301  a                   person:painter , owl:NamedIndividual ;
+        rdfs:comment             "artiste espagnol du XVIe siècle"@fr , "Greek artist, painter, sculptor and architect, 1541-1614"@en ;
+        rdfs:label               "Le Greco"@fr , "El Greco"@en ;
+        person:dateOfBirth       "1541-10-01T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1614-04-07T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Theotokópoulos" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q29 ;
+        person:isPartofMovement  mvmt:Q430167  ;
+        owl:sameAs               wikipedia:El_Greco , wd:Q301 .
+
+person:Q5582  a                  person:painter , owl:NamedIndividual ;
+        rdfs:comment             "Dutch painter"@en , "peintre néerlandais (1853-1890)"@fr ;
+        rdfs:label               "Vincent van Gogh"@fr , "Vincent van Gogh"@en ;
+        person:dateOfBirth       "1853-03-30T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1890-07-29T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Van Gogh" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q55 ;
+        person:isPartofMovement  mvmt:Q166713 , mvmt:Q80113 ;
+        owl:sameAs               wikipedia:Vincent_van_Gogh , wd:Q5582 .
       
                     

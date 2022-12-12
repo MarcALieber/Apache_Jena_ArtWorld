@@ -1,0 +1,36 @@
+@prefix city:      <http://www.art.org/ontology/world/city#> .
+@prefix ctry:      <http://www.art.org/ontology/world/country#> .
+@prefix gender:    <http://www.art.org/ontology/person/gender#> .
+@prefix mus:       <http://www.art.org/ontology/museum#> .
+@prefix mvmt:      <http://www.art.org/ontology/movement#> .
+@prefix owl:       <http://www.w3.org/2002/07/owl#> .
+@prefix person:    <http://www.art.org/ontology/person#> .
+@prefix rdfs:      <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:    <http://schema.org/> .
+@prefix wd:        <http://www.wikidata.org/entity/> .
+@prefix wdt:       <http://www.wikidata.org/prop/direct/> .
+@prefix wikipedia: <https://en.wikipedia.org/wiki/> .
+@prefix world:     <http://www.art.org/ontology/world#> .
+@prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+person:Q301  a                   person:painter , owl:NamedIndividual ;
+        rdfs:comment             "artiste espagnol du XVIe siècle"@fr , "Greek artist, painter, sculptor and architect, 1541-1614"@en ;
+        rdfs:label               "Le Greco"@fr , "El Greco"@en ;
+        person:dateOfBirth       "1541-10-01T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1614-04-07T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Theotokópoulos" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q4948 , ctry:Q29 ;
+        person:isPartofMovement  mvmt:Q430167 , mvmt:Q131808 ;
+        owl:sameAs               wikipedia:El_Greco , wd:Q301 .
+
+person:Q5582  a                  person:painter , owl:NamedIndividual ;
+        rdfs:comment             "Dutch painter"@en , "peintre néerlandais (1853-1890)"@fr ;
+        rdfs:label               "Vincent van Gogh"@fr , "Vincent van Gogh"@en ;
+        person:dateOfBirth       "1853-03-30T00:00:00Z"^^xsd:dateTime ;
+        person:dateOfDeath       "1890-07-29T00:00:00Z"^^xsd:dateTime ;
+        person:familyName        "Van Gogh" ;
+        person:hasGender         gender:male ;
+        person:isCitizenOf       ctry:Q55 ;
+        person:isPartofMovement  mvmt:Q166713 , mvmt:Q80113 ;
+        owl:sameAs               wikipedia:Vincent_van_Gogh , wd:Q5582 .

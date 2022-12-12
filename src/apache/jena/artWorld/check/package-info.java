@@ -6,7 +6,6 @@
  * checkMissingLabel : each individual (painter,movement,museum, artefact) must have a label in english
  * 
  * TODO : verify properties association rdfs:domain and rdfs:range
- * TODO : checkMissingLabel
  * TODO : check missing country in museum
  *
  * @since 1.0
