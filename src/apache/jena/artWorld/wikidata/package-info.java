@@ -18,10 +18,14 @@
  *  Step4  execute generateFiles2 (no parameter)
  *     -- new data are stored in data/tempload in 3 files 
  *     -- copy the set of triples (if there is some) into artMuseum.ttl , artMuseum2.ttl , artMovement.ttl, artCity.ttl, artCity2.ttl 
+ *     -- rerun execute generateFiles2 and check if new data in  museum_inCity_........nt
+ *     -- some manual fixes might be necessary in artMuseum2.ttl to add the missing museum_inCity
+ *     
  *  Step5 execute apache/jena/artWorld/demo/validateArtefact.java
  *  
  *  Step6 reload world Graph an museum and movement
  *      -- use util/LoadArtWorld.java and set in ArtistBase the value LOAD_NG = "default"; run; then LOAD_NG = "artefact"; run;
+ *      -- execute createCity an reload world (2 times) to get the inCountry  
  *  Step7 validate the triple store
  *     execute checkProperties.java then checkClasses.java then checkMissingLabel.java
  * 

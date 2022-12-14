@@ -35,3 +35,89 @@
 @prefix wp:        <https://en.wikipedia.org/wiki/> .
 @prefix xml:       <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd:       <http://www.w3.org/2001/XMLSchema#> .
+
+city:Q13360  world:isCityOf  ctry:Q38 .
+
+city:Q41604  world:isCityOf  ctry:Q142 .
+
+city:Q891  world:isCityOf  ctry:Q159 .
+
+city:Q165271  world:isCityOf  ctry:Q142 .
+
+city:Q803  world:isCityOf  ctry:Q55 .
+
+city:Q8692  world:isCityOf  ctry:Q29 .
+
+city:Q15684  world:isCityOf  ctry:Q29 .
+
+city:Q202973  world:isCityOf  ctry:Q16 .
+
+city:Q14317  world:isCityOf  ctry:Q29 .
+
+city:Q319813  world:isCityOf  ctry:Q36 .
+
+city:Q628  world:isCityOf  ctry:Q38 .
+
+city:Q9807  world:isCityOf  ctry:Q55 .
+
+city:Q179815  world:isCityOf  ctry:Q145 .
+
+city:Q793  world:isCityOf  ctry:Q55 .
+
+city:Q10313  world:isCityOf  ctry:Q29 .
+
+city:Q12411  world:isCityOf  ctry:Q29 .
+
+city:Q4126  world:isCityOf  ctry:Q183 .
+
+city:Q8356  world:isCityOf  ctry:Q29 .
+
+city:Q279  world:isCityOf  ctry:Q38 .
+
+city:Q15098  world:isCityOf  ctry:Q29 .
+
+city:Q160544  world:isCityOf  ctry:Q41 .
+
+city:Q798  world:isCityOf  ctry:Q55 .
+
+city:Q1891  world:isCityOf  ctry:Q38 .
+
+city:Q736897  world:isCityOf  ctry:Q17 .
+
+city:Q8818  world:isCityOf  ctry:Q29 .
+
+city:Q3223801  world:isCityOf  ctry:Q35 .
+
+city:Q1733  world:isCityOf  ctry:Q183 .
+
+city:Q649  world:isCityOf  ctry:Q159 .
+
+city:Q1563  world:isCityOf  ctry:Q241 .
+
+city:Q47475  world:isCityOf  ctry:Q29 .
+
+city:Q5836  world:isCityOf  ctry:Q29 .
+
+city:Q52607  world:isCityOf  ctry:Q414 .
+
+city:Q2683  world:isCityOf  ctry:Q38 .
+
+city:Q2634  world:isCityOf  ctry:Q38 .
+
+city:Q4098  world:isCityOf  ctry:Q183 .
+
+city:Q134674  world:isCityOf  ctry:Q142 .
+
+city:Q8717  world:isCityOf  ctry:Q29 .
+
+city:Q15095  world:isCityOf  ctry:Q29 .
+
+city:Q622594  world:isCityOf  ctry:Q17 .
+
+city:Q892526  world:isCityOf  ctry:Q55 .
+
+city:Q43631  world:isCityOf  ctry:Q55 .
+
+city:Q68160  world:isCityOf  ctry:Q39 .
+
+city:Q9945  world:isCityOf  ctry:Q55 .

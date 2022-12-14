@@ -21,7 +21,12 @@ schema:MuseumShape
         sh:name "City" ;
         sh:minCount 1;
         sh:description "The City's museum";
-        sh:message "A Museum must have a unique City";
+        sh:message "A Museum must have a inCity entry";
+    ] ;
+    sh:property [
+        sh:path mus:inCity  ;
+        sh:maxCount 1;
+        sh:message "A Museum can only be linked to one City";
     ] ;
     sh:property [
         sh:path rdfs:label ;
@@ -49,8 +54,7 @@ schema:ArteFactShape
         sh:path rdfs:label ;
         sh:datatype rdf:langString ;
         sh:uniqueLang true ;
-        sh:minCount 1;
-        sh:maxCount 2;
+        #sh:minCount 1;
         sh:name "label" ;
         sh:description "the label of the artefact must exist";
         sh:message "An Artefact must have a label with language declaration";
@@ -63,10 +67,10 @@ schema:ArteFactShape
         sh:message "comment must have unique language declaration";
     ] ;
     sh:property [
-        sh:path art:location ;
+        sh:path art:inMuseum ;
         sh:maxCount 1;
         sh:minCount 1;
-        sh:message "an Artefact must have one location";
+        sh:message "an Artefact must have one museum associated (inMuseum)";
     ] ;
     sh:property [
         sh:path art:location ;

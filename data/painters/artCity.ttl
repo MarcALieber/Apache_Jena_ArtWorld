@@ -1830,4 +1830,218 @@ city:Q23939248  rdf:type  world:city , owl:NamedIndividual ;
         rdfs:label    "Londres"@fr , "London"@en ;
         owl:sameAs    wd:Q23939248 .
 
-        
+city:Q13360  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune italienne"@fr , "Italian commune (comune) in Emilia-Romagna"@en ;
+        rdfs:label    "Reggio Emilia"@en , "Reggio d'Émilie"@fr ;
+        owl:sameAs    wp:Reggio_Emilia , wd:Q13360 .
+
+city:Q41604  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département de la Somme (chef-lieu)"@fr , "commune in Somme, France"@en ;
+        rdfs:label    "Amiens"@en , "Amiens"@fr ;
+        owl:sameAs    wd:Q41604 , wp:Amiens .
+
+city:Q891  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville de Russie et capitale du district fédéral de la Volga"@fr , "capital of the Nizhny Novgorod Oblast and the Volga Federal District in central Russia"@en ;
+        rdfs:label    "Nizhny Novgorod"@en , "Nijni Novgorod"@fr ;
+        owl:sameAs    wp:Nizhny_Novgorod , wd:Q891 .
+
+city:Q165271  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département du Pas-de-Calais"@fr , "commune in Pas-de-Calais, France"@en ;
+        rdfs:label    "Lens"@en , "Lens"@fr ;
+        owl:sameAs    wd:Q165271 , <https://en.wikipedia.org/wiki/Lens,_Pas-de-Calais> .
+
+city:Q803  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality in the Netherlands and capital city of the province of Utrecht"@en , "commune et ville néerlandaise, chef-lieu de la province d'Utrecht"@fr ;
+        rdfs:label    "Utrecht"@en , "Utrecht"@fr ;
+        owl:sameAs    wp:Utrecht , wd:Q803 .
+
+city:Q8692  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality and city in Spain"@en , "ville d'Espagne"@fr ;
+        rdfs:label    "Bilbao"@en , "Bilbao"@fr ;
+        owl:sameAs    wp:Bilbao , wd:Q8692 .
+
+city:Q15684  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune espagnole, en Castilla y León, capitale de la province du même nom"@fr , "Spanish municipality, in Castilla y León, capital of the province of the same name"@en ;
+        rdfs:label    "Ségovie"@fr , "Segovia"@en ;
+        owl:sameAs    wd:Q15684 , wp:Segovia .
+
+city:Q202973  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in Ontario, Canada"@en , "ville de l'Ontario (Canada)"@fr ;
+        rdfs:label    "Kingston"@en , "Kingston"@fr ;
+        owl:sameAs    wd:Q202973 , <https://en.wikipedia.org/wiki/Kingston,_Ontario> .
+
+city:Q14317  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality of Asturias, Spain"@en , "commune espagnole"@fr ;
+        rdfs:label    "Oviedo"@en , "Oviedo"@fr ;
+        owl:sameAs    wp:Oviedo , wd:Q14317 .
+
+city:Q319813  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in eastern Poland"@en , "ville polonaise"@fr ;
+        rdfs:label    "Siedlce"@en , "Siedlce"@fr ;
+        owl:sameAs    wp:Siedlce , wd:Q319813 .
+
+city:Q628  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "comune in Lombardy, Italy"@en , "ville d'Italie"@fr ;
+        rdfs:label    "Bergamo"@en , "Bergame"@fr ;
+        owl:sameAs    wp:Bergamo , wd:Q628 .
+
+city:Q9807  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality in the Netherlands"@en , "commune de Brabant-Septentrional, Pays-Bas"@fr ;
+        rdfs:label    "Bois-le-Duc"@fr , "'s-Hertogenbosch"@en ;
+        owl:sameAs    wd:Q9807 .
+
+city:Q179815  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville britannique"@fr , "city and the county town of County Durham in North East England"@en ;
+        rdfs:label    "Durham"@en , "Durham"@fr ;
+        owl:sameAs    wd:Q179815 , <https://en.wikipedia.org/wiki/Durham,_England> .
+
+city:Q793  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality in Overijssel, the Netherlands"@en , "chef-lieu de la province d'Overijssel"@fr ;
+        rdfs:label    "Zwolle"@en , "Zwolle"@fr ;
+        owl:sameAs    wp:Zwolle , wd:Q793 .
+
+city:Q10313  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville en Guipúzcoa, Communauté autonome basque, Espagne"@fr , "city in Basque Country, Spain"@en ;
+        rdfs:label    "Donostia-San Sebastián"@en , "Saint-Sébastien"@fr ;
+        owl:sameAs    wd:Q10313 , <https://en.wikipedia.org/wiki/San_Sebasti%C3%A1n> .
+
+city:Q12411  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Espagne capitale de la province de Pontevedra et des Rias Baixas"@fr , "city in north-west Spain capital of Pontevedra province and the Rias Baixas"@en ;
+        rdfs:label    "Pontevedra"@en , "Pontevedra"@fr ;
+        owl:sameAs    wd:Q12411 , wp:Pontevedra .
+
+city:Q4126  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Allemagne"@fr , "city in the district of Lower Franconia in Bavaria, Germany"@en ;
+        rdfs:label    "Schweinfurt"@en , "Schweinfurt"@fr ;
+        owl:sameAs    wd:Q4126 , wp:Schweinfurt .
+
+city:Q8356  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city of the Province of Valladolid in Spain"@en , "ville d'Espagne"@fr ;
+        rdfs:label    "Valladolid"@en , "Valladolid"@fr ;
+        owl:sameAs    wp:Valladolid , wd:Q8356 .
+
+city:Q279  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "Italian city and municipality"@en , "ville d'Italie"@fr ;
+        rdfs:label    "Modène"@fr , "Modena"@en ;
+        owl:sameAs    wp:Modena , wd:Q279 .
+
+city:Q15098  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality in Spain"@en , "commune d'Espagne"@fr ;
+        rdfs:label    "Cuenca"@en , "Cuenca"@fr ;
+        owl:sameAs    wd:Q15098 , <https://en.wikipedia.org/wiki/Cuenca,_Spain> .
+
+city:Q160544  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in the island of Crete, Greece"@en , "ville grecque"@fr ;
+        rdfs:label    "Heraklion"@en , "Héraklion"@fr ;
+        owl:sameAs    wd:Q160544 , wp:Heraklion .
+
+city:Q798  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality in and capital city of Drenthe, the Netherlands"@en , "ville et capitale de la province neérlandaise de Drenthe"@fr ;
+        rdfs:label    "Assen"@en , "Assen"@fr ;
+        owl:sameAs    wd:Q798 , wp:Assen .
+
+city:Q1891  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune italienne"@fr , "city in Emilia-Romagna, Italy"@en ;
+        rdfs:label    "Bologna"@en , "Bologne"@fr ;
+        owl:sameAs    wd:Q1891 , wp:Bologna .
+
+city:Q736897  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville japonaise"@fr , "city in Hiroshima prefecture, Japan"@en ;
+        rdfs:label    "Hatsukaichi"@en , "Hatsukaichi"@fr ;
+        owl:sameAs    wp:Hatsukaichi , wd:Q736897 .
+
+city:Q8818  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality in Spain, capital city of the Valencian Community"@en , "ville d'Espagne"@fr ;
+        rdfs:label    "Valencia"@en , "Valence"@fr ;
+        owl:sameAs    wd:Q8818 , wp:Valencia .
+
+city:Q3223801  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "town in Denmark"@en ;
+        rdfs:label    "Frederikssund"@en , "Frederikssund"@fr ;
+        owl:sameAs    wd:Q3223801 , wp:Frederikssund .
+
+city:Q1733  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville allemande, capitale du land Saxe-Anhalt"@fr , "capital city of the German state of Saxony-Anhalt"@en ;
+        rdfs:label    "Magdeburg"@en , "Magdebourg"@fr ;
+        owl:sameAs    wd:Q1733 , wp:Magdeburg .
+
+city:Q649  rdf:type   world:city , owl:NamedIndividual ;
+        rdfs:comment  "capital and most populous city of Russia"@en , "capitale de la Russie"@fr ;
+        rdfs:label    "Moscow"@en , "Moscou"@fr ;
+        owl:sameAs    wd:Q649 , wp:Moscow .
+
+city:Q1563  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capital and largest city of Cuba"@en , "capitale de Cuba"@fr ;
+        rdfs:label    "La Havane"@fr , "Havana"@en ;
+        owl:sameAs    wp:Havana , wd:Q1563 .
+
+city:Q47475  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality of Spain"@en , "commune espagnole"@fr ;
+        rdfs:label    "Sigüenza"@en , "Sigüenza"@fr ;
+        owl:sameAs    wd:Q47475 , <https://en.wikipedia.org/wiki/Sig%C3%BCenza> .
+
+city:Q5836  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality in central Spain"@en , "ville d'Espagne capitale de la province de Tolède et de Castille-la-Manche"@fr ;
+        rdfs:label    "Toledo"@en , "Tolède"@fr ;
+        owl:sameAs    wd:Q5836 , <https://en.wikipedia.org/wiki/Toledo,_Spain> .
+
+city:Q52607  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in Buenos Aires Province, Argentina"@en , "commune argentine"@fr ;
+        rdfs:label    "Mar del Plata"@en , "Mar del Plata"@fr ;
+        owl:sameAs    wd:Q52607 , wp:Mar_del_Plata .
+
+city:Q2683  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in the northern Italian region of Emilia-Romagna"@en , "ville d'Italie"@fr ;
+        rdfs:label    "Parma"@en , "Parme"@fr ;
+        owl:sameAs    wd:Q2683 , wp:Parma .
+
+city:Q2634  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville italienne, capitale de la Campanie"@fr , "city and commune in Campania, Italy"@en ;
+        rdfs:label    "Naples"@en , "Naples"@fr ;
+        owl:sameAs    wp:Naples , wd:Q2634 .
+
+city:Q4098  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "ville d'Allemagne"@fr , "town in Mecklenburg-Vorpommern, Germany"@en ;
+        rdfs:label    "Greifswald"@en , "Greifswald"@fr ;
+        owl:sameAs    wp:Greifswald , wd:Q4098 .
+
+city:Q134674  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune française du département des Pyrénées-Atlantiques"@fr , "commune in Pyrénées-Atlantiques, France"@en ;
+        rdfs:label    "Bayonne"@en , "Bayonne"@fr ;
+        owl:sameAs    wd:Q134674 , wp:Bayonne .
+
+city:Q8717  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "capitale de la province de Séville et de la communauté autonome d’Andalousie en Espagne"@fr , "capital of the province of Seville and the autonomous community of Andalusia in Spain"@en ;
+        rdfs:label    "Seville"@en , "Séville"@fr ;
+        owl:sameAs    wp:Seville , wd:Q8717 .
+
+city:Q15095  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in Castilla-La Mancha, Spain"@en , "ville d'Espagne capitale de la province d'Albacete"@fr ;
+        rdfs:label    "Albacete"@en , "Albacete"@fr ;
+        owl:sameAs    wp:Albacete , wd:Q15095 .
+
+city:Q622594  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city in Gifu Prefecture, Japan"@en , "ville japonaise dans la préfecture de Gifu"@fr ;
+        rdfs:label    "Takayama"@en , "Takayama"@fr ;
+        owl:sameAs    <https://en.wikipedia.org/wiki/Takayama,_Gifu> , wd:Q622594 .
+
+city:Q892526  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "municipality in the Netherlands"@en , "commune de la province de Groningue, Pays-Bas"@fr ;
+        rdfs:label    "Groningen"@en , "Groningue"@fr ;
+        owl:sameAs    wd:Q892526 .
+
+city:Q43631  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "Dutch municipality in South Holland"@en , "commune néerlandaise en Hollande-Méridionale"@fr ;
+        rdfs:label    "Leiden"@en , "Leyde"@fr ;
+        owl:sameAs    wp:Leiden , wd:Q43631 .
+
+city:Q68160  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "city on Lake Geneva, in the canton of Vaud, Switzerland"@en , "commune du canton de Vaud, Suisse"@fr ;
+        rdfs:label    "Vevey"@en , "Vevey"@fr ;
+        owl:sameAs    wp:Vevey , wd:Q68160 .
+
+city:Q9945  rdf:type  world:city , owl:NamedIndividual ;
+        rdfs:comment  "commune néerlandaise"@fr , "municipality in North Holland, Netherlands"@en ;
+        rdfs:label    "Laren"@en , "Laren"@fr ;
+        owl:sameAs    wd:Q9945 , <https://en.wikipedia.org/wiki/Laren,_North_Holland> .
+                

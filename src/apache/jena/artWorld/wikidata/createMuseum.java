@@ -138,7 +138,7 @@ public class createMuseum extends ArtistBase
         		+ "  BIND(replace(str(?museum),\"http://www.art.org/ontology/museum#\",\"\") as ?itemID )\n"
         		+ "  BIND(IRI(CONCAT(\"http://www.wikidata.org/entity/\", ?itemID   ))  AS ?museumID ) .\n"
         		+ "{ SERVICE <"+ serviceURI +">  {?museumID wdt:P131 ?city .\n"
-        		+ "     ?city wdt:P31 ?loc FILTER(?loc in (wd:Q5119 ,wd:Q515,wd:Q1549591,wd:Q484170,wd:Q1637706,wd:Q2039348,wd:Q532,wd:Q200250,wd:Q1093829,wd:Q133442 )) .\n"
+        		+ "     ?city wdt:P31 ?loc FILTER(?loc in (wd:Q5119 ,wd:Q515,wd:Q1549591,wd:Q484170,wd:Q1637706,wd:Q2039348,wd:Q532,wd:Q200250,wd:Q1093829,wd:Q133442,wd:Q2074737 )) .\n"
         		+ "      \n"
         		+ "     }\n"
         		+ "  }\n"
@@ -150,7 +150,7 @@ public class createMuseum extends ArtistBase
         try (QueryExecution qexec =  QueryExecution.service(queryService).query(query).build()) { 
 		  
     		PrintStream o = new PrintStream(file2);
-		    //System.out.println(query);
+	//System.out.println(query);
 			System.setOut(o);
 			Dataset d = qexec.execConstructDataset();
 			RDFDataMgr.write(System.out, d, Lang.TRIG);
