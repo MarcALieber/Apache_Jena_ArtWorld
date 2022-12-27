@@ -39,17 +39,18 @@ public abstract class Base
     public static final String SHAPES_DIR = "./data/painters/shapes/";
     public static final String tempfolder ="./data/tempload";
     public static final String tempfolder2 ="./data/tempload2";
+    public static final String quadfolder ="./data/painters/quads";
 
     /** Relative path to the directory containing sample ontologies */
     public static final String ONTOLOGIES_DIR = "./data/painters/ontologies/";
 
     public static final String dsName = "ArtWorld";
 	//static String serverURL ="http://localhost:3030";
-    public static final String serverURL ="http://localhost:8080/fuseki";
+    public static final String serverURL ="http://localhost:8043/fuseki";
     public static final String dataURL = serverURL+"/"+dsName;
     public static final String queryService = dataURL+"/query";
     public static final String serviceURI  = "https://query.wikidata.org/sparql" ;
-    public static final String baseUrl = "http://localhost:8080/fuseki/#/dataset/ArtWorld/query?query=";
+    public static final String baseUrl = "http://localhost:8043/fuseki/#/dataset/ArtWorld/query?query=";
     
     /***********************************/
     /* Static variables                */

@@ -28,7 +28,7 @@ public abstract class ArtistBase extends Base
     /* Constants                       */
     /***********************************/
 	//allowed values : ontology ** all ** movement ** museum ** default ** world ** artefact
-	public static final String LOAD_NG = "museum";
+	public static final String LOAD_NG = "all";
 
     public static final String ARTIST_SCHEMA = "http://www.art.org/ontology/person#";
     public static final String WORLD_SCHEMA = "http://www.art.org/ontology/world#";
