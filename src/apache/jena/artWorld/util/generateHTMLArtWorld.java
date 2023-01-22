@@ -79,8 +79,8 @@ public class generateHTMLArtWorld  extends ArtistBase {
 	    public void run() {
 			boolean result; 
 			File file ;  
-			Model model;
-			System.out.println("start");
+			//Model model;
+			System.out.println("start build "+date);
 			Query queryString = QueryFactory.create("SELECT ?NamedGraph (STR(COUNT(?s)) AS ?countOfs)  \n"
 	        		+ "WHERE { GRAPH ?NamedGraph { ?s ?p ?o . } \n"
 	        		+ "  } GROUP BY (?NamedGraph)" );
@@ -101,17 +101,11 @@ public class generateHTMLArtWorld  extends ArtistBase {
 	        		+ "group by ?g ?o\n"
 	        		+ "order by ?g ?o\n");
 	        		
-		  Dataset dataset;
+		  //Dataset dataset;
 		  ResultSet results;
 		  
 		  file = new File(tempfolder+"/overview.html");
 	  	  file.delete();
-			
-			 
-		   model = ModelFactory.createDefaultModel();
-		   model.read("data/painters/artMuseum2.ttl");
-		   dataset = DatasetFactory.create(model);
-  	       dataset.addNamedModel(ng_museum, model);
 	  	       
 	  	   try { result = file.createNewFile();  //creates a new file  
 	  	  
